@@ -20,11 +20,3 @@ a = 0: 0
 \end{cases}
 $$
 
-```tikz
-\begin{document}
-\begin{tikzpicture}
-\draw[thick,lime,->] (0,0) -- (3,3);
-\end{tikzpicture}
-\end{document}
-```
-

@@ -22,7 +22,7 @@ Syntax dafür:
 > lorem ipsum
 ```
 
-erzeugt:
+Dies erzeugt:
 > [!def] Mensch
 > Ein Mensch ist ein federloser Zweibeiner.
 > lorem ipsum
