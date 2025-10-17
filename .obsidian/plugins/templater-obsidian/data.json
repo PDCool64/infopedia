@@ -29,7 +29,8 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "Metaphysik (Vault-Verwaltung)/Templates/def-callout-template.md"
+    "Metaphysik (Vault-Verwaltung)/Templates/def-callout-template.md",
+    "Metaphysik (Vault-Verwaltung)/Templates/wip-callout-template.md"
   ],
   "startup_templates": [
     ""

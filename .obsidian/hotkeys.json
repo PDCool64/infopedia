@@ -15,5 +15,14 @@
       ],
       "key": "C"
     }
+  ],
+  "templater-obsidian:Metaphysik (Vault-Verwaltung)/Templates/wip-callout-template.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
   ]
 }

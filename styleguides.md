@@ -29,6 +29,7 @@ Dies erzeugt:
 
 
 # Anmerkungen zu Work-In-Progress Notizen
+> *Damit dies richtig dargestellt wird, muss in `Settings > Appearance > CSS Snipets` (ganz unten, Snippets selbst müssen ggfs. erst aktiviert werden.) der Snippet `WIPcalloutHervorhebungen.css` aktiviert werden.
 
 Wenn in einer Notiz
 - noch etwas wichtiges fehlt

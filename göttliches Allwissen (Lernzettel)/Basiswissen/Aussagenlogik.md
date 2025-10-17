@@ -1,3 +1,10 @@
+>[!wip]
+> Diese Notiz ist noch nicht auf dem rigoroseren Stand der DS Vorlesung: z.B. fehlen Terme, die Unterscheidung zwischen Subjunktion und Implikation usw. Es wird auf das [[Skript Diskrete Strukturen.pdf]] verwiesen.
+
+
+---
+
+
 >[!def] Aussage:
 >Eine (mathematische) Aussage ist eine sprachlich oder symbolisch formulierte Behauptung, der auf eindeutiger Weise ein Wahrheitswert, nämlich *wahr (W)* oder *falsch (F)* zugeordnet werden kann.
 
