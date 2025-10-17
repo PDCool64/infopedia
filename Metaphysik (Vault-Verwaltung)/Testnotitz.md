@@ -6,7 +6,7 @@ cssclasses:
 Kann ich vom Desktop commits machen?
 
 
->[!WIP]
+>[!wip]
 > ,jhabsdas
 > sadasd
 > 
