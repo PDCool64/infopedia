@@ -11,11 +11,11 @@ Skriptfolien:
 ## Affenproblem
 Gegeben: $100$ Affen, $1600$ Kokusnüsse
 ### Behauptung
-$\exists k \in \mathbb{N}:$ $4$ Affen haben $k$ Kokusnüsse
+$\exists k \in \mathbb{N}_{0}:$ $4$ Affen haben $k$ Kokusnüsse
 
 ### Beweis
 Angenommen, die Aussage ist falsch, dann folgt: 
-$\forall k \in \mathbb{N}:$ höchstens $3$ Affen haben k Kokusnüsse
+$\forall k \in \mathbb{N}_{0}:$ höchstens $3$ Affen haben k Kokusnüsse
 Wir nummerieren alle Affen von 1 bis 100 nach steigender Anzahl an Kokusnüssen. 
 $$
 \begin{align}
