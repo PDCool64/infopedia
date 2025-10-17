@@ -3,7 +3,7 @@ cssclasses:
 ---
 
 
-Kann ich vom Desktop commits machen?
+Kann ich vom Desktop commits machen? -ja
 
 
 > [!WIP]

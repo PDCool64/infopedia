@@ -1,0 +1,1 @@
+Modulübergreifende Grundlagen, Vorwissen aus dem Mathevorkurs und der Schule.
