@@ -6,3 +6,25 @@ $f: A \to B, g: U \to V$ heißen gleich, wenn $A=U \land B=V$ und $f(x) = g(x) \
 ### Beispiel
 $f: \mathbb{R} \to \mathbb{R}, x \mapsto x^{2}$
 $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
+
+$$
+\begin{align}
+a = 2 \\
+b = 3   \\
+c = 7
+\end{align}
+\begin{cases}
+a >0: x \\
+a < 0: x - 1 \\
+a = 0: 0
+\end{cases}
+$$
+
+```tikz
+\begin{document}
+\begin{tikzpicture}
+\draw[thick,lime,->] (0,0) -- (3,3);
+\end{tikzpicture}
+\end{document}
+```
+

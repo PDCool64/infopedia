@@ -2,5 +2,10 @@
   "dataview",
   "obsidian-excalidraw-plugin",
   "obsidian-git",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "obsidian-tikzjax",
+  "code-emitter",
+  "obsidian-desmos",
+  "folder-notes",
+  "obsidian-hover-editor"
 ]
