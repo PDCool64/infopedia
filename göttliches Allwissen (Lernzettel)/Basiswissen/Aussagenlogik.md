@@ -2,15 +2,15 @@
 >Eine (mathematische) Aussage ist eine sprachlich oder symbolisch formulierte Behauptung, der auf eindeutiger Weise ein Wahrheitswert, nämlich *wahr (W)* oder *falsch (F)* zugeordnet werden kann.
 
 Dabei zu beachten:
-- Damit einer Aussage ein *eindeutiger* Wahrheitswert zugewiesen werden kann, muss klar sein, in welchem System/Kontext gearbeitet wird, d.h. mit welchen Axiomen die Aussage bewertet wird.
+- Damit einer Aussage ein *eindeutiger* Wahrheitswert zugewiesen werden kann, muss klar sein, in welchem System/Kontext gearbeitet wird, d.h. mit welchen Axiomen die Aussage bewertet wird: $a^{2}+b^{2}=c^{2}$ ist *alleine* keine Aussage, weil nicht klar ist, was $a,b,c$ überhaupt seien sollen. Erst durch den Kontext "$a,b$ sind die Längen der Katheten und $c$ die Länge der Hypothenuse in einem rechtwinkligen Dreieck." wird es zu einer Aussage.
+   
 - Aussagen sollten *allgemeingültig* sein d.h. von jedermann logisch nachvollziehbar sein.
+  
 - Ob bewiesen ist, dass eine Aussage wahr/falsch ist, ändert nichts daran, dass es sich um eine Aussage handelt.
 
-
 # Wahrheitstafeln
-weisen für sämtlichen Kombinationen/Fälle einen neuen Wahrheitswert aus
-
-# Logische Operatoren
+weisen für sämtlichen Kombinationen der Wahrheitswerte der Variablen neue Wahrheitswerte aus.
+# Zusammensetzung von Aussagen durch Operatoren
 
 Logische Operatoren verknüpfen gegebene Aussagen basierend ihrer jeweiligen Wahrheitstafel zu einer neuen Aussage.
 
@@ -23,7 +23,7 @@ Logische Operatoren verknüpfen gegebene Aussagen basierend ihrer jeweiligen Wah
 > | 1   | 0        |
 > 
 >---
-(Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Strich))  ^2f2183
+Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Strich)  ^2f2183
 >
 >---
 > Bei der Negation von Aussagen, die mehrere Objekte betreffen, muss *sehr genau* aufgepasst werden: Mehr dazu bei [[Quantoren#Verneinung von Quantoren|Verneinung von Quantoren]].
