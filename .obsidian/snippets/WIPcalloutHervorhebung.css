@@ -1,0 +1,25 @@
+/* WIP Callouts gelb mit Baustellen-Icon */
+.callout[data-callout="WIP"] {
+    background-color: #fff8b3;       /* helles Gelb */
+    border-left: 4px solid #ffcc00;  /* farbiger Rand */
+    position: relative;
+}
+
+/* Icon links hinzufügen */
+.callout[data-callout="WIP"]::before {
+    content: "🚧";          /* Baustellen-Emoji */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.2em;
+}
+
+/* Padding anpassen, damit Text nicht über Icon liegt */
+.callout[data-callout="WIP"] .callout-content {
+    padding-left: 2em;      /* genug Platz für Icon */
+}
+
+/* def Callouts unverändert lassen */
+.callout[data-callout="def"] {
+    /* keine Änderungen */
+}
