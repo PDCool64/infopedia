@@ -6,5 +6,14 @@
       ],
       "key": "M"
     }
+  ],
+  "templater-obsidian:Metaphysik (Vault-Verwaltung)/Templates/def-callout-template.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
   ]
 }
