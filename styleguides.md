@@ -40,13 +40,13 @@ Wenn in einer Notiz
 Kann man Anmerkungen/Kommentare dazu ebenfalls mit einem Callout markieren:
 
 ```
-> [!wip] Mensch
-> Sollten erwähnen, dass der AFI Prof und der DS Prof unterschiedliche Symbole für "Teilmenge von, oder gleich" und "echte Teilmenge von" verwenden
+> [!wip] Teilmengensymbole
+> Sollten erwähnen, dass der AFI Prof und der DS Prof unterschiedliche Symbole für "Teilmenge von, oder gleich" und "echte Teilmenge von" verwenden.
 > lorem ipsum
 ```
 
 Dies erzeugt:
 > [!wip] Teilmengensymbole
-> Sollten erwähnen, dass der AFI Prof und der DS Prof unterschiedliche Symbole für "Teilmenge von, oder gleich" und "echte Teilmenge von" verwenden
+> Sollten erwähnen, dass der AFI Prof und der DS Prof unterschiedliche Symbole für "Teilmenge von, oder gleich" und "echte Teilmenge von" verwenden.
 > lorem ipsum
 
