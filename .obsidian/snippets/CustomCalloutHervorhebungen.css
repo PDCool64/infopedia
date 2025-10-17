@@ -1,0 +1,22 @@
+/* @settings
+name: Custom Callout Colors
+id: custom-callouts
+settings:
+  - id: wip-color
+    title: WIP Background Color
+    type: variable-color
+    default: "#FFF59D"
+  - id: wip-accent
+    title: WIP Accent Color
+    type: variable-color
+    default: "#FBC02D"
+*/
+
+.callout-WIP {
+  background-color: var(--wip-color);
+  border-left: 4px solid var(--wip-accent);
+}
+
+.callout-WIP .callout-title::before {
+  content: "⚠️ ";
+}
