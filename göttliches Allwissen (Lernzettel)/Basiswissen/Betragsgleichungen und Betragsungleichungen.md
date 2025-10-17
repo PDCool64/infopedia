@@ -31,7 +31,7 @@ $$\to \mathbb{L}_{1}\;\text{als Lösungsmenge für den 1. Fall entsteht}$$
 
 2. Der Wert im Betrag ist negativ:
    
-   $$\begin{array}{rllll}
+$$\begin{array}{rllll}
 &\underbrace{ cx+d< 0 }_{ \text{Fallbedingung} }&\wedge &\underbrace{ ax+b=-cx-d }_{ \text{resultierende Gleichung} } \\ \\
 
 \iff& cx+d< 0                                   &\wedge &       \left(a\!+\!c\right)x+\left(b\!+\!d\right)=0 \\
