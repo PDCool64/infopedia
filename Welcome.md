@@ -1,6 +1,7 @@
 
-# Was ist der Vault
-1. Momentan ist alles noch *sehr* Work-In-Progress - Vorschläge, wie Dinge besser umgesetzt, gemacht, geordnet usw. werden könnten gerne einbringen!
+# Was ist der Vault?
+
+Momentan ist alles noch *sehr* Work-In-Progress - Vorschläge, wie Dinge besser umgesetzt, gemacht, geordnet usw. werden könnten gerne einbringen!
    
    Diskussion darüber am besten einfach in [[Ideen & Änderungen & Co.]]
    Eine Liste mit "ToDo's" die so anstehen gibt es in [[Metaphysik (Vault-Verwaltung)/Forum romanum/Todo|Todo]].
@@ -10,8 +11,7 @@
 1. Damit die Sachen grob einheitlich werden gibt es ein paar [[styleguides]].
 2. Gute Infos zur Funktionsweise von Obsidian findet man unter [https://help.obsidian.md/](https://help.obsidian.md/).
 
-
-# Wo ist was ?
+# Wo ist was?
 Ordner:
 - in `göttliches Allwissen (Lernzettel)` gibt es die aufbereiteten Inhalte der Module: organisierte Lernzettel, Themenübersichten und Zusammenfassungen.
   
