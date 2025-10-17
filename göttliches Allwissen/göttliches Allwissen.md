@@ -1,0 +1,1 @@
+Das Allwissen der Welt und noch mehr wird hier gelagert. Komm damit klar du Sohn einer unehliche sexuell aktiven Mutter. 
