@@ -8,6 +8,8 @@
 >[!def] Aussage:
 >Eine (mathematische) Aussage ist eine sprachlich oder symbolisch formulierte Behauptung, der auf eindeutiger Weise ein Wahrheitswert, nämlich *wahr (W)* oder *falsch (F)* zugeordnet werden kann.
 
+^8f29c5
+
 Dabei zu beachten:
 - Damit einer Aussage ein *eindeutiger* Wahrheitswert zugewiesen werden kann, muss klar sein, in welchem System/Kontext gearbeitet wird, d.h. mit welchen Axiomen die Aussage bewertet wird: $a^{2}+b^{2}=c^{2}$ ist *alleine* keine Aussage, weil nicht klar ist, was $a,b,c$ überhaupt seien sollen. Erst durch den Kontext "$a,b$ sind die Längen der Katheten und $c$ die Länge der Hypothenuse in einem rechtwinkligen Dreieck." wird es zu einer Aussage.
    
@@ -72,6 +74,9 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 > ---
 > 
 > Anders als $A\vee B$ oder $A\wedge B$ ist die Subjunktion *nicht* symmetrisch.
+> ---
+> Das man aus einer Falschen Aussage alles folgern kann ist nicht ganz intuitiv.
+> Erklärungsansatz: 
 
 ^7a467a
 
@@ -89,7 +94,6 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 
 ^075f1b
 
-
 # Logische Terme
 
 >[!def]
@@ -104,7 +108,7 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 > - $(F)\to(G)$
 > - $(F)\leftrightarrow(G)$
 > 
-> durch rekursives Anwenden dieser Regeln kann man beliebige neue Terme bilden.
+> Durch rekursives Anwenden dieser Regeln kann man beliebige neue Terme bilden.
 > 
 > ---
 > 
@@ -179,10 +183,10 @@ Die [[#^075f1b|Bijunktion]] $A\leftrightarrow B$ ist einfach logischer Operator,
 
 # Tautologie und Widerspruch
 >[!def] Tautologie
->Eine Aussage, die für alle Wahrheitswerte der Grundannahmen wahr ist, heißt **Tautologie**.
+>Ein Logischer Term $T$ heißt **Tautologie**, wenn $T\equiv w$, d.h. wenn der Term für alle Belegungen der Variablen immer wahr ist.
 
+Bsp:
  $A \vee \neg A$ ist eine Tautologie
-
 
 >[!def] Widerspruch
 >Eine Aussage, die für alle Wahrheitswerte der Grundannahmen falsch ist, heißt **Widerspruch**
@@ -193,33 +197,21 @@ Es folgt:
 	Sei $A$ eine Tautologie, dann ist $\neg A$ ein Widerspruch.
 	Sei $B$ ein Widerspruch, dann ist $\neg B$ eine Tautologie.
 
-# Implikation
 
-^a7e378
+# Frage: Warum kann man aus einer Falschen Aussage alles folgern ?
 
-Die **Implikation** bildet den sprachlich oft als "*Wenn, ... , dann ...*" beschriebenen Zusammenhang ab. ^4f7e2e
+Gegeben sie die Implikation $A\implies B$ 
 
+Die Wahrheitstafel der zugrundeliegenden Subjunktion ist:
 
->[!def] Implikation
->Sind $A$ und $B$ zwei Aussagen, dann können wir eine weitere zusammengesetzte Aussage mit Hilfe der **Folgerung (Implikation)** erzeugen:
->$$A \implies B$$
->
->Dies entspricht sprachlich:
->- "Aus $A$ folgt $B$"
->- "$A$ impliziert $B$"
->- "Wenn $A$ gilt, dann gilt auch $B$"
->  
->  Die [[#Wahrheitstafeln|Wahrheitstafel]] der Implikation ist:
->
-> | $A$ | $B$ | $A\implies B$ |
-> | --- | --- | --- |
-> |  W   | W    | W  |
-> |  W   | F    | F  |
-> |  F   | W    | W  |
-> |  F   | F    | W  |
+| $A$ | $B$ | $A\to B$ |
+| --- | --- | -------- |
+| 0   | 0   | 1        |
+| 0   | 1   | 1        |
+| 1   | 0   | 0        |
+| 1   | 1   | 1        |
 
-#### Frage: 
-*Warum führt A="F" dazu, dass die Implikation Wahr ist?* 
+### *Warum führt  $A=f$ dazu, dass die Implikation Wahr ist?* 
 
 #### Erklärungsansätze:
 
@@ -244,4 +236,21 @@ Die **Implikation** bildet den sprachlich oft als "*Wenn, ... , dann ...*" besch
     
 >[!satz] Intuitiv:
 > **Ein Versprechen ist nicht gebrochen, wenn die Bedingung nie eintritt.**
+
+
+# Aussageformen
+
+>[!def] Aussageform
+> Eine **Aussageform** ist ein sprachlicher Ausdruck, der Variablen enthält, und der für jede Belegung aller vorkommenden Belegung mit *konkreten Objekten* zu einer [[#^8f29c5|Aussage]] wird.
+> 
+> ---
+> (Da es konkrete Objekte seien müssen sorgt in der Regel dafür, dass man die Auswahl der Objekte mit denen die Variablen belegt werden können einschränkt / explizit definiert. Häufig sind z.B. einzelne [[Zahlenräume]])
+> 
+> ---
+> Eine Aussageform selbst ist *keine* Aussage. Dies liegt daran, dass die Aussageform keinen eindeutigen Wahrheitswert hat, da dieser von der Belegung der Variablen abhängt.
+> 
+> Die Zusammensetzung von Aussageformen mit den [[#Zusammensetzung von Aussagen durch Operatoren|Operatoren]] erzeugt wieder eine Aussageform.
+
+## Bsp. 1:
+"Wenn $x>0$, dann ist $x$ ein Quadrat" ist eine Aussageform. Erst wenn Variable $x$ konkret mit einer reellen Zahl belegt wird, erhalten wir eine Aussage(Eines eindeutigen Wahrheitswertes)
 
