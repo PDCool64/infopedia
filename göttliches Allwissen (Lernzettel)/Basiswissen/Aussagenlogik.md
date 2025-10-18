@@ -108,9 +108,8 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 
 ## Regeln bei zusammengesetzten Aussagen
 
-**Klammern sind wichtig** - Aussagenlogik ist oft nicht [[Einfache Rechengesetze#Assoziativgesetz|assoziativ]].
-
-z.B. : 
+1. **Klammern sind wichtig** - Aussagenlogik ist oft nicht [[Einfache Rechengesetze#Assoziativgesetz|assoziativ]].
+   z.B. : 
 $$
 \begin{align}
 w \vee(w\wedge f) &\;\cancel{ \iff }\; (w\vee w)\wedge f \\
@@ -118,36 +117,24 @@ w\vee f&\;\cancel{ \iff }\; w \wedge f \\
 w  &\;\cancel{ \iff }\; f
 \end{align}
 $$
-Die [[#^2f2183|Negation]] wird vor allen anderen Verknüpfungen ausgeführt.
-(Dies ist eine Konvention, um sich das Schreiben von unnötig vielen Klammern zu sparen)
+2. Die [[#^2f2183|Negation]] wird vor allen anderen Verknüpfungen ausgeführt.
+   (Dies ist eine Konvention, um sich das Schreiben von unnötig vielen Klammern zu sparen)
+
+# Implikation und Äquivalenz
+>[!def] Implikation
+> Die **Implikation** $A\implies B$ drückt aus, dass die Aussage $(A\to B)$ den Wahrheitswert $w$ hat. 
+> 
+> Man sagt dann:
+> - "Aus $A$ folgt $B$"
+> - "$A$ impliziert $B$"
+> - "Wenn $A$, dann $B$"
+> - "$A$ ist [[Notwendige vs hinreichende Bedingung#Hinreichende Bedingung|hinreichend]] für $B$"
 
 
+Die 
 
-### Konstruieren neuer Aussagen
-Mann kann somit aus gegebenen Aussagen und den [[#Logische Operatoren|Logischen Operatoren]] neue Aussagen konstruieren.
 
-Das "Entweder-Oder" (XOR) lässt sich z.B. so herleiten:
-
-gewünschte Wahrheitstafel:
-
-| A   | B   | XOR(A,B) |
-| --- | --- | -------- |
-| W   | W   | F        |
-| W   | F   | W        |
-| F   | W   | W        |
-| F   | F   | F        |
-
-Zusammengesetze Aussage, welche dazu führt:
-$(A\vee B)\wedge \neg(A \wedge B)$
-
-| A   | B   | $A \vee B$ | $\neg(A\wedge B)$ | $(A \vee B) \wedge \neg (A \vee B)$ |
-| --- | --- | ---------- | ----------------- | ----------------------------------- |
-| W   | W   | W          | F                 | F                                   |
-| W   | F   | W          | W                 | W                                   |
-| F   | W   | W          | W                 | W                                   |
-| F   | F   | F          | W                 | F                                   |
-
-### Tautologie und Widerspruch
+# Tautologie und Widerspruch
 >[!def] Tautologie
 >Eine Aussage, die für alle Wahrheitswerte der Grundannahmen wahr ist, heißt **Tautologie**.
 
