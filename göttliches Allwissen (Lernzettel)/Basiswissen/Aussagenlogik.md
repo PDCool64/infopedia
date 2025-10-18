@@ -73,6 +73,8 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 > 
 > Anders als $A\vee B$ oder $A\wedge B$ ist die Subjunktion *nicht* symmetrisch.
 
+^7a467a
+
 >[!def] Bijunktion
 > Die Bijunktion (*genau-dann*-Verknüpfung) zweier Aussagen $A$ und $B$ wird beschrieben mit $A\leftrightarrow B$ 
 > 
@@ -84,6 +86,8 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 > | 1   | 1   | 1        |
 > Die Bijunktion ist nur genau dann wahr, wenn $A$ und $B$ die gleichen Wahrheitswerte haben. d.h. wenn beide wahr sind oder wenn beide falsch sind.
 > 
+
+^075f1b
 
 
 # Logische Terme
@@ -122,7 +126,7 @@ $$
 
 # Implikation und Äquivalenz
 >[!def] Implikation
-> Die **Implikation** $A\implies B$ drückt aus, dass die Aussage $(A\to B)$ den Wahrheitswert $w$ hat. 
+> Die **Implikation** ist $A\implies B$ drückt aus, dass die Aussage $(A\to B)$ den Wahrheitswert $w$ hat. 
 > 
 > Man sagt dann:
 > - "Aus $A$ folgt $B$"
@@ -130,9 +134,48 @@ $$
 > - "Wenn $A$, dann $B$"
 > - "$A$ ist [[Notwendige vs hinreichende Bedingung#Hinreichende Bedingung|hinreichend]] für $B$"
 
+>[!def] Genau dann, wenn
+> 
+> "$A$ Genau dann. wenn $B$", geschrieben durch $A\iff B$ drückt aus, dass die Aussage $(A\leftrightarrow B)$ den Wahrheitswert $w$ hat.
+> 
+> Man sagt dann:
+> - "$A$, genau dann, wenn $B$"
+> - "$A$ dann und nur dann, wenn $B$"
+> - "$A$ ist [[Notwendige vs hinreichende Bedingung#Äquivalente Bedingung|notwendig und hinreichend]] für $B$"
 
-Die 
 
+>[!def] Wertverlaufsgleich / Logisch Äquivalent
+> Zwei Logische Terme $S$ und $T$, definiert auf derselben Variablenmenge, heißen **logisch äquivalent** oder **wertverlaufsgleich**, geschrieben $S\equiv T$, wenn $S$ und $T$ denselben Wahrheitswert haben für jede Belegung der Variablen.
+
+## Unterscheidung: Subjunktion vs. Implikation bzw. Bijunktion vs. Äquivalenz
+>[!wip]
+> 
+> Hier ist man auf dünnen Eis unterwegs - Wirklich rigoros haben wir dass hier alles nicht gemacht und die Erklärungen vom Fragestunden-Dude waren auch ein bisschen komisch.
+> 
+> Für die Zwecke der DS Vorlesung ist die genaue Unterscheidung angeblich bald schon nichtmehr wirklich wichtig.
+
+
+Die [[#^7a467a|Subjunktion]] $A\to B$ ist einfach logischer Operator, genau wie $\vee,\wedge$ und Co. : Er verknüpft zwei Aussagen basierend auf seiner Wahrheitstafel zu einer neuen Aussage. 
+![[Aussagenlogik 2025-10-18 12.26.09.excalidraw]]
+
+Die [[#^4f7e2e|Implikation]] hingegen ist kein logischer Operator, sondern eine Schreibweise um auf "Metabene" über Aussagen zu reden. 
+![[Aussagenlogik 2025-10-18 12.29.28.excalidraw]]
+
+
+Ebenso für Bijunktion und "Genau dann, wenn" :
+
+Die [[#^075f1b|Bijunktion]] $A\leftrightarrow B$ ist einfach logischer Operator, genau wie $\vee,\wedge$ und Co. : Er verknüpft zwei Aussagen basierend auf seiner Wahrheitstafel zu einer neuen Aussage. 
+![[Aussagenlogik 2025-10-18 12.34.51.excalidraw]]
+
+"Genau dann, wenn" $\iff$ hingegen ist kein logischer Operator, sondern eine Schreibweise um auf "Metabene" über Aussagen zu reden. 
+![[Aussagenlogik 2025-10-18 12.36.12.excalidraw]]
+
+### TL:DR
+- Wenn man aus zwei Aussagen mit einem logischen Operator zu einer neuen Aussage verknüpfen so, schreibt man $\leftrightarrow$
+- Wenn man auf "Metaebene" sagen will, dass aus einer Aussage eine andere folgt (z. B für einen Beweis), dann schreibt man $\implies$.
+
+>[!wip]
+> Ob es einen Unterschied zwischen $\equiv$ und $\iff$ gibt kann uns angeblich recht bald egal sein - wir werden wohl bald fast nur noch $\iff$ sehen.
 
 # Tautologie und Widerspruch
 >[!def] Tautologie
@@ -152,7 +195,9 @@ Es folgt:
 
 # Implikation
 
-Die **Implikation** bildet den sprachlich oft als "*Wenn, ... , dann ...*" beschriebenen Zusammenhang ab.
+^a7e378
+
+Die **Implikation** bildet den sprachlich oft als "*Wenn, ... , dann ...*" beschriebenen Zusammenhang ab. ^4f7e2e
 
 
 >[!def] Implikation
