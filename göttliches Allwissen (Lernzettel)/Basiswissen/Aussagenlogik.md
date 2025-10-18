@@ -18,11 +18,10 @@ Dabei zu beachten:
 # Wahrheitstafeln
 weisen für sämtlichen Kombinationen der Wahrheitswerte der Variablen neue Wahrheitswerte aus.
 # Zusammensetzung von Aussagen durch Operatoren
-
 Logische Operatoren verknüpfen gegebene Aussagen basierend ihrer jeweiligen Wahrheitstafel zu einer neuen Aussage.
 
 >[!def] Negation / Verneinung
->Die Negation einer Aussage $\mathcal{A}$ wird beschrieben mit $\neg \mathcal{A}$. 
+>Die **Negation** einer Aussage $\mathcal{A}$ wird beschrieben mit $\neg \mathcal{A}$. 
 >
 > | $\mathcal{A}$ | $\neg \mathcal{A}$ |
 > | --- | -------- |
@@ -35,15 +34,11 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 >---
 > Bei der Negation von Aussagen, die mehrere Objekte betreffen, muss *sehr genau* aufgepasst werden: Mehr dazu bei [[Quantoren#Verneinung von Quantoren|Verneinung von Quantoren]].
 
-
-
-
-
 >[!def] Konjunktion
->Die Konjunktion (logisches **Und**) zweier Aussagen $\mathcal{A}$ und $\mathcal{B}$ wird beschrieben mit $A \wedge B$
+>Die **Konjunktion** (*Und*-Verknüpfung) zweier Aussagen $A$ und $B$ wird beschrieben mit $A \wedge B$
 >
 >
->|$\mathcal{A}$     |$\mathcal{B}$     | $\mathcal{A\wedge B}$
+>|$A$     |$B$     | $A\wedge B$
 >| --- | --- | --- |
 >|  0   |0   | 0|
 >|  0   |1   | 0|
@@ -51,27 +46,83 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 >| 1  | 1   | 1|
 
 >[!def] Disjunktion
->Die Disjunktion (logisches **Oder**, *nicht aber XOR*) zweier Aussagen $A$ und $B$ wird beschrieben mit $A \vee B$
+>Die **Disjunktion** (*Oder*-Verknüpfung) zweier Aussagen $A$ und $B$ wird beschrieben mit $A \vee B$
 >
->|$\mathcal{A}$     |$\mathcal{B}$     | $\mathcal{A\vee B}$
+>|$A$     |$B$     | $A\vee V$
 >| --- | --- | --- |
 >|  0   |0   | 0|
 >|  0   |1   | 1|
 >|  1   |0   | 1|
 >| 1  | 1   | 1|
+> ---
+> Die Disjunktion ist das *inklusive* Oder. D.h. auch beide Aussagen können war sein. Dies steht im Gegensatz zum *exklusiven* Oder, welches $\text{xor}$ geschrieben wird und nur dann wahr ist, wenn *genau eine* der beiden Aussagen wahr ist.
 
-## Zusammengesetzte Aussagen
 
-**Klammern sind wichtig** - Aussagenlogik ist nicht immer [[Einfache Rechengesetze#Assoziativgesetz|assoziativ]].
+>[!def] Subjunktion
+> Die **Subjunktion** (*wenn-dann*-Vernknüpfung) zweier Aussagen $A$ und $B$ wird beschrieben mit $A\to B$ 
+> 
+> | $A$ | $B$ | $A\to B$ |
+> | --- | --- | -------- |
+> | 0   | 0   | 1        |
+> | 0   | 1   | 1        |
+> | 1   | 0   | 0        |
+> | 1   | 1   | 1        |
+> Die Subjunktion ist nur genau dann falsch, wenn $A$ wahr und $B$ falsch sind.
+> 
+> ---
+> 
+> Anders als $A\vee B$ oder $A\wedge B$ ist die Subjunktion *nicht* symmetrisch.
+
+>[!def] Bijunktion
+> Die Bijunktion (*genau-dann*-Verknüpfung) zweier Aussagen $A$ und $B$ wird beschrieben mit $A\leftrightarrow B$ 
+> 
+> | $A$ | $B$ | $A\leftrightarrow B$ |
+> | --- | --- | -------- |
+> | 0   | 0   | 1        |
+> | 0   | 1   | 0       |
+> | 1   | 0   | 0        |
+> | 1   | 1   | 1        |
+> Die Bijunktion ist nur genau dann wahr, wenn $A$ und $B$ die gleichen Wahrheitswerte haben. d.h. wenn beide wahr sind oder wenn beide falsch sind.
+> 
+
+
+# Logische Terme
+
+>[!def]
+> Ein **logischer Term** ist ein Ausdruck bestehend aus Variablen $A,B,\dots$ und den Konstanten $w,f$ bzw. $0,1$ , die *verknüpft sind* mit den [[#Zusammensetzung von Aussagen durch Operatoren|Symbolen]] $\neg\;,\,\vee\;,\;\wedge\;,\;\text{xor}\;,\;\to\;,\; \leftrightarrow$ sowie Klammern.
+> 
+> Terme sind aus dem Alphabet der Aussagenlogik zusammengesetzte Worte.
+> 
+> Durch rekursives anwenden der folgenden Muster kann man aus beliebigen schon existierenden Wörtern $F$ und $G$ neue Wörter nach den Folgenden Regeln bilden:
+> - $\neg(F)$
+> - $(F)\vee(G)$
+> - $(F)\wedge(G)$
+> - $(F)\to(G)$
+> - $(F)\leftrightarrow(G)$
+> 
+> durch rekursives Anwenden dieser Regeln kann man beliebige neue Terme bilden.
+> 
+> ---
+> 
+> Durch Belegung der Variablen mit Wahrheitswerten bekommt de Term selbst einen Wahrheitswert.
+
+## Regeln bei zusammengesetzten Aussagen
+
+**Klammern sind wichtig** - Aussagenlogik ist oft nicht [[Einfache Rechengesetze#Assoziativgesetz|assoziativ]].
 
 z.B. : 
 $$
 \begin{align}
-W \vee(W\wedge F) &\neq (W\vee W)\wedge F \\
-W\vee F &\neq W \wedge F \\
-W  &\neq F
+w \vee(w\wedge f) &\;\cancel{ \iff }\; (w\vee w)\wedge f \\
+w\vee f&\;\cancel{ \iff }\; w \wedge f \\
+w  &\;\cancel{ \iff }\; f
 \end{align}
 $$
+Die [[#^2f2183|Negation]] wird vor allen anderen Verknüpfungen ausgeführt.
+(Dies ist eine Konvention, um sich das Schreiben von unnötig vielen Klammern zu sparen)
+
+
+
 ### Konstruieren neuer Aussagen
 Mann kann somit aus gegebenen Aussagen und den [[#Logische Operatoren|Logischen Operatoren]] neue Aussagen konstruieren.
 
