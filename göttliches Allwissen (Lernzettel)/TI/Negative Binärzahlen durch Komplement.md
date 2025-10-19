@@ -1,3 +1,11 @@
+---
+tags:
+  - TI
+  - PROGRA
+status: grün
+---
+---
+
 *Ziel: im [[Binärsystem]] nicht nur [[Zahlenräume#Natürliche Zahlen $ mathbb{N}|natürliche Zahlen$]], sondern auch negative Zahlen -d.h. die [[Zahlenräume#Ganze Zahlen $ mathbb{Z}$|Ganzen Zahlen]] darstellen können.*
 
 ---

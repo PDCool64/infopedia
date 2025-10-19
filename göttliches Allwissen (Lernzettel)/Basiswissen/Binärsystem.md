@@ -16,6 +16,7 @@ status: rot
 - [[Negative Binärzahlen durch Komplement]]
 - [[Festkomma-Darstellung von Binärzahlen]]
 - [[Gleitkomma-Darstellung von Binärzahlen]]
+- [[BCD-Code]]
 
 ----
 
