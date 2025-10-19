@@ -13,7 +13,7 @@ status: rot
 
 ---
 *Die Folgenden Abschnitte beinhalten nur Informationen zur Darstellung positiver, natürlicher Zahlen im Binärsystem*. Für fähigere Kodierungen wird verwiesen auf:
-- [[Negative Binärzahlen durch Komplement]]
+- [[Negative Binärzahlen durch Komplement - Ganze Zahlen im Binärsystem]]
 - [[Festkomma-Darstellung von Binärzahlen]]
 - [[Gleitkomma-Darstellung von Binärzahlen]]
 - [[BCD-Code]]
