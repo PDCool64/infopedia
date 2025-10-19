@@ -21,10 +21,10 @@ Probleme bei diesem Ansatz:
 > z.B. : $K_{1}(1011)=0100$
 > 
 > ---
-> Es handelt sich bei dieser Abbildung um ein *Komplement* d.h. die Funktion hebt sich selbst wieder auf:
+> Es handelt sich bei dieser [[Abbildungen|Abbildung]] um ein *Komplement* d.h. die Funktion hebt sich selbst wieder auf:
 > $$K_{1}(K_{1}(x))=x$$
 > ---
-> Der Name *Komplement* ergibt sich daher, das die Ziffern einer Zahl und ihres Komplements sich genau zu $1$en ergänzen. Es gilt somit für zwei Binärzahlen mit $n$ Bit:
+> Der Name Einer-*Komplement* ergibt sich daher, das die Ziffern einer Zahl und ihres Komplements sich genau zu $1$en ergänzen. Es gilt somit für eine Binärzahl mit $n$ Bit:
 > $$\begin{align} &2^{n}-1=z+K_{1}(z) \\\\ \iff &K_{1}(z)= (2^{n}-1)-z
 \end{align}$$
 
@@ -86,3 +86,60 @@ In anderen Worten: Der übertrag der ganz links entsteht mach einen "wrap around
 ![[Negative Binärzahlen durch Komplement 2025-10-18 21.03.30.excalidraw]]
 
 Man sieht: Da es zwei mögliche Darstellungen für $0$, nämlich `-0` und `+0` gibt, wird ein Schritt zu wenig gegangen, wenn die $0$ durchquert wird.
+
+# Negative Zahlen als Zweier-Komplement
+>[!def] Zweier-Komplement
+> 
+> Um das **Einer-Komplement** einer Binärzahl zu bilden, vertauscht man jeden Bit und addiert dann $1$:
+> $$K_{2}(x):=(\overline{x_{n-1}},\dots,\overline{x_{0}})_{2}+(1)_{2}$$
+> Anders gesagt: Man bildet das [[#Negative Zahlen als Einer-Komplement|Einer-Komplment]] und addiert dann $1$ :
+> $$K_{2}(x)=K_{1}(x)+1$$
+> ---
+> 
+> z.B. : $K_{2}(1011)=K_{1}(1011)+1=0100+1=0101$
+> 
+> ---
+> Es handelt sich bei dieser [[Abbildungen|Abbildung]] um ein *Komplement* d.h. die Funktion hebt sich selbst wieder auf:
+> $$K_{2}(K_{2}(x))=x$$
+
+Mit dem **Einer-Komplement** können ganze Zahlen wie folgt codiert werden:
+- Der *Most Significant Bit (MSB)* entscheidet darüber, ob die Zahl als positiv oder als negativ zu interpretieren ist:
+	- MSB=0 : Interpretation wie im vorzeichenlosen Fall
+	- MSB=1 : Bilde das Zweir-Komplement $K_{2}$ der Zahl und interpretiere dieses als negative Zahl.
+### Beispiel:
+$(0111)_{2}$ : MSB=0 $\to$ Interpretation wie im Vorzeichenlosen Fall $\to$ $(7)_{10}$
+$(1100)_{2}$ : MSB=1 $\to$ Bilde $-K_{2}(1100)=-(0011+1)_2=-(0100)_{2}=-(4)_{10}$
+## Addition im Zweier-Komplement
+$(-4)_{10}+(6)_{10}=(2)_{10}$
+
+$$
+\begin{flalign}
+-(4)_{10} &= K_{2}(0100)_{2}=(1011+1)_{2}=(1100)_{2}&\\
+ (6)_{10} &= (0110)_{2}
+\end{flalign}
+$$
+```
+ 1100 (-4)
++0110 ( 6)
+11    (Überträge)
+-----
+ 0010 ( 2)
+```
+
+> Anders als im [[#Negative Zahlen als Einer-Komplement|Einer-Komplment]] funktioniert die Addition im Zweier-Komplement immer. Es ist kein zweiter Korrekturschritt notwendig.
+
+Warum funktioniert dies immer:
+![[Negative Binärzahlen durch Komplement 2025-10-19 13.00.39.excalidraw]]
+
+Man sieht: Da auf die Beträge der negativen Zahlen im Zweierkomplement immer $1$ addiert wurde, sind diese relativ zum Einer-Komplement um eins verschoben. Dadurch gibt es hier *keine* Doppelte Darstellung der $0$, welche zu Zählfehlern führen würde. 
+
+Der freigewordene Platz wird im Zweierkomplement durch die neu dazukommende $-8$ gefüllt, welche sich im Einer-Komplement nicht darstellen lässt.
+
+# Darstellungsbereiche
+
+|                                                               | $4$bit                              | $n$Bit                                                  |
+| ------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------- |
+| Vorzeichenlos                                                 | $\;\;\,(0)_{10} \;\dots\;(15)_{10}$ | $\;\;\;\quad\quad\quad(0)_{10} \;\dots\;(2^{n}-1)_{10}$ |
+| [[#Negative Zahlen als Einer-Komplement\|Einer-Komplement]]   | $(-7)_{10} \;\dots\;(7)_{10}$       | $-(2^{n-1}-1)_{10} \;\dots\;(2^{n-1}-1)_{10}$           |
+| [[#Negative Zahlen als Zweier-Komplement\|Zweier-Komplement]] | $(-8)_{10} \;\dots\;(7)_{10}$       | $-(2^{n-1})_{10}\quad\quad \dots\;(2^{n-1}-1)_{10}$     |
+
