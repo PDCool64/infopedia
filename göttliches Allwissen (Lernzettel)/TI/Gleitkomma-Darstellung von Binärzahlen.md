@@ -49,6 +49,8 @@ Die Daten werden in drei Feldern gespeichert:
 	 Dazu verschiebt man die Exponenten um die Hälfte der Breite: $\frac{2^{k}-2}{2}=2^{k-1}-1$
 	 D.h. der *bias*-Wert wird gewählt als $2^{k-1}-1$.
 	 
+	 >Für eine anders formulierte Erklärung ist der (englische) [Wikipedia Artikel "Exponent bias"](https://en.wikipedia.org/wiki/Exponent_bias) ziemlich lesenswert.
+	 
 	 Es gilt also:
 	 $e=\hat{e}-bias$
 	 $\hat{e}=e+bias$
