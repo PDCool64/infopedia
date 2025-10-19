@@ -16,19 +16,20 @@ status: rot
 >Da rechnerintern im [[Binärsystem]] gearbeitet wird, ist die Basis $b=2$.
 >
 >---
->*Nicht alle Zahlen in Bereich können exakt dargestellt werden*
->
->---
+>*Nicht alle Zahlen in Bereich können exakt dargestellt werden*.
+
 
 Die Gleitkomma Darstellung versucht, bei gleicher Anzahl an Speicherbits einen deutlich größeren Zahlenbereich als die [[Festkomma-Darstellung von Binärzahlen]] zu erreichen.
 
-Die Funktionsweise der heute angewendeten Gleitkomma-Formate wurde in der Norm [*IEEE 754*](https://de.wikipedia.org/wiki/IEEE_754) vom *Institute of Electrical and Electronics Engineers* festgelegt
+Die Funktionsweise der heute angewendeten Gleitkomma-Formate wurde in der Norm [*IEEE 754*](https://de.wikipedia.org/wiki/IEEE_754) vom *Institute of Electrical and Electronics Engineers* festgelegt.
 
 Je nach gewünschter Präzision und Zahlenbereich sowie Speicherlimitierungen gibt es verschiedene Versionen/Größen von Gleitkommaformaten. Häufig sind:
 - 16-Bit
 - 32-Bit (aka. ``single``)
 - 64-Bit (aka. ``double``)
 - 128-Bit
+
+> Es gibt online einen praktischen [IEEE-754 Konverter](https://www.h-schmidt.net/FloatConverter/IEEE754de.html).
 
 ## Darstellung im Speicher
 > Die im Speicher stehenden Werte werden mit Dach  $\hat{}$  geschrieben: $\hat{s},\hat{e},\hat{m}$
@@ -59,7 +60,7 @@ Die Daten werden in drei Feldern gespeichert:
 	 Das $\hat{e}$ mit Dach ist *visuell größer* als das $e$ ohne Dach.
 	 
 	 $\hat{e}$ wird dann als ganz normale, positive $k$-Bit Zahl ohne Komastellen oder Sonstiges in den Speicher geschrieben.
- 	  
+ 	   ^18e0c0
 - Mantisse $\hat{m}$ : $n$-Bit am Ende
 	  Je nachdem, ob es sich um die [[#Normalisierte Darstellung]] oder die [[#Denormalisierte Darstellung]] handelt, wird die Mantisse unterschiedlich behandelt.
 
@@ -83,8 +84,25 @@ Sonderfälle werden ebenfalls markiert:
 # Normalisierte Darstellung
 
 ## Dezimal -> Gleitkomma
+am Beispiel $-12.6875$
+1. Vorzeichen ablesen: Die Zahl ist negativ also gilt $s=\hat{s}=1$
+   
+2. Mantisse bestimmen: Rechne $12.6875$ wie eine [[Festkomma-Darstellung von Binärzahlen|Festkommazahl]] ins Binärsystem um:
+	   i) Teil vor dem Komma umrechnen: $(12)_{2}=(1100)_{2}$
+	   ii) Teil nach dem Komma umrechnen:![[Festkomma-Darstellung von Binärzahlen 2025-10-19 14.04.25.excalidraw|300]]Die Mantisse hat also den Wert $(1100.1011)_{2}$ - sie wird aber *normalisiert* gespeichert d.h. vor dem Komma muss immer *genau* 1 stehen. Dazu verschiebt man das Komma so weit nach links oder rechts, bis dies der Fall ist. Verschiebungen (Bit-Shifts) kommen im Binärsystem der Multiplikation/Division mit $2$ gleich, wodurch automatisch der Exponent $e$entsteht: $(1100.1011)_{2}=(1.1001011)_{2}\cdot 2^{3}$
+	   Die zu speichernde Mantisse ist also `10010110000000...`
+	   
+>[!wip]
+>    Hier sollte noch besser erklärt werden wie/warum die Mantisse auf 1,XXX normalisiert wird. Z.B. weil man dann noch einen Bit mehr präzision kriegt weil man sich das Speichern der 1 spart. Auch die "Rückrichtung" der Erklärung à la :"Die bits in der Mantisse $\hat{m}$ werden nur als die Nachkommastellen gelesen. Davor wird immer eine 1,XXX gehängt." könnte eingearbeitet werden.
 
-
+   
+3. Den bei der Mantissen-Bestimmung entstandenen Exponenten $e$ mit dem [[#^18e0c0|bias]] zu $\hat{e}$ verrechnen: 
+     $\hat{e}=e+(2^{k-1}-1)=3+127=130$
+     
+     Dadurch wird dieser zu einer immer positiven Zahl und kann somit einfach ins Binärsystem mit $k$-Bit umgewandelt werden:
+     $(130)_{10}=(10000010)_{2}$
+     
+3. Alles zusammentun:![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 20.17.04.excalidraw]]
 ## Gleitkomma -> Dezimal
 
 
