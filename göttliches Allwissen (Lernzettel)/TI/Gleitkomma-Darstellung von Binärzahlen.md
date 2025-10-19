@@ -45,9 +45,9 @@ Die Daten werden in drei Feldern gespeichert:
 	  
 	 **Wahl des *bias*-Werts:**
 	 Die gespeicherten $k$-Bit-Muster $\hat{e}=(000\dots 000)$ und $\hat{e}=(111\dots 111)$ sind für spezielle Interpretationen reserviert (s.h. [[#Fallunterscheidungen]]).
-	 Es verbleiben also die restlichen $k$-Bit-Muster von $(\dots0001)_{2}=1$ bis $(0111\dots)_{2}=2^{k}-1$ zur Speicherung des Exponenten. Diese sollen nun zur Hälfte genutzt werden um negative Exponenten zu speichern, während die andere Hälfte positive Exponenten speichert. 
-	 Dazu verschiebt man die Exponenten um die Hälfte des in $k$-Bit darstellbaren Maximalwerts: $\frac{2^{k}-1}{2}$ , was aber das nicht ganzzahlige Ergebnis $2^{k-1}-\frac{1}{2}$ liefern würde.
-	 Weil Exponenten ganzzahlig kodiert werden wählt man gerundet: $bias=2^{k-1}-1$, weil die Werte so symmetrisch um $0$ liegen.
+	 Es verbleiben also die restlichen $k$-Bit-Muster von $(\dots0001)_{2}=1$ bis $(0111\dots)_{2}=2^{k}-1$ zur Speicherung des Exponenten. Da an beiden Enden sozusagen jeweils ein Bitmuster fehlt, ist die Anzahl dieser verwendbaren Muster $2^{k}-2$. Diese sollen nun zur Hälfte genutzt werden um negative Exponenten zu speichern, während die andere Hälfte positive Exponenten speichert. 
+	 Dazu verschiebt man die Exponenten um die Hälfte der Breite: $\frac{2^{k}-2}{2}=2^{k-1}-1$
+	 D.h. der *bias*-Wert wird gewählt als $2^{k-1}-1$.
 	 
 	 Es gilt also:
 	 $e=\hat{e}-bias$
