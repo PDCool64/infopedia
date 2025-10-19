@@ -5,6 +5,9 @@ tags:
 status: grün
 ---
 ---
+>[!wip]
+> Wir haben nur die Festkomma-Darstellung *positiver* Zahlen gemacht. Man kann da aber auch einen Vorzeichenbit draufwerfen oder irgendwas mit dem Zweierkomplement machen. Wurde aber nicht behandelt.
+
 
 >[!def] Festkomma-Darstellung
 >In der **Festkomma-Darstellung** werden Kommazahlen im Binärsystem mit einer *festen* Anzahl an Stellen vor und nachdem Komma gespeichert.
@@ -41,3 +44,21 @@ Was ist $47.6875$ als Festkomma-Zahl in $6$ Bit vor dem Komma und $4$ Bit nach d
 
 # Rechnen mit Festkomma-Zahlen
 
+Das schöne an Festkomma-Zahlen ist, dass man einfach so rechnen kann als ob das Komma gar nicht da wäre - man darf nur nicht vergessen es am ende wieder an der gleichen Stelle aufzuschreiben.
+
+$(3.5)_{10}+(2.75)_{10}=(6.25)_{10}$
+
+Umrechnen: (Hier mit willkürlichen $4$Bit vor und $3$Bit nach dem Komma)
+$(3.5)_{10}\;\,=0011.100$
+$(2.75)_{10}=0010.110$
+
+Addition wie immer:
+```
+  0011.100
+ +0010.110
+   111
+ ---------
+  0110.010
+```
+Was geklappt hat: 
+$(0110.010)_{2}=4+2+\frac{1}{4}=6.25$
