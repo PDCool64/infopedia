@@ -2,16 +2,26 @@
 >[!def] Mengen
 >Eine Menge ist eine Ansammlung von *unterscheidbaren* Objekten, genannt *Elemente* der Menge. Eine Menge wird durch eine Vorschrift festgelegt, die eindeutig bestimmt, ob ein gegebenes Objekt ein Element der Menge ist oder nicht. Die Elemente der Menge haben *keine* Reihenfolge und werden *nicht* mehrfach gezählt.
 >
+>---
+>Das einzige was eine Menge ausmacht ist, dass man für jedes Beliebige Objekt entscheiden kann, ob es zur Menge gehört oder nicht.
+>
 #### Beispiele:
 - Die Menge der [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürlichen Zahlen]] $1,2,3,4,\dots$
 - Die Menge der Zahlen $1,3,18,\pi$.
 - Die Menge der Buchstaben $a,b,\sigma,k.$
 - Die Menge der Orangen und Zitronen (Es geht um die *Idee* der Zitronen bzw. Orangen, nicht um alle einzelnen Früchte. Die Menge hat 2 Elemente)
 
-# Definieren einer Menge
+## Probleme mit dieser Mengendefinition
+Mit dieser einfachen Mengendefinition sind einige Konstrukte als Menge zulässig, die zu Widersprüchen führen. Wenn man tiefer in die Theorie hinabsteigen würde, gäbe es eine rigorosere Definition die wir aber nicht behandeln werden (vielleicht in MaLo oder so idk).
+In seinem Mathematischen System will man eigentlich keine Widersprüche drinhaben.
+
+Eine solche Konstruktion ist: $M=$"Die Menge aller Mengen, die sich nicht selbst enthalten"
+- wenn sich $M$ nicht selbst enthält, gehört $M$ zu der Gruppe der sich nicht selbst enthaltenden Mengen. $M$ muss sich also selbst enthalten ... 
+
+# Aufschreiben einer Menge
 Neben den oben gelisteten [[#Beispiele|Beispielen]], bei denen eine Menge durch *Aufzählung aller Elemente* definiert wurde, kann eine Menge auch durch eine *Vorschrift* definiert werden:
 $$
-M:=\{ x:S(x) \}
+M:=\{ x\mid S(x) \}
 $$
 was bedeutet : "$M$ ist die Menge aller $x$, welche die Eigenschaft $S(x)$ erfüllen."
 
@@ -26,11 +36,18 @@ $$
 | ------------- | ---------------------------------------------------------- | ----------------------------------------------- |
 | $m\in A$      | $m$ ist ein Element von $A$                                | ![[Mengenlehre 2025-07-20 18.45.14.excalidraw]] |
 | $m \not\in A$ | $m$ ist *kein* Element von $A$                             | ![[Mengen 2025-09-08 17.13.35.excalidraw]]      |
-| $\#M$         | Mächtigkeit einer Menge.<br>Anzahl der Elemente der Menge. |                                                 |
-
-^7f5fd0
 
 # Grundliegende Operatoren:
+>[!wip]
+> 
+> Hier müsste man -je nach Prof/Modul- die Schreibweisen für Teilmengen unterscheiden
+
+
+|     | "Teilmenge von oder gleich"                     | "echte Teilmenge"                               |
+| --- | ----------------------------------------------- | ----------------------------------------------- |
+| DS  | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | Noch nicht bekannt                              |
+| AFI | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | ![[Mengen 2025-10-19 15.18.12.excalidraw\|100]] |
+
 
 | Schreibweise    | Definition                                                               | Bedeutung                                                                      | Veranschaulichung                               |
 | --------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------- |
@@ -42,7 +59,6 @@ $$
 | $A\times B$     |                                                                          | [[#Kartesisches Produkt]] von $A$ und $B$                                      |                                                 |
 
 ^d190a1
-
 ^ec070c
 # Leere Menge
 > [!def] Leere Menge
@@ -50,9 +66,25 @@ $$
 
 Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subseteq M$ für jede Menge $M$.
 
+
+# Mächtigkeit einer Menge
+
+Sei $M$ eine nicht-leere Menge. Gibt es [[paarweise verschiedene]] Elemente $x_{1},\dots,x_{n}$ mit $n\in \mathbb{N}$, sodass $M=\{ x_{1},x_{2},\dots,x_{n} \}$, so definiert man die **Mächtigkeit** $\#M$, auch geschrieben als $|M|$ als:
+$$
+\#M:=n
+$$ 
+
+Andernfalls setzt man $\#M=\infty$ .
+Man definiert $\#\emptyset:=0$ 
+
+
 # Potenzmenge
 >[!def] Potenzmenge
 >Die [[#^ec070c|Teilmengen]] $A\subseteq M$ einer gegebenen Menge $M$ bilden ebenfalls eine Menge, die *Potenzmenge* $\mathcal{P}(M):= \{ A \mid A\subseteq M \}$ von $M$. 
+>
+>---
+>Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
+
 
 Zu beachten:
 - Da die [[#Leere Menge]] Teilmenge *aller* Mengen ist, enthält jede Potenzmenge die leere Menge.
@@ -60,7 +92,7 @@ Zu beachten:
   
 - $M\in \mathcal{P}(M)$
   
-Ist die [[#^7f5fd0|Mächtigkeit]] von $M$ endlich, etwa $\#M=n$, so ist die Mächtigkeit der Potenzmenge
+Ist die [[#Mächtigkeit einer Menge|Mächtigkeit]] von $M$ endlich, etwa $\#M=n$, so ist die Mächtigkeit der Potenzmenge
 $\#\mathcal{P}(M)=2^n.$
 	(Intuition dahinter: Beim Bilden einer Teilmenge von $M$ hat man für jedes Element von $M$ die Option 1. Das Element zu nehmen oder 2. Das Element nicht zu nehmen. - Damit entstehen $2^{n}$ Optionen.)
 
