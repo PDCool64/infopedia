@@ -31,8 +31,8 @@ Je nach gewünschter Präzision und Zahlenbereich sowie Speicherlimitierungen gi
 - 128-Bit
 
 ## Darstellung im Speicher
-> Die im Speicher stehenden Werte werden mit Dach $\hat{}$  geschrieben: $\hat{s},\hat{e},\hat{m}$
-> Die zur Berechnung von $z=s\cdot m\cdot b^{e}$ verwendeten werte werden ohne Dach geschrieben
+> Die im Speicher stehenden Werte werden mit Dach  $\hat{}$  geschrieben: $\hat{s},\hat{e},\hat{m}$
+> Die zur Berechnung von $z=\pm m\cdot b^{\pm e}$ verwendeten Werte werden ohne Dach geschrieben.
 
 Die Daten werden in drei Feldern gespeichert: 
 - Vorzeichen $\hat{s}$ : $1$-Bit am Anfang
@@ -40,17 +40,34 @@ Die Daten werden in drei Feldern gespeichert:
 	  ist $\hat{s}=1$ wird die Zahl als negativ interpretiert.
 	  
 - Exponent $\hat{e}$ : $k$-Bit in der Mitte
-	  Der Exponent $e$ kann positiv oder negativ sein und zwischen -? und ? liegen.
-	  *Gespeichert* wird aber immer nur ein *positiver* Wert $\hat{e}$, was dadurch erreicht wird, dass $e$ um einen sogenannten *bias*-Wert ins positive verschoben wird. Man spart sich damit die Kodierung von negativen Exponenten, die sonst z.B. durch das [[Negative Binärzahlen durch Komplement - Ganze Zahlen im Binärsystem#Negative Zahlen als Zweier-Komplement|Zweier-Komplement]] umgesetzt werden müsste.
+	  Der Exponent $e$ kann positiv oder negativ sein. 
+	  *Gespeichert* wird aber immer nur ein *positiver* Wert $\hat{e}$, was dadurch erreicht wird, dass $e$ um einen sogenannten *bias*-Wert ins Positive verschoben wird. Man spart sich damit die Kodierung von negativen Exponenten, die sonst z.B. durch das [[Negative Binärzahlen durch Komplement - Ganze Zahlen im Binärsystem#Negative Zahlen als Zweier-Komplement|Zweier-Komplement]] umgesetzt werden müsste.
 	  
-	 Der *bias*-Wert ist so gewählt, dass der kleinstmögliche Wert von e ( nämlich $-2^{k-1}$ ) bis zur ? Verschoben wird. Der *bias*-Wert beträgt also $bias=2^{k-1}-1$ .
-	  
+	 **Wahl des *bias*-Werts:**
+	 Die gespeicherten $k$-Bit-Muster $\hat{e}=(000\dots 000)$ und $\hat{e}=(111\dots 111)$ sind für spezielle Interpretationen reserviert (s.h. [[#Fallunterscheidungen]]).
+	 Es verbleiben also die restlichen $k$-Bit-Muster von $(\dots0001)_{2}=1$ bis $(0111\dots)_{2}=2^{k}-1$ zur Speicherung des Exponenten. Diese sollen nun zur Hälfte genutzt werden um negative Exponenten zu speichern, während die andere Hälfte positive Exponenten speichert. 
+	 Dazu verschiebt man die Exponenten um die Hälfte des in $k$-Bit darstellbaren Maximalwerts: $\frac{2^{k}-1}{2}$ , was aber das nicht ganzzahlige Ergebnis $2^{k-1}-\frac{1}{2}$ liefern würde.
+	 Weil Exponenten ganzzahlig kodiert werden wählt man gerundet: $bias=2^{k-1}-1$, weil die Werte so symmetrisch um $0$ liegen.
+	 
+	 Es gilt also:
+	 $e=\hat{e}-bias$
+	 $\hat{e}=e+bias$
+	 
+	 **Eselsbrücke zur Verschiebungsrichtung**: 
+	 Das $\hat{e}$ mit Dach ist *visuell größer* als das $e$ ohne Dach.
+	 
+	 $\hat{e}$ wird dann als ganz normale, positive $k$-Bit Zahl ohne Komastellen oder Sonstiges in den Speicher geschrieben.
+ 	  
 - Mantisse $\hat{m}$ : $n$-Bit am Ende
+	  Je nachdem, ob es sich um die [[#Normalisierte Darstellung]] oder die [[#Denormalisierte Darstellung]] handelt, wird die Mantisse unterschiedlich behandelt.
 
 Bei $32$-Bit haben wir $k=8$ und $n=23$
 Bei $64$-Bit haben wir $k=11$ und $n=52$
 
 Aufteilung bei $32$-Bit:
+>[!wip] Abbildung
+> Die Grafik könnte man mal selbst nachbauen - dann wäre sie light/darkmode kompatibel
+
 ![[Pasted image 20251019170832.png]]
 # Fallunterscheidungen:
 Die meisten Zahlen werden in der [[#Normalisierte Darstellung|Normalisierten Darstellung]] gespeichert.
