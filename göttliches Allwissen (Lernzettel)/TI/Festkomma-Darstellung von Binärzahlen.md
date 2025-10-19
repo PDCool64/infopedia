@@ -60,5 +60,5 @@ Addition wie immer:
  ---------
   0110.010
 ```
-Was geklappt hat: 
+Was geklappt hat, weil: 
 $(0110.010)_{2}=4+2+\frac{1}{4}=6.25$
