@@ -5,30 +5,51 @@
 >---
 >Das einzige was eine Menge ausmacht ist, dass man für jedes Beliebige Objekt entscheiden kann, ob es zur Menge gehört oder nicht.
 >
+>---
+>Im Rahmen der DS-Vorlesung schließen wir uns der [*Zermelo-Fraenkel-Mengenlehre*](https://de.wikipedia.org/wiki/Zermelo-Fraenkel-Mengenlehre) an.
 #### Beispiele:
 - Die Menge der [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürlichen Zahlen]] $1,2,3,4,\dots$
 - Die Menge der Zahlen $1,3,18,\pi$.
 - Die Menge der Buchstaben $a,b,\sigma,k.$
 - Die Menge der Orangen und Zitronen (Es geht um die *Idee* der Zitronen bzw. Orangen, nicht um alle einzelnen Früchte. Die Menge hat 2 Elemente)
 
+### Verbindung zur [[Aussagenlogik]]
+Der Satz der Definition *"Das einzige was eine Menge ausmacht ist, dass man für jedes Beliebige Objekt entscheiden kann, ob es zur Menge gehört oder nicht."* bedeutet, dass Mengen genau dadurch gekennzeichnet sind, dass $(x\in M)$ für jedes konkrete Objekt $x$ eine [[Aussagenlogik|Aussage]] mit eindeutigem Wahrheitswert ist.
+
+Umgekehrt ist für *jede* [[Aussagenlogik#Aussageformen|Aussageform]] $A(x)$ die Zusammenfassung aller $x$, für die $A(x)$ wahr ist, eine Menge.
 ## Probleme mit dieser Mengendefinition
 Mit dieser einfachen Mengendefinition sind einige Konstrukte als Menge zulässig, die zu Widersprüchen führen. Wenn man tiefer in die Theorie hinabsteigen würde, gäbe es eine rigorosere Definition die wir aber nicht behandeln werden (vielleicht in MaLo oder so idk).
-In seinem Mathematischen System will man eigentlich keine Widersprüche drinhaben.
+In seinem Mathematischen System will man eigentlich keine Widersprüche drin haben.
 
 Eine solche Konstruktion ist: $M=$"Die Menge aller Mengen, die sich nicht selbst enthalten"
 - wenn sich $M$ nicht selbst enthält, gehört $M$ zu der Gruppe der sich nicht selbst enthaltenden Mengen. $M$ muss sich also selbst enthalten ... 
 
 # Aufschreiben einer Menge
-Neben den oben gelisteten [[#Beispiele|Beispielen]], bei denen eine Menge durch *Aufzählung aller Elemente* definiert wurde, kann eine Menge auch durch eine *Vorschrift* definiert werden:
+Neben den oben gelisteten [[#Beispiele|Beispielen]], bei denen eine Menge durch *Aufzählung aller Elemente* definiert wurde, kann man Mengen auch wie folgt konstruieren:
+## Durch Ausschließen
 $$
-M:=\{ x\mid S(x) \}
+M:=\{ x\in N\mid S(x) \}
 $$
-was bedeutet : "$M$ ist die Menge aller $x$, welche die Eigenschaft $S(x)$ erfüllen."
+was bedeutet : "$M$ ist die Menge aller $x$ aus $N$, welche die Eigenschaft $S(x)$ erfüllen."
 
-Bsp. ist die Menge der ungeraden natürlichen Zahlen wie folgt definierbar:
+> Formal ist diese "Vorschrift" eine [[Aussagenlogik#Aussageformen|Aussageform]]. (s.h. ebenfalls [[#Verbindung zur Aussagenlogik]])
+
+z.B. ist die Menge der ungeraden natürlichen Zahlen wie folgt definierbar:
 $$
-M:=\{ x \mid x=2n+1 \text{ für ein }n\in \mathbb{N} \}
+M:=\{ x \in \mathbb{N}\mid x=2n+1 \text{ für ein }n\in \mathbb{N} \}
 $$
+## Durch Abbilden
+Sei $f$ eine [[Abbildungen|Abbildung]], die jedem $x\in N$ ein Element aus $L$ zuordnet, dann ist $$
+M:=\{ f(x) \mid x\in N\}
+$$ eine neue Menge (und eine Teilmenge von $L$).
+
+z.B. ist die Menge der Quadratzahlen wie folgt definierbar:
+$M:=\{ n^{2} \mid n\in \mathbb{N} \}$
+
+## Beides gemischt:
+Man kann z.B. die Menge der Quadrate ungerader Zahlen schreiben als:
+$M:=\{ n^{2} \mid (n\in \mathbb{N} )\wedge(\text{"n ist ungerade"}) \}$
+
 
 # Schreibweisen:
 
@@ -38,28 +59,30 @@ $$
 | $m \not\in A$ | $m$ ist *kein* Element von $A$                             | ![[Mengen 2025-09-08 17.13.35.excalidraw]]      |
 
 # Grundliegende Operatoren:
+
+## Bilden neuer Mengen
+
+| Schreibweise   | Definition                                                               | Bedeutung                                                             | Veranschaulichung                               |
+| -------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------- | ----------------------------------------------- |
+| $A \cup B$     | $A\cup B=\{ x \mid (x\in A)\vee(x\in B) \}$<br><br>($A\cup B=B\cup A$)   | Vereinigungsmenge                                                     | ![[Mengenlehre 2025-07-20 18.49.58.excalidraw]] |
+| $A \cap B$     | $A\cup B=\{ x \mid (x\in A)\wedge(x\in B) \}$<br><br>($A\cap B=B\cap A$) | Schnittmenge<br>(aka. "Durschschnitt")                                | ![[Mengenlehre 2025-07-20 21.21.02.excalidraw]] |
+| $A\setminus B$ | $A\setminus B=\{ x \mid (x\in A)\wedge(x \not\in B) \}$                  | Differenz<br>(aka "Komplement von $A$ in $B$",<br>aka "$A$ ohne $B$") | ![[Mengen 2025-09-08 17.29.49.excalidraw]]      |
+| $A\times B$    |                                                                          | [[#Kartesisches Produkt]] von $A$ und $B$                             |                                                 |
+^d190a1
+^ec070c
+## Verknüpfen zu einer [[Aussagenlogik|Aussage]]:
+
+| $A \subseteq B$ | $A\subseteq B \iff \forall_{x\in A}: x\in B$<br>bzw.<br>$A\subseteq B \iff(x\in a\to x\in B)$ | $A$ ist Teilmenge von oder gleich $B$.<br><br>($B$ ist eine Obermenge von $A$) | ![[Mengen 2025-09-08 17.32.00.excalidraw]] |
+| --------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------ |
+| $A⊊ B$          | $A⊊ B \iff (\forall_{x\in A}:x\in B)\wedge (A\neq B)$                                         | $A$ ist eine echte Teilmenge von $B$                                           | ![[Mengen 2025-09-08 17.44.31.excalidraw]] |
 >[!wip]
 > 
-> Hier müsste man -je nach Prof/Modul- die Schreibweisen für Teilmengen unterscheiden
-
+> Hier muss man -je nach Prof/Modul- die Schreibweisen für Teilmengen unterscheiden.
 
 |     | "Teilmenge von oder gleich"                     | "echte Teilmenge"                               |
 | --- | ----------------------------------------------- | ----------------------------------------------- |
-| DS  | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | Noch nicht bekannt                              |
+| DS  | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | Noch nicht bekannt<br>(AFAIK)                   |
 | AFI | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | ![[Mengen 2025-10-19 15.18.12.excalidraw\|100]] |
-
-
-| Schreibweise    | Definition                                                               | Bedeutung                                                                      | Veranschaulichung                               |
-| --------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------- |
-| $A \cup B$      | $A\cup B=\{ x \mid (x\in A)\vee(x\in B) \}$<br><br>($A\cup B=B\cup A$)   | Vereinigungsmenge                                                              | ![[Mengenlehre 2025-07-20 18.49.58.excalidraw]] |
-| $A \cap B$      | $A\cup B=\{ x \mid (x\in A)\wedge(x\in B) \}$<br><br>($A\cap B=B\cap A$) | Schnittmenge<br>(aka. "Durschschnitt")                                         | ![[Mengenlehre 2025-07-20 21.21.02.excalidraw]] |
-| $A\setminus B$  | $A\setminus B=\{ x \mid (x\in A)\wedge(x \not\in B) \}$                  | Differenz<br>(aka "Komplement von $A$ in $B$",<br>aka "$A$ ohne $B$")          | ![[Mengen 2025-09-08 17.29.49.excalidraw]]      |
-| $A \subseteq B$ | $A\subseteq B \iff \forall_{x\in A}\mid x\in B$                          | $A$ ist Teilmenge von oder gleich $B$.<br><br>($B$ ist eine Obermenge von $A$) | ![[Mengen 2025-09-08 17.32.00.excalidraw]]      |
-| $A\subset B$    | $A\subset B \iff (\forall_{x\in A}\mid x\in B)\wedge (A\neq B)$          | $A$ ist eine echte Teilmenge von $B$                                           | ![[Mengen 2025-09-08 17.44.31.excalidraw]]      |
-| $A\times B$     |                                                                          | [[#Kartesisches Produkt]] von $A$ und $B$                                      |                                                 |
-
-^d190a1
-^ec070c
 # Leere Menge
 > [!def] Leere Menge
 > Die Menge, die keine Elemente enthält, heißt *leere Menge* $\emptyset$ oder $\{ \; \}$.
