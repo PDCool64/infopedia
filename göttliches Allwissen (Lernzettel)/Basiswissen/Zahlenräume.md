@@ -1,3 +1,4 @@
+Zahlenräume sind [[Mengen]].
 # Natürliche Zahlen $\mathbb{N}$
 $$
 1,2,3,4,\dots
@@ -12,6 +13,9 @@ Daraus folgt, dass sie Auch in der *Multiplikation* abgeschlossen sind,
 weil $5\cdot 3=3+3+3+3+3$ usw.
 
 Wenn $n$ eine natürliche Zahl ist, dann ist auch $n+1$ eine natürliche Zahl.
+
+Eine Schreibweise für die $n$ ersten natürlichen Zahlen ist $\underline{n}=\{ 1,2,3,\dots,n \}$ mit $\underline{0}=\emptyset$.
+
 # Ganze Zahlen $\mathbb{Z}$
 $$
 \ldots,-3,-2,-1,0,1,2,3,\dots
@@ -54,4 +58,8 @@ $$
 $$
 $$
 e = 2.71828182846\dots
+$$
+# Komplexe Zahlen
+$$
+\mathbb{C}=\{ a+bi\mid a,b\in \mathbb{R} \}
 $$

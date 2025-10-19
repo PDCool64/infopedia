@@ -1,6 +1,6 @@
 
 >[!def] Mengen
->Eine Menge ist eine Ansammlung von *unterscheidbaren* Objekten, genannt *Elemente* der Menge. Eine Menge wird durch eine Vorschrift festgelegt, die eindeutig bestimmt, ob ein gegebenes Objekt ein Element der Menge ist oder nicht. Die Elemente der Menge haben *keine* Reihenfolge und werden *nicht* mehrfach gezählt.
+>Eine Menge ist eine Ansammlung von *unterscheidbaren* Objekten, genannt *Elemente* der Menge. Eine Menge wird durch eine Vorschrift festgelegt, die eindeutig bestimmt, ob ein gegebenes Objekt ein Element der Menge ist oder nicht. Die Elemente der Menge haben *keine* Reihenfolge und werden *nicht* mehrfach gezählt. (grob nach *[Georg Cantor](https://de.wikipedia.org/wiki/Georg_Cantor), 1895*)
 >
 >---
 >Das einzige was eine Menge ausmacht ist, dass man für jedes Beliebige Objekt entscheiden kann, ob es zur Menge gehört oder nicht.
@@ -23,7 +23,13 @@ In seinem Mathematischen System will man eigentlich keine Widersprüche drin hab
 
 Eine solche Konstruktion ist: $M=$"Die Menge aller Mengen, die sich nicht selbst enthalten"
 - wenn sich $M$ nicht selbst enthält, gehört $M$ zu der Gruppe der sich nicht selbst enthaltenden Mengen. $M$ muss sich also selbst enthalten ... 
+- symbolisch aufgeschrieben: Angenommen es gäbe eine Menge $A$ aller Mengen. Dann betrachten wir $T:=\{ M\in A \mid M \not\in M \}$. Es stellt sich nun die Frage $T\in T$ ? Diese Frage stellt einen Widerspruch dar. 
 
+> Wenn man viel Zeit hat, kann man zu diesem Thema, der [Russelschen Antinomie](https://de.wikipedia.org/wiki/Russellsche_Antinomie) was nachlesen. Auch Interessant ist hier [[Skript Diskrete Strukturen.pdf#page=13|Seite 11 des Skripts für DS]].
+
+$\to$ Für ein rigoroseres System sollte man einige Mengenkonstruktionen ausschließen.
+
+---
 # Aufschreiben einer Menge
 Neben den oben gelisteten [[#Beispiele|Beispielen]], bei denen eine Menge durch *Aufzählung aller Elemente* definiert wurde, kann man Mengen auch wie folgt konstruieren:
 ## Durch Ausschließen
@@ -53,10 +59,10 @@ $M:=\{ n^{2} \mid (n\in \mathbb{N} )\wedge(\text{"n ist ungerade"}) \}$
 
 # Schreibweisen:
 
-| Schreibweise  | Bedeutung                                                  | Veranschaulichung                               |
-| ------------- | ---------------------------------------------------------- | ----------------------------------------------- |
-| $m\in A$      | $m$ ist ein Element von $A$                                | ![[Mengenlehre 2025-07-20 18.45.14.excalidraw]] |
-| $m \not\in A$ | $m$ ist *kein* Element von $A$                             | ![[Mengen 2025-09-08 17.13.35.excalidraw]]      |
+| Schreibweise  | Bedeutung                      | Veranschaulichung                                    |
+| ------------- | ------------------------------ | ---------------------------------------------------- |
+| $m\in A$      | $m$ ist ein Element von $A$    | ![[Mengenlehre 2025-07-20 18.45.14.excalidraw\|200]] |
+| $m \not\in A$ | $m$ ist *kein* Element von $A$ | ![[Mengen 2025-09-08 17.13.35.excalidraw\|200]]      |
 
 # Grundliegende Operatoren:
 
@@ -92,27 +98,29 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 
 # Mächtigkeit einer Menge
 
-Sei $M$ eine nicht-leere Menge. Gibt es [[paarweise verschiedene]] Elemente $x_{1},\dots,x_{n}$ mit $n\in \mathbb{N}$, sodass $M=\{ x_{1},x_{2},\dots,x_{n} \}$, so definiert man die **Mächtigkeit** $\#M$, auch geschrieben als $|M|$ als:
-$$
-\#M:=n
-$$ 
-
-Andernfalls setzt man $\#M=\infty$ .
-Man definiert $\#\emptyset:=0$ 
-
+>[!def] Mächtigkeit einer Menge
+> Sei $M$ eine nicht-leere Menge. Gibt es [[paarweise verschiedene]] Elemente $x_{1},\dots,x_{n}$ mit $n\in \mathbb{N}$, sodass $M=\{ x_{1},x_{2},\dots,x_{n} \}$, so definiert man die **Mächtigkeit** $\#M$, auch geschrieben als $|M|$ als:
+> $$
+> \#M:=n
+> $$ 
+> 
+> Andernfalls setzt man $\#M=\infty$ .
+> Man definiert $\#\emptyset:=0$ 
+> 
+> ---
+> Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
 
 # Potenzmenge
+
 >[!def] Potenzmenge
->Die [[#^ec070c|Teilmengen]] $A\subseteq M$ einer gegebenen Menge $M$ bilden ebenfalls eine Menge, die *Potenzmenge* $\mathcal{P}(M):= \{ A \mid A\subseteq M \}$ von $M$. 
+>Die [[#^ec070c|Teilmengen]] $A\subseteq M$ einer gegebenen Menge $M$ bilden ebenfalls eine Menge, die **Potenzmenge** $\mathcal{P}(M):= \{ A \mid A\subseteq M \}$ von $M$. 
 >
 >---
->Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
-
+>Eine weitere Schreibweise ist $\text{Pot}(M)$
 
 Zu beachten:
 - Da die [[#Leere Menge]] Teilmenge *aller* Mengen ist, enthält jede Potenzmenge die leere Menge.
   $\emptyset\in\mathcal{P}(M)$
-  
 - $M\in \mathcal{P}(M)$
   
 Ist die [[#Mächtigkeit einer Menge|Mächtigkeit]] von $M$ endlich, etwa $\#M=n$, so ist die Mächtigkeit der Potenzmenge
@@ -126,12 +134,12 @@ Beispiel:
 # Kartesisches Produkt
 >[!def] Kartesisches Produkt
 >Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller *geordneten Paare*
->$$A\times B:=\{ (a,b):a \in A,b\in B \}$$
+>$$A\times B:=\{ (a,b)\mid a \in A,b\in B \}$$
 >das *kartesische Produkt der Mengen A und B*.
 >
 >Für *mehr als zwei* Mengen:
 >Sind $n$ Mengen $A_{1},A_2,A_{n}$ gegeben, so bilden die *geordneten* $n$-Tupel das kartesische Produkt
->$$A_{1}\times\dots\times A_{n}:=\{ (a_{1},a_{2},\dots,a_{n}):a_{i} \in A_{i} \text{ für }i=1,\dots,n \}$$
+>$$A_{1}\times\dots\times A_{n}:=\{ (a_{1},a_{2},\dots,a_{n})\mid a_{i} \in A_{i} \text{ für }i=1,\dots,n \}$$
 >der Mengen $A_{1},\dots,A_{n}$ (in dieser Reihenfolge).
 >
 >
