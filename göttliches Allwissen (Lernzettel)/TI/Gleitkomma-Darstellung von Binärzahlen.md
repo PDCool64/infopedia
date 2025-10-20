@@ -82,6 +82,7 @@ Sonderfälle werden ebenfalls markiert:
 
 ![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 17.08.48.excalidraw|900]]
 # Normalisierte Darstellung
+Darstellung der meisten Zahlen. Bei $32$-Bit sind *Beträge* von $1.18\cdot 10^{-38}$ bis $3.40\cdot 10^{38}$ möglich.
 
 ## Dezimal -> Gleitkomma
 am Beispiel $-12.6875$
@@ -118,5 +119,10 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
 4. Die Dezimalzahl aus Vorzeichen, Mantisse und Exponenten berechnen:
 	   $z= + 1.880859375\cdot 2^{7}= 240.75$
 # Denormalisierte Darstellung
+Darstellung der $0$ sowie genauere Darstellung von Zahlen sehr nah an der Null.
+Es handelt sich um die Denormalisierte Darstellung, wenn der gespeicherte Exponent $\hat{e}$ nur aus Nullen besteht.
+
+## Gleitkomma->Dezimal:
+1. Vorzeichen
 
 # Sonderfälle
