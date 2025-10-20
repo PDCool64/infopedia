@@ -141,7 +141,40 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 00000000 10000000000000000000000``
 	  $z=0.5\cdot 2^{-126}=5.877471754111437539843683\cdot 10^{-39}$
 
 ## Dezimal->Gleitkomma
+>[!wip]
+> 
+> Keine Ahnung ob man dass so machen kann/soll. Bin am rumprobieren.
+> Wahrscheinlich müsste man anstatt $\cdot 2^{126}$ hier bitshifts draufschmeißen
+
 Gegeben sei die Dezimalzahl $1.4\cdot 10^{-43}$
 1. Vorzeichen positiv $\to s=\hat{s}=0$
-2. Mantisse mit [[Horner Schema]] berechnen (schreibe ich hier nicht auf, weil man $$ )
+2. Zahl mit dem gegebenen Exponenten verwursten um die Mantisse bestimmen zu können: $$\begin{align}
+      1.4\cdot 10^{-43}&=m\cdot2^{-126} &|\cdot 2^{126} \\
+1.4\cdot 10^{-43}\cdot 2^{126}&=m \\
+0.00001190988&=m
+\end{align}$$ Mantisse nach dem Horner-Schema in einer Binärzahl umwandeln: (mit EXCEL oder so)
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|0|
+|1|
+|1|
+|0|
+|0|
+|0|
+|1|
+|1|
+  
 # Sonderfälle
