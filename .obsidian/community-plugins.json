@@ -1,19 +1,9 @@
 [
-<<<<<<< HEAD
-  "obsidian-excalidraw-plugin",
-  "dataview",
-  "obsidian-git",
-  "obsidian-latex-suite"
-=======
-  "dataview",
-  "obsidian-excalidraw-plugin",
-  "obsidian-git",
-  "obsidian-latex-suite",
-  "obsidian-tikzjax",
   "code-emitter",
+  "dataview",
   "obsidian-desmos",
   "folder-notes",
-  "obsidian-hover-editor",
-  "templater-obsidian"
->>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
+  "obsidian-git",
+  "obsidian-hotkeys-for-templates",
+  "obsidian-hover-editor"
 ]
