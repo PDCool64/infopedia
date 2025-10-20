@@ -122,7 +122,23 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
 Darstellung der $0$ sowie genauere Darstellung von Zahlen sehr nah an der Null.
 Es handelt sich um die Denormalisierte Darstellung, wenn der gespeicherte Exponent $\hat{e}$ nur aus Nullen besteht.
 
-## Gleitkomma->Dezimal:
-1. Vorzeichen
+ >[!wip]
+> 
+> Insbesondere die Wahl von $1-bias$ anstatt $0-bias$ beim Exponenten, aber auch die Wahl von 0.XXX anstatt 1.XXX bei der Mantisse könnten noch genauer begründet werden.
 
+
+## Gleitkomma->Dezimal:
+Gegeben sei die $32$-Bit Gleitkommazahl ``0 00000000 10000000000000000000000``
+1. Vorzeichen $\hat{s}=s=0\to$ positive Zahl
+2. den *Festen* Exponenten berechnen:
+	   Eigentlich würde man erwarten, wieder $e=\hat{e}-bias=0-bias$ zu rechnen - Man hat sich aber entschieden stattdessen als festen Exponenten der denormalisierten Darstellung stattdessen $e=1-bias$ zu wählen, weil dies einen gleichmäßigen Übergang zwischen normalisierten und denormalisierten Zahlen erzeugt.
+	   Bei $32$-Bit gilt also: $e=1-127=-126$
+3. Mantisse ablesen: *Hier wird keine 1.XXX sondern 0.XXX verwendet!*
+	   In der gespeicherten Mantisse $\hat{m}=$ ``10000000000000000000000`` sind wieder die Nachkommastellen der Mantisse $m$ kodiert. In diesem Fall handelt es sich um $\frac{1}{2}=.5$
+	   Anders als bei der normalisierten Darstellung wird hier aber keine $1$ vor das Komma gehängt, sondern eine $0$. Somit ist plötzlich auch die Darstellung von *genau* Null möglich.
+	   Die Mantisse im Beispiel beträgt also $0.5$
+4. Die Dezimalzahl aus Vorzeichen, Mantisse und Exponenten berechnen:
+	  $z=0.5\cdot 2^{-126}=5.877471754111437539843683\cdot 10^{-39}$
+
+## Dezimal->Gleitkomma
 # Sonderfälle
