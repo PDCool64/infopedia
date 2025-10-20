@@ -104,8 +104,19 @@ am Beispiel $-12.6875$
      
 3. Alles zusammentun:![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 20.17.04.excalidraw]]
 ## Gleitkomma -> Dezimal
-
-
+Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
+1. Vorzeichen ablesen: $\hat{s}=s=0\to$ positive Zahl
+2. Nachkommastellen der Mantisse ablesen:
+	    ``11100001100000000000000`` = $\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{256}+\frac{1}{512}= \frac{899}{1024}=0.880859375$
+	    Die $1$ der normalisierten Darstellung wieder vor das Komma setzen:
+	    $m=1.880859375$
+3. gespeicherten Exponenten $\hat{e}$ ablesen und zu einer Dezimalzahl machen:
+		``10000110`` = $128+4+2=134$ 
+		Das *bias* wieder herausrechnen, um den tatsächlichen Exponenten $e$ zu erhalten:
+		$e=\hat{e}-127$
+		$e=134-127=7$
+4. Die Dezimalzahl aus Vorzeichen, Mantisse und Exponenten berechnen:
+	   $z= + 1.880859375\cdot 2^{7}= 240.75$
 # Denormalisierte Darstellung
 
 # Sonderfälle
