@@ -81,6 +81,8 @@ Für die Zahlen nahe der $0$, sowie die $0$ selbst gibt es die [[#Denormalisiert
 Sonderfälle werden ebenfalls markiert:
 
 ![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 17.08.48.excalidraw|900]]
+
+---
 # Normalisierte Darstellung
 Darstellung der meisten Zahlen. Bei $32$-Bit sind *Beträge* von $1.18\cdot 10^{-38}$ bis $3.40\cdot 10^{38}$ möglich.
 
@@ -111,13 +113,15 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
 	    ``11100001100000000000000`` = $\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{256}+\frac{1}{512}= \frac{899}{1024}=0.880859375$
 	    Die $1$ der normalisierten Darstellung wieder vor das Komma setzen:
 	    $m=1.880859375$
-3. gespeicherten Exponenten $\hat{e}$ ablesen und zu einer Dezimalzahl machen:
+3. gespeicherten Exponenten $\hat{e}$ ablesen und zu $e$ umrechnen:
 		``10000110`` = $128+4+2=134$ 
 		Das *bias* wieder herausrechnen, um den tatsächlichen Exponenten $e$ zu erhalten:
-		$e=\hat{e}-127$
+		$e=\hat{e}-bias$
 		$e=134-127=7$
 4. Die Dezimalzahl aus Vorzeichen, Mantisse und Exponenten berechnen:
 	   $z= + 1.880859375\cdot 2^{7}= 240.75$
+
+---
 # Denormalisierte Darstellung
 Darstellung der $0$ sowie genauere Darstellung von Zahlen sehr nah an der Null.
 Es handelt sich um die Denormalisierte Darstellung, wenn der gespeicherte Exponent $\hat{e}$ nur aus Nullen besteht.
@@ -125,14 +129,20 @@ Es handelt sich um die Denormalisierte Darstellung, wenn der gespeicherte Expone
  >[!wip]
 > 
 > Insbesondere die Wahl von $1-bias$ anstatt $0-bias$ beim Exponenten, aber auch die Wahl von 0.XXX anstatt 1.XXX bei der Mantisse könnten noch genauer begründet werden.
+> 
+> Doppelte Darstellung der Null fehlt noch.
+> 
+> ggfs. solche "Theorie"-Inhalte von den Umrechnungsbeispielen trennen
+> 
 
 
 ## Gleitkomma->Dezimal:
 Gegeben sei die $32$-Bit Gleitkommazahl ``0 00000000 10000000000000000000000``
 1. Vorzeichen $\hat{s}=s=0\to$ positive Zahl
-2. den *Festen* Exponenten berechnen:
+2. den *festen* Exponenten berechnen:
 	   Eigentlich würde man erwarten, wieder $e=\hat{e}-bias=0-bias$ zu rechnen - Man hat sich aber entschieden stattdessen als festen Exponenten der denormalisierten Darstellung stattdessen $e=1-bias$ zu wählen, weil dies einen gleichmäßigen Übergang zwischen normalisierten und denormalisierten Zahlen erzeugt.
-	   Bei $32$-Bit gilt also: $e=1-127=-126$
+	   Bei $32$-Bit gilt also: 
+	   $e=1-bias=1-127=-126$
 3. Mantisse ablesen: *Hier wird keine 1.XXX sondern 0.XXX verwendet!*
 	   In der gespeicherten Mantisse $\hat{m}=$ ``10000000000000000000000`` sind wieder die Nachkommastellen der Mantisse $m$ kodiert. In diesem Fall handelt es sich um $\frac{1}{2}=.5$
 	   Anders als bei der normalisierten Darstellung wird hier aber keine $1$ vor das Komma gehängt, sondern eine $0$. Somit ist plötzlich auch die Darstellung von *genau* Null möglich.
@@ -143,42 +153,41 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 00000000 10000000000000000000000``
 ## Dezimal->Gleitkomma
 >[!wip]
 > 
-> Wahrscheinlich müsste man anstatt $\cdot 2^{126}$ hier bitshifts draufschmeißen
+> Wahrscheinlich sollte man anstatt $\cdot 2^{126}$ hier bitshifts draufschmeißen
 
 Gegeben sei die Dezimalzahl $1.4\cdot 10^{-43}$
 1. Vorzeichen positiv $\to s=\hat{s}=0$
 2. Zahl mit dem gegebenen Exponenten verwursten um die Mantisse bestimmen zu können: $$\begin{align}
       1.4\cdot 10^{-43}&=m\cdot2^{-126} &|\cdot 2^{126} \\
 1.4\cdot 10^{-43}\cdot 2^{126}&=m \\
-0.00001190988&=m
-\end{align}$$ Mantisse nach dem Horner-Schema in einer Binärzahl umwandeln:
+\end{align}$$ Mantisse nach dem Horner-Schema in einer Binärzahl umwandeln (Hier mit Excel gemacht):
 
-|              |     |              | Vor dem Komma: | Bit Nr.: |
-| ------------ | --- | ------------ | -------------- | -------- |
-| 1,19E-05     | *2  | 2,38E-05     | 0              | 1        |
-| 2,38E-05     | *2  | 4,76E-05     | 0              | 2        |
-| 4,76E-05     | *2  | 9,53E-05     | 0              | 3        |
-| 9,53E-05     | *2  | 1,91E-04     | 0              | 4        |
-| 1,91E-04     | *2  | 3,81E-04     | 0              | 5        |
-| 3,81E-04     | *2  | 7,62E-04     | 0              | 6        |
-| 7,62E-04     | *2  | 1,52E-03     | 0              | 7        |
-| 1,52E-03     | *2  | 3,05E-03     | 0              | 8        |
-| 3,05E-03     | *2  | 6,10E-03     | 0              | 9        |
-| 6,10E-03     | *2  | 1,22E-02     | 0              | 10       |
-| 1,22E-02     | *2  | 2,44E-02     | 0              | 11       |
-| 2,44E-02     | *2  | 4,88E-02     | 0              | 12       |
-| 4,88E-02     | *2  | 9,76E-02     | 0              | 13       |
-| 9,76E-02     | *2  | 1,95E-01     | 0              | 14       |
-| 1,95E-01     | *2  | 3,90E-01     | 0              | 15       |
-| 3,90E-01     | *2  | 7,81E-01     | 0              | 16       |
-| 7,81E-01     | *2  | 1,56E+00     | 1              | 17       |
-| 5,61E-01     | *2  | 1,12E+00     | 1              | 18       |
-| 1,22E-01     | *2  | 2,44E-01     | 0              | 19       |
-| 2,44E-01     | *2  | 4,88E-01     | 0              | 20       |
-| 4,88E-01     | *2  | 9,77E-01     | 0              | 21       |
-| 9,77E-01     | *2  | 1,95E+00     | 1              | 22       |
-| **9,54E-01** | *2  | **1,91E+00** | **1**          | **23**   |
-| 9,07E-01     | *2  | 1,81E+00     | 1              | 24       |
+|                                  |     |              | Vor dem Komma: | Bit Nr.: |
+| -------------------------------- | --- | ------------ | -------------- | -------- |
+| $1.4\cdot 10^{-43}\cdot 2^{126}$ | *2  | 2,38E-05     | 0              | 1        |
+| 2,38E-05                         | *2  | 4,76E-05     | 0              | 2        |
+| 4,76E-05                         | *2  | 9,53E-05     | 0              | 3        |
+| 9,53E-05                         | *2  | 1,91E-04     | 0              | 4        |
+| 1,91E-04                         | *2  | 3,81E-04     | 0              | 5        |
+| 3,81E-04                         | *2  | 7,62E-04     | 0              | 6        |
+| 7,62E-04                         | *2  | 1,52E-03     | 0              | 7        |
+| 1,52E-03                         | *2  | 3,05E-03     | 0              | 8        |
+| 3,05E-03                         | *2  | 6,10E-03     | 0              | 9        |
+| 6,10E-03                         | *2  | 1,22E-02     | 0              | 10       |
+| 1,22E-02                         | *2  | 2,44E-02     | 0              | 11       |
+| 2,44E-02                         | *2  | 4,88E-02     | 0              | 12       |
+| 4,88E-02                         | *2  | 9,76E-02     | 0              | 13       |
+| 9,76E-02                         | *2  | 1,95E-01     | 0              | 14       |
+| 1,95E-01                         | *2  | 3,90E-01     | 0              | 15       |
+| 3,90E-01                         | *2  | 7,81E-01     | 0              | 16       |
+| 7,81E-01                         | *2  | 1,56E+00     | 1              | 17       |
+| 5,61E-01                         | *2  | 1,12E+00     | 1              | 18       |
+| 1,22E-01                         | *2  | 2,44E-01     | 0              | 19       |
+| 2,44E-01                         | *2  | 4,88E-01     | 0              | 20       |
+| 4,88E-01                         | *2  | 9,77E-01     | 0              | 21       |
+| 9,77E-01                         | *2  | 1,95E+00     | 1              | 22       |
+| **9,54E-01**                     | *2  | **1,91E+00** | **1**          | **23**   |
+| 9,07E-01                         | *2  | 1,81E+00     | 1              | 24       |
 :
 	Da nur 23 Bit für die Mantisse verfügbar sind, entschiedet der $24$te Bit: Da dieser $1$ ist wird von $\dots 011$ zu $\dots 100$ aufgerundet: Es wird AFAIK nach der "round-To-Nearest"-Regel verfahren d.h. es wird aufgerundet weil $\dots100$ näher an $...0111$ liegt als $\dots 011$.
 	$\:$
@@ -194,6 +203,31 @@ Gegeben sei die Dezimalzahl $1.4\cdot 10^{-43}$
    ``0 00000000 00000000000000001100100``
 
 Der bei der Zahl selbst entstandene Rundungsfehler beträgt:$(1.4\cdot 10^{-43})-(2^{-126}\cdot(  \frac{1}{2^{17}}+\frac{1}{2^{18}}+\frac{1}{2^{21}}))=0.00000000000000000000000000000000000000000000012984643248170709237295832899161313$Dies sind ca. $0.000927\%$ Abweichung.
+
+---
 # Sonderfälle
 
+## Über-/Unterlauf bzw. Unendlich
+**Überlauf**: Das Resultat einer Gleitkomma-Operation ist zu groß um es darzustellen.
+**Unterlauf**: Das Resultat einer Gleitkomma-Operation ist zu klein um es darzustellen.
 
+z.B. $\frac{1}{0}=+ \infty$ oder $\frac{1}{-0}=-\infty$ (nur bei Gleitkomma-Arithmetik)
+
+$\to$ Das Ergebnis einer solchen Gleitkomma-Operation wird durch "**infinity**" gespeichert.
+
+- im [*IEEE 754*](https://de.wikipedia.org/wiki/IEEE_754) werden die beiden Unendlichkeiten dadurch kodiert, dass die gespeicherte Mantisse nur aus 0en und der gespeicherte Exponent nur aus 1en besteht:
+  $\hat{m}=(000\dots 000)$ 
+  $\hat{e}=(111\dots 111)$
+  Der Vorzeichenbit $\hat{s}$ entscheidet darüber, ob es sich um $+\infty$ und $-\infty$ handelt.
+
+Durch diese Kodierung kann in vielen Fällen noch sinnvoll weitergearbeitet werden z. B kann der vergleich ``3 < 1/0`` immernoch als ``true`` erkannt werden, anstatt sofort einen Fehler zu werfen.
+
+
+## NaN
+Ist das Resultat einer Gleitkomma-Operation keine gültige Gleitkommazahl, wird eine Sonderzahl mit der Bedeutung "**not a number* (NaN)**" generiert.
+
+z.B. $+\infty+(-\infty)=\text{NaN}$ 
+
+- im [*IEEE 754*](https://de.wikipedia.org/wiki/IEEE_754) wird NaN dadurch kodiert, dass der gespeicherte Exponent nur aus $1$en besteht während die Mantisse (im Unterschied zu [[#Über-/Unterlauf bzw. Unendlich]]) *nicht* ausschließlich aus $0$en besteht.
+
+>AFAIK verwendet man die möglichen Kombinationen wie $\hat{m}$ aus nicht nur $0$en bestehen kann um weitere Informationen zu kodieren. Irgendwas mit "Non Interrupting NaN" vs. "Interrupting NaN" oder so
