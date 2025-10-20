@@ -1,5 +1,5 @@
 ---
-date: "{{date}}"
+date:
 tags:
 status: rot
 Vorlesungsfolien:
