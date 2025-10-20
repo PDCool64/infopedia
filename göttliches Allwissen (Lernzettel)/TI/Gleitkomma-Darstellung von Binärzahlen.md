@@ -152,29 +152,44 @@ Gegeben sei die Dezimalzahl $1.4\cdot 10^{-43}$
       1.4\cdot 10^{-43}&=m\cdot2^{-126} &|\cdot 2^{126} \\
 1.4\cdot 10^{-43}\cdot 2^{126}&=m \\
 0.00001190988&=m
-\end{align}$$ Mantisse nach dem Horner-Schema in einer Binärzahl umwandeln: (mit EXCEL oder so)
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|0|
-|1|
-|1|
-|0|
-|0|
-|0|
-|1|
-|1|
-  
+\end{align}$$ Mantisse nach dem Horner-Schema in einer Binärzahl umwandeln:
+
+|              |     |              | Vor dem Komma: | Bit:   |
+| ------------ | --- | ------------ | -------------- | ------ |
+| 1,19E-05     | *2  | 2,38E-05     | 0              | 1      |
+| 2,38E-05     | *2  | 4,76E-05     | 0              | 2      |
+| 4,76E-05     | *2  | 9,53E-05     | 0              | 3      |
+| 9,53E-05     | *2  | 1,91E-04     | 0              | 4      |
+| 1,91E-04     | *2  | 3,81E-04     | 0              | 5      |
+| 3,81E-04     | *2  | 7,62E-04     | 0              | 6      |
+| 7,62E-04     | *2  | 1,52E-03     | 0              | 7      |
+| 1,52E-03     | *2  | 3,05E-03     | 0              | 8      |
+| 3,05E-03     | *2  | 6,10E-03     | 0              | 9      |
+| 6,10E-03     | *2  | 1,22E-02     | 0              | 10     |
+| 1,22E-02     | *2  | 2,44E-02     | 0              | 11     |
+| 2,44E-02     | *2  | 4,88E-02     | 0              | 12     |
+| 4,88E-02     | *2  | 9,76E-02     | 0              | 13     |
+| 9,76E-02     | *2  | 1,95E-01     | 0              | 14     |
+| 1,95E-01     | *2  | 3,90E-01     | 0              | 15     |
+| 3,90E-01     | *2  | 7,81E-01     | 0              | 16     |
+| 7,81E-01     | *2  | 1,56E+00     | 1              | 17     |
+| 5,61E-01     | *2  | 1,12E+00     | 1              | 18     |
+| 1,22E-01     | *2  | 2,44E-01     | 0              | 19     |
+| 2,44E-01     | *2  | 4,88E-01     | 0              | 20     |
+| 4,88E-01     | *2  | 9,77E-01     | 0              | 21     |
+| 9,77E-01     | *2  | 1,95E+00     | 1              | 22     |
+| **9,54E-01** | *2  | **1,91E+00** | **1**          | **23** |
+| 9,07E-01     | *2  | 1,81E+00     | 1              | 24     |
+
+Da nur 23 Bit für die Mantisse verfügbar sind, entschiedet der $24$te Bit: Da dieser $1$ ist wird von $\dots 011$ zu $\dots 100$ aufgerundet: Es wird AFAIK nach der "round-To-Nearest"-Regel verfahren d.h. es wird aufgerundet weil $\dots100$ näher an $...0111$ liegt als $\dots 011$.
+
+Gespeichert wird also die Mantisse $\hat{m}$:
+``00000000000000001100100``
+
+Es entsteht ein Rundungsfehler, da ``00000000000000001100100`` nicht genau $1.4\cdot 10^{-43}\cdot 2^{126}$ ist:
+$(1.4\cdot 10^{-43}\cdot 2^{126})-\left( \frac{1}{2^{17}}+\frac{1}{2^{18}}+\frac{1}{2^{21}} \right)=$
+
+
 # Sonderfälle
+
+
