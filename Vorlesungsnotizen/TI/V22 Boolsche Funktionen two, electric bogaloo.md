@@ -58,4 +58,4 @@ $y_{2}=f_{2}(x_{1},x_{0})=x_{13}$
 $y_{1}=f_{1}(x_{1},x_{0})=x_{0}$
 $y_{0}=f_{0}(x_{1},x_{0})=0$
 
-(es sind hier jeweils eine bzw. bei y0 beide Eingaben unnötig. )fjf
+(es sind hier jeweils eine bzw. bei y0 beide Eingaben unnötig.)
