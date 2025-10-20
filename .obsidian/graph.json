@@ -1,13 +1,39 @@
 {
+<<<<<<< HEAD
   "collapse-filter": true,
   "search": "",
+=======
+  "collapse-filter": false,
+  "search": "-file: .excalidraw path:\"göttliches Allwissen (Lernzettel)\"  ",
+>>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
+<<<<<<< HEAD
   "collapse-color-groups": true,
   "colorGroups": [],
   "collapse-display": true,
+=======
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"göttliches Allwissen (Lernzettel)/Basiswissen\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path: \"göttliches Allwissen (Lernzettel)/TI\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    }
+  ],
+  "collapse-display": false,
+>>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -17,6 +43,11 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
+<<<<<<< HEAD
   "scale": 1,
   "close": true
+=======
+  "scale": 0.36288736930121407,
+  "close": false
+>>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
 }
