@@ -5,5 +5,8 @@
   "folder-notes",
   "obsidian-git",
   "obsidian-hotkeys-for-templates",
-  "obsidian-hover-editor"
+  "obsidian-hover-editor",
+  "obsidian-latex-suite",
+  "obsidian-tikzjax",
+  "templater-obsidian"
 ]
