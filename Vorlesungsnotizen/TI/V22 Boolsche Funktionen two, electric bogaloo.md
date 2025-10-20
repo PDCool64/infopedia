@@ -54,7 +54,7 @@ $$\begin{align} \\
 \end{align}$$
 Dann kann man für jeden bit eine einzelne Boolsche Funktion aufstellen:
 
-$y_{2}=f_{2}(x_{1},x_{0})=x_{13
+$y_{2}=f_{2}(x_{1},x_{0})=x_{13}$
 $y_{1}=f_{1}(x_{1},x_{0})=x_{0}$
 $y_{0}=f_{0}(x_{1},x_{0})=0$
 
