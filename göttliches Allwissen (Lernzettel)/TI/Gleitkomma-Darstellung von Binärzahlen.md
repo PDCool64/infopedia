@@ -141,4 +141,7 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 00000000 10000000000000000000000``
 	  $z=0.5\cdot 2^{-126}=5.877471754111437539843683\cdot 10^{-39}$
 
 ## Dezimal->Gleitkomma
+Gegeben sei die Dezimalzahl $1.4\cdot 10^{-43}$
+1. Vorzeichen positiv $\to s=\hat{s}=0$
+2. Mantisse mit [[Horner Schema]] berechnen (schreibe ich hier nicht auf, weil man $$ )
 # Sonderfälle
