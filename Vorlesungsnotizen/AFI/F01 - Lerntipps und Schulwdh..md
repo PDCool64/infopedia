@@ -3,7 +3,7 @@ date: 2025-10-21
 tags:
   - AFI
 status: rot
-Vorlesungsfolien: blatt
+Vorlesungsfolien: "[[blatt0_afi_wise202526_a.pdf]]"
 Skriptfolien:
 ---
 ---
