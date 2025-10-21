@@ -230,4 +230,14 @@ z.B. $+\infty+(-\infty)=\text{NaN}$
 
 - im [*IEEE 754*](https://de.wikipedia.org/wiki/IEEE_754) wird NaN dadurch kodiert, dass der gespeicherte Exponent nur aus $1$en besteht während die Mantisse (im Unterschied zu [[#Über-/Unterlauf bzw. Unendlich]]) *nicht* ausschließlich aus $0$en besteht.
 
->AFAIK verwendet man die möglichen Kombinationen wie $\hat{m}$ aus nicht nur $0$en bestehen kann um weitere Informationen zu kodieren. Irgendwas mit "Non Interrupting NaN" vs. "Interrupting NaN" oder so
+>AFAIK verwendet man die möglichen Kombinationen wie $\hat{m}$ aus nicht nur $0$en bestehen kann um weitere Informationen zu kodieren. Irgendwas mit "Non Interrupting NaN" vs. "Interrupting NaN" oder sos
+
+---
+
+# Verteilung der Gleitkommazahlen
+
+
+---
+
+# Rechnen mit Gleitkommazahlen
+
