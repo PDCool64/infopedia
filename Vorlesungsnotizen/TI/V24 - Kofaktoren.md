@@ -28,7 +28,7 @@ Bsp:
 
 ## Baumdarstellung
 Wenn man die nicht bis zu blättern durchzieht, kann man sich dabei diesen tollen theoretischen Hintergrund geben:
-Binärer Entscheidungsbaum, bei dem man sich jeweils entscheidet ob man die momentane Eingabevariablen auf 1 oder 0 festsetzt. Man bekommt für jede Option dann eine neue Boolesche Funktion in der dieser Kofaktor gewählt wurde.
+Binärer Entscheidungsbaum, bei dem man sich jeweils entscheidet ob man die momentane Eingabe variablen auf 1 oder 0 festsetzt. Man bekommt für jede Option dann eine neue Boolesche Funktion in der dieser Kofaktor gewählt wurde.
 
 Zieht man es durch, bis man *alle* Variablen durch knoten / Ebenen im Baum festgesetzt hat, dann kommen als Blätter boolesche Funktionen raus, die immer die gleiche Ausgabe geben d.h. unten stehen auf Folie [[Kapitel 02 - Boolesche Funktionen.pdf#page=48]] nur noch 0 / 1.
 
@@ -113,6 +113,6 @@ Darstellung von Booleschen Funktionen
 - Karnaug-Diagramme
 
 Gray-Code:Generierungsverfahren zur robusten Übertragung.
-
+(hat auch was mit GrayCode zutun)
 
 
