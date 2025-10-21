@@ -18,7 +18,7 @@ Schreibweise:
 
 
 >[!def] Schaltfunktion
-> Schaltfunktionen sind Funktionen, die eine Kette aus Boolschen Werten auf eine weitere abbildet ist eine **Schaltfunktion**
+> Schaltfunktionen sind Funktionen, die eine Liste aus Booleschen Werten auf eine weitere abbildet ist eine **Schaltfunktion**
 > $F:B^{n}\to B^m$
 
 # Beispiele:
@@ -54,8 +54,8 @@ $$\begin{align} \\
 \end{align}$$
 Dann kann man für jeden bit eine einzelne Boolsche Funktion aufstellen:
 
-$y_{2}=f_{2}(x_{1},x_{0})=x_{13}$
+$y_{2}=f_{2}(x_{1},x_{0})=x_{1}$
 $y_{1}=f_{1}(x_{1},x_{0})=x_{0}$
 $y_{0}=f_{0}(x_{1},x_{0})=0$
 
-(es sind hier jeweils eine bzw. bei y0 beide Eingaben unnötig.)
+(es sind hier jeweils eine bzw. bei y0 beide Eingaben unnötig. )fjf

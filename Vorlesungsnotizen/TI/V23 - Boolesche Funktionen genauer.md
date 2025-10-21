@@ -44,7 +44,7 @@ d.h. die obige Tabelle wäre:
 `1_1`
 `_11` 
 
-# Darstellung Boolscher Funktionen
+# Darstellung Boolescher Funktionen
 
 ## DNF und KNF
 
