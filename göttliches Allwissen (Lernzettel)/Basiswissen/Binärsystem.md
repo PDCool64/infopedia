@@ -92,7 +92,7 @@ $0\cdot1=0$
 $1 \cdot 0 = 0$
 $1 \cdot 1 = 1$
 
-![[Binärsystem 2025-10-14 21.27.50.excalidraw|200]]
+![[göttliches Allwissen (Lernzettel)/Basiswissen/_attachments/Binärsystem 2025-10-14 21.27.50.excalidraw|200]]
 
 Man sieht schön: Es wird eigentlich nur um eins nach links verschoben und dann -wenn der bit 1 beträgt- addiert.
 
