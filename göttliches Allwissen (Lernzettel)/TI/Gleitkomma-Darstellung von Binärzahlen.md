@@ -5,6 +5,10 @@ tags:
 status: rot
 ---
 ---
+Eine schöne Erklärung zum Thema :
+ ["IEEE 754 Standard for Floating Point Binary Arithmetic" von "Computer Science Lesson"](https://youtu.be/RuKkePyo9zk?si=xGo5ESTOJQOqybHE)
+
+---
 
 >[!def] Gleitkomma-Darstellung
 >Die **Gleitkomma** Darstellung ist eine *approximative* Darstellung [[Zahlenräume#Reelle Zahlen $ mathbb{R}$|reeller]] bzw. [[Zahlenräume#Rationale Zahlen $ mathbb{Q}$|rationaler]] Zahlen.
