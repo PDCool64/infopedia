@@ -22,6 +22,8 @@ status: rot
 >---
 >Für Schaltfunktionen benutzt man als Funktionsnamen meist *Großbuchstaben* wie $F$.
 
+^efa64a
+
 Z.B. eine Schaltfunktion, welche zwei boolesche Werte annimmt und drei boolesche Werte ausgibt.
 
 ![[Schaltfunktionen 2025-10-21 10.35.15.excalidraw]]
@@ -50,5 +52,22 @@ Vgl. als Tabelle:
 
 
 
-# Reduzierbarkeit auf [[Boolesche Funktionen]]] 
+# Reduzierbarkeit auf [[#^8e41bd|Boolesche Funktion]]
+>[!def] Boolesche Funktion
+> 
+> **Boolesche Funktionen** sind [[#^efa64a|Schaltfunktionen]], welche genau einen booleschen Wert als Ausgabe liefern. Eine Schaltfunktion $$
+> f:B^{n}\to B^{1}
+> $$ heißt $n$-stellige **Boolesche Funktion**.
+> ---
+> Für Boolesche Funktionen nutzt man als  Funktionsnamen meist *Kleinbuchstaben* wie $f$.
 
+^8e41bd
+
+>[!def] Reduzierbarkeit von [[#^efa64a|Schaltfunktionen]] auf [[#^8e41bd|Boolesche Funktion]]
+> Sei $F:B^{n}\to B^{m}$ mit $F(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=(y_{m-1}\;,\;\dots\;,\;y_{1}\;,\;y_{0})$ eine [[#^efa64a|Schaltfunktion]], dann kann man für jedes $i\in \{ m-1\;,\;\dots\;,\;0 \}$ eine separate [[#^8e41bd|Boolesche Funktion]] $$
+> f_{i}:B^{n}\to B\;,\;f_{i}(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=y_{i}
+> $$definieren, welche den jeweiligen Bit $y_{i}$ des Ergebnisses liefert.
+> Somit ist $F$ wie folgt darstellbar:$$F(x_{n-1},\dots\,x_{1},x_{0})= \bigg( f_{m-1}(x_{n-1},\dots,x_{1},x_{0}) \;,\; f_{m-2}(x_{n-1},\dots,x_{1},x_{0}) \;,\; \dots \;,\;f_{0  }(x_{n-1},\dots,x_{1},x_{0})\bigg)$$
+> 
+
+![[Schaltfunktionen und Boolesche Funktionen 2025-10-23 11.06.07.excalidraw]]

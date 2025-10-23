@@ -6,7 +6,7 @@ Wichtige Templates, die standardmäßig durch `alt + N` aufgerufen werden, sind:
 	- `date` mit dem Datum der Vorlesung ausfüllen
 	- `tags` ist entweder `TI` , `AFI` , `DS` oder `PROGRA` d.h. das Modul
 	- `status` ist bedeutet, ob die Notiz schon zu Lernzetteln verarbeitet wurde. `rot`= noch gar nicht ; `gelb` = so halb ; `grün` = vollständig
-	- `Vorlesungsfolien` verweißt als Obsidian Link auf das `.pdf` mit den Vorlesungsfolien inkl. Seitenangaben: z.B. [[I1_Organisation.pdf#page=8]]
+	- `Vorlesungsfolien` verweist als Obsidian Link auf das `.pdf` mit den Vorlesungsfolien inkl. Seitenangaben: z.B. [[I1_Organisation.pdf#page=8]]
 	- `Skriptfolien` funktioniert genau wie `Vorlesungsfolien`, nur dass hier auf die relevanten Seiten des Vorlesungsskripts verwiesen wird. (DS hat z.B. beides.)
 - [[Lernzettel]] für Aufbereitete Übersichten zu einzelnen Inhalten
 	- `tags` können ***beliebig viele*** der Modulabkürzungen sein - Einfach alle Module auflisten, in denen das Thema behandelt wurde.
