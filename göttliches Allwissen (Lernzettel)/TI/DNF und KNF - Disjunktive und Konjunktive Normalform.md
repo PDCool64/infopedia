@@ -73,4 +73,5 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 > bzw. ausgeschrieben:$$f=M_a\;\wedge\; \dots \;\wedge\;M_b$$
 
 ## Intuitiv und viel offensichtlicher
-![[DNF und KNF - Disjunktive und Konjunktive Normalform 2025-10-23 20.27.08.excalidraw]]
+![[DNF und KNF - Disjunktive und Konjunktive Normalform 2025-10-23 20.27.08.excalidraw|600]]
+
