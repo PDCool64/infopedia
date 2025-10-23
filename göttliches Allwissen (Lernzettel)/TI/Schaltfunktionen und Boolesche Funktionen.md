@@ -4,6 +4,8 @@ tags:
 status: rot
 ---
 ---
+# Schaltfunktionen
+
 >[!def] Tupel aus [[Boolesche Algebra|booleschen Werten]]
 > 
 > $B^{n},n\in \mathbb{N}$ ist ein Tupel aus $n$ [[Boolesche Algebra|booleschen Werten]] hintereinander.
@@ -50,9 +52,9 @@ Vgl. als Tabelle:
 | Sortieren von 30 16-stelligen Dualzahlen        | 480     | 480                          |
 | Primzahltest einer 16-steiigen Dualzahl         | 16      | 1                            |
 
+---
+# Boolesche Funktionen
 
-
-# Reduzierbarkeit auf [[#^8e41bd|Boolesche Funktion]]
 >[!def] Boolesche Funktion
 > 
 > **Boolesche Funktionen** sind [[#^efa64a|Schaltfunktionen]], welche genau einen booleschen Wert als Ausgabe liefern. Eine Schaltfunktion $$
@@ -63,6 +65,8 @@ Vgl. als Tabelle:
 
 ^8e41bd
 
+## Reduzierbarkeit von [[#^efa64a|Schaltfunktionen]] auf [[#^8e41bd|Boolesche Funktionen]]
+
 >[!def] Reduzierbarkeit von [[#^efa64a|Schaltfunktionen]] auf [[#^8e41bd|Boolesche Funktion]]
 > Sei $F:B^{n}\to B^{m}$ mit $F(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=(y_{m-1}\;,\;\dots\;,\;y_{1}\;,\;y_{0})$ eine [[#^efa64a|Schaltfunktion]], dann kann man für jedes $i\in \{ m-1\;,\;\dots\;,\;0 \}$ eine separate [[#^8e41bd|Boolesche Funktion]] $$
 > f_{i}:B^{n}\to B\;,\;f_{i}(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=y_{i}
@@ -70,4 +74,4 @@ Vgl. als Tabelle:
 > Somit ist $F$ wie folgt darstellbar:$$F(x_{n-1},\dots\,x_{1},x_{0})= \bigg( f_{m-1}(x_{n-1},\dots,x_{1},x_{0}) \;,\; f_{m-2}(x_{n-1},\dots,x_{1},x_{0}) \;,\; \dots \;,\;f_{0  }(x_{n-1},\dots,x_{1},x_{0})\bigg)$$
 > 
 
-![[Schaltfunktionen und Boolesche Funktionen 2025-10-23 11.06.07.excalidraw]]
+![[Schaltfunktionen und Boolesche Funktionen 2025-10-23 11.06.07.excalidraw|500]]
