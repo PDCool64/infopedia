@@ -75,3 +75,14 @@ Vgl. als Tabelle:
 > 
 
 ![[Schaltfunktionen und Boolesche Funktionen 2025-10-23 11.06.07.excalidraw|500]]
+
+## Verschiedene Boolesche Funktionen
+
+>[!def] Anzahl an unterschiedlichen booleschen Funktionen
+> Es gibt $2^{(2^{n})}$ $n$-Stellige boolesche Funktionen.
+> 
+> ---
+> Erklärung: Es gibt $2^{n}$ Eingabekombinationen, für die jeweils eine booelsche Funktion mit Ausgabe $0$ sowie eine mit Ausgabe $1$ existiert.
+
+
+Für die Wahrheitstafeln, Namen und Verwendungszwecke verschiedener Boolescher Funktionen  gibt es eine Übersicht : [[Übersicht verschiedener Boolesche Funktionen]]
