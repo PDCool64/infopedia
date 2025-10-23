@@ -71,7 +71,7 @@ Vgl. als Tabelle:
 > Sei $F:B^{n}\to B^{m}$ mit $F(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=(y_{m-1}\;,\;\dots\;,\;y_{1}\;,\;y_{0})$ eine [[#^efa64a|Schaltfunktion]], dann kann man für jedes $i\in \{ m-1\;,\;\dots\;,\;0 \}$ eine separate [[#^8e41bd|Boolesche Funktion]] $$
 > f_{i}:B^{n}\to B\;,\;f_{i}(x_{n-1}\;,\;\dots\;,\;x_{1}\;,\;x_{0})=y_{i}
 > $$definieren, welche den jeweiligen Bit $y_{i}$ des Ergebnisses liefert.
-> Somit ist $F$ wie folgt darstellbar:$$F(x_{n-1},\dots\,x_{1},x_{0})= \bigg( f_{m-1}(x_{n-1},\dots,x_{1},x_{0}) \;,\; f_{m-2}(x_{n-1},\dots,x_{1},x_{0}) \;,\; \dots \;,\;f_{0  }(x_{n-1},\dots,x_{1},x_{0})\bigg)$$
+> Somit ist jede Schaltfunktion $F$ wie folgt darstellbar:$$F(x_{n-1},\dots\,x_{1},x_{0})= \bigg( f_{m-1}(x_{n-1},\dots,x_{1},x_{0}) \;,\; f_{m-2}(x_{n-1},\dots,x_{1},x_{0}) \;,\; \dots \;,\;f_{0  }(x_{n-1},\dots,x_{1},x_{0})\bigg)$$
 > 
 
 ![[Schaltfunktionen und Boolesche Funktionen 2025-10-23 11.06.07.excalidraw|500]]
