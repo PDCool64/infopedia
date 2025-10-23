@@ -26,6 +26,12 @@ Die [[#Disjunktive Normalform - DNF]] als auch die [[#Konjunktive Normalform - K
 > ---
 > $x_{2}\wedge x_{1}\wedge\overline{x_{0}}$ oder $a_{3}\,\overline{a_{2}}\,a_{1}\,\overline{a_{0}}$ sind z.B. Minterme.
 > 
+> ---
+> Minterme schreib man mit einem kleinen $m$.
+> Der Minterm der $i$-ten Zeile der Wahrheitstabelle der [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Booleschen Funktion]] $f$ heißt "$i-ter$ Minterm von $f$"
+> 
+> Es gilt: Sei $M_{i}$ der $i$-te [[#^4b83d3|Maxterm]] von $f$, dann ist $m_{i}=\overline{M_{i}}$ der $i$-te Minterm von $f$. (und umgekehrt)
+
 
 ^0681ec
 
@@ -33,7 +39,7 @@ Die [[#Disjunktive Normalform - DNF]] als auch die [[#Konjunktive Normalform - K
 > Jede [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] $f:B^{n}\to B$ ist *eindeutig* darstellbar als **Summe der [[#^0681ec|Minterme]] ihrer [[Darstellung boolescher Funktionen#^bbd58f|einschlägigen Indizes]]. 
 > 
 > D.h. ist $I\subseteq \{ 0,\dots,2^{n}-1 \}$ die Menge der [[Darstellung boolescher Funktionen#^bbd58f|einschlägigen Indizes]] von $f$, so gilt: $$f=\sum_{i\in I}m_{i}$$
-> bzw. ausgeschrieben:$$f=m_{2^{n}-1}\;\vee\; \dots \;\vee\;m_{0}$$
+> bzw. ausgeschrieben:$$f=m_a\;\vee\; \dots \;\vee\;m_b$$
 
 ## Intuitiv und viel offensichtlicher:
 
@@ -50,4 +56,21 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 > 
 > ---
 > $x_{2}\vee x_{1}\vee\overline{x_{0}}$ oder $a_{3}+\overline{a_{2}}+a_{1}+\overline{a_{0}}$ sind z.B. Maxterme.
+> 
+> ---
+> Maxterme schreib man mit einem großen $M$.
+> Der Maxterme der $i$-ten Zeile der Wahrheitstabelle der [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Booleschen Funktion]] $f$ heißt "$i-ter$ Maxterm von $f$"
+> 
+> Es gilt: Sei $m_{i}$ der $i$-te [[#^0681ec|Minterm]] von $f$, dann ist $M_{i}=\overline{m_{i}}$ der $i$-te Maxterm von $f$. (und umgekehrt)
 
+^4b83d3
+
+
+>[!def] Konjunktive Normalform
+> Jede [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] $f:B^{n}\to B$ ist *eindeutig* darstellbar als **Produkt der [[#^0681ec|Minterme]] ihrer *NICHT*-einschlägigen Indizes**. 
+> 
+> D.h. ist $I\subseteq \{ 0,\dots,2^{n}-1 \}$ die Menge der [[Darstellung boolescher Funktionen#^bbd58f|NICHT-einschlägigen Indizes]] von $f$, so gilt: $$f=\prod_{i\in I}M_{i}$$
+> bzw. ausgeschrieben:$$f=M_a\;\wedge\; \dots \;\wedge\;M_b$$
+
+## Intuitiv und viel offensichtlicher
+![[DNF und KNF - Disjunktive und Konjunktive Normalform 2025-10-23 20.27.08.excalidraw]]
