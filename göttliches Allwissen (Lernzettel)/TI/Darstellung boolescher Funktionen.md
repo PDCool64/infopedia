@@ -25,6 +25,8 @@ wobei es sich hier um die Wahrheitstafel von $\text{xor}$ handelt.
 
 # 1.1 Liste "*einschlägiger Indizes*"
 
+^bbd58f
+
 Man nummeriert die Zeilen einer Wahrheitstabelle durch.
 Dann speichert man nur noch die Indizes der Spalten welche $1$ als Ausgabe liefern.
 

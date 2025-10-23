@@ -32,6 +32,10 @@ Wie die Aussagenlogik basiert die Boolesche Aussagenlogik auf zwei Werten
 | 0   | 1   | 1         | 0           |
 | 1   | 0   | 1         | 0           |
 | 1   | 1   | 1         | 1           |
+#### Schreibweisen:
+- $\text{ODER}$ = $\vee$ = $+$ = **Disjunktion**
+- $\text{UND}$ = $\wedge$ = $\cdot$ = **Konjunktion**. Der Malpunkt wird, wie bei der Multiplikation von Zahlen, oft nicht geschrieben.
+
 
 ---
 # Logische Gesetze
