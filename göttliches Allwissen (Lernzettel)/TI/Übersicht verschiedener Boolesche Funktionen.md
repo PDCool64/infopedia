@@ -1,7 +1,7 @@
 ---
 tags:
   - TI
-status: rot
+status: gelb
 ---
 ---
 Eine Übersicht über verschiedene [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktionen]], ihre Namen sowie ihre Interpretationen in verschiedenen Kontexten.

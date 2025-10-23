@@ -50,5 +50,12 @@ Es entsteht also die Form `1_1 , _11` welche beide Eingabeoptionen zeigt, bei de
 - die letzten beiden Eingabe sind $1$
 
 ---
-# DNF und KNF
+# 3. DNF - Disjunktive Normalform und KNF - Konjunktive Normalform
 
+
+---
+# 4. DAG - Directed Acyclic Graph
+
+---
+
+# 5. OBDD - Ordered Binary Decision Diagram
