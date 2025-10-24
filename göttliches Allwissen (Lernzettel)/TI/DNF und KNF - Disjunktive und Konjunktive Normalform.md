@@ -75,3 +75,9 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 ## Intuitiv und viel offensichtlicher
 ![[DNF und KNF - Disjunktive und Konjunktive Normalform 2025-10-23 20.27.08.excalidraw|600]]
 
+
+---
+
+# [[Funktionale Vollständigkeit]] auf Grund von KNF und DNF
+
+Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen]]
