@@ -1,7 +1,7 @@
 ---
 tags:
   - TI
-status: rot
+status: gelb
 ---
 ---
 Die [[#Disjunktive Normalform - DNF]] als auch die [[#Konjunktive Normalform - KNF]] sind zwei standardisierte Schreibweisen für [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktionen]]. Es handelt sich jeweils um [[Boolesche Algebra|Boolesche Aussagen]].
