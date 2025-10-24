@@ -78,6 +78,10 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 
 ---
 
-# [[Funktionale Vollständigkeit]] auf Grund von KNF und DNF
 
-Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen]]
+---
+# [[Funktionale Vollständigkeit]] auf Grund von KNF und DNF.
+
+Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] eine DNF und keine KNF aufstellen, welche die Funktion genau widergeben. Da sowohl DNF als auch KNF nur aus den Verknüpfungen $\vee,\wedge,\neg$ bestehen, lassen sich also *alle* Booleschen Funktionen nur mit diesen drei Verknüpfungen darstellen. 
+Man sagt: 
+	Das System $\{ \vee,\wedge,\neg \}$ ist **[[Funktionale Vollständigkeit|funktional vollständig]]**.
