@@ -1,39 +1,35 @@
 {
-<<<<<<< HEAD
-  "collapse-filter": true,
-  "search": "",
-=======
   "collapse-filter": false,
-  "search": "-file: .excalidraw path:\"göttliches Allwissen (Lernzettel)\"  ",
->>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
-  "showTags": false,
+  "search": "- .excalidraw",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-<<<<<<< HEAD
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
-=======
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"göttliches Allwissen (Lernzettel)/Basiswissen\"  ",
+      "query": "path: Vorlesungsnotizen  tag:#AFI  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path: \"göttliches Allwissen (Lernzettel)/TI\"  ",
+      "query": "path:\"göttliches Allwissen (Lernzettel)/AFI\"  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 12714032
+      }
+    },
+    {
+      "query": "path:Vorlesungsnotizen tag:#TI  ",
+      "color": {
+        "a": 1,
+        "rgb": 3361791
       }
     }
   ],
-  "collapse-display": false,
->>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -43,11 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-<<<<<<< HEAD
-  "scale": 1,
-  "close": true
-=======
-  "scale": 0.36288736930121407,
+  "scale": 0.7545958428437245,
   "close": false
->>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b
 }
