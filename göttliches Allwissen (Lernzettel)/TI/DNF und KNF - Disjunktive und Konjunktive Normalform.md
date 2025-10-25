@@ -85,3 +85,15 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] eine DNF und keine KNF aufstellen, welche die Funktion genau widergeben. Da sowohl DNF als auch KNF nur aus den Verknüpfungen $\vee,\wedge,\neg$ bestehen, lassen sich also *alle* Booleschen Funktionen nur mit diesen drei Verknüpfungen darstellen. 
 Man sagt: 
 	Das System $\{ \vee,\wedge,\neg \}$ ist **[[Funktionale Vollständigkeit|funktional vollständig]]**.
+
+
+---
+# Umstellen Maxterme vs. Minterme
+
+## Minterme -> Maxterme
+Hier sind genau die Maxterme richtig deren Negation mit *keinem* der gegebenen Minterme übereinstimmt.
+
+z. B wird (2)= $x_{3}+x_{2}+\overline{x_{1}}+x_{0}$ invertiert zu $\overline{x_{3}}\overline{x_{2}}x_{1}\overline{x_{0}}$ , was von keinem der Minterme gedeckt wird.
+
+
+![[Pasted image 20251025104516.png]]
