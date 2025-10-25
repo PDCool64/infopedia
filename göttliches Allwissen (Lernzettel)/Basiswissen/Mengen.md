@@ -32,7 +32,7 @@ $\to$ Für ein rigoroseres System sollte man einige Mengenkonstruktionen ausschl
 ---
 # Aufschreiben einer Menge
 Neben den oben gelisteten [[#Beispiele|Beispielen]], bei denen eine Menge durch *Aufzählung aller Elemente* definiert wurde, kann man Mengen auch wie folgt konstruieren:
-## Durch Ausschließen
+## Durch Aussondern
 $$
 M:=\{ x\in N\mid S(x) \}
 $$
@@ -68,14 +68,24 @@ $M:=\{ n^{2} \mid (n\in \mathbb{N} )\wedge(\text{"n ist ungerade"}) \}$
 
 ## Bilden neuer Mengen
 
-| Schreibweise   | Definition                                                               | Bedeutung                                                             | Veranschaulichung                               |
-| -------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------- | ----------------------------------------------- |
-| $A \cup B$     | $A\cup B=\{ x \mid (x\in A)\vee(x\in B) \}$<br><br>($A\cup B=B\cup A$)   | Vereinigungsmenge                                                     | ![[Mengenlehre 2025-07-20 18.49.58.excalidraw]] |
-| $A \cap B$     | $A\cup B=\{ x \mid (x\in A)\wedge(x\in B) \}$<br><br>($A\cap B=B\cap A$) | Schnittmenge<br>(aka. "Durschschnitt")                                | ![[Mengenlehre 2025-07-20 21.21.02.excalidraw]] |
-| $A\setminus B$ | $A\setminus B=\{ x \mid (x\in A)\wedge(x \not\in B) \}$                  | Differenz<br>(aka "Komplement von $A$ in $B$",<br>aka "$A$ ohne $B$") | ![[Mengen 2025-09-08 17.29.49.excalidraw]]      |
-| $A\times B$    |                                                                          | [[#Kartesisches Produkt]] von $A$ und $B$                             |                                                 |
+| Schreibweise   | Definition                                                                | Bedeutung                                                             | Veranschaulichung                               |
+| -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------- |
+| $A \cup B$     | $A\cup B:=\{ x \mid (x\in A)\vee(x\in B) \}$<br><br>($A\cup B=B\cup A$)   | Vereinigungsmenge                                                     | ![[Mengenlehre 2025-07-20 18.49.58.excalidraw]] |
+| $A \cap B$     | $A\cup B:=\{ x \mid (x\in A)\wedge(x\in B) \}$<br><br>($A\cap B=B\cap A$) | Schnittmenge<br>(aka. "Durschschnitt")                                | ![[Mengenlehre 2025-07-20 21.21.02.excalidraw]] |
+| $A\setminus B$ | $A\setminus B:=\{ x \mid (x\in A)\wedge(x \not\in B) \}$                  | Differenz<br>(aka "Komplement von $A$ in $B$",<br>aka "$A$ ohne $B$") | ![[Mengen 2025-09-08 17.29.49.excalidraw]]      |
+| $A\times B$    | $A\times B:=\{ (a,b)\mid a\in ,b\in B \}$                                 | [[#Kartesisches Produkt]] von $A$ und $B$                             |                                                 |
+
 ^d190a1
 ^ec070c
+
+>[!def] Vereinigung und Schnitt mehrerer Mengen
+> Vereinigungs- und Schnittmenge können auch allgemeiner für beliebig viele Mengen geschrieben werden:
+> Für eine endliche Indexmenge $I$ und Mengen $M_{i}$ bezeichnen wir
+> $$\bigcup_{i\in I}M_{i}:=\{ x \mid \exists_{j\in I}:x\in M_{j} \}$$ als *Vereinigung* alle Mengen $M_{i}$ für $i\in I$ und
+> $$\bigcap_{i\in I}M_{i}:=\{ x \mid \forall _{j\in I}:x\in M_{j} \}$$
+> als *Schnitt* über alle Mengen $M_{i}$ für $i\in I$.
+
+
 ## Verknüpfen zu einer [[Aussagenlogik|Aussage]]:
 
 | $A \subseteq B$ | $A\subseteq B \iff \forall_{x\in A}: x\in B$<br>bzw.<br>$A\subseteq B \iff(x\in a\to x\in B)$ | $A$ ist Teilmenge von oder gleich $B$.<br><br>($B$ ist eine Obermenge von $A$) | ![[Mengen 2025-09-08 17.32.00.excalidraw]] |
@@ -121,6 +131,9 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 Zu beachten:
 - Da die [[#Leere Menge]] Teilmenge *aller* Mengen ist, enthält jede Potenzmenge die leere Menge.
   $\emptyset\in\mathcal{P}(M)$
+  (Dies sieht man an der Teilmengenbeziehung und der Def. der [[Aussagenlogik#Implikation und Äquivalenz|Implikation]]: 
+  $(\emptyset\subseteq M)\iff(x\in \emptyset\implies x\in M)\iff(\text{ f}\implies x \not\in A)$ was eine wahre Aussage ist.
+  
 - $M\in \mathcal{P}(M)$
   
 Ist die [[#Mächtigkeit einer Menge|Mächtigkeit]] von $M$ endlich, etwa $\#M=n$, so ist die Mächtigkeit der Potenzmenge

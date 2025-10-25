@@ -6,6 +6,7 @@ $$
 Positive Zahlen ohne Kommastellen.
 
 Null ist in der Mathematik *meist* ausgeschlossen. Gehört sie doch dazu, dann ist dies explizit erwähnt: $\mathbb{N}_{0}=\mathbb{N}\cup \{ 0 \}=\{ 0,1,2,3,\dots \}$
+> In AFI, DS ist $\mathbb{N}$ standardmäßig ohne $0$, in TI und Progra weiß ich net.
 
 Die natürlichen Zahlen $\mathbb{N}$ und $\mathbb{N}_{0}$ sind bezüglich *Addition* abgeschlossen: $a,b\in \mathbb{N}_{0} \implies a+b\in \mathbb{N}_{0}$
 
@@ -16,6 +17,7 @@ Wenn $n$ eine natürliche Zahl ist, dann ist auch $n+1$ eine natürliche Zahl.
 
 Eine Schreibweise für die $n$ ersten natürlichen Zahlen ist $\underline{n}=\{ 1,2,3,\dots,n \}$ mit $\underline{0}=\emptyset$.
 
+> Solange wir noch nicht in MaLo sind, nehmen wir die natürlichen Zahlen als von Gott gegeben an. Die Herleitung aus leeren Mengen ist laut Afi Prof sehr scuffed.
 # Ganze Zahlen $\mathbb{Z}$
 $$
 \ldots,-3,-2,-1,0,1,2,3,\dots
