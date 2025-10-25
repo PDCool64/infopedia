@@ -87,8 +87,45 @@ Nichtterminale werden hier in Anführungszeichen geschrieben.
 
 ## Beispiel: Klammergrammatik als EBNF
 Die [[#Beispiel Klammergrammatik|obige Klammergrammatik]] kann auch sehr kurz als EBNF geschrieben werden:
-$K=\{ \;''(''\;K\;'')''; \}$
+$K=\{ \;''(''\;K\;'')''\; \}$
 
 ---
 # Syntaxdiagramme
 Kontextfreie Grammatiken können ebenfalls als (ggfs. rekursive) Syntaxdiagramme angegeben werden.
+- für *jedes* Nichtterminal ein Syntaxdiagramm
+
+## Beispiel: Klammergrammatik als Syntaxdiagramm
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[scale=2]
+            \draw[->,very thick] (-3,0) -- (6,0);
+            \node at (-3.2,2) {K:};
+
+            \begin{scope}[shift={(2,0)}]
+                \draw[->,thick] (0,0)--(0,1)--(1,1);
+                \draw[thick] (1,0.7) rectangle (2,1.3);
+                \node at (1.5,1) {K};
+                \draw[->,thick] (2,1)--(3,1)--(3,0);
+            \end{scope}
+
+            \begin{scope}[shift={(-2,0)}]
+                \draw[->,thick] (0,0)--(0,1)--(1,1);
+                \draw[thick,fill=white] (0.5,1) circle (0.25);
+                \node at (0.5,1) {(};
+                
+                \draw[thick] (1,0.7) rectangle (2,1.3);
+                \node at (1.5,1) {K};
+                
+                \draw[->,thick] (2,1)--(3,1)--(3,0);
+                \draw[thick,fill=white] (2.5,1) circle (0.25);
+                \node at (2.5,1) {)};
+                
+            \end{scope}
+
+		\node at (0,-1) {};
+            
+        \end{tikzpicture}
+\end{document}
+```
+
