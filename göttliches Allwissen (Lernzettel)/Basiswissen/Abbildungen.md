@@ -27,8 +27,36 @@ $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
 
 ---
 
-# Bild und Urbild
-Seien $A.B$ nicht-leere Mengen und $f:A\to B$ eine Abbildung. Für $M\subseteq A$
+# Bild, Urbild und Wertebereich
+>[!def] Bild, Urbild, Wertebereich
+> 
+> Seien $A.B$ nicht-leere Mengen und $f:A\to B$ eine Abbildung. 
+> 
+> ---
+> Für $M\subseteq A$ heißt
+> $$f(M):=\{ f(x) \mid x\in M\}$$ das **Bild von $M$ unter $f$**. Speziell nennt man $f(A)$ die **Wertemenge von $f$**.
+> 
+> ---
+> Für $N\subseteq B$ heißt
+> $$f^{-1}(N):=\{ x\in A \mid f(x)\in N \}$$ das **Urbild von $N$ unter $f$**.
+
+## Bemerkung
+- Es werden hier [[Mengen]] in die die Klammern der Funktion geschrieben, *nicht* einzelne Werte.
+- Die Schreibweise $f^{-1}(N)$ darf keinesfalls mit der Umkehrabbildung verwechselt werden!
+  Für jede Menge $N\subseteq B$ existiert sicher ein Urbild $f^{-1}(N)$, auch wenn dies $\emptyset$ ist.
+  Die Umkehrabbildung (welche einzelne Elemente abbilden würde) existiert aber nur für bijektive Abbildungen und kann nicht allgemein angenommen werden.
+
+
+---
+
+# Restriktion des Definitionsbereichs
+>[!def] Restriktion einer Abbildung
+> 
+> Ist $f:A\to B,\;x\mapsto f(x)$ eine Abbildung und $M$ eine nicht-leere Teilmenge des Definitionsbereichs $A$, so heißt die Abbildung $$
+> f|_{M}:M\to B,\;x\mapsto(f|_{M})(x):=f(x)
+> $$ die **Restriktion** oder **Einschränkung** von $f$ auf $M$. 
+
+---
 
 
 ---
