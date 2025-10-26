@@ -48,7 +48,6 @@ $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
 
 
 ---
-
 # Restriktion des Definitionsbereichs
 >[!def] Restriktion einer Abbildung
 > 
@@ -57,11 +56,22 @@ $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
 > $$ die **Restriktion** oder **Einschränkung** von $f$ auf $M$. 
 
 ---
+# Verkettung zweier Abbildungen
+>[!def]
+> Ist $f:A\to B$ eine Abbildung und $g:B\,'\to C$ eine weitere Abbildung mit der Eigenschaft $f(A)\subseteq B\,'$ , so nennt man $$
+> f \circ g:A\to C,\;x\mapsto(g\circ f)(x):=g(f(x))
+> $$ die **Verkettung** oder **Komposition** oder **Hintereinanderausführung** von $f$ und $g$.
 
+ ---
+# Identische Abbildung
+>[!def] Identische Abbildung
+> Die **identische Abbildung** auf $D$, auch **Identität** auf $D$ genannt, ist die Abbildung, welche jeden Wert *auf sich selbst* abbildet:
+> $$\text{id}_{D}:D\to D\;,\;x\to x$$
+> Daraus resultiert:
+> $$\text{id}_{D}(x)=x$$
 
 ---
 # Injektiv, Surjektiv, Bijektiv
-
 >[!def] Surjektiv
 >Das Bild schöpft den Zielbereich aus. Jeder Wert in Z wird getroffen.
 >
@@ -84,8 +94,6 @@ $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
 > Bsp: Die Funktion $f: \mathbb{R}\mapsto \mathbb{R},x\mapsto e^x$ ist Injektiv.
 
 ^d80cf2
-
-
 Bsp.
 Für $f:\mathbb{R}\mapsto \mathbb{R},x\mapsto x^{2}$ gilt z.B. $f(2)=4=f(-2)$ und $-2\neq 2$, also ist $f$ nicht Injektiv.
 Will man diese Funktion Injektiv machen, kann man sie umschreiben zu: $\overset{\sim}{f}:\mathbb{R}_{x\geq_{0}}\mapsto \mathbb{R},x\mapsto x^{2}$ macht es injektiv.
@@ -101,3 +109,19 @@ Will man diese Funktion Injektiv machen, kann man sie umschreiben zu: $\overset{
 > Injektiv, weil. Wenn immer $id_{D}(x)=id_{D}(y)$ gilt, $x=y$
 > 
 > Auch $f:\mathbb{R}\mapsto \mathbb{R},x\mapsto x^3$ ist bijektiv.
+
+^5299c8
+
+---
+
+# Umkehrabbildung
+>[!def] Umkehrabbildung
+> Ist $f:A\to B$ eine [[#^5299c8|bijektive]] Abbildung, so gibt es genau eine Abbildung
+> $$f^{-1}:B\to A$$ welche 
+> - $f^{-1}\circ f=id_{A}$ und
+> - $f \circ f^{-1}=id_{B}$ 
+>   
+> erfüllt.
+> 
+> Man nennt $f^{-1}$ die **Umkehrabbildung** von $f$. Sie ist charakterisiert durch:
+> $$\forall_{x\in A,y\in B}:\;f(x)=y \iff f^{-1}(y)=x$$
