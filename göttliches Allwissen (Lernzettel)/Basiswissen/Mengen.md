@@ -95,10 +95,10 @@ $M:=\{ n^{2} \mid (n\in \mathbb{N} )\wedge(\text{"n ist ungerade"}) \}$
 > 
 > Hier muss man -je nach Prof/Modul- die Schreibweisen für Teilmengen unterscheiden.
 
-|     | "Teilmenge von oder gleich"                     | "echte Teilmenge"                               |
-| --- | ----------------------------------------------- | ----------------------------------------------- |
-| DS  | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | Noch nicht bekannt<br>(AFAIK)                   |
-| AFI | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]] | ![[Mengen 2025-10-19 15.18.12.excalidraw\|100]] |
+|     | "Teilmenge von oder gleich"                                                                                                                                        | "echte Teilmenge"                               |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| DS  | ![[Mengen 2025-10-19 15.18.53.excalidraw\|100]]                                                                                                                    | Noch nicht bekannt<br>(AFAIK)                   |
+| AFI | Prof in den Vorlesungen:![[Mengen 2025-10-19 15.18.53.excalidraw\|100]]<br>Im [[Altes Skript AFI.pdf\|Skript]]:<br>![[Mengen 2025-10-26 15.43.55.excalidraw\|100]] | ![[Mengen 2025-10-19 15.18.12.excalidraw\|100]] |
 # Leere Menge
 > [!def] Leere Menge
 > Die Menge, die keine Elemente enthält, heißt *leere Menge* $\emptyset$ oder $\{ \; \}$.

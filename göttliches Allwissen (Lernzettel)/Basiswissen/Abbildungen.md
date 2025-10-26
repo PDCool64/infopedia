@@ -1,6 +1,6 @@
 
 >[!def] Abbildung
-> Seien $A, B$ nicht-leere Mengen. Eine **Abbildung** $f$ von $A$ nach $B$ ist eine Vorschrift, die jeden $x \in A$ *genau ein* $y \in B$ zuordnet.
+> Seien $A, B$ nicht-leere [[Mengen]]. Eine **Abbildung** $f$ von $A$ nach $B$ ist eine Vorschrift, die jeden $x \in A$ *genau ein* $y \in B$ zuordnet.
 > 
 > Man nennt $x$ das *Argument* und
 > $f(x):=y$ das *Bild von $x$ unter $f$*.
@@ -13,7 +13,7 @@
 > 
 > ___
 > 
-> Die Menge $$G_{f}:=\{ (x,f(x))\mid x\in A \}\subset A\times B$$
+> Die Menge $$G_{f}:=\{ (x,f(x))\mid x\in A \}\subseteq A\times B$$
 > nennt man *Graph von $f$*.
 >
 >---
@@ -24,6 +24,12 @@
 ### Beispiel
 $f: \mathbb{R} \to \mathbb{R}, x \mapsto x^{2}$
 $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
+
+---
+
+# Bild und Urbild
+Seien $A.B$ nicht-leere Mengen und $f:A\to B$ eine Abbildung. Für $M\subseteq A$
+
 
 ---
 # Injektiv, Surjektiv, Bijektiv
