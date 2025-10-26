@@ -1,5 +1,5 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "- .excalidraw",
   "showTags": true,
   "showAttachments": false,
@@ -27,6 +27,20 @@
         "a": 1,
         "rgb": 3361791
       }
+    },
+    {
+      "query": "path:\"göttliches Allwissen (Lernzettel)/TI\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1704160
+      }
+    },
+    {
+      "query": "path:\"göttliches Allwissen (Lernzettel)/Basiswissen\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15990599
+      }
     }
   ],
   "collapse-display": true,
@@ -39,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7545958428437245,
+  "scale": 0.3242333124405645,
   "close": false
 }
