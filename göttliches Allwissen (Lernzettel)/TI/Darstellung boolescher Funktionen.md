@@ -52,7 +52,7 @@ Es entsteht also die Form `1_1 , _11` welche beide Eingabeoptionen zeigt, bei de
 - die letzten beiden Eingabe sind $1$
 
 ---
-# 3. DNF - Disjunktive Normalform und KNF - Konjunktive Normalform
+# 3.[[DNF und KNF - Disjunktive und Konjunktive Normalform]]
 
 
 ---
