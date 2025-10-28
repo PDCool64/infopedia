@@ -120,6 +120,19 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 > ---
 > Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
 
+
+sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
+(ohne die Subtraktion würde man die Elemente, welche in beiden Mengen liegen doppelt zählen.)
+
+Für [[paarweise verschieden und paarweise disjunkt#^7df85e|paarweise disjunkte]] Mengen ist die Mächtigkeit der Schnittmenge immer $0$, also gilt
+$\left| M\cup N \right|=\left| M \right|+\left| N \right|$ und für beliebige viele [[paarweise verschieden und paarweise disjunkt#^7df85e|paarweise disjunkte]] Mengen $M_{i}\;,\;i\in I$ gilt:
+$$
+\left|  \bigcup_{i\in I} M_{i}\right|=\sum_{i\in I} \left| M_{i} \right| 
+$$
+
+Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist $$
+\left| M \right| =\sum_{C\in\mathcal{P}}\left| C \right| 
+$$
 # Potenzmenge
 
 >[!def] Potenzmenge
@@ -145,6 +158,9 @@ Beispiel:
 	$\mathcal{P}(M)=\{ \emptyset,\{ 1 \},\{ 2 \},\{ 3 \},\{ 1,2 \},\{ 1,3 \},\{ 2,3 \},\{ 1,2,3 \} \}$
 
 # Kartesisches Produkt
+
+> Wortstamm "kartesisch" kommt von [René Descartes](https://de.wikipedia.org/wiki/Ren%C3%A9_Descartes) 
+
 >[!def] Kartesisches Produkt
 >Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller *geordneten Paare*
 >$$A\times B:=\{ (a,b)\mid a \in A,b\in B \}$$
@@ -161,8 +177,10 @@ Beispiel:
 >$$A^n=A\times\dots\times A$$
 
 Zu beachten:
-*geordnete* $n$-Tupel bedeutet, dass die Reihenfolge der Einträge wichtig ist.
+- *geordnete* $n$-Tupel bedeutet, dass die Reihenfolge der Einträge wichtig ist.
   (vgl. Tuple in Python usw.)
+- $\emptyset \times M=M\times \emptyset=\emptyset$ für jede Menge $M$
+
   
 ### Beispiele:
 - $\{ a,b \}\times \{ 1,2 \}=\{ (a,1),(a,2),(b,1),(b,2) \}$ ist ungleich zu 
@@ -200,3 +218,30 @@ Zu beachten:
   \end{tikzpicture}
 \end{document}
 ```
+
+# Partition einer Menge
+>[!def] Partition einer Menge
+> Eine **Partition** einer Menge $M$ ist eine Menge $\mathcal{P}$ nicht-leerer, paarweise disjunkter Teilmengen von $M$ mit
+> $$
+> M= \bigcup_{C\in\mathcal{P}}C
+> $$
+> d.h. wir zerlegen die Menge in Teile, die sich gegenseitig nicht überschneiden.
+> 
+> ---
+> 
+Für jede Partition von $M$ ist $\mathcal{P}\subseteq\text{Pot}(M)\setminus\{ \emptyset \}$
+
+-Die Partition bezeichnet die Menge, deren Elemente die disjunkten Teilmengen sind.
+  Die Partition bezeichnet *nicht* die einzelnen Teilmengen selbst.
+
+
+z.B. sind einige der mögliche Partitionen der Menge $M=\{ 1,2,3,4 \}$ 
+- $\mathcal{P}=\{ \{ 1,2 \},\{ 3,4 \} \}$
+- $\mathcal{P}=\{ \{ 1,4 \},\{ 2,3 \} \}$
+- $\mathcal{P}=\{ \{ 2 \},\{ 3,4,1 \} \}$
+- $\mathcal{P}=\{ \{ 1 \},\{ 3,4 \} ,\{ 2 \}\}$
+- $\mathcal{P}=\{ \{ 2 \},\{ 4 \} ,\{ 1 \},\{ 3 \}\}$
+
+Eine Partition der Menge $\mathbb{Z}$ wäre z.B.
+$\mathcal{P}=\{ \{ x\in \mathbb{Z}\mid x<0 \},\{ x \in \mathbb{Z} \mid x\geq 0 \} \}$
+

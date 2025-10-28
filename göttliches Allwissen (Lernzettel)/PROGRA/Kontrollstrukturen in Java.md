@@ -83,18 +83,80 @@ Will man beim switch-*Ausdruck* Codeblöcke ausführen, muss trotzdem ein Wert z
 
 ---
 # ``while`` Schleife
-````java
 
-boolean notDone = true;
-String eingabe;
-while (notDone) {
-	
-	IO.println("moin");
-
-	eingabe = IO.readln("weiter? :" );
-	if (eingabe == "stop") {
-		notDone = false;
-	}
-	
+```java
+boolean notDone = true;  
+String eingabe;  
+while (notDone) {  
+  
+    IO.println("moin");  
+  
+    eingabe = IO.readln("weiter? :" );  
+    if (eingabe.equals("stop")) {  
+        notDone = false;  
+    }  
+  
 }
 ```
+
+Je nach Bedingung kann es passieren, das der Schleifenrumpf nie ausgeführt wird, 
+z.b.
+```java
+while (false) {
+	IO.println("moin");
+}
+```
+
+# ``do`` Schleifen
+Hier wird der Schleifenrumpf immer mindestens einmal ausgeführt. - die Bedingung wird sozusagen nach dem Durchlaufen des Rumpfes und überprüft - beim ersten mal also nicht.
+
+```java
+do {
+	something();
+	x = 10;
+
+} while (Bedingung);
+
+```
+
+# ``for``-Schleifen
+Am besten für Zählschleifen geeignet.
+
+interessant: die Initialisierung kann enthalten : 
+	eine Variablendeklaration
+	ODER
+	Beliebig viele Zuweisungen.
+
+```java
+
+for (int i = 1;i<=100;i++) {
+	IO.println(i*i);
+}
+```
+
+auch gültig:
+```java
+int x,y;  
+  
+for (x=4,y=10 ; x<20 && y<100 ; x++ , y*=2) {  
+    IO.println(x+y);  
+}
+
+//Ausagabe:
+//14
+//25
+//46
+//87
+```
+
+---
+# Sprunganweisungen
+
+``break`` bricht die gesamte Schleife ab und springt ans Ende
+
+``continue`` überspringt den Rest des momentanen Schleifendurchlaufs und macht mit dem nächsten Durchlauf weiter.
+
+Welche verschachtelte Schleife ist gemeint?
+- ``break`` und ``continue`` beziehen sich immer auf die Schleifeneben auf der sie selbst stehen
+- mit labels kann man schleifen benennen und gezielt bestimmte Ebenen ansteuern:
+  ![[Kontrollstrukturen in Java 2025-10-28 10.53.53.excalidraw]]
