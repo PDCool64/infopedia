@@ -16,9 +16,30 @@ status: rot
 # ``if``-Anweisung
 
 ```java
-if ()
+if (<BoolescherAusdruck>) {
+	doSomething();
+	doSomethingDifferent();
+} else {
+	doAnotherThing();
+}
 ```
 
 
+Dabei für die booleschen Ausdrücke wichtig:
+- ``&&`` = oder
+- `||` = und
 
+## Ternärer Operator
+Für kleine Entscheidungen welcher Wert zugewiesen werden soll, gibt es auch eine inline-Schreibweise:
 
+``` java
+int max = (a<b)? a : b;
+
+```
+gelesen:
+``` java
+int max = <BoolescherAusdruck> ? <WertWennWar> : <WertWenNFalsch> ;
+
+```
+
+Hier dürfen aber explizit nur einzelne Ausdrücke verwendet werden - keine ganzen Blöcke
