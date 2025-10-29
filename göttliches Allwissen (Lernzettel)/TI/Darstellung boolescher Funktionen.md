@@ -61,7 +61,7 @@ Es entsteht also die Form `1_1 , _11` welche beide Eingabeoptionen zeigt, bei de
 DAG = Directed Acylic Graph
 - Directed = Gerichtet
 - Acyclic = Keine Zyklen (man kann nicht im Kreis laufen sondern kommt nach endlich vielen Schritten an)
-- Graph = Graph aus Knoten und Kanten
+ - Graph = Graph aus Knoten und Kanten
 
 Für den Moment ist die Einschränkung auf nicht-zyklische Graphen sehr sinnvoll - die Flimmerschaltung ist aber ein Beispiel, bei dem es schon Sinn machen kann:
 
