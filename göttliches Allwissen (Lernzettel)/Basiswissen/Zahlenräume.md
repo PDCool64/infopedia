@@ -13,7 +13,7 @@ Die natürlichen Zahlen $\mathbb{N}$ und $\mathbb{N}_{0}$ sind bezüglich *Addit
 Daraus folgt, dass sie Auch in der *Multiplikation* abgeschlossen sind,
 weil $5\cdot 3=3+3+3+3+3$ usw.
 
-Wenn $n$ eine natürliche Zahl ist, dann ist auch $n+1$ eine natürliche Zahl.
+Wenn $n$ eine natürliche Zahl ist, dann ist auch $n+1$ eine natürliche Zahl. Man kann die natürlichen Zahlen also rekursiv oder über "Induktion" zusammenbauen.
 
 Eine Schreibweise für die $n$ ersten natürlichen Zahlen ist $\underline{n}=\{ 1,2,3,\dots,n \}$ mit $\underline{0}=\emptyset$.
 

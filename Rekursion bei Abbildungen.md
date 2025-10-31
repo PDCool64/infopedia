@@ -1,0 +1,6 @@
+---
+tags:
+  - AFI
+status: rot
+---
+---

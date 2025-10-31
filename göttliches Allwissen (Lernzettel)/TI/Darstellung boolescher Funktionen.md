@@ -76,3 +76,28 @@ Für den Moment ist die Einschränkung auf nicht-zyklische Graphen sehr sinnvoll
 ---
 
 # 5. OBDD - Ordered Binary Decision Diagram
+Darstellung als Entscheidungsbaum:
+- durchgezogene Linie: Variable ist 1
+- gestrichelte Linie: Variable ist 0
+![[Pasted image 20251030095225.png]]
+
+## Variablenordnung
+- Man darf auf jedem Pfad eine Variable nur einmal (auch keinmal erlaubt) abfragen, womit automatisch die Festlegung auf eine bestimmte Reihenfolge der Variablen notwendig wird.
+- Die Variablenordnung kann beliebig gewählt werden, je nach Variablenordnung kann der kleinstmögliche OBDD aber eine sehr unterschiedliche Größe haben.
+  
+z.b. Kleinster OBDD mit dieser Variablenordnung:
+![[Pasted image 20251030110626.png]]
+
+Wählt man einfach eine Variablenordnung nach absteigenden Index ist plötzlich dies der kleinste OBDD:
+![[Pasted image 20251030110704.png]]
+## Herleitung über Kofaktoren
+Setzt man in einer Booleschen Funktion eine Eingabevariable auf einen festen Wert, so erhält man eine neue boolesche Funktion mit einer Variable weniger.
+Bsp:
+	$f(x_{1},x_{0})=x_{1}\wedge x_{0}$
+	
+	$f(x_{1}/ 1)=1\wedge x_{0}=x_{0}$
+	$f(x_{1}/ 0)=0\wedge x_{0}=0$
+	
+Macht man dies rekursiv erhält man einen OBDD - jeder Knoten ist die Festlegung einer Variable auf 1 (durchgezogener Ast) oder 0 (gestrichelter Ast) und der Folgeknoten dann die Folgeknoten die Kofaktoren mit der jeweiligen Variable als Fest 1 oder 0.
+
+Zieht man dies bis zum Ende durch hat man konstante boolesche Funktionen ohne Variablen, die den Blättern gleichkommen.
