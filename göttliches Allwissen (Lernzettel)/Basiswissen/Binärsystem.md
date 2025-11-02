@@ -107,5 +107,7 @@ $$
 In der Praxis ist es sinnvoll, jeden Term der Form $x\cdot y_{i}\cdot 2^{i}$ sofort zur laufenden Summe zu addieren, sobald der generiert wurde.
 
 
-
+>[!def] Bitshifts sind Multiplikation / Division mit $2$
+>$x\ll k =x\cdot 2^{k}$
+>$x\gg k=x:2^{k}$
 
