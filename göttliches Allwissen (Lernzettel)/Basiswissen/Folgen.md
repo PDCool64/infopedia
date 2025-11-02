@@ -20,6 +20,8 @@ Rekursive folgen müssen, um überhaupt eindeutig definiert zu sein, einen "Anke
 
 Obwohl beide Ansätze gleichmächtig sind, ist es sehr oft nicht einfach (auch mit Rechenleistung) möglich, jede rekursive Folge in eine explizite Darstellung zu bringen.
 
+Formell definier man die Rekursive Folge
+
 # Monotonie einer Folge
 Die Monotonie einer Folge lässt sich mit den gleichen Definitionen bestimmen, wie sie auch bei reellen Funktionen greifen:
 [[Monotonie von Funktionen]]. Nicht anwendbar sind hingegen Verfahren der Differenzialrechnung, da "gestückelte" Folgen nicht differenzierbar sind. ^711ffd
