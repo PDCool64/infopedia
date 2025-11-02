@@ -17,3 +17,11 @@ $g_{n}$ hingegen ist die Abbildung, welche den Rekursionsschritt selbst definier
 
 ---
 # Rekursion für [[Summenzeichen und Produktzeichen]]
+
+>[!def]
+> Es seien reelle Zahlen $a_{k},k\in \mathbb{N}$ gegeben.
+> Für jedes $n\in \mathbb{N}$ definiere die Summe $\sum_{k=1}^{n}a_{k}$ rekursiv durch
+> $$\sum_{k=1}^{1}a_{k}:=a_{1}$$
+> und $$\sum_{k=1}^{n+1}a_{k}:=\left( \sum_{k=1}^{n}a_{k} \right)+a_{n+1}$$
+> Analog definiert man das Produkt $\prod_{k=1}^{n}a_{k}$ durch $$\prod_{k=1}^{1}a_{k}:=a_{1}$$
+> und $$\prod_{k=1}^{n+1}a_{k}:=\left( \prod_{k=1}^{n}a_{k} \right)+a_{n+1}$$

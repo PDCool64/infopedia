@@ -74,6 +74,7 @@ Die Negation wird vor allen anderen Operatoren ausgeführt (vgl. Punkt-vor-Stric
 > ---
 > 
 > Anders als $A\vee B$ oder $A\wedge B$ ist die Subjunktion *nicht* symmetrisch.
+> 
 > ---
 > Das man aus einer Falschen Aussage alles folgern kann ist nicht ganz intuitiv.
 > Erklärungsansatz: 

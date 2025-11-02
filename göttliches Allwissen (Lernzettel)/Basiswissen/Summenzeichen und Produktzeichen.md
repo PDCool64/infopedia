@@ -6,7 +6,7 @@
 >  - $\prod_{i\in I}$ das **Produkt** der Zahlen $a_{i}$ mit $i\in I$
 >
 
-Definiert sind beide Zeichen   [[Rekursion#Rekursion für Summenzeichen und Produktzeichen|Rekursion]].
+Für eine Formale Definition von Summen und Produktzeichen: [[Rekursion#Rekursion für Summenzeichen und Produktzeichen|Rekursive Definition von Summe und Produkt]].
 ## Schreibweisen:
 Ist die Indexmenge $I$ aus [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürliche Zahlen]] wie $I=\{ 1,2,3,\dots,n \}$ gegeben, kann auch geschrieben werden:$$
 \sum_{i\in I}=\sum_{i=1}^{n}
