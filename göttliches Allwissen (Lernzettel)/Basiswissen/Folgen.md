@@ -20,7 +20,7 @@ Rekursive folgen müssen, um überhaupt eindeutig definiert zu sein, einen "Anke
 
 Obwohl beide Ansätze gleichmächtig sind, ist es sehr oft nicht einfach (auch mit Rechenleistung) möglich, jede rekursive Folge in eine explizite Darstellung zu bringen.
 
-Formell definier man die Rekursive Folge
+Das zwei rekursiv Definierte Folgen mit gleichem Startwert und gleicher Rekursionsvorschrift tatsächlich identisch sind, zeigt der [[Rekursion|Dedekindische Rekursionssatz]].
 
 # Monotonie einer Folge
 Die Monotonie einer Folge lässt sich mit den gleichen Definitionen bestimmen, wie sie auch bei reellen Funktionen greifen:
