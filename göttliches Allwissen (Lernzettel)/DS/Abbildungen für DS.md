@@ -4,6 +4,9 @@ tags:
 status: rot
 ---
 ---
+
+Die meisten Infos zum Thema befinden sich in der Hauptnotiz [[Abbildungen]]. Hier werden nur spezifische Unterschiede für DS thematisiert.
+
 Für die meisten Anwendungen funktioniert hier alles genau wie sonst, nur beschreibt man hier den "Zuordnung"s-Teil der Abbildung durch **geordnete Paare**. Die wirklich rigorose Definition haben wir nicht, und man will so weit möglich den in Afi -und auch im DS Skript-bestehenden Haken umschiffen, dass man "Abbildung" nur durch ein Synonym, nämlich "Vorschrift" ersetzt hat. 
 Um dies hier ein wenig zu verschönern, findet sich die "Verknüpfung"/"Zuordnung"/"Vorschrift" hier in der Menge der geordneten Paare wieder.
 
