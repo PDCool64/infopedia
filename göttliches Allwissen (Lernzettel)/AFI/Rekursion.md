@@ -32,11 +32,12 @@ $g_{n}$ hingegen ist die Abbildung, welche den Rekursionsschritt selbst definier
 > D.h. zu jeder "expliziten" Abbildung $f$ existiert eine eindeutige rekursive Folge, die die Funktionswerte an den natürlichen Zahlen nachbildet.
 
 
-## Wichtige Bemerkung:
+## Wichtige Bemerkung: Existenz $\neq$ Praktisch
 - Die reine Existenz und Eindeutigkeit einer Expliziten Abbildung ist nur dies, und nichts mehr. Die explizite Form ist oft:
 	- nicht konstruierbar
 	- nicht als Formel aufschreibbar
-	- nicht berrechnbar
+	- nicht berechenbar
+- Aus expliziten Formen kann man formell immer eine triviale rekursive Form bauen, auch wenn diese oft keine "schönen" kleinen Rekusionsschritte ergeben.
 
 ---
 # Rekursion für [[Summenzeichen und Produktzeichen]]
