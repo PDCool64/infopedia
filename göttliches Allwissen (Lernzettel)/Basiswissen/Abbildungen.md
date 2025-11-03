@@ -136,3 +136,22 @@ Will man diese Funktion Injektiv machen, kann man sie umschreiben zu: $\overset{
 > $$
 > Für die Mächtigkeit dieser Menge -bzw. die Anzahl an Abbildungen- gilt:
 > $$\left| \{ f:M\to N \} \right|=\left| N \right|^{\left| M \right|}$$
+
+## Bemerkungen
+- Es ist z.B. $|\text{Abb}(\{ 0,1 \},\{ a,b,c \})|=3^{2}=9$ weil es für jeden der $2$ Werte im Definitionsberreich $3$ unabhängig auswählbare Werte im Zielbereich gibt. 
+---
+# Abbildungen mit der leeren Menge
+
+>[!def] Abbildung in die leere Menge
+> Sei $N$ eine Menge (*die auch leer seien darf*), dann existiert *genau eine* Abbildung
+> $\emptyset\to N$
+> nämlich (In [[Abbildungen für DS|DS-Tupelschreibweise]]) $f=\emptyset$ 
+> 
+> Mann kann nämlich keine Tupel $\emptyset \times N=\emptyset$ bilden und somit ist $f\subseteq \emptyset \times N$ die leere Menge.
+
+## Bemerkung
+Dies passt ebenfalls zur Definition der [[#Menge von Abbildungen]]: $\left| \text{Abb}(\emptyset ,N) \right|=\left| N \right|^{\left| \emptyset \right|}=\left| N \right|^{0}=1$
+
+Es existiert *keine* Abbildung von einer nichtleeren Menge in die Leere Menge, d.h. $M\to \emptyset$ mit $M\neq \emptyset$. Denn um eine Abbildung zu sein, muss jedem $x\in M$ ein $y\in \emptyset$ zugewiesen werden, wobei aber keine $y$ existieren, die man verwenden könnte.
+
+Hingegen existiert eine einzige Abbildung $f:\emptyset\to \emptyset$ mit $f=\emptyset$ ([[Abbildungen für DS|DS-Tupelschreibweise]]). Denn die Bedingung "Alle $x\in \emptyset$ werden auf ein $y\in \emptyset$ abgebildet" ist immer erfüllt, da erst gar keine $x\in \emptyset$ existieren.
