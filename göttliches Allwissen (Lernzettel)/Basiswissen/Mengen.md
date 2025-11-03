@@ -133,6 +133,9 @@ $$
 Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist $$
 \left| M \right| =\sum_{C\in\mathcal{P}}\left| C \right| 
 $$
+
+moin servus
+
 # Potenzmenge
 
 >[!def] Potenzmenge

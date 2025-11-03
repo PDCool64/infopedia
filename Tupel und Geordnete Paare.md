@@ -29,5 +29,6 @@ $t(1)=1\;,\;t(2)=-3\;,\;t(3)=t(4)=0\;,\;t(5)=27$
 - die Mengen $\underline{n}:=\{ 1,2,3,\dots,n \}$ sind "Anfangsstücke" der [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürlichen Zahlen]].
 
 
-
+---
+# Verbindung zum [[Mengen]]
 
