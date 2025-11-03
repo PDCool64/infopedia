@@ -129,7 +129,8 @@ $$
 \left|  \bigcup_{i\in I} M_{i}\right|=\sum_{i\in I} \left| M_{i} \right| 
 $$
 
-Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist $$
+Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist 
+$$
 \left| M \right| =\sum_{C\in\mathcal{P}}\left| C \right| 
 $$
 
@@ -164,7 +165,7 @@ Beispiel:
 > Wortstamm "kartesisch" kommt von [René Descartes](https://de.wikipedia.org/wiki/Ren%C3%A9_Descartes) 
 
 >[!def] Kartesisches Produkt
->Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller *geordneten Paare*
+>Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller [[Tupel und Geordnete Paare|Geordneten Paare / Tupel]] 
 >$$A\times B:=\{ (a,b)\mid a \in A,b\in B \}$$
 >das *kartesische Produkt der Mengen A und B*.
 >
@@ -175,7 +176,7 @@ Beispiel:
 >
 >
 >
- Sind die Mengen gleich,so schreiben wir
+ Sind die Mengen gleich, so schreiben wir
 >$$A^n=A\times\dots\times A$$
 
 Zu beachten:

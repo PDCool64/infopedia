@@ -30,5 +30,6 @@ $t(1)=1\;,\;t(2)=-3\;,\;t(3)=t(4)=0\;,\;t(5)=27$
 
 
 ---
-# Verbindung zum [[Mengen]]
+# Verbindung zum [[Mengen#Kartesisches Produkt|Kartesischen Produkt]] 
+
 
