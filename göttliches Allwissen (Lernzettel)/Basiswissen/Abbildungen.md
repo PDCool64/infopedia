@@ -125,3 +125,14 @@ Will man diese Funktion Injektiv machen, kann man sie umschreiben zu: $\overset{
 > 
 > Man nennt $f^{-1}$ die **Umkehrabbildung** von $f$. Sie ist charakterisiert durch:
 > $$\forall_{x\in A,y\in B}:\;f(x)=y \iff f^{-1}(y)=x$$
+
+---
+# Menge von Abbildungen
+
+>[!def]
+> Es seien $M,N$ Mengen, dann ist die **Menge der Abbildungen von $M$ nach $N$**:
+> $$
+> \text{Abb}(M,N)=N^{M}:=\{ f:M\to N \}
+> $$
+> Für die Mächtigkeit dieser Menge -bzw. die Anzahl an Abbildungen- gilt:
+> $$\left| \{ f:M\to N \} \right|=\left| N \right|^{\left| M \right|}$$
