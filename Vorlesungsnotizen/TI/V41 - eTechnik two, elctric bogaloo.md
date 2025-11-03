@@ -62,3 +62,4 @@ Man muss somit mit einer Gleichung weniger Rechnen - aber am Ende wieder von den
 # Knotenspannungsanalyse
 Ersetze die Spannungsquellen durch Stromquellen - wähle dabei die Stromstärke der Stromquellen so, dass an der Schnittstelle an der die "neue" Stromquelle eingesetzt wurde wieder die gleichen Bedingungen herrschen wie mit der Spannungsquelle.
 
+
