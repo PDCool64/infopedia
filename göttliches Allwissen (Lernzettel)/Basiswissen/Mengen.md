@@ -110,8 +110,9 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 
 >[!def] Mächtigkeit einer Menge
 > Sei $M$ eine nicht-leere Menge. Gibt es [[paarweise verschiedene]] Elemente $x_{1},\dots,x_{n}$ mit $n\in \mathbb{N}$, sodass $M=\{ x_{1},x_{2},\dots,x_{n} \}$, so definiert man die **Mächtigkeit** $\#M$, auch geschrieben als $|M|$ als:
-> $$\#M:=n$$ 
-> 
+> $$
+> \#M:=n
+> $$ 
 > Andernfalls setzt man $\#M=\infty$ .
 > Man definiert $\#\emptyset:=0$ 
 > 
@@ -119,7 +120,7 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 > Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
 
 
-sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
+Sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
 (ohne die Subtraktion würde man die Elemente, welche in beiden Mengen liegen doppelt zählen.)
 
 Für [[paarweise verschieden und paarweise disjunkt#^7df85e|paarweise disjunkte]] Mengen ist die Mächtigkeit der Schnittmenge immer $0$, also gilt
