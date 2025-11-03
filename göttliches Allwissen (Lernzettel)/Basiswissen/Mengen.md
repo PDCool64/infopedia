@@ -110,9 +110,7 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 
 >[!def] Mächtigkeit einer Menge
 > Sei $M$ eine nicht-leere Menge. Gibt es [[paarweise verschiedene]] Elemente $x_{1},\dots,x_{n}$ mit $n\in \mathbb{N}$, sodass $M=\{ x_{1},x_{2},\dots,x_{n} \}$, so definiert man die **Mächtigkeit** $\#M$, auch geschrieben als $|M|$ als:
-> $$
-> \#M:=n
-> $$ 
+> $$\#M:=n$$ 
 > 
 > Andernfalls setzt man $\#M=\infty$ .
 > Man definiert $\#\emptyset:=0$ 
