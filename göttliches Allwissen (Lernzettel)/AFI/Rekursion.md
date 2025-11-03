@@ -15,6 +15,8 @@ $r$ ist hier die Abbildung, die dem "Anwender" letztendlich für jede natürlich
 
 $g_{n}$ hingegen ist die Abbildung, welche den Rekursionsschritt selbst definiert, d.h. definiert wie genau man für diese speziellen Sachverhalt vom $n$-ten auf den $n+1$-ten Wert kommt.
 
+
+
 ---
 # Rekursion für [[Summenzeichen und Produktzeichen]]
 

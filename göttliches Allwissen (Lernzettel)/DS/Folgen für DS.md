@@ -25,3 +25,11 @@ Für mehr Infos, die aber noch auf weniger rigorosem Schulwissen basieren gibt e
 
 ---
 # Rekursive Folgen
+Folgen lassen sich auch *rekursiv definieren*, was ein "gleichmächtiger" Ansatz ist.
+Bsp. $(a_{n})_{n\geq 1}:a_{n+1}=2a_{n}\;,\;a_{1}=1$ ist gleichbedeutend zu $(\tilde{a}_{n})_{n\geq 1}:a_{n}=2^{n}$
+
+Rekursive folgen müssen, um überhaupt eindeutig definiert zu sein, einen "Anker" haben, d.h. das Folgenglied $a_{1}$ muss angegeben werden.
+
+Obwohl beide Ansätze gleichmächtig sind, ist es sehr oft nicht einfach (auch mit Rechenleistung) möglich, jede rekursive Folge in eine explizite Darstellung zu bringen.
+
+Das zwei rekursiv Definierte Folgen mit gleichem Startwert und gleicher Rekursionsvorschrift tatsächlich identisch sind, zeigt der [[Rekursion|Dedekindische Rekursionssatz]].
