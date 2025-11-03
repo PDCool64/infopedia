@@ -4,8 +4,10 @@ tags:
 status: rot
 ---
 ---
-Für die meisten Anwendungen funktioniert hier alles genau wie sonst, nur beschreibt man hier den "Zuordnung"s-Teil der Abbildung durch **geordnete Paare**. Die Rigorose Definition haben wir nicht, und man will so weit möglich den in Afi -und auch im DS Skript-bestehenden Haken umschiffen, dass man "Abbildung" nur durch ein Synonym, nämlich "Vorschrift" ersetzt hat. 
+Für die meisten Anwendungen funktioniert hier alles genau wie sonst, nur beschreibt man hier den "Zuordnung"s-Teil der Abbildung durch **geordnete Paare**. Die wirklich rigorose Definition haben wir nicht, und man will so weit möglich den in Afi -und auch im DS Skript-bestehenden Haken umschiffen, dass man "Abbildung" nur durch ein Synonym, nämlich "Vorschrift" ersetzt hat. 
 Um dies hier ein wenig zu verschönern, findet sich die "Verknüpfung"/"Zuordnung"/"Vorschrift" hier in der Menge der geordneten Paare wieder.
+
+D.h. das was wir in Afi nur als "Graph der Funktion" $G_{f}\subseteq M\times N$ bezeichnen, nehmen wir hier zur Konstruktion zur Hand und definieren die "Zuordnung" selbst durch den Inhalt der geordneten Paare: $f\subseteq M\times N$ 
 
 ---
 Seien $M,N$ [[Mengen]]. Eine **Abbildung** $f$ von $M$ nach $N$ ist eine "Vorschrift" (z.B. eine Formel), die jedem $x\in M$ *genau ein* Element $f(x)\in N$ zuordnet, geschrieben$$f:M\to N\;,\;x\mapsto f(x)$$
