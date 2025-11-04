@@ -17,7 +17,7 @@
 > nennt man *Graph von $f$*.
 >
 >---
->Zei Abbildungen 
+>Zwei Abbildungen 
 > $f: A \to B$ und  $g: U \to V$ heißen gleich,
 >  wenn $A=U \land B=V$ und $f(x) = g(x) \forall x \in A$
 
@@ -53,20 +53,24 @@ $g: \mathbb{R} \to \mathbb{R}, x \mapsto (x+r)^{2}$
   Die Umkehrabbildung (welche einzelne Elemente abbilden würde) existiert aber nur für bijektive Abbildungen und kann nicht allgemein angenommen werden.
 - Die nichtleeren Fasern einer Abbildung bilden eine [[Mengen#Partition einer Menge|Partition]] des Definitionsbereichs.
 
-
-
-
 ---
 # Restriktion des Definitionsbereichs
 >[!def] Restriktion einer Abbildung
 > 
-> Ist $f:A\to B,\;x\mapsto f(x)$ eine Abbildung und $M$ eine nicht-leere Teilmenge des Definitionsbereichs $A$, so heißt die Abbildung $$
+> Ist $f:A\to B,\;x\mapsto f(x)$ eine Abbildung und $M\subseteq A$ eine nicht-leere Teilmenge des Definitionsbereichs $A$, so heißt die Abbildung $$
 > f|_{M}:M\to B,\;x\mapsto(f|_{M})(x):=f(x)
 > $$ die **Restriktion** oder **Einschränkung** von $f$ auf $M$. 
 
+- Jede Abbildung kann durch Einschränkung auf eine geeignete Teilmenge des Definitionsbereichs [[#Injektiv, Surjektiv, Bijektiv|Injektiv]] gemacht werden.
+
+Eine besondere Einschränkung ist die sog. **Inklusion**:
+	Sei $M$ eine Menge, $N\subseteq M$:
+	$\iota =\iota^{N}:=(\text{id}_{M})|_{N}:N\to M$
+
+
 ---
 # Verkettung zweier Abbildungen
->[!def]
+>[!def] Komposition zweier Abbildungen
 > Ist $f:A\to B$ eine Abbildung und $g:B\,'\to C$ eine weitere Abbildung mit der Eigenschaft $f(A)\subseteq B\,'$ , so nennt man $$
 > f \circ g:A\to C,\;x\mapsto(g\circ f)(x):=g(f(x))
 > $$ die **Verkettung** oder **Komposition** oder **Hintereinanderausführung** von $f$ und $g$.
