@@ -1,4 +1,9 @@
 
+>[!wip]
+> Diese Notiz ist noch redundant mit [[Abbildungen für DS]] weil die beiden Definitionsansätze noch nicht perfekt zusammengefügt sind.
+
+
+---
 >[!def] Abbildung
 > Seien $A, B$ nicht-leere [[Mengen]]. Eine **Abbildung** $f$ von $A$ nach $B$ ist eine Vorschrift, die jeden $x \in A$ *genau ein* $y \in B$ zuordnet.
 > 
