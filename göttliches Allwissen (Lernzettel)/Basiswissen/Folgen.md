@@ -3,19 +3,14 @@ Diese Notiz besteht aus Infos aus der Schule und ist nicht zwangsweise auf dem S
 
 
 >[!def] Folge
-> Eine **Folge [[Zahlenräume#Reelle Zahlen $ mathbb{R}$|reeller]] Zahlen** ist eine [[Abbildungen|Abbildung]] $a:\mathbb{N}\to \mathbb{R},n\to a(n)$ 
+> Eine [[Abbildungen für DS|Abbildung]] $f:\mathbb{N}\to N$, welche von den [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürlichen Zahlen]] in eine Menge abbildet wird **Folge in $N$** genannt.
 > 
-> ---
+> Schreibweisen:
+> - $f:\mathbb{N}\to N$ wird geschrieben als $a_{1},a_{2},a_{3},\dots$ oder $(a_{i})_{i\in \mathbb{N}}$ 
+>   
+> Nach der Definition der [[Abbildungen#Menge von Abbildungen|Menge von Abbildungen]] ist die Menge aller Folgen in $N$:
+> $\text{Abb}(\mathbb{N},N)=N^{\mathbb{N}}$
 > 
-> Meisten schreiben wir eine Folge kurz als
-> $(a_{n})_{n\geq 1}$ oder $(a_{n})_{n\in \mathbb{N}}$
-> 
-> wobei $a_{n}:=a(n)$
-> 
-> ---
-> 
-> Die Zahlen $a_{n}$ heißen **Folgenglieder**.
-
 ## Rekursive Folgen
 Folgen lassen sich auch *rekursiv definieren*, was ein "gleichmächtiger" Ansatz ist.
 Bsp. $(a_{n})_{n\geq 1}:a_{n+1}=2a_{n}\;,\;a_{1}=1$ ist gleichbedeutend zu $(\tilde{a}_{n})_{n\geq 1}:a_{n}=2^{n}$

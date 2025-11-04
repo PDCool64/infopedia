@@ -178,11 +178,27 @@ Beispiel:
 >
  Sind die Mengen gleich, so schreiben wir
 >$$A^n=A\times\dots\times A$$
+>
+>---
+>Verwendet man die Schreibweise von [[Tupel und Geordnete Paare|Tupeln / geordneten Paaren]] als [[Abbildungen]], lautet die Definition:
+>
+>Es sei $n\in \mathbb{N}$ und $M_{i}$ eine Menge für alle $i\in \underline{n}$.
+>Wir setzten $M:=\bigcup_{i\in \underline{n}}M_{i}$ und definieren 
+>$$
+>M_{1}\times \dots \times M_{n} := \{ f:\underline{n}\to M \mid f(i)\in M_{i} \;\forall_{i\in \underline{n}} \}
+>$$
+>als das **kartesische Produkt** der Mengen $M_{i},\dots,M_{n}$.
+>
+>Wir schreiben $(x_{1},\dots,x_{n})$ oder $(x_{i})_{i\in \underline{n}}$ für die enthaltenen Abbildungen $f\in M_{1}\times\dots \times M_{n}$ wobei $x_{i}:=f(i)$ für $1\le i\le n$.
+
+
+
 
 Zu beachten:
 - *geordnete* $n$-Tupel bedeutet, dass die Reihenfolge der Einträge wichtig ist.
   (vgl. Tuple in Python usw.)
 - $\emptyset \times M=M\times \emptyset=\emptyset$ für jede Menge $M$
+
 
   
 ### Beispiele:
