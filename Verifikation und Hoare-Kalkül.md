@@ -202,3 +202,41 @@ $$
 }
 $$
 
+> "einzige Regel, für die man Kreativität braucht"
+
+Man muss eine geeignete Schleifeninvariante $\varphi$ finden, die drei Eigenschaften erfüllt:
+- $\varphi$ Muss tatsächlich eine Schleifeninvariante sein.
+- $\varphi$ muss aus der Vorbedingung folgen (und dafür meist eher schwach sein)
+- Die gewünschte Nachbedingung muss aus der Schleifeninvariante $\varphi$ und der negierten Schleifenbedingung $\neg B$ folgen. (`true` ist beispielsweise viel zu schwach, um daraus viel folgern zu können)
+
+> Tipp: Fange von unten an, und probiere mal die Nachbedingung als mögliche Schleifeninvariante aus Meist muss man diese aber so anpassen, das daraus eine Schleifeninvariante wird. 
+
+Am besten führt man zum Testen die Schleife mal mit typischen Variablen aus und probiert, ob das ganze eine Schleifeninvariante sein kann - Tabelle für Variablen pro Durchlauf hilft.
+
+Hat man eine Schleifeninvariante gefunden, muss man sie nur noch 4 Stellen einsetzen und mit den übrigen Regeln die Lücken schließen.
+- Vor der gesamten Schleife
+- In der Schleife vor dem Schleifenrumpf - zusammen mit Schleifenbedingung
+- In der Schleife nach dem Schleifenrumpf
+- Nach der Schleife - zusammen mit negierter Schleifenbedingung
+
+Beispiel:
+
+![[Verifikation und Hoare-Kalkül 2025-11-05 16.11.21.excalidraw|700]]
+
+Man versucht es zuerst mal mit der Nachbedingung $res=n!$ - merkt aber schnell das diese nicht Invariant ist, wenn man eine Tabelle mit Typischen Eingaben anschaut:
+
+| i   | res                | n   |
+| --- | ------------------ | --- |
+| 4   | 1                  | 4   |
+| 3   | 4                  | 4   |
+| 2   | $4\cdot3$          | 4   |
+| 1   | $4\cdot 3 \cdot 2$ | 4   |
+Mit dem Aufbau der Fakultät kommt man aber schnell auf eine gültige Schleifeninvariante:
+$i!\cdot res= n!$
+
+Hat man eine solche Invariante gefunden, kann es oft passieren, dass diese noch nicht ganz ausreicht, um zusammen mit der negierten Schleifenbedingung die Nachbedingung zu implizieren. Oft reicht es dafür aber, noch eine der vor der schleife gegebenen Informationen über die Laufvariable mitzunehmen.
+
+#### Was tun bei zu schwacher Invariante:
+Häufig ist z.B. für die Nachbedingung notwendig, dass am Ende von ``while (i<n) { ... i++}`` nicht nur $\neg(i<n)\iff i\ge n$ benötigt wird, sondern genau $i=n$.
+Augenscheinlich ist meist offensichtlich, dass die Schleife genau bei $n$ aufhört. Formal muss man aber beachten, dass dies nur der Fall ist, wenn $i$ vor der Schleife überhaupt kleiner oder gleich $n$ war. Hat man tatsächlich einen solchen Fall, kann man meist leicht die Vorbedingung $i\leq n$ mit in die Invariante aufnehmen um am Ende zu erhalten:
+$\neg(i<n)\wedge i\le n \implies i\ge n \land i \le n \implies i=n$ 
