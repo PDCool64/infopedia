@@ -3,7 +3,7 @@ tags:
 status: rot
 ---
 ---
-# Was ist Verifkation?
+# Was ist Verifikation?
 Es geht hier nicht mehr darum, dass eine Programm *syntaktisch* korrekt ist -das kann der Compiler für uns recht einfach machen. (s.h.[[Formale Sprachen und Grammatiken]])- sondern darum dass es *semantisch* d.h. inhaltlich und von der Funktion korrekt ist.
 
 ## Begriffe
