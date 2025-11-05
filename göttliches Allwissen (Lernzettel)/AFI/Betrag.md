@@ -19,7 +19,10 @@ Damit lässt sich für alle $x,y\in K$ zeigen:
 - $\left| \frac{1}{y} \right|=\frac{1}{\left| y \right|}$ sowie $\left| \frac{x}{y} \right|=\frac{\left| x \right|}{\left| y \right|}\text{ für }y\neq 0$
 
 - $\left| x+y \right|\le\left| x \right|+\left| y \right|$ (*Dreiecksungleichung*)
-> Die **Dreiecksungleichung** wird für viele Beweise wichtig bleiben. Sie erlaubt ein praktisches Abschätzen von größer/kleiner Beziehungen. Eine geometrische Interpretation ist, dass die Summe der Länge der Katheten größer als die Länge der Hypothenuse eines Dreiecks ist.
+> Die **Dreiecksungleichung** wird für viele Beweise wichtig bleiben. Sie erlaubt ein praktisches Abschätzen von größer/kleiner Beziehungen. 
+> 
+> Eine geometrische Interpretation ist, dass der kürzeste Weg zwischen zwei Punkten eine Gerade ist. Mit Vektoren: Sei $\vec{x}$ der kürzeste Weg von $A$ nach $B$ und $\vec{y}$ der kürzeste Weg von $B$ nach $C$, so ist der direkte Weg $A\to C$ immer kürzer oder gleich dem Weg $A\to B\to C$ d.h.
+> $\left| \vec{x}+\vec{y} \right|\le\left| \vec{x} \right|+\left| \vec{y} \right|$.
 
 - $\left| x+y \right|\ge\left| \left| x \right|-\left| y \right| \right|\ge\left| x \right|-\left| y \right|$ (*2. Dreieckungleichung*)
 
