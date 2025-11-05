@@ -201,3 +201,4 @@ $$
 {\color{red}{<\varphi>}}\;\text{ while (B) \{P\} }{\color{red}{<\varphi \land \neg \text{B}>}}
 }
 $$
+
