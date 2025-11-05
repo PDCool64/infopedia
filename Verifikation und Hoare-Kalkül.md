@@ -139,3 +139,65 @@ Beispiele:
 {\color{red}{<x\ge5>}}
 \end{array}
 $$
+
+### Sequenzregel
+$$
+\frac{
+{\color{red}{<\varphi>}}
+\text{ P }
+{\color{red}{<\psi>}}\quad
+{\color{red}{<\psi>}}
+\text{ Q }
+{\color{red}{<\beta>}}}
+{
+{\color{red}{<\varphi>}}\;\text{ P Q }{\color{red}{<\beta>}}
+}
+$$
+Wenn die Nachbedingung von P gleich der Vorbedingung von Q ist, gilt dann ist auch P Q verifizierbar.
+
+### Bedingungsregel 1 (if-Anweisung)
+$$
+\frac{
+{\color{red}{<\varphi \land \text{B}>}}
+\text{ P }
+{\color{red}{<\psi>}}\quad
+{\color{red}{\psi \land \neg B}}\implies{\color{red}{\psi}}}
+{
+{\color{red}{<\varphi>}}\;\text{ if (B) \{P\} }{\color{red}{<\psi>}}
+}
+$$
+Damit $\psi$ nach einem if-Block gilt, muss $\psi$ sowohl gelten,
+- nach dem das Programm $P$ ausgeführt wurde weil $B$ gilt.
+- nach dem der if-Block nicht ausgeführt wurde weil $\neg B$ gilt.
+
+> d.h. auf beiden möglichen Pfaden muss die gleiche Nachbedingung $\psi$ entstehen, um gültig zu sein.
+
+### Bedingungsregel 2 (if-else-Anweisung)
+$$
+\frac{
+{\color{red}{<\varphi \land \text{B}>}}
+\text{ P }
+{\color{red}{<\psi>}}\quad
+{\color{red}{<\varphi \land \neg\text{B}>}}
+\text{ Q }
+{\color{red}{<\psi>}}}
+{
+{\color{red}{<\varphi>}}\;\text{ if (B) \{P\} else \{Q\} }{\color{red}{<\psi>}}
+}
+$$
+Damit $\psi$ nach einem if-Block gilt, muss $\psi$ sowohl gelten,
+- nach dem das Programm $P$ ausgeführt wurde weil $B$ gilt.
+- nach dem das Programm $Q$ ausgeführt wurde weil $\neg B$ gilt.
+
+> d.h. auf beiden möglichen Pfaden muss die gleiche Nachbedingung $\psi$ entstehen, um gültig zu sein.
+
+## Schleifenregel
+$$
+\frac{
+{\color{red}{<\varphi \land \text{B}>}}
+\text{ P }
+{\color{red}{<\varphi>}}}
+{
+{\color{red}{<\varphi>}}\;\text{ while (B) \{P\} }{\color{red}{<\varphi \land \neg \text{B}>}}
+}
+$$
