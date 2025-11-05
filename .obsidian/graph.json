@@ -41,6 +41,20 @@
         "a": 1,
         "rgb": 15990599
       }
+    },
+    {
+      "query": "path:\"göttliches Allwissen (Lernzettel)/DS\" tag:#DS  ",
+      "color": {
+        "a": 1,
+        "rgb": 10289341
+      }
+    },
+    {
+      "query": "path:Vorlesungsnotizen/DS  ",
+      "color": {
+        "a": 1,
+        "rgb": 14745855
+      }
     }
   ],
   "collapse-display": true,
@@ -48,10 +62,10 @@
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
+  "collapse-forces": false,
+  "centerStrength": 0.374306213618519,
   "repelStrength": 10,
-  "linkStrength": 1,
+  "linkStrength": 0.777176120211182,
   "linkDistance": 250,
   "scale": 0.3242333124405645,
   "close": false

@@ -1,5 +1,6 @@
 ---
 tags:
+  - PROGRA
 status: rot
 ---
 ---
