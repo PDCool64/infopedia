@@ -38,10 +38,11 @@ Alle Brüche aus zwei [[#Ganze Zahlen $ mathbb{Z}$|Ganzen Zahlen]].
 Allerdings ist diese Darstellung einer rationalen als Bruch nicht eindeutig ist:
 z.B. ist $\frac{1}{2}=\frac{3}{6}=\frac{250}{500}$ usw.
 
+Die Rationalen Zahlen sind ein [[Körper]]
+
 Zwei Brüche sind genau dann gleich, wenn sie durch Kürzen oder Erweitern auseinander hervorgehen.
 - am einfachsten sind die Rational Zahlen durch *vollständig gekürzte* Brüche darstellbar.
   Ein Bruch $\frac{m}{n}\in \mathbb{Q}$ ist vollständig gekürzt, wenn der [[Primzahlen und Teilbarkeit#ggT und kgV|ggT]]$(m,n)=1$ .
-
 
 
 # Reelle Zahlen $\mathbb{R}$

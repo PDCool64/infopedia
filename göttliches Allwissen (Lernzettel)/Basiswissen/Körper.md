@@ -1,7 +1,7 @@
 >[!def] Körper
 > Eine [[Mengen|Menge]] $\mathbb{K}$ bildet einen **Körper**, wenn zu je zwei Zahlen $x,y\in \mathbb{K}$
-> - eine **Summe** $x+y\in \mathbb{K}$
-> - und ein **Produkt** $x\cdot y\in \mathbb{K}$
+> - eine **Summe** $+\;:K\times K\to K\;,\;(a,b)\mapsto a+b$ 
+> - und ein **Produkt** $\cdot\;:K\times K\to K\;,\;(a,b)\mapsto a\cdot b$
 >
 >definiert sind, welche die folgenden Rechenregeln erfüllen:
 >
@@ -34,7 +34,7 @@
 ^a3c120
 
 ## Bemerkungen:
-- Sowohl das neutrale als auch das inverse Element der Addition sowie der Multiplikation sind jeweils *eindeutig*. (Es kann in einem Körper z.B. nicht zwei neutrale Elemente geben)
+- Sowohl das neutrale als auch das inverse Element der Addition sowie der Multiplikation sind jeweils *eindeutig*. (Es kann in einem Körper z.B. nicht zwei neutrale Elemente geben) Dies ist nicht Teil der Definition, kann aber schnell gefolgter werden.
   
 - $\mathbb{N}$ ist *kein* Körper, weil u.A. kein Inverses Element der Addition besteht. ($2+n\neq 0\;,\;n\in \mathbb{N}$)
   

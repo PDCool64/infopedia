@@ -39,14 +39,14 @@
       "query": "path:\"göttliches Allwissen (Lernzettel)/Basiswissen\"  ",
       "color": {
         "a": 1,
-        "rgb": 15990599
+        "rgb": 16056156
       }
     },
     {
       "query": "path:\"göttliches Allwissen (Lernzettel)/DS\" tag:#DS  ",
       "color": {
         "a": 1,
-        "rgb": 10289341
+        "rgb": 8650910
       }
     },
     {
@@ -54,6 +54,20 @@
       "color": {
         "a": 1,
         "rgb": 14745855
+      }
+    },
+    {
+      "query": "path:\"göttliches Allwissen (Lernzettel)/PROGRA\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 487424
+      }
+    },
+    {
+      "query": "path:Vorlesungsnotizen/PROGRA  ",
+      "color": {
+        "a": 1,
+        "rgb": 65356
       }
     }
   ],
@@ -67,6 +81,6 @@
   "repelStrength": 10,
   "linkStrength": 0.777176120211182,
   "linkDistance": 250,
-  "scale": 0.3242333124405645,
+  "scale": 0.5694148860370308,
   "close": false
 }
