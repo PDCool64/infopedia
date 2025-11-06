@@ -25,7 +25,7 @@ Es geht hier nicht mehr darum, dass eine Programm *syntaktisch* korrekt ist -das
 >  Schön zu lesen: [Liste an Softwarebugs (mit größeren Konsequenzen)](614GBN@rwth-aachen.de)
 
 ---
-Man kann diese Zusicherungen mit dem schlüsselwort ``asssert`` gefolgt von einem booleschen Ausdruck auch direkt in seinen Java Code schreiben. standardmäßig werden diese einfach ignoriert, gibt man aber die flag ``-ea`` bzw. ``--enable-assertions`` beim ausführen an, werden die Zusicherungen während des Programmdurchlaufs immer überprüft. Dabei wird ein ``assertion-error`` ausgegeben, sobald der boolesche Ausdruck hinter einem ``assert`` falsch ist.
+Man kann diese Zusicherungen mit dem keyword ``asssert`` gefolgt von einem booleschen Ausdruck auch direkt in seinen Java Code schreiben. standardmäßig werden diese einfach ignoriert, gibt man aber die flag ``-ea`` bzw. ``--enable-assertions`` beim ausführen an, werden die Zusicherungen während des Programmdurchlaufs immer überprüft. Dabei wird ein ``assertion-error`` ausgegeben, sobald der boolesche Ausdruck hinter einem ``assert`` falsch ist.
 
 ---
 # Hoare-Kalkül
