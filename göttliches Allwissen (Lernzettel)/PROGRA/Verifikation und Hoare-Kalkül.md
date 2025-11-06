@@ -251,7 +251,7 @@ Für jede Schleife ``while (B) {P}`` finde einen ``int``-Ausdruck $V$ (**Variant
 - $B\implies V\ge 0$
 - ${\color{red}{<V=m \land B>}}\text{ P }{\color{red}{<V<m>}}$
 
-Es ist also ein Ausdruck $V$ gesucht, der größer oder gleich $0$ seien muss damit die schleife erneut ausgeführt wird, welcher aber bei jedem Schleifendurchlauf kleiner wird.
+Es ist also ein Ausdruck $V$ gesucht, der durch die Schleifenbedingung nach unten Begrenzt ist aber bei jedem Schleifendurchlauf kleiner wird.
 
 Beispiel:
 $$
