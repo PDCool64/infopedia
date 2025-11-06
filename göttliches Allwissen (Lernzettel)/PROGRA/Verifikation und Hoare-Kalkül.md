@@ -25,6 +25,9 @@ Es geht hier nicht mehr darum, dass eine Programm *syntaktisch* korrekt ist -das
 >  Schön zu lesen: [Liste an Softwarebugs (mit größeren Konsequenzen)](614GBN@rwth-aachen.de)
 
 ---
+Man kann diese Zusicherungen mit dem schlüsselwort ``asssert`` gefolgt von einem booleschen Ausdruck auch direkt in seinen Java Code schreiben. standardmäßig werden diese einfach ignoriert, gibt man aber die flag ``-ea`` bzw. ``--enable-assertions`` beim ausführen an, werden die Zusicherungen während des Programmdurchlaufs immer überprüft. Dabei wird ein ``assertion-error`` ausgegeben, sobald der boolesche Ausdruck hinter einem ``assert`` falsch ist.
+
+---
 # Hoare-Kalkül
 > Benannt nach Tony Hoare
 
@@ -241,3 +244,25 @@ Hat man eine solche Invariante gefunden, kann es oft passieren, dass diese noch 
 Häufig ist z.B. für die Nachbedingung notwendig, dass am Ende von ``while (i<n) { ... i++}`` nicht nur $\neg(i<n)\iff i\ge n$ benötigt wird, sondern genau $i=n$.
 Augenscheinlich ist meist offensichtlich, dass die Schleife genau bei $n$ aufhört. Formal muss man aber beachten, dass dies nur der Fall ist, wenn $i$ vor der Schleife überhaupt kleiner oder gleich $n$ war. Hat man tatsächlich einen solchen Fall, kann man meist leicht die Vorbedingung $i\leq n$ mit in die Invariante aufnehmen um am Ende zu erhalten:
 $\neg(i<n)\wedge i\le n \implies i\ge n \land i \le n \implies i=n$ 
+
+---
+# Terminierung
+Für jede Schleife ``while (B) {P}`` finde einen ``int``-Ausdruck $V$ (**Variante der Schleife**), so dass:
+- $B\implies V\ge 0$
+- ${\color{red}{<V=m \land B>}}\text{ P }{\color{red}{<V<m>}}$
+
+Es ist also ein Ausdruck $V$ gesucht, der größer oder gleich $0$ seien muss damit die schleife erneut ausgeführt wird, welcher aber bei jedem Schleifendurchlauf kleiner wird.
+
+Beispiel:
+$$
+\begin{array}{l} \\
+\text{while (i>1)\{} \\
+{\color{red}{<i=m \land i>1>}} \\
+{\color{red}{<i-1<m>}}\\
+\text{res = res*i; i=i-1;}\\
+
+{\color{red}{<i<m>}} \\
+\text{\}}
+\end{array}
+
+$$
