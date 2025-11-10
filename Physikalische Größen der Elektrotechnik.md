@@ -14,12 +14,12 @@ Elektronen und Protonen sind **Ladungsträger**, die jeweils den positiven oder 
 
 > **Elementarladung** : $e\approx 1.602 \cdot 10^{-19}C$ 
 
-Ladung eines Elektrons: $e$
-Ladung eines Protons: $-e$
+Ladung eines Elektrons: $-e$
+Ladung eines Protons: $e$
 
 Da Elektronen/Protonen für unsere Zwecke nicht gespalten werden können, ist dies die kleinste Einheit in die sich Ladung aufteilen lässt: Sie liegt somit **quantisiert** vor.
-Die Ladung eines Körpers ist somit immer ein Vielfaches der Elementarladung:
-$Q=e\cdot n\mid n\in \mathbb{N}$
+Die Ladung eines Körpers ist somit immer ein ganzes Vielfaches der Elementarladung:
+$Q=e\cdot z\mid z\in \mathbb{Z}$
 
 ## Entstehen der Ladung eines Körpers
 Elektronen und Protonen können weder erzeugt noch vernichtet werden.
@@ -45,6 +45,7 @@ Dabei ist:
 - $r^{2}$ die Distanz zwischen beiden Körpern.
 - $\vec{r_{0}}$ der Richtungsvektor von $Q_{0}$ zu $Q_{1}$ (Einheitsvektor)
 
+- $K$ eine vom Medium abhängige Konstante
 
 ![[Physikalische Größen der Elektrotechnik 2025-11-10 10.15.39.excalidraw]]
 
@@ -82,7 +83,29 @@ Gedankenexperiment:
 Es wird die **Spannung** definiert als:
 Durch Ladungsverschiebung zur Verfügung stehende Energie, bezogen auf die Menge der verschobenen Energie.
 
-$$U=\frac{W}{Q}$$
+$$U=\frac{W}{Q}\quad \text{bzw.} \quad V= \frac{J}{C}$$
 Man teilt durch die Menge an Ladungsträgern, um herauszufinden, wie viel _potentielle Energie pro Ladungsträger_ vorliegt.
 
-> $U$ ist praktisch die S
+> $U$ ist praktisch der Proportionalitätsfaktor zwischen aufgebrachter Energie und Ladungsmenge in einem bestimmten System zu einem bestimmten Zeitpunkt.
+
+Da es immer um die Energie geht, die aufgebracht werden musste um eine Ladungsungleichverteilung *zwischen zwei Orten* zu erzeugen, besteht die Spannung *relativ* zwischen zwei Punkten.
+## Im Schaltkreis
+- Ladung wirkt zwischen zwei Punkten im Schaltkreis
+- In der Regel gibt man die Spannung eines Punktes $p$ in einem Schaltkreis in Bezug auf einen *festen Nullpunkt* an. Man spricht dann vom **Potential** des Punktes.
+  Dieser Nullpunkt heißt im Schaltkreis **Masse**: Symbol ⏚ 
+
+
+---
+# Elektrischer Strom
+Symbol: $I$
+Einheit: $A$ (Ampere)
+
+Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.
+
+> Die **Stromstärke** $I$ ist die Menge der bewegten Ladung pro Zeiteinheit.
+$$I=\frac{\Delta Q}{\Delta t}\quad\text{bzw.}\quad 1\text{A}= \frac{1\text{C}}{1\text{s}}$$
+
+![[Pasted image 20251110110022.png|400]]
+Gedankenexperiment dazu:
+- Man stelle sich an eine Stelle im Leiter und zählt, wie viele Ladungsträger pro Zeiteinheit an einem Vorbeifließen.
+
