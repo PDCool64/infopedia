@@ -12,7 +12,9 @@ Einheit: $C$ (Coulomb)
 ### Definition
 Elektronen und Protonen sind **Ladungsträger**, die jeweils den positiven oder negativen Betrag der Elementarladung tragen.
 
-> **Elementarladung** : $e\approx 1.602 \cdot 10^{-19}C$ 
+> **Elementarladung** : $e\approx 1.602 \cdot 10^{-19}C$  
+> 
+> Zur Frage wie diese "Magic Number" zustande kommt: [[#Historisch gewachsen Ampere, Coulomb und Elementarladung]]
 
 Ladung eines Elektrons: $-e$
 Ladung eines Protons: $e$
@@ -108,4 +110,23 @@ $$I=\frac{\Delta Q}{\Delta t}\quad\text{bzw.}\quad 1\text{A}= \frac{1\text{C}}{1
 ![[Pasted image 20251110110022.png|400]]
 Gedankenexperiment dazu:
 - Man stelle sich an eine Stelle im Leiter und zählt, wie viele Ladungsträger pro Zeiteinheit an einem Vorbeifließen.
+
+## Historisch gewachsen: Ampere, Coulomb und Elementarladung
+
+Die Einheiten Ampere und Coulomb wurden definiert, noch *bevor* wir ein gutes Verständniss der Elementarteilchen hatten. Ihre Werte wurden durch Referenzversuche experimentell festgesetzt und ihre Werte eignen sich gut für menschliche Anwendungen.
+
+Timeline:
+- 1785: Coulomb stell einen Zusammenhang zwischen Ladung und Kraft fest: [Torsionswage](https://de.wikipedia.org/wiki/Drehwaage) : Zwei geladene Kugel stoßen sich ab und eine Kraft kann gemessen werden. Er **definiert aber keine Einheiten** für die Größen
+  
+- 1820: Oversted entdeckt: Strom erzeugt eine Magnetfeld: Kompassnadel wird von Stromdurchflossenem Draht abgelenkt. Strom wird messbar, aber ohne Einheit.
+  
+- 1827: Ohm formuliert das Ohm'sche Gesetz: Spannung proportional zu Strom und Widerstand. Man fängt an über die "Systematik" und den Zusammenhang zwischen den Größen Nachzudenken.
+
+- 1893: Chicago Weltkongress: **Definition des Ampere als Basiseinheit**: Mit einem einfachen Versuch (Zwei parallele Drähte, Strom durch sie so einstellen, dass eine bestimme elektromagnetische Kraft entsteht)
+  
+  Die Elektrische Ladung in Coulomb wir hingegen als **Abgeleitete Einheit** definiert durch:
+  $1\text{C}=1\text{A}\cdot 1\text{s}$ 
+
+
+  
 
