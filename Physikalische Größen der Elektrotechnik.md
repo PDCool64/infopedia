@@ -121,11 +121,15 @@ Timeline:
 - 1820: Oversted entdeckt: Strom erzeugt eine Magnetfeld: Kompassnadel wird von Stromdurchflossenem Draht abgelenkt. Strom wird messbar, aber ohne Einheit.
   
 - 1827: Ohm formuliert das Ohm'sche Gesetz: Spannung proportional zu Strom und Widerstand. Man fängt an über die "Systematik" und den Zusammenhang zwischen den Größen Nachzudenken.
+  
+- 1881: Deutsches Reich: **Definition des Amperes als Basiseinheit**: Strom der in einer bestimmten Elektrolyselösung eine feste Menge an Silbernitrat pro Sekunde an der Elektrode entstehen lässt.
 
-- 1893: Chicago Weltkongress: **Definition des Ampere als Basiseinheit**: Mit einem einfachen Versuch (Zwei parallele Drähte, Strom durch sie so einstellen, dass eine bestimme elektromagnetische Kraft entsteht)
+- 1893: Chicago Weltkongress: **Neue Definition des Ampere als Basiseinheit**: Mit einem einfachen Versuch (Zwei parallele Drähte, Strom durch sie so einstellen, dass eine bestimme elektromagnetische Kraft entsteht)
   
   Die Elektrische Ladung in Coulomb wir hingegen als **Abgeleitete Einheit** definiert durch:
   $1\text{C}=1\text{A}\cdot 1\text{s}$ 
+
+- 1897: J.J. Thomson entdeckt das Elektron: Beginn des Verständnisses, das Ladung aus "Stückchen" besteht.
 
 
   
