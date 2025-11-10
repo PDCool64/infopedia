@@ -83,5 +83,6 @@ Es wird die **Spannung** definiert als:
 Durch Ladungsverschiebung zur Verfügung stehende Energie, bezogen auf die Menge der verschobenen Energie.
 
 $$U=\frac{W}{Q}$$
+Man teilt durch die Menge an Ladungsträgern, um herauszufinden, wie viel _potentielle Energie pro Ladungsträger_ vorliegt.
 
-
+> $U$ ist praktisch die S
