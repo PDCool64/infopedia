@@ -27,7 +27,7 @@ $Q=e\cdot z\mid z\in \mathbb{Z}$
 Elektronen und Protonen können weder erzeugt noch vernichtet werden.
 $\to$ Ladung entsteht durch Ortswechsel von Elementarladungen. (Meist den Elektronen)
 
-In Metallgittern und anderen *Leitern* lösen sich die Elektronen leicht aus den äußeren Schalen der Atome. Es bleiben somit positiv geladen Atomrümpfe und eine Menge an beweglichen Elektronen im Kristallgitter.
+In Metallgittern und anderen *Leitern* lösen sich die Elektronen leicht aus den äußeren Schalen der Atome. Es bleiben somit positiv geladen Atomrümpfe und eine Menge an beweglichen Elektronen im Kristallgitter. ([Elektronengas](https://de.wikipedia.org/wiki/Elektronengas))
 ![[Pasted image 20251110100429.png]]
 
 ## Coulomb-Kraft
@@ -129,8 +129,33 @@ Timeline:
   Die Elektrische Ladung in Coulomb wir hingegen als **Abgeleitete Einheit** definiert durch:
   $1\text{C}=1\text{A}\cdot 1\text{s}$ 
 
-- 1897: J.J. Thomson entdeckt das Elektron: Beginn des Verständnisses, das Ladung aus "Stückchen" besteht.
+- 1897: J.J. Thomson entdeckt das Elektron: Beginn des Verständnisses, das Ladung aus "Stückchen" besteht.[Versuch zu Kathodenstrahlen](https://www.leifiphysik.de/atomphysik/atomaufbau/ausblick/atommodell-von-thomson) findet unabhängig vom Element negative Ladungsträger mit gleicher Ladungsmenge: Elektronen.
+
+- 1909: [Milikan-Experiment](https://de.wikipedia.org/wiki/Millikan-Versuch): Öltropfen schweben zwischen geladenen Platten. Aus Gleichgewicht folgt Ladungsträgergröße $e$. Man misst: $e\approx 1.602 \cdot 10^{-19}C$, wobei Coulomb aber immernoch die recht arbiträr, historisch experimentell gewachsene Einheit ist.
 
 
+- 2019: [SI-Reform](https://de.wikipedia.org/wiki/Internationales_Einheitensystem#:~:text=Seit%202019%3A%20Definition%20%C3%BCber%20physikalische%20Konstanten) Alle Basiseinheiten werden direkt durch physikalische Konstanten (wie die Elementarladung) definiert: Nichtmehr wird Coulomb durch Ampere definiert, sondern: Elementarladung$\to$Coulomb$\to$Ampere.
   
+> **Die Definition wird umgekehrt: Ein Coulomb ist nun dadurch definiert, dass $1,602\,176\,634\cdot 10^{-19}\text{C}=e$ genau einer Elementarladung entsprechen sollen.** 
+> 
+> Somit ist ein Coulomb $1\text{C}= \frac{1}{1,602\,176\,634\cdot 10^{-19}}e$.
+
+
+
+---
+# Widerstand
+Symbol: $R$
+Einheit: $\Omega$ (Ohm)
+
+Der elektrische Widerstand entsteht durch den Widerstand, den Ladungsträger bei der Ausgleichsbewegung erfahren.
+
+Eine Ursache sind u.A. "Zusammenstöße" der Elektronen mit dem Kristallgitter.
+Das Material, z.B. die Dichte des Metallgitters haben einen Einfluss auf den Widerstand.
+
+> Die Temperatur spielt eine wichtige Rolle: Einerseits steigern die Zusammenstöße mit Atomrümpfen die Temperatur des Materials ("Vibration"), außerdem stellen sich bewegende Atomrümpfe eine größere Zielfläche für die Elektronen dar und steigern den Widerstand. (ist eine recht vereinfachte Ansicht)
+## Definition: Ohm'sches Gesetz
+>[!def] Ohm'sches Gesetz
+> $$
+> U=R\cdot I \quad \text{bzw.}\quad R= \frac{U}{I}\;\text{und}\; 1\Omega= \frac{1\text{V}}{1\text{A}}
+> $$
 
