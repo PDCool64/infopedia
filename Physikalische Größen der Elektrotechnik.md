@@ -159,3 +159,16 @@ Das Material, z.B. die Dichte des Metallgitters haben einen Einfluss auf den Wid
 > U=R\cdot I \quad \text{bzw.}\quad R= \frac{U}{I}\;\text{und}\; 1\Omega= \frac{1\text{V}}{1\text{A}}
 > $$
 
+## Leitwert
+Der Leitwert $G$ ist der Kehrwert des Widerstands. 
+d.h. desto größer der Leitwert, desto besser Leitet ein Bauteil
+## Dimensionsanalyse
+
+$$
+\begin{align}
+1\Omega &= \frac{1\text{V}}{1\text{A}} = \frac{\frac{1\text{J}}{1\text{C}}}{\frac{1\text{C}}{1\text{s}}} = \frac{\text{J}}{\text{C}}\cdot \frac{\text{s}}{\text{C}} = \frac{\text{J}\cdot\text{s}}{\text{C}^{2}}
+\end{align} = \frac{\text{Energie}\cdot\text{Zeit}}{\text{Ladungsmenge}^{2}}
+$$
+Damit entsteht für den Leitwert eine schöne Intuition:
+$$\text{Leitwert}=\frac{\text{Ladungsmenge}^{2}}{\text{Energie}\cdot \text{Zeit}}$$
+bedeutet, dass ein Bauteil umso besser Leitet, desto Mehr Ladungsmenge$^{2}$ man mit einem bestimmten Energieaufwand in einer bestimmten Zeit durch es führen kann.
