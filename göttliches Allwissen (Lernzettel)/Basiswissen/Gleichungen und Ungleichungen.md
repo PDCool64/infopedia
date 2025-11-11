@@ -18,7 +18,7 @@
 >Für Ungleichungen gehen wir analog vor:
 > 1. Die [[Mengen|Menge]] $M$, genannt **Grundgesamtheit**. Alle Lösungen sollen Elemente dieser Menge $M$ sein. ("In welcher Menge suche ich überhaupt Lösungen", insbesondere wenn diese eingeschränkt werden soll/muss)
 > 
-> 2. Eine [[Abbildungen|Abbildung]] $f:M\to \mathbb{K}$, wobei $\mathbb{K}$ jetzt aber ein **[[Körper#Anordnung auf einem Körper|angeordneter]]** Körper sein muss.
+> 2. Eine [[Abbildungen|Abbildung]] $f:M\to K$, wobei $K$ jetzt aber ein **[[Körper#Anordnung auf einem Körper|angeordneter]]** Körper sein muss.
 > 
 > 3. Es gibt nun zwei qualitativ verschiedene Ungleichungen, nämlich
 >    - $f(x)>0$ und
