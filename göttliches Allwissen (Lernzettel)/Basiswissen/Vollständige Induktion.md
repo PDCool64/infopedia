@@ -1,8 +1,12 @@
 Sei $A(n)\;,\;n\in \mathbb{N}_{0}$ eine [[Aussagenlogik|Aussage]], die von einer [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|natürlichen Zahl]] $n$ abhängt. Um zu beweisen, dass die Aussage für alle $n\geq n_{0}$ richtig ist, genügt es, zu beweisen:
 1. $A(n)$ ist wahr für $n=n_{0}$ (**Induktionsanfang**)
 2. $A(n)\implies A(n+1)\;,\;n\geq n_{0}$ (**Induktionsschritt**)
-### Bemerkungen:
+### Varianten der Vollständigen Induktion:
 - $n_{0}$ ist nicht immer gleich $1$. Es kann eine beliebige Zahl, ab welcher die Behauptung gilt, sein.
+- Es sind auch Induktionsvarianten mir anderen Induktionsannahmen/Induktionsvoraussetzungen möglich. Z.B. Kann die Gültigkeit von mehreren vorherigen Aussagen notwendig sein: $A(n-1)\wedge A(n)\implies A(n+1)$. Ebenso kann auch die Gültigkeit aller vorherigen Aussagen notwendig sein: $A(n_{0})\wedge\dots\wedge A(n)\implies A(n+1)$
+  - Man kann die Beweise auch aufteilen, z.B. für gerade/ungerade Zahlen jeweils mit $1$ und $2$ als Induktionsanfang und Induktionsschritten à la $A(n)\implies A(n+2)$. Kann man auch mit beliebigen Aufteilungen machen.
+
+> Wenn man nachlesen will, warum das strikt formell funktioniert, kann man zur Folgenden Eigenschaft von $\mathbb{N}$ nachlesen:	Für jede Teilmenge $A\subseteq \mathbb{N}$ gilt: Ist $1\in A$ und ist für jedes $n\in A$ auch $n+1\in A$, dann ist $A=\mathbb{N}$. (s.h. "Peano-Axiome). Damit kann man dann schön zeigen, dass es für *alle* natürlichen Zahlen gilt.
 
 # Beispiel: Formelle Runterschrift
 ## Gaußsche Summenformel

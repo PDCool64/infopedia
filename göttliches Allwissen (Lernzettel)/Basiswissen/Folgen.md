@@ -1,17 +1,16 @@
->[!def] Folge
-> Eine **Folge [[Zahlenräume#Reelle Zahlen $ mathbb{R}$|reeller]] Zahlen** ist eine [[Abbildungen|Abbildung]] $a:\mathbb{N}\to \mathbb{R},n\to a(n)$ 
-> 
-> ---
-> 
-> Meisten schreiben wir eine Folge kurz als
-> $(a_{n})_{n\geq 1}$ oder $(a_{n})_{n\in \mathbb{N}}$
-> 
-> wobei $a_{n}:=a(n)$
-> 
-> ---
-> 
-> Die Zahlen $a_{n}$ heißen **Folgenglieder**.
 
+Diese Notiz besteht aus Infos aus der Schule und ist nicht zwangsweise auf dem Stand der Vorlesungen. Bis wir inhaltlich in DS so weit sind, dass man sieht ob es hier inhaltliche Unterschiede gibt, wird primär [[Folgen für DS]] unterhalten.
+
+
+>[!def] Folge
+> Eine [[Abbildungen für DS|Abbildung]] $f:\mathbb{N}\to N$, welche von den [[Zahlenräume#Natürliche Zahlen $ mathbb{N}$|Natürlichen Zahlen]] in eine Menge abbildet wird **Folge in $N$** genannt.
+> 
+> Schreibweisen:
+> - $f:\mathbb{N}\to N$ wird geschrieben als $a_{1},a_{2},a_{3},\dots$ oder $(a_{i})_{i\in \mathbb{N}}$ 
+>   
+> Nach der Definition der [[Abbildungen#Menge von Abbildungen|Menge von Abbildungen]] ist die Menge aller Folgen in $N$:
+> $\text{Abb}(\mathbb{N},N)=N^{\mathbb{N}}$
+> 
 ## Rekursive Folgen
 Folgen lassen sich auch *rekursiv definieren*, was ein "gleichmächtiger" Ansatz ist.
 Bsp. $(a_{n})_{n\geq 1}:a_{n+1}=2a_{n}\;,\;a_{1}=1$ ist gleichbedeutend zu $(\tilde{a}_{n})_{n\geq 1}:a_{n}=2^{n}$
@@ -19,6 +18,8 @@ Bsp. $(a_{n})_{n\geq 1}:a_{n+1}=2a_{n}\;,\;a_{1}=1$ ist gleichbedeutend zu $(\ti
 Rekursive folgen müssen, um überhaupt eindeutig definiert zu sein, einen "Anker" haben, d.h. das Folgenglied $a_{1}$ muss angegeben werden.
 
 Obwohl beide Ansätze gleichmächtig sind, ist es sehr oft nicht einfach (auch mit Rechenleistung) möglich, jede rekursive Folge in eine explizite Darstellung zu bringen.
+
+Das zwei rekursiv Definierte Folgen mit gleichem Startwert und gleicher Rekursionsvorschrift tatsächlich identisch sind, zeigt der [[Rekursion|Dedekindische Rekursionssatz]].
 
 # Monotonie einer Folge
 Die Monotonie einer Folge lässt sich mit den gleichen Definitionen bestimmen, wie sie auch bei reellen Funktionen greifen:

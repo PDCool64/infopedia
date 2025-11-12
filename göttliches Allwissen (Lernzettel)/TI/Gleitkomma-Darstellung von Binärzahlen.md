@@ -245,3 +245,38 @@ z.B. $+\infty+(-\infty)=\text{NaN}$
 
 # Rechnen mit Gleitkommazahlen
 
+## Gleitkomma-Addition ist nicht wirklich kommutativ
+
+### Beispiel Problem:
+```
+float a, b, c, d;
+float x, y;
+x = a + b + c;
+y = b + c + d;
+```
+Offensichtlich enthält dieses Programm Additionen, die mehrfach auf den gleichen Werten ausgeführt werden, nämlich die Summenbildung von b und c in beiden Zuweisungen. Um Rechenzeit zu optimieren, könnte man eine zusätzliche Variable t einführen, um den Wert der Addition zwischenzuspeichern. 
+```
+t = b + c;
+x = a + t;
+y = t + d;
+```
+### Erklärung
+Wenn man die neue Variable einführt, hat man bei x eine andere Reihen folge der Addition
+Oben : `x=(a+b)+c`
+vs.
+Unten: `x=a+(b+c)
+
+Diese ist nicht immer kommutativ:
+Um Addieren zu können, müssen beide Zahlen auf den gleichen Exponenten gebracht werden.
+Sind sie dabei von der Größe sehr unterschiedlich, stehen ihre Werte in einer gemeinsamen Mantisse also sehr weit aus einander landen. Sind sie zu weit aus einander ist die Mantisse zu lang für den erlaubten Speicher - Informationen der hinten stehenden kleineren Zahl werden einfach abgeschnitten bzw. weggerundet:
+Nehmen wir zwei **Single Precision (float32)**-Zahlen:
+
+### Beispiel
+Sowohl $a=1.0$ als auch $b=2^{-24}$ sind exakt als 32-bit float darstellbar:
+- $1.0=1.00000000000000000000000_{2}$
+- $2^{-24} = 0.000000000000000000000001_2$
+
+Aber:
+$a + b = 1.000000000000000000000001_2$
+
+Was **nicht mehr exakt darstellbar** mit 24 Bit Mantisse ist : es wird **auf 1.0** gerundet.

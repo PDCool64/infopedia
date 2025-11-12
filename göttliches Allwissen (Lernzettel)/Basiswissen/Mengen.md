@@ -113,7 +113,6 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 > $$
 > \#M:=n
 > $$ 
-> 
 > Andernfalls setzt man $\#M=\infty$ .
 > Man definiert $\#\emptyset:=0$ 
 > 
@@ -121,7 +120,7 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 > Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
 
 
-sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
+Sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
 (ohne die Subtraktion würde man die Elemente, welche in beiden Mengen liegen doppelt zählen.)
 
 Für [[paarweise verschieden und paarweise disjunkt#^7df85e|paarweise disjunkte]] Mengen ist die Mächtigkeit der Schnittmenge immer $0$, also gilt
@@ -130,9 +129,13 @@ $$
 \left|  \bigcup_{i\in I} M_{i}\right|=\sum_{i\in I} \left| M_{i} \right| 
 $$
 
-Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist $$
+Ist $\left| M \right|$ eine endliche Menge und $\mathcal{P}$ eine [[#Partition einer Menge|Partition]] von $M$, dann ist 
+$$
 \left| M \right| =\sum_{C\in\mathcal{P}}\left| C \right| 
 $$
+
+moin servus
+
 # Potenzmenge
 
 >[!def] Potenzmenge
@@ -162,7 +165,7 @@ Beispiel:
 > Wortstamm "kartesisch" kommt von [René Descartes](https://de.wikipedia.org/wiki/Ren%C3%A9_Descartes) 
 
 >[!def] Kartesisches Produkt
->Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller *geordneten Paare*
+>Sind $A$ und $B$ zwei Mengen, so heißt die Menge aller [[Tupel und Geordnete Paare|Geordneten Paare / Tupel]] 
 >$$A\times B:=\{ (a,b)\mid a \in A,b\in B \}$$
 >das *kartesische Produkt der Mengen A und B*.
 >
@@ -173,13 +176,29 @@ Beispiel:
 >
 >
 >
- Sind die Mengen gleich,so schreiben wir
+ Sind die Mengen gleich, so schreiben wir
 >$$A^n=A\times\dots\times A$$
+>
+>---
+>Verwendet man die Schreibweise von [[Tupel und Geordnete Paare|Tupeln / geordneten Paaren]] als [[Abbildungen]], lautet die Definition:
+>
+>Es sei $n\in \mathbb{N}$ und $M_{i}$ eine Menge für alle $i\in \underline{n}$.
+>Wir setzten $M:=\bigcup_{i\in \underline{n}}M_{i}$ und definieren 
+>$$
+>M_{1}\times \dots \times M_{n} := \{ f:\underline{n}\to M \mid f(i)\in M_{i} \;\forall_{i\in \underline{n}} \}
+>$$
+>als das **kartesische Produkt** der Mengen $M_{i},\dots,M_{n}$.
+>
+>Wir schreiben $(x_{1},\dots,x_{n})$ oder $(x_{i})_{i\in \underline{n}}$ für die enthaltenen Abbildungen $f\in M_{1}\times\dots \times M_{n}$ wobei $x_{i}:=f(i)$ für $1\le i\le n$.
+
+
+
 
 Zu beachten:
 - *geordnete* $n$-Tupel bedeutet, dass die Reihenfolge der Einträge wichtig ist.
   (vgl. Tuple in Python usw.)
 - $\emptyset \times M=M\times \emptyset=\emptyset$ für jede Menge $M$
+
 
   
 ### Beispiele:

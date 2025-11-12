@@ -1,7 +1,7 @@
 >[!def] Körper
 > Eine [[Mengen|Menge]] $\mathbb{K}$ bildet einen **Körper**, wenn zu je zwei Zahlen $x,y\in \mathbb{K}$
-> - eine **Summe** $x+y\in \mathbb{K}$
-> - und ein **Produkt** $x\cdot y\in \mathbb{K}$
+> - eine **Summe** $+\;:K\times K\to K\;,\;(a,b)\mapsto a+b$ 
+> - und ein **Produkt** $\cdot\;:K\times K\to K\;,\;(a,b)\mapsto a\cdot b$
 >
 >definiert sind, welche die folgenden Rechenregeln erfüllen:
 >
@@ -34,7 +34,7 @@
 ^a3c120
 
 ## Bemerkungen:
-- Sowohl das neutrale als auch das inverse Element der Addition sowie der Multiplikation sind jeweils *eindeutig*. (Es kann in einem Körper z.B. nicht zwei neutrale Elemente geben)
+- Sowohl das neutrale als auch das inverse Element der Addition sowie der Multiplikation sind jeweils *eindeutig*. (Es kann in einem Körper z.B. nicht zwei neutrale Elemente geben) Dies ist nicht Teil der Definition, kann aber schnell gefolgter werden.
   
 - $\mathbb{N}$ ist *kein* Körper, weil u.A. kein Inverses Element der Addition besteht. ($2+n\neq 0\;,\;n\in \mathbb{N}$)
   
@@ -43,16 +43,71 @@
 - in einem Körper ist ein Produkt genau dann Null, wenn einer der Faktoren Null ist:$$
 a\cdot b=0\iff(a=0)\vee(b=0)
 $$
-## Anordnung auf einem Körper:
->[!def] Anordnung auf $\mathbb{R}$
->Ein [[Körper]] heißt **Angeordneter Körper**, wenn in ihm eine **Anordnung $\leq$ (kleiner gleich)** definiert ist, die den folgenden Regeln für alle $x,y,z\in \mathbb{K}$ gehorcht:
-> 
-> - (Q.1) *Trichotometrie:* Es gilt stets $x\leq y \;\vee\; y\le x$
-> - (Q.2) *Reflexivität*: $x \le x$
-> - (Q.3) *Asymmetrie*: $(x\le y \;\wedge\; y\le x)\implies x=y$
-> - (Q.4) *Transitivität*:  $(x\le y \;\wedge\; y\le z) \implies x \le z$
-> - (Q.5) *Monotonie der Addition*: $(x \le y)\implies x+z \le y+z$
-> - (Q.6) *Monotonie der Multiplikation*: $(x \le y \;\wedge 0 \le z) \implies x\cdot z \le y\cdot z$
+- Diese Gesetze erlauben es uns, mit [[Gleichungen und Ungleichungen|Gleichungen]] zu arbeiten.
 
+---
+# Angeordneter Körper
+>[!def] Angeordneter Körper
+> Es sei $K$ ein Körper.
+> Mann nennt $K$ einen **angeordneten Körper**, wenn es eine Teilmenge $P\subseteq K$ (genannt **Positivitätsbereich**) von $K$ gibt, die die folgenden Eigenschaften erfüllt:
+> - Für alle $x\in K$ ist genau eine der Aussagen richtig: $x\in P$ oder $x=0$ oder $-x\in P$
+> - Für alle $x,y\in P$ gilt: $x+y\in P$
+> - Für alle $x,y\in P$ gilt: $x\cdot y\in P$
+> 
+> ---
+> Durch$$x<y \;:\!\iff y-x\in P$$
+> wir eine Relation "$<$" eingeführt, die sog. **Anordnung auf $K$**.
+> 
+> ---
+> Weiter vereinbart man die Schreibweisen:
+> - $x\le y \iff x<y \;\lor\; x=0$
+> - $x>y\iff y<x$
+> - $x\ge y\iff y\le x$
+> 
 ^315cce
-Die [[Zahlenräume#Reelle Zahlen $ mathbb{R}$|Reellen Zahlen]] sind z.B. ein angeordneter Körper.
+## Bemerkungen
+- $K=P\overset{\cdot}{\cup}\{ 0 \}\overset{\cdot}{\cup}\{ -P \}$
+  wobei "$\overset{\cdot}{\cup}$" hervorhebt, das die Mengen welche vereinigt werden disjunkt sind.
+- Diese Gesetze erlauben es uns, mit [[Gleichungen und Ungleichungen|Ungleichungen]] zu arbeiten.
+- Der Standard für einen angeordneten Körper sind die [[Zahlenräume#Rationale Zahlen $ mathbb{Q}$|Rationalen Zahlen]]
+- Die [[Zahlenräume#Reelle Zahlen $ mathbb{R}$|Reellen Zahlen]] sind z.B. ein angeordneter Körper.
+
+
+## Folgerungen
+Direkt aus dieser Definition folgen die folgenden, intuitiv bekannten Eigenschaften:
+Es sei $K$ ein angeordneter Körper.
+- Für alle $a,b,c\in K$ gilt: $a<b\wedge b<c\implies a<c$ (*Transitivität*)
+
+Für alle $a,b,c,d\in K$ gilt:
+- $a+c<b+c \iff a<b$ (*Monotonie der Addition*)
+- $a<b \land c\le d \implies a+c<b+d$ 
+- $0<a<b\;\land\; 0<c\le d\;\implies ac<bd$ 
+- $0<a<b\implies 0< a^{n }<b^{n}\;\;\forall_{n\in \mathbb{N}}$
+
+- $a>0 \land b<0 \implies ab<0$
+   $a<0 \land b<0 \implies ab>0$
+- $0\leq a^{2}$; speziell $0<1$
+  
+- $a>0\iff a^{-1}>0$
+- $0<a<b\;\land\; c<0\implies bc<ac<0$
+
+- $$a<b\;,\;a\neq 0,b\neq 0 \implies \begin{cases}
+a^{-1}<b^{-1}&,\;ab<0 \\
+b^{-1}<a^{-1}&,\;ab>0
+\end{cases}$$
+  
+
+>[!def] $\mathbb{Q}$ in anderen angeordneten Körpern
+> Jeder angeordnete Körper $K$ "enthält" gewissermaßen $\mathbb{Q}$ (also auch $\mathbb{N}$ und $\mathbb{Z}$) in folgendem Sinn: Es gibt eine [[Abbildungen#Injektiv, Surjektiv, Bijektiv|injektive]] Abbildung $$
+> \varphi:\mathbb{Q}\to K
+> $$ welche die Rechenoperationen und die Anordnung respektiert, d.h. für alle $x,y\in \mathbb{Q}$ gilt:$$\begin{array}{rcl}
+> \varphi(x+q)&=&\varphi(x)+\varphi(y) \\
+> \varphi(x\cdot y)&=&\varphi (x)\cdot \varphi(y) \\
+> x<y &\implies& \varphi(x)<\varphi(y)
+> \end{array}$$
+> 
+> ---
+> 
+> Es gibt also eine Möglichkeit, für jedes Element aus $\mathbb{Q}$ eine Art Gegenstück in jedem angeordneten Körper $K$ zu finden, so dass sich diese untereinander genauso verhalten wie die Ursprungselemente in $\mathbb{Q}$.
+
+- Der Beweis davon ist schwierig und wird hier nicht versucht.
