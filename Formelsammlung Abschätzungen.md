@@ -18,5 +18,18 @@ status: rot
 > $$
 
 
+---
+# Dreiecksungleichung
+Für den [[Betrag]] gelten die Dreiecksungleichungen:
 
+>[!def] Dreiecksungleichungen
+>1. Dreiecksungleichung
+>  $$\left| x+y \right|\le\left| x \right|+\left| y \right|$$
+> 2. Dreiecksungleichung
+>    $$\left| x+y \right| \ge \left| \left| x \right| -\left| y \right|  \right| \ge \left| x \right| -\left| y \right| $$
+	
 
+> Die **Dreiecksungleichung** wird für viele Beweise wichtig bleiben. Sie erlaubt ein praktisches Abschätzen von größer/kleiner Beziehungen. 
+> 
+> Eine geometrische Interpretation ist, dass der kürzeste Weg zwischen zwei Punkten eine Gerade ist. Mit Vektoren: Sei $\vec{x}$ der kürzeste Weg von $A$ nach $B$ und $\vec{y}$ der kürzeste Weg von $B$ nach $C$, so ist der direkte Weg $A\to C$ immer kürzer oder gleich dem Weg $A\to B\to C$ d.h.
+> $\left| \vec{x}+\vec{y} \right|\le\left| \vec{x} \right|+\left| \vec{y} \right|$.
