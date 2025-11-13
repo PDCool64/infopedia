@@ -11,12 +11,15 @@ status: rot
 > (1+a)^{n}\ge{1}+na
 > $$
 
+> d.h. exponentielles Wachstum überholt lineares Wachstum
+
 >[!def] Korollar: Bernoulli'sche Ungleichung
-> Es sei $q\in \mathbb{Q}\;,\;q>1$. Dann gibt es zu jedem $M>0$ ein $N\in \mathbb{N}$, so dass
+> Es sei $q\in \mathbb{Q}\;,\;q>1$. Dann gibt es zu jedem $M\in \mathbb{Q}$ ein $N\in \mathbb{N}$, so dass
 > $$
 > \frac{q^{n}}{n}\ge M\quad\forall n\ge N
 > $$
 - gilt ebenfalls für $q\in \mathbb{R}$ , $M\in\mathbb{R}$
+
 
 ---
 # Dreiecksungleichung

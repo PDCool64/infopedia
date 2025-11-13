@@ -148,9 +148,9 @@ Es existiert also kein Supremum $s\in \mathbb{Q}$ von $M$.
 > Es folgt nach dem [[#^370e3d|Satz]] : "*Falls die Menge $M$ ein Supremum $s$ besitzt, so besitzt $-M:=\{ x\in K \mid -x\in M \}$ ein Infimum und zwar $-s$*" ebenfalls, dass jede nach unten beschränkten Teilmenge von $\mathbb{R}$ ein Infimum besitzt.
 
 
-
 - Aus mathematischer Sicht lässt die Charakterisierung eigentlich alle Fragen offen. Weder die Frage nach Existenz noch die nach Eindeutigkeit wird beantwortet. In der Tat gibt es einen solchen Körper und er ist im Wesentlichen (mathematisch: „bis auf Isomorphie“) eindeutig bestimmt. Bewiesen soll dies hier aber nicht werden
 
 
-
-
+Mit dieser Definition kann man folgern:
+- [[Natürliche und rationale Zahlen als Teilmenge der Reellen Zahlen]]
+- 
