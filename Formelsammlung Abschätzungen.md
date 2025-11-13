@@ -16,7 +16,7 @@ status: rot
 > $$
 > \frac{q^{n}}{n}\ge M\quad\forall n\ge N
 > $$
-
+- gilt ebenfalls für $q\in \mathbb{R}$ , $M\in\mathbb{R}$
 
 ---
 # Dreiecksungleichung
