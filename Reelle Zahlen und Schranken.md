@@ -47,5 +47,46 @@ status: rot
 ---
 # In den [[Zahlenräume#Rationale Zahlen $ mathbb{Q}$|Rationalen Zahlen]] hat nicht jedes Intervall ein Supremum:
 
-Am Beispiel $\{ x\in \mathbb{Q} \mid x\ge 0 \land x^{2}<2 \}$ kann dies einfach gezeigt werden, weil $\sqrt{  2}$ keine rationale Zahl ist.
+Am Beispiel $M=\{ x\in \mathbb{Q} \mid x\ge 0 \land x^{2}<2 \}$ kann dies einfach gezeigt werden, weil $\sqrt{  2}$ keine rationale Zahl ist.
+
+### Beweisprinzip: 
+Wir wissen durch [Euklids Beweis](https://de.wikipedia.org/wiki/Beweis_der_Irrationalit%C3%A4t_der_Wurzel_aus_2_bei_Euklid), dass $\sqrt{ 2 }$ irrational, insbesondere also $\sqrt{ 2 }\not\in \mathbb{Q}$ ist. 
+
+Dann zeigen wir, dass kein Supremum $s$ existieren kann, das ungleich $\sqrt{ 2 }$ ist.
+Dafür führen wir sowohl $s^{2}<2$ als auch $s^{2}>2$ zum Widerspruch.
+
+Wenn gezeigt ist, das ein theoretisches Supremum $s$ genau $\sqrt{ 2 }$ seien muss, ist klar, dass kein Supremum in $\mathbb{Q}$ existiert.
+
+### Annahme: $s^{2}<2$
+Wir zeigen, dass $s$ keine obere Schranke von $M$ ist, indem wir ein $(s+h_{0})\in M$ bzw. $(s+h)^{2}<2$ konstruieren, dass *größer* als $s$ ist.
+
+Für $0<h<1$ beachte man $0<h^{2}<h$. Damit lässt sich konstruieren:
+$$(s+h)^{2}=s^{2}+2sh+h^{2}\le s^{2}+2sh+h=s^{2}+3sh$$
+Somit lässt sich $(s+h)^{2}\leq s^{2}+3sh$ nach oben abschätzen.
+Damit gilt sicher, dass wenn $s^{2}+3sh<2$ auch $(s+h)^{2}<2$.
+
+Diese Bedingung lässt sich umformen:
+$$
+\begin{align}
+s^{2}+3sh &<2 \\
+3sh&<2-s^{2} \\
+h &< \frac{2-s^{2}}{3s}
+\end{align}
+$$
+Dabei existieren offensichtlich $h_{0}$ welche diese Bedingung erfüllen: Z.B. $h_{0}$ gewählt als die Hälfte des rechten Terms:
+$$
+\begin{align}
+h_{0} &< \frac{2-s^{2}}{3s}\\ \\
+\frac{2-s^{2}}{6s} &< \frac{2-s^{2}}{3s}
+\end{align}
+$$
+Damit gilt sicher, dass auch $(s+h_{0})^{2}<2$ bzw. $(s+h_{0})\in M$ sind.
+Insbesondere gilt durch $0<h<1$ auch, dass $s<s+h_{0}$ , womit $s$ keine obere Schranke seien kann.
+Die Aussage $s^{2}<2$ wurde somit zum Widerspruch geführt.
+
+### Annahme: $s^{2}>2$
+
+
+
+
 
