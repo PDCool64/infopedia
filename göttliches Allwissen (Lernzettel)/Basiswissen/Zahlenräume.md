@@ -50,7 +50,7 @@ Zwei Brüche sind genau dann gleich, wenn sie durch Kürzen oder Erweitern ausei
 
 Die Reellen Zahlen erweitern die Rationalen Zahlen um die *Irrationalen Zahlen*.
 
-Irrationale Zahlen haben **unendlich viele, nicht periodische Dezimalstellen**. Sie sind nicht als Bruch darstellbar.
+Irrationale Zahlen haben **unendlich viele, nicht periodische Dezimalstellen**. Sie sind nicht als Bruch darstellbar. ^4c01ae
 
 Bsp.
 $$

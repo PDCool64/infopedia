@@ -9,5 +9,6 @@
   "obsidian-latex-suite",
   "obsidian-tikzjax",
   "templater-obsidian",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "obsidian-relative-line-numbers"
 ]
