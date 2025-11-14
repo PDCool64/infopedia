@@ -24,7 +24,6 @@ public class Rechteck {
 		IO.println("secret")
 	}
 	
-	
 	void main(){
 	
 		Rechteck R = new Rechteck();
@@ -40,17 +39,21 @@ public class Rechteck {
 # ``static`` vs. nicht-``static``
 Jede Variable die im Rumpf der Klasse deklariert wird und die nicht explizit ``static`` ist, ist automatisch ein Attribut jedes Objekts: Sie sind nicht-statisch und verändern sich von Objekt zu Objekt. Man kann sie für jedes Objekt mit ``R.breite`` usw. aufrufen.
 
-Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt:
+Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt folgendes:
 - In Methoden, die selber nicht-``static`` sind, verwendet man sie direkt, oder besser mit ``this.attributsName`` (so überlädt man sie nicht versehentlich mit Methodenparametern)
 - In ``static``-Methoden, muss man sie explizit auf einen bestimmten Objekt aufrufen, also z.B. ``r.laenge``
-
 
 
 
 # ``public`` vs. ``private`` vs. ``protected`` 
 ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
 
+---
+# Realisierung im Speicher
+Variablen von Klassendatentypen enthalten als Wert nur eine Adresse für eine Stelle im Heap (Referenz).
 
+Alles zum Thema Seiteneffekte, Garbage Collector etc. ist wie bei Arrays.
+Achte also auf [[Call-by-value vs. call-by-reference]]
 
 ---
 # Arbeiten mit Klassen : ``main``, Dateien, Compact Source File.

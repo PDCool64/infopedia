@@ -7,6 +7,8 @@ status: rot
 
 Arrays sind in Java [[Wert vs. Referenzvariablen & Call-By-Value vs. Call-By-Reference#Zuweisung von Referenzvariablen|Referenzvariablen]], also muss bei Zuweisungen auf Seiteneffekte geachtet werden. Ebenfalls sollte man arrays niemals mit `` == `` vergleichen.
 
+Man achte auf [[Call-by-value vs. call-by-reference]].
+
 ---
 
 # Syntax
