@@ -32,3 +32,5 @@ $\to$ keine Seiteneffekte, Primitive Variablen bleiben unberührt.
 Es wird nach dem Gleichen Schema einfach der Wert der bei x im Stack steht in die Speicherzelle von y kopiert. Da x aber ein array ist, liegt dort nur ein Verweis. y und x zeigen somit auf das gleiche Array.
 
  $\to$ Zuweisungen bei Referenzvariablen erstellen *keine* Kopien der Werte sondern duplizieren nur Verweise auf ein un den selben Datensatz im Speicher - Es entstehen also Seiteneffekte.
+
+Ebenso muss auch bei Methodenaufrufen beachtet werden: Durch [[Call-by-value vs. call-by-reference]] können auch bei Methoden Seiteneffekte hervorgerufen werden.

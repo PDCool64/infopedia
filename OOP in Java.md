@@ -48,6 +48,14 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
 # ``public`` vs. ``private`` vs. ``protected`` 
 ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
 
+
+---
+## Prozedur vs. Funktion
+- Man nennt Methoden mit Rückgabetyp `void` oft Prozedur.
+  Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.
+- Man nennt Methoden mit Rückgabetypen meist Prozeduren.
+  die haben dann immer ein `return` 
+
 ---
 # Realisierung im Speicher
 Variablen von Klassendatentypen enthalten als Wert nur eine Adresse für eine Stelle im Heap (Referenz).
@@ -57,8 +65,6 @@ Achte also auf [[Call-by-value vs. call-by-reference]]
 
 ---
 # Arbeiten mit Klassen : ``main``, Dateien, Compact Source File.
-
-
 - Programme sind Abfolge von Klassendeklarationen
 - Jede Datei darf höchstens eine ``public``-Klasse enthalten, welche genau den gleichen Namen wie die Datei haben *muss*.
 - ``java Dateiname`` in der Konsole führt die ``main``-Methode der enthaltenen ``public``-Klasse aus.

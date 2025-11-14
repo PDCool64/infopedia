@@ -5,7 +5,7 @@ status: rot
 ---
 ---
 
-Arrays sind in Java [[Wert vs. Referenzvariablen & Call-By-Value vs. Call-By-Reference#Zuweisung von Referenzvariablen|Referenzvariablen]], also muss bei Zuweisungen auf Seiteneffekte geachtet werden. Ebenfalls sollte man arrays niemals mit `` == `` vergleichen.
+Arrays sind in Java [[Stack und Heap in Java#Zuweisung von Referenzvariablen|Referenzvariablen]], also muss bei Zuweisungen auf Seiteneffekte geachtet werden. Ebenfalls sollte man arrays niemals mit `` == `` vergleichen.
 
 Man achte auf [[Call-by-value vs. call-by-reference]].
 
@@ -20,7 +20,7 @@ Stellt eine Speicherzelle x bereit, der aber noch ein Zeiger ins Leere "null" st
 int [] x; 
 ```
 
-Erst mit ``new`` wird auf dem [[Wert vs. Referenzvariablen & Call-By-Value vs. Call-By-Reference|Heap]] ein neuer Speicherbereich für die Einträge des Arrays erzeugt: (Hier von der Länge 10)
+Erst mit ``new`` wird auf dem [[Stack und Heap in Java|Heap]] ein neuer Speicherbereich für die Einträge des Arrays erzeugt: (Hier von der Länge 10)
 ```java
 int [] x;
 x = new int[10];
