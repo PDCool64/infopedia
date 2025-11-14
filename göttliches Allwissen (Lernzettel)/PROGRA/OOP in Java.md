@@ -39,6 +39,60 @@ public class Rechteck {
 
 
 ---
+# Erstellen von Objekten: Konstruktoren
+Konstruktoren sind Methoden zur Erzeugung von Objekten
+Ein Konstruktor heißt genau wie die Klasse, die er erzeugt. 
+
+Was macht ein Konstruktor:
+- Erzeugt ein neues Objekt
+- Setzt die Attribute des neuen Objekts auf bestimmte Werte, die er gegebenenfalls als Parameter erhält
+- hat keinen Rückgabetyp
+
+> Man kann den standardmäßig erzeugten Konstruktor mit einem eigenen überschreiben.
+
+*Wann* wird der Konstruktor ausgeführt:
+1. Die Attribute erhalten zunächst die Initialwerte aus den Variablendeklarationen im Rumpf der Klasse.
+2. Anschließend wird der Konstruktor ausgeführt.
+
+z.B.:
+```java
+class Rechteck {
+	int laenge =5;
+	
+	Rechteck(){
+		laenge++;	
+		}
+}
+```
+führt dazu, das ``laenge`` für jedes neue Objekt am Ende ``6`` ist.
+
+## Konstruktor mit Parametern
+
+```java
+class Rechteck {
+	int laenge =5;
+	
+	Rechteck(){
+		laenge++;	
+		}
+	Rechteck(int l){
+		laenge = l;	
+	}
+}
+```
+
+Konstruktoren können wie alle anderen Methoden auch überladen werden, womit die Objekte mit flexiblen Parametern erzeugt werden können.
+
+# Überschreiben des "canonical"-constructors
+Wenn man keinen Konstruktor schreibt, dann wird der parameterlose Konstruktor (canonical / default constructor) automatisch erzeugt. Er hat einen leeren Methodenrumpf.
+
+**Achtung**:
+- Sobald man einen eigenen Konstruktor implementiert (auch wenn dieser Parameter hat), dann wir für diese Klasse *kein* default-Konstruktor mehr automatisch erzeugt.
+
+Typischer Anwendungsfall für eigene Konstruktoren sind **Kopier-Konstruktoren**, die ein neues Objekt mit den Eigenschaften eines schon existierenden erzeugen:
+``Rechteck r = new Rechteck(anderesRechteck);``
+
+---
 # Eigenschaften von Attributen und Methoden
 
 # ``static`` vs. nicht-``static``
@@ -61,6 +115,9 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
   Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.
 - Man nennt Methoden mit Rückgabetypen meist Prozeduren.
   die haben dann immer ein `return` 
+
+## Überladen von Methoden
+Es kann in der gleichen Klasse mehrere Methoden mit gleichen Namen geben, solange deren Parameterlisten hinreichend verschieden sind. Genaueres bei [[Überladen von Methoden]].
 
 ---
 # Realisierung im Speicher
