@@ -5,7 +5,7 @@ status: rot
 ---
 ---
 
-Arrays sind in Java [[Wert vs. Referenzvariablen & Call-By-Value vs. Call-By-Reference#Zuweisung von Referenzvariablen|Referenzvariablen]], also muss bei Zuweisungen auf Seiteneffekte geachtet werden.
+Arrays sind in Java [[Wert vs. Referenzvariablen & Call-By-Value vs. Call-By-Reference#Zuweisung von Referenzvariablen|Referenzvariablen]], also muss bei Zuweisungen auf Seiteneffekte geachtet werden. Ebenfalls sollte man arrays niemals mit `` == `` vergleichen.
 
 ---
 
@@ -85,3 +85,6 @@ x[0][1] = 2;
 x[2][2] = 10;
 ```
 ![[Arrays in Java 2025-11-06 13.22.12.excalidraw]]
+
+
+

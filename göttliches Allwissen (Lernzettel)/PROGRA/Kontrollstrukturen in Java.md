@@ -149,6 +149,17 @@ for (x=4,y=10 ; x<20 && y<100 ; x++ , y*=2) {
 //87
 ```
 
+
+# ``for``-each Schleifen:
+```java
+int [] a = {2,3,3,4,5}
+for (int x : a) {
+	IO.print(x);
+}
+```
+
+iteriert direkt über alle Werte im array ohne manuelle Indizierung.
+
 ---
 # Sprunganweisungen
 
