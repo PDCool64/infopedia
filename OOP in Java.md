@@ -50,6 +50,7 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
 
 
 ---
+# Methoden genauer
 ## Prozedur vs. Funktion
 - Man nennt Methoden mit Rückgabetyp `void` oft Prozedur.
   Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.

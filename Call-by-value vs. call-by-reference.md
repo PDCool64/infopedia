@@ -4,7 +4,9 @@ tags:
 status: rot
 ---
 ---
+vgl. [[Speicher in Java - Stack und Heap#Laufzeitkeller bei Methoden]] - erklrt
 
+---
 # Allgemeines zu Methodenaufruf und Parameterübergabe:
 
 >[!def] formale vs. aktuelle Parameter

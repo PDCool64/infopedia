@@ -34,3 +34,25 @@ Es wird nach dem Gleichen Schema einfach der Wert der bei x im Stack steht in di
  $\to$ Zuweisungen bei Referenzvariablen erstellen *keine* Kopien der Werte sondern duplizieren nur Verweise auf ein un den selben Datensatz im Speicher - Es entstehen also Seiteneffekte.
 
 Ebenso muss auch bei Methodenaufrufen beachtet werden: Durch [[Call-by-value vs. call-by-reference]] können auch bei Methoden Seiteneffekte hervorgerufen werden.
+
+
+---
+
+# Blöcke / Abschnitte im Code und auf dem Stack
+Speicherverwaltung bei Blöcken von Anweisungen.
+Jedem Block entspricht einem Speicherbereich (frame) auf dem Laufzeitkeller / runtime stack, in dem die Werte der Variablen des Blocks gespeichert sind.
+
+Beim Eintritt in einen neuen Block wird der dazugehörige Speicherbereich oben(im Sinne der Wachstumsrichtung, auf den Folien wachsen die Teile nach unten) auf dem Laufzeitkeller angelegt (allocate).
+
+Der zuletzt angelegte Speicherbereich wird als erstes wieder gelöscht, nämlich genau dann, wenn man aus dem Block wieder herausgeht. (Last-In-First-Out)
+
+Variable ist zugreifbar in dem Block, in dem sie deklariert wurde und auch in den Unterblöcken.
+
+In Java ist es *nicht* erlaubt, in Unterblöcken Variablen zu deklarieren, die in den oberen Blöcken schon existieren.
+
+## Laufzeitkeller bei Methoden
+- Gleiches Prinzip: Methodenaufruf ist auch ein Block
+- Für jeden Methodenaufruf wir auf dem Laufzeitkeller ein neuer Speicherbereich angelegt. (u.A. für die formalen Parameter)
+- Beim Aufruf der Methode kommt der neue Speicherbereich oben auf den Keller.
+- Die Variablen in der Methoden dürfen aber genauso heißen, wie Variablen im aufrufenden Block.
+- Aus der Methode kann man nicht auf die Variablen im aufrufenden Block zugreifen.

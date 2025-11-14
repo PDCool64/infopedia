@@ -29,7 +29,7 @@ d.h., egal wie groß $b$ und wie klein $a$ war, es gibt immer eine natürliche Z
 
 ---
 # [[Zahlenräume#Rationale Zahlen $ mathbb{Q}$|Rationale Zahlen]]
->[!def] Die Rationalen Zahlen liegen dicht in den reellen
+>[!def] Die Rationalen Zahlen liegen dicht in den reellen Zahlen
 > Zu allen $a,b\in \mathbb{R}$ mit $a<b$ existiert ein $q\in \mathbb{Q}$ mit der Eigenschaft.
 > $a<q<b$
 > 
