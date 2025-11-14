@@ -8,6 +8,11 @@ status: rot
 Objekte sind Instanzen von Klassen und haben
 - Attribute
 - Methoden
+
+Grundlage für die Umsetzung im Speicher ist [[Speicher in Java - Stack und Heap]].
+
+Wichtiges Prinzip bei der Softwareentwicklung mit OOP ist die [[Datenkapselung und Datenabstraktion]]
+
 ---
 # Syntax in Java:
 
@@ -62,6 +67,7 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
 Variablen von Klassendatentypen enthalten als Wert nur eine Adresse für eine Stelle im Heap (Referenz).
 
 Alles zum Thema Seiteneffekte, Garbage Collector etc. ist wie bei Arrays.
+
 Achte also auf [[Call-by-value vs. call-by-reference]]
 
 ---
