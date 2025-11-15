@@ -9,6 +9,9 @@ Grundlage sind die [[Grundliegende Gesetze der Elektrotechnik|Grundlegenden Gese
 
 Hier werden Verfahren thematisiert, die es erlauben einfache, lineare Schaltungen die nur aus Widerständen, Strom/Spannungsquellen und Knoten bestehen zu untersuchen.
 
+Beispiele für die Anwendung dieser Verfahren gibt es zum Beispiel in dieser Globalübung:
+[[Beispiele_Netzwerkanalyse.pdf]]
+
 ---
 # Vorbereitung
 
@@ -46,4 +49,29 @@ Eigentlich ist man hier nach den Vorbereitungsschritten schon fertig.
 2. Klammere überall die Zweigströme (ggfs. mit Faktor 0) aus,
 3. Schreibe als Matrix-Vektor Produkt
 
-z.B:
+Z.B.:
+LGS:
+![[Pasted image 20251115204249.png]]
+Als Matrix-Vektor Produkt:
+![[Pasted image 20251115204334.png]]
+
+---
+# Maschenstromanalyse
+**Gegeben**: Quellspannungen
+**Gesucht**: Maschenströme bzw. auch Zweigströme
+
+Stelle genau wie in der [[#Zweigstromanalyse]] die Maschengleichungen auf.
+**Hier kann man sich die *Knoten*gleichungen sparen**
+
+Dann:
+1. Beschreibe alle Zweigströme als Kombination von Maschenströmen![[Pasted image 20251115204710.png]]
+2. Setzte die neuen Definitionen der Ströme in die Maschengleichungen ein.
+3. Klammere die Maschenströme aus und schreibe das LGS als Matrix-Vektor-Produkt
+
+
+Z.B.:
+![[Pasted image 20251115205100.png]]
+
+
+---
+# Knotenspannungsanalyse
