@@ -37,4 +37,13 @@ Hier werden Verfahren thematisiert, die es erlauben einfache, lineare Schaltunge
 
 ---
 # Zweigstromanalyse
-Gegeben: Quellspannungen
+**Gegeben:** Quellspannungen
+**Gesucht**: Zweigströme
+
+Eigentlich ist man hier nach den Vorbereitungsschritten schon fertig.
+
+1. Schreibe die Knotengleichungen zusammen mit den Maschengleichungen in ein LGS
+2. Klammere überall die Zweigströme (ggfs. mit Faktor 0) aus,
+3. Schreibe als Matrix-Vektor Produkt
+
+z.B:
