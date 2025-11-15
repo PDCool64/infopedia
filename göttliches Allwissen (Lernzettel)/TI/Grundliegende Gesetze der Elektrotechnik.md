@@ -28,6 +28,8 @@ Das Ohm'sche Gesetz sowie die Kirchhoff'schen Regel reichen alleine aus, um alle
 > Somit ist die Summe aller Ströme an einem Knoten genau $0$
 > $$0=I_{1}+I_{2}+\dots+I_{n}$$
 
+^88c4a5
+
 - Diese Regel drückt aus, das die Ladung erhalten wird: Alle Elektronen die hineinfließen kommen auch wieder heraus.
 - In einem Knoten können keine Elektronen gespeichert, geschweige denn vernichtet oder erzeugt werden.
 ![[Pasted image 20251114193120.png]]
@@ -43,6 +45,8 @@ Das Ohm'sche Gesetz sowie die Kirchhoff'schen Regel reichen alleine aus, um alle
 > 
 > - (Es ist Konvention, Maschen in die Richtung zu legen, in denen die Spannung der ggfs. enthaltenen Spannungsquelle abfällt)
 >   
+
+^4f95a2
 
 - Die Maschenregel drückt den Erhalt von Energie aus: Wenn man in einem Kreis/Zyklus läuft, muss man nach jedem Durchlauf wieder an einem Punkt mit genau gleich viel potentieller Energie (vgl. [[Physikalische Größen der Elektrotechnik#Elektrische Spannung|elektrische Spannung]]) herauskommen.
 
