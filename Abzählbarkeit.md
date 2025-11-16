@@ -134,3 +134,43 @@ $$\varphi(n)=\varphi\left(  \frac{m(m+1)}{2} +l\right)=(l,m+2-l)$$
 
 
 # Eine Abzählbare Vereinigung $\cup$ abzählbarer Mengen ist abzählbar
+
+
+>[!def] Vereinigung $\cup$ abzählbar vieler abzählbarer Mengen 
+> Eine abzählbare Vereinigung $\cup$ abzählbarer Mengen ist abzählbar.
+
+
+Sei M= \bigcup_{n=1}^{\infty}M_{n} jedes $M_{n}$ abzählbar und ohne Einschränkung $M_{n}\neq \emptyset$.
+
+Da jedes $M_{n}$ abzählbar ist, existiert auch für jedes $n\in \mathbb{N}$ eine *surjektive* Funktion, die $M_{n}$ abzählt:
+$$
+f_{n}:\mathbb{N}\to M_{n}
+$$
+
+Die Abbildung $\varphi$ aus dem [[#Cantor'sches Diagonalargument das kartesische Produkt $ mathbb{N} times mathbb{N}$ ist abzählbar|Cantor'schen Diagonalargumet]] liefert mit Definitionsberreich $\mathbb{N}$ als Werteberreich alle Kombinationen $\mathbb{N}\times \mathbb{N}$ . Will man dabei die Kombinationen nicht als Tupel sondern einzeln haben, kann man definieren: $\varphi(n)=(\varphi_{1}(n),\varphi_{2}(n))$
+(Informatisch geschrieben von der Idee her: $\varphi_{1}(n):=\varphi(n)[\,0\,]$ und $\varphi_{1}(n):=\varphi(n)[\,1\,]$)
+
+Ziel ist es nun, eine surjektive Abbildung zu konstruieren, die ganz $M$ abzählt
+$$g:\mathbb{N}\to M$$
+dies ist möglich, in dem man die durch $\varphi(n)$ erzeugten Paare benutzt, um gleichzeitig den gesamten Definitionsberreich jeder Funktion $f_{n}$ durch zu iterieren, als auch simultan alle verschiedenen Funktionen $f_{1}\;,\;f_{2}\;,\;\dots \;,\;f_{n}$ abzudecken:
+$$
+g:\mathbb{N}\to M \;,\; g(l)= f_{\varphi_{1}(n)}\big(\,\varphi_{2}(n)\;\big)
+$$
+
+Mit dieser Konstruktion ist $g$ surjektiv.
+
+
+# Die Rationalen Zahlen $\mathbb{Q}$ sind abzählbar
+
+Mehre anschauliche Optionen:
+Jeder rationale Zahl ist auch nur eine Kombination aus zwei natürlichen Zahlen, also ist
+$\mathbb{Q} \approx \mathbb{N}\times \mathbb{N}$. 
+Wobei durch kürzen nicht alle Kombinationen durchnummeriert werden müssen, weil sie $\mathbb{Q}$ nicht um "neue" Zahlen erweitern. 
+
+Graphisch: ([Wikipedia](https://de.wikipedia.org/wiki/Cantors_erstes_Diagonalargument))
+![[Abzählbarkeit 2025-11-16 15.18.13.excalidraw|600]]
+
+Man zählt genau wie beim Kreuzprodukt, überspringt aber nicht vollständig gekürzte Brüche.
+
+---
+
