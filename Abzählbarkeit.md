@@ -78,3 +78,7 @@ Wie funktioniert das:
 
 
 ![[Abzählbarkeit 2025-11-16 12.28.03.excalidraw]]
+
+
+
+![[Abzählbarkeit 2025-11-16 13.04.05.excalidraw]]
