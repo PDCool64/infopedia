@@ -67,18 +67,28 @@ Diese Abbildung ist sogar *bijektiv*, womit nicht nur gezeigt ist, dass $\mathbb
 Das Durchlaufen alle Elemente $(m,n)\in \mathbb{N}\times \mathbb{N}$ wird gut deutlich: Man kann eine bijektive Abbildung aufstellen, womit $\mathbb{N}\times \mathbb{N}$ abzählbar ist.
 ## Als explizite Abbildung
 
-### Idee: Gaus'sche Summenformel und Einteilung in Blöcke.
-
-Zu jedem $n\in \mathbb{N}$ gibt es *genau ein* Paar $(m,l)$ mit $m\in \mathbb{N}_{0}$ und $1\le l \le m+1$, so dass
+## $\mathbb{N}\times \mathbb{N}\to \mathbb{N}$
+Alle Tupel $(j,k)$ auf einer $m$-ten Diagonale haben die gleiche Summe $j+k$ ihrer Komponenten. Wir verschieben die Indizierung der Diagonalen aber um $-2$, damit das Tupel $(1,1)$ die $0$-te Diagonale bildet.
 $$
-n=\frac{m(m+1)}{2}
-+l$$
-Wie funktioniert das:
-- Der Bruch ist die Gaus'sche Summenformel
+m=j+k-2
+$$
+**Wir bilden die Tupel einer Diagonalen zusammen auf ein Intervall der natürlichen Zahlen ab.** 
+
+Jede Diagonale hat ein Element mehr als die Vorherige. - den "Block" der natürlichen Zahlen, auf den sie abgebildet werden soll, muss also eins größer als der Vorherige Block sein.
+
+Wo kann der $m$-te Block anfangen: Genau bei der Summe der Länge aller vorherigen Blöcke. Also bei:$$\sum_{i=0}^{m}i=\frac{m(m+1)}{2}$$
+Also bilden wir jedes der Tupel $(j,k)$ die in der $j+k-2$-ten Diagonale liegen ab auf:
+- Den Start des Intervalls auf $\mathbb{N}$ dieser diagonale: $\frac{m(m+1)}{2}$ mit $m=j+k-2$
+- Addiert mit der Position des jeweiligen Elements in der Diagonale: $k$
+
+Also:
+ $n=$
 
 
-![[Abzählbarkeit 2025-11-16 12.28.03.excalidraw]]
 
 
+![[Abzählbarkeit 2025-11-16 13.04.05.excalidraw|800]]
 
-![[Abzählbarkeit 2025-11-16 13.04.05.excalidraw]]
+![[Abzählbarkeit 2025-11-16 12.28.03.excalidraw|600]]
+
+
