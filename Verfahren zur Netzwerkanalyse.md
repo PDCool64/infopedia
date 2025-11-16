@@ -80,4 +80,17 @@ Z.B.:
 
 1. Ersetze alle Spannungsquellen durch Stromquellen
 	- Das Schnittstellenverhalten muss gleich bleiben
-	- 
+	- Faustregeln:
+		- Jede Spannungsquelle hat (irgendwo) einen Widerstand in Reihe 
+		  (sonst Kurzschluss)
+		- Jede Stromquelle benötigt einen Widerstand in Parallelschaltung.
+		  (Sie lässt selbst keinen Fremdstrom durch)
+		  
+	  - *Der Widerstand, den man an der Stromquelle parallel schalten muss ist **genauso groß** wie der Widerstand, der an der Spannungsquelle in Reihe war.* 
+	    (Es lässt sich herleiten, dass genau dann das Schnittstellenverhalten gleich bleibt)
+	- Der Strom $I_{q}$ den die neue Stromquelle liefert beträgt genau $I_{q}=\frac{U_{q}}{R}$ wobei $U_{q}$ die Spannung an der früheren Spannungsquelle war und $R$ der Widerstand in Reihe/Parallel ist.
+
+1. Bestimme einen Bezugsknoten
+	- Zeichne alle Knotenspannungen relativ zum Bezugsknoten ein
+
+	  
