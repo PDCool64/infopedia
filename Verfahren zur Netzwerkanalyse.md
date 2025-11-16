@@ -75,3 +75,9 @@ Z.B.:
 
 ---
 # Knotenspannungsanalyse
+**Gegeben**: Ströme an den Stromquellen
+**Gesucht**: Knotenspannungen
+
+1. Ersetze alle Spannungsquellen durch Stromquellen
+	- Das Schnittstellenverhalten muss gleich bleiben
+	- 
