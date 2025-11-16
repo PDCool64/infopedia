@@ -61,17 +61,18 @@ Diese Abbildung ist sogar *bijektiv*, womit nicht nur gezeigt ist, dass $\mathbb
 
 # Cantor'sches Diagonalargument: das kartesische Produkt $\mathbb{N}\times \mathbb{N}$ ist abzählbar
 
+## Formal:
+![[Pasted image 20251116145442.png]]
 
 
-
-# Verständniss: Warum funktioniert das:
-## Graphisch
+## Verständniss: Warum funktioniert das:
+### Graphisch
 ![[Pasted image 20251116122406.png|400]]
 
 Das Durchlaufen alle Elemente $(m,n)\in \mathbb{N}\times \mathbb{N}$ wird gut deutlich: Man kann eine bijektive Abbildung aufstellen, womit $\mathbb{N}\times \mathbb{N}$ abzählbar ist.
-## Die explizite Abbildung
+### Die explizite Abbildung
 
-## Hinrichtung: $\mathbb{N}\times \mathbb{N}\to \mathbb{N}$
+#### Hinrichtung: $\mathbb{N}\times \mathbb{N}\to \mathbb{N}$
 Alle Tupel $(j,k)$ auf einer $m$-ten Diagonale haben die gleiche Summe $j+k$ ihrer Komponenten. Wir verschieben die Indizierung der Diagonalen aber um $-2$, damit das Tupel $(1,1)$ die $0$-te Diagonale bildet.
 $$
 m=j+k-2
@@ -99,7 +100,7 @@ Achtung: *WARUM AUCH IMMER* hat man uns ins Skript ein Diagramm gepackt, in dem 
 ![[Abzählbarkeit 2025-11-16 12.28.03.excalidraw|600]]
 
 
-## Rückrichtung: $\mathbb{N}\to \mathbb{N}\times \mathbb{N}$
+#### Rückrichtung: $\mathbb{N}\to \mathbb{N}\times \mathbb{N}$
 Wir Teilen die natürlichen Zahlen in Blöcke ein, die jeweils einer Diagonale im Kartesischen Produkt entsprechen. Da jede Diagonale ein Element mehr als die vorherige hat, müssen auch die Blöcke jeweils ein Element größer werden.
 
 Die Grenzen der Blöcke werden somit als die Ergebnisse der Gauß'schen Summenformel gewählt:
@@ -132,4 +133,4 @@ $$\varphi(n)=\varphi\left(  \frac{m(m+1)}{2} +l\right)=(l,m+2-l)$$
 > Es gibt eine Abbildung, die jeder natürlichen Zahl genau ein Tupel aus $\mathbb{N}\times \mathbb{N}$ zuordnet.
 
 
-
+# Eine Abzählbare Vereinigung $\cup$ abzählbarer Mengen ist abzählbar
