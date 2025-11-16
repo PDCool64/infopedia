@@ -91,12 +91,30 @@ Z.B.:
 	- Der Strom $I_{q}$ den die neue Stromquelle liefert beträgt genau $I_{q}=\frac{U_{q}}{R}$ wobei $U_{q}$ die Spannung an der früheren Spannungsquelle war und $R$ der Widerstand in Reihe/Parallel ist.
 
 1. Stelle neue Knotengleichungen auf
-	- durch das Einfügen von neuen Zweigen an den Stromquellen sind Ströme hinzugekommen. Stellte diese neuen Ströme als Kombination aus den Quellströmen und den schon existierenden Strömen in Netzwerk dar
-	- Schreibe in den Knotengleichungen die Quelleströme auf die Ergebnisseite.
+	- durch das Einfügen von neuen Zweigen sind an jeder Stromquelle zwei neue Ströme Entstanden
+	- Schreibe in den Knotengleichungen die neuen Quelleströme auf die Ergebnisseite.
 
 Z.B:
-![[Verfahren zur Netzwerkanalyse 2025-11-16 11.22.45.excalidraw]]
+![[Verfahren zur Netzwerkanalyse 2025-11-16 11.22.45.excalidraw|600]]
 Die oberen Gleichungen waren *vor* dem Einfügen der Stromquellen. In die Knoten $2$ und $3$ fließen jetzt aber neue Ströme:
 	$\text{K2}:-I_{1}+I_{2}-I_{6}'+I_{q}$
 	$\text{K3}:-I_{3}+I_{4}+I_{6}'-I_{q}$ 
+Dabei zieht man die Quellströme auf die rechte Seite des LGS
+
+
+
+3. Stelle die Zweigströme (auch die neuen wie $I_{6}'$) durch [[Physikalische Größen der Elektrotechnik#Leitwert|Leitwerte]] (Kehrwert des Widerstands) sowie Knotenspannungen (relativ zum Referenzknoten dar.)
+   
+   Da für das Ohm'sche Gesetz die Zweigspannungen und nicht etwa die Spannungen relativ zu einem arbiträren Referenzknoten benötigt werden, muss man sich die Zweigspannungen aus den Knotenspannungen konstruieren:
+
+![[Pasted image 20251116113113.png]]
+Hier wird z.B. die Spannung die am Widerstand $G_{1}$ abfällt als Kombination der Knotenspannungen von Knoten $1$ und $2$ geschrieben.
+
+Ersetzt man somit alle Zweigströme erhält man ein LGS aus Knotenspannungen und Leitwerten:
+![[Pasted image 20251116113505.png]]
+
+4. Sortiere nach den Knotenspannungen um
+	 - Leitwerte Ausmultiplizieren
+	 - Knotenspannungen (ggfs. mit 0) ausklammern.
+
 	  
