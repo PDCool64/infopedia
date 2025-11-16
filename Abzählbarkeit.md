@@ -71,10 +71,7 @@ Diese Abbildung ist sogar *bijektiv*, womit nicht nur gezeigt ist, dass $\mathbb
 Das Durchlaufen alle Elemente $(m,n)\in \mathbb{N}\times \mathbb{N}$ wird gut deutlich: Man kann eine bijektive Abbildung aufstellen, womit $\mathbb{N}\times \mathbb{N}$ abzählbar ist.
 ## Die explizite Abbildung
 
-## $\mathbb{N}\to \mathbb{N}\times \mathbb{N}$
-
-
-## $\mathbb{N}\times \mathbb{N}\to \mathbb{N}$
+## Hinrichtung: $\mathbb{N}\times \mathbb{N}\to \mathbb{N}$
 Alle Tupel $(j,k)$ auf einer $m$-ten Diagonale haben die gleiche Summe $j+k$ ihrer Komponenten. Wir verschieben die Indizierung der Diagonalen aber um $-2$, damit das Tupel $(1,1)$ die $0$-te Diagonale bildet.
 $$
 m=j+k-2
@@ -89,12 +86,50 @@ Also bilden wir jedes der Tupel $(j,k)$ die in der $j+k-2$-ten Diagonale liegen 
 - Addiert mit der Position des jeweiligen Elements in der Diagonale: $j$ 
   (man könnte anstatt $j$ auch $k$ wählen, dann wäre die Sortierung innerhalb der einzelnen Diagonalen umgekehrt)
 
-Also:$$n= \frac{(j+k-2)(j+k-2)}{2}+j$$
-> Es gibt also eine injektive Abbildung, die jedem Tupel $(j,k)\in \mathbb{N}\times \mathbb{N}$ eine natürliche Zahl $n$ zuordnet.
+Also:$$n(j,k) =\frac{(j+k-2)(j+k-2)}{2}+j$$
+> Es gibt also eine injektive Abbildung, die jedem Tupel $(j,k)\in \mathbb{N}\times \mathbb{N}$ genau eine natürliche Zahl $n$ zuordnet.
 
-Achtung: *WARUM AUCH IMMER* hat man uns ins Skript ein Diagramm gepackt, in dem Die Diagonalen gespiegelt gewählt worden sind. In dem Diagramm hier wird innerhalb der einzelnen Diagonalen nach steigender zweiter Komponente sortiert, während die Formeln im Skript nach steigender erster Komponente sortieren.
+
+>[!wip]
+> Die beiden graphischen Beispiele hier stellen eine vertausche Sortierung da, die aber ebenso verwendet werden könnte.
+
+Achtung: *WARUM AUCH IMMER* hat man uns ins Skript ein Diagramm gepackt, in dem Die Diagonalen gespiegelt gewählt worden sind. In dem Diagramm hier wird innerhalb der einzelnen Diagonalen nach steigender zweiter Komponente sortiert, während die Formeln im Skript nach steigender erster Komponente sortiert.)
 ![[Abzählbarkeit 2025-11-16 13.04.05.excalidraw|800]]
 
 ![[Abzählbarkeit 2025-11-16 12.28.03.excalidraw|600]]
+
+
+## Rückrichtung: $\mathbb{N}\to \mathbb{N}\times \mathbb{N}$
+Wir Teilen die natürlichen Zahlen in Blöcke ein, die jeweils einer Diagonale im Kartesischen Produkt entsprechen. Da jede Diagonale ein Element mehr als die vorherige hat, müssen auch die Blöcke jeweils ein Element größer werden.
+
+Die Grenzen der Blöcke werden somit als die Ergebnisse der Gauß'schen Summenformel gewählt:
+> Zu jedem $n\in \mathbb{N}$ gibt es *genau eine* Kombination $(m,l)$ mit $m\in \mathbb{N}_{0}$ und $1\le l \le m+1$, so 
+> dass
+> $n= \frac{m(m+1)}{2}+l$
+
+Nun ist die Idee, $m$ als Index der Diagonale aufzufassen, die wir mit diesem Block abdecken wollen und $l$ als Position innerhalb der Diagonale. 
+Wir versuchen nun die $m+1$ vielen Tupel $(j,k)$ die auf dieser Diagonale liegen zu treffen:
+
+Von $n$ subtrahieren wir also den Beginn des Blocks, um die Position relativ zum Blockanfang zu bestimmen : $l=n- \frac{m(m+1)}{2}$.
+
+Indem man jede dieser relativen Positionen einfach als ersten Index des Tupels wählt, 
+erhält man mit $j=l= \frac{m(m+1)}{2}$ schon eine gültige erste Komponente des Tupels,
+die alle notwendigen ersten Komponenten der Diagonale abdeckt.
+
+Da die Summe der beiden Komponenten für jedes Element der Diagonale gleich ist,
+wählen wir für die jede erste Komponente $j=k= \frac{m(m+1)}{2}$ die Zweite Komponente so, dass ihre Summe konstant ist. Da $j=l$ für die einzelnen Elemente der Diagonale wächst, muss $k$ ebenso sinken: $k=m\!+\!1-l$ .
+Damit durch $1 \le l \le m+1$ auch hier aber alle notwendigen zweiten Komponenten $k$ der Diagonale mit $1\le k \le m+1$ getroffen werden, muss $k$ um $+1$ verschoben werden. (Sonst würde $k$ von $0\le k \le m$) liegen.
+
+Also wählt man als Zweite Komponente:
+
+$$
+k=m+2-l
+$$
+
+Insgesamt also:
+$$\varphi(n)=\varphi\left(  \frac{m(m+1)}{2} +l\right)=(l,m+2-l)$$
+
+> Es gibt eine Abbildung, die jeder natürlichen Zahl genau ein Tupel aus $\mathbb{N}\times \mathbb{N}$ zuordnet.
+
 
 
