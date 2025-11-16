@@ -47,7 +47,7 @@ Eigentlich ist man hier nach den Vorbereitungsschritten schon fertig.
 
 1. Schreibe die Knotengleichungen zusammen mit den Maschengleichungen in ein LGS
 2. Klammere überall die Zweigströme (ggfs. mit Faktor 0) aus,
-3. Schreibe als Matrix-Vektor Produkt
+3. Schreibe als Matrix-Vektor Produkt aus einer Matrix an Widerständen mit einem Vektor an Zweigströmen.
 
 Z.B.:
 LGS:
@@ -66,7 +66,7 @@ Stelle genau wie in der [[#Zweigstromanalyse]] die Maschengleichungen auf.
 Dann:
 1. Beschreibe alle Zweigströme als Kombination von Maschenströmen![[Pasted image 20251115204710.png]]
 2. Setzte die neuen Definitionen der Ströme in die Maschengleichungen ein.
-3. Klammere die Maschenströme aus und schreibe das LGS als Matrix-Vektor-Produkt
+3. Klammere die Maschenströme aus und schreibe das LGS als Matrix-Vektor-Produkt einer Matrix an Widerständen mit einem Vektor aus Maschenströmen.
 
 
 Z.B.:
@@ -113,8 +113,9 @@ Hier wird z.B. die Spannung die am Widerstand $G_{1}$ abfällt als Kombination d
 Ersetzt man somit alle Zweigströme erhält man ein LGS aus Knotenspannungen und Leitwerten:
 ![[Pasted image 20251116113505.png]]
 
-4. Sortiere nach den Knotenspannungen um
+4. Sortiere nach den Knotenspannungen um: Bilde ein LGS mit den Knotenspannungen als Unbekannte
 	 - Leitwerte Ausmultiplizieren
 	 - Knotenspannungen (ggfs. mit 0) ausklammern.
+	 - Als Produkt einer Matrix aus Leitwerten mit einem Vektor aus Knotenspannungen schreiben.
 
-	  
+![[Pasted image 20251116114237.png]]
