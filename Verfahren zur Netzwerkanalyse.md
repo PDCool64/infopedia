@@ -90,7 +90,13 @@ Z.B.:
 	    (Es lässt sich herleiten, dass genau dann das Schnittstellenverhalten gleich bleibt)
 	- Der Strom $I_{q}$ den die neue Stromquelle liefert beträgt genau $I_{q}=\frac{U_{q}}{R}$ wobei $U_{q}$ die Spannung an der früheren Spannungsquelle war und $R$ der Widerstand in Reihe/Parallel ist.
 
-1. Bestimme einen Bezugsknoten
-	- Zeichne alle Knotenspannungen relativ zum Bezugsknoten ein
+1. Stelle neue Knotengleichungen auf
+	- durch das Einfügen von neuen Zweigen an den Stromquellen sind Ströme hinzugekommen. Stellte diese neuen Ströme als Kombination aus den Quellströmen und den schon existierenden Strömen in Netzwerk dar
+	- Schreibe in den Knotengleichungen die Quelleströme auf die Ergebnisseite.
 
+Z.B:
+![[Verfahren zur Netzwerkanalyse 2025-11-16 11.22.45.excalidraw]]
+Die oberen Gleichungen waren *vor* dem Einfügen der Stromquellen. In die Knoten $2$ und $3$ fließen jetzt aber neue Ströme:
+	$\text{K2}:-I_{1}+I_{2}-I_{6}'+I_{q}$
+	$\text{K3}:-I_{3}+I_{4}+I_{6}'-I_{q}$ 
 	  
