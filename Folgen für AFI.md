@@ -100,3 +100,13 @@ Wenn man Quantoren mag ist auch diese kompakte Schreibweise gleichbedeutend:
 $$
 
 ## Eindeutigkeit des Grenzwerts
+
+>[!def] Eindeutigkeit des Grenzwerts
+> Eine reelle Folge besitzt höchstens einen Grenzwert. 
+> D.h. *wenn* ein Grenzwert existiert, dann ist dieser eindeutig bestimmt.
+
+## Grenzwert und Beschränktheit.
+>[!def] Grenzwert und Beschränktheit
+> Eine konvergente Folge ist [[#Beschränktheit von Folgen|beschränkt]]. (nach Oben *und* nach Unten).
+
+
