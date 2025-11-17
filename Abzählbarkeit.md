@@ -187,9 +187,35 @@ Aus $a)$ ergibt sich wegen $M^{(n+1)}=M^{n}\times M$ mit offensichtlicher Indukt
 a) selbst lässt sich zeigen: Das kartesische Produkt ist die [[#Eine Abzählbare Vereinigung $ cup$ abzählbarer Mengen ist abzählbar|Vereinigung]] $\cup$ abzählbar vieler Zweitupel.
 
 ---
-
 # Die [[Mengen#Potenzmenge|Potenzmenge]] ist *nicht* abzählbar
 
 >[!def] Potenzmenge ist überabzählbar
 > Die Potenzmenge $\text{Pot}(\mathbb{N})$ ist überabzählbar.
+
+## Beweis:
+Angenommen, es gibt eine surjektive Abbildung $f:\mathbb{N}\to\text{Pot}(\mathbb{N})$.
+Wir betrachten nun, die nach Definition der Potenzmenge sicher im Zielbereich enthaltene Menge  $$
+A:=\{ n\in \mathbb{N} \mid n \not\in f(n) \}
+$$also die Menge aller $n$, die nicht in ihrem eigenen Bild enthalten sind.
+
+Da die Abbildung $f$ surjektiv ist, wird $A$ sicher getroffen und es existiert ein $m\in \mathbb{N}$ mit $f(m)=A$.
+
+1. Fall: $m\in f(m)=A$ (d.h. $m$ ist im eigenen Bild enthalten): Nach Konstruktion von $A$ gilt aber: $m\notin A = f(m)$ als Widerspruch.
+   
+2. Fall: $m \not\in f(m)=A$ (d.h. $m$ ist *nicht* im eigenen Bild enthalten): Nach Konstruktion von $A$ gilt aber: $m\in A=f(m)$ als Widerspruch.
+
+Also kann ein solches $f$ nicht existieren.
+
+---
+# Die Menge aller Abbildungen $\{ 0,1 \}^{\mathbb{N}}$ ist überabzählbar
+
+>[!def] Überabzählbarkeit von Abbildungen aus $\mathbb{N}$
+> Die Menge $\{ 0,1 \}^\mathbb{N}$ aller [[Abbildungen]] von $\mathbb{N}$ nach $\{ 0,1 \}$ ist überabzählbar.
+
+## Beweis
+Ordnet man einem $f:\mathbb{N}\to \{ 0,1 \}$ die Menge $X_{f}:=\{ n\in \mathbb{N} \mid f(n)=1 \}$ zu, so erhält man eine Abbildung von $\{ 0,1 \}^{\mathbb{N}}$ nach $\text{Pot}(\mathbb{N})$. Diese ist bijektiv.
+Somit ist die gegebene Menge gleichmächtig mit der überabzählbaren Potenzmenge
+
+**Vgl. "Liste einschlägiger Indizes" aus TI:**
+Jeder "booleschen" Funktion weisen wir hier eine Menge aus den $n\in \mathbb{N}$ zu, für die sie $1$ ist. Dies erzeugt die gesamte Potenzmenge, weil sowohl die Anzahl der einschlägigen Indizes als auch ihre jeweiligen Werte variabel sind. *Es kann jede Beliebige Teilmenge von $\mathbb{N}$ als Liste der einschlägigen Indizes auftauchen*.
 
