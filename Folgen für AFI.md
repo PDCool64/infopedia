@@ -109,4 +109,49 @@ $$
 >[!def] Grenzwert und Beschränktheit
 > Eine konvergente Folge ist [[#Beschränktheit von Folgen|beschränkt]]. (nach Oben *und* nach Unten).
 
+## Beweis:
+Seien $a$ und $a'$ verschiedene Grenzwerte von $(a_{n})_{n\ge 1}$ und $\varepsilon>0$.
+Man wählt $n_{0},n_{1}\in \mathbb{N}$ sodass $\left| a_{n}-a \right|< \frac{\varepsilon}{2} \;\forall{n\ge n_{0}}$ und $\left| a_{n}-a' \right|< \frac{\varepsilon}{2} \;\forall{n\ge n_{1}}$.
+
+Sei $m=\text{max}\{ n_{0},n_{1} \}$. Dann gilt mit der [[Formelsammlung Abschätzungen#Dreiecksungleichung|Dreiecksungleichung]] :
+$$
+\left| a-a' \right| =\left| a-a_{m}+a_{m}-a' \right| \overset{\text{DUG}}{\le} \left| a-a_{m} \right| -\left| a_{m}-a' \right| < \frac{\varepsilon}{2}+ \frac{\varepsilon}{2}=\varepsilon 
+$$
+Also insbesondere:
+$\left| a-a' \right|<\varepsilon$
+
+Weil $\varepsilon$ beliebig ist, folgt $a=a'$.
+
+---
+# Limitenregeln /  Grenzwertsätze
+
+>[!def] Limitenregeln
+> Seien $c\in \mathbb{R}$ 
+> und $(a_{n})_{n\ge 1}$ , $(b_{n})_{n\ge 1}$ [[#Grenzwert von Folgen|konvergente]] (reelle) Folgen mit 
+> $\lim_{ n \to \infty }a_{n}=a$ und
+> $\lim_{ n \to \infty }b_{n}=b$.
+> 
+> Dann gilt:
+> 
+> >[!def] Summe zweier konvergenter Folgen
+> > $$
+> > (a_{n}+b_{n})_{n\ge 1} \quad \text{konvergiert mit}\quad \lim_{ n \to (\infty) } (a_{n}+b_{n})=a+b 
+> > $$
+> 
+> >[!def] Produkt konvergenter Folge mit konstantem Faktor
+> > $$
+> > (c\cdot a_{n})_{n\ge_{1}} \quad\text{konvergiert mit}\quad \lim_{ n \to   }(c\cdot a_{n})=c\cdot a
+> > $$
+> 
+> >[!def] Produkt zweier konvergenter Folgen
+> > $$
+> > (a_{n}\cdot b_{n})_{n\ge 1} \quad \text{konvergiert mit} \quad \lim_{ n \to \infty } (a_{n}\cdot b_{n})=a\cdot b
+> > $$
+> 
+> >[!def] Quotient zweier konvergenter Folgen.
+> > Falls $b_{n}\neq 0 \;\forall _n\in \mathbb{N}$ und $b\neq 0$, dann:
+> > $$
+> >  \Big(\frac{a_{n}}{b_{n}}\Big)_{n\ge 1}\quad \text{konvergiert mit}\quad\lim_{ n \to \infty } \left( \frac{a_{n}}{b_{n}} \right) = \frac{a}{b}
+> > $$
+> 
 
