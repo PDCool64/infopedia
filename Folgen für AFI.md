@@ -6,7 +6,7 @@ status: rot
 ---
 
 >[!def] Folge
->Eine (reelle) Folge ist eine Abbildung $\mathbb{N}\to \mathbb{R}$.
+>Eine ([[Reelle Zahlen und Schranken|reelle]]) Folge ist eine [[Abbildungen|Abbildung]] $\mathbb{N}\to \mathbb{R}$.
 >
 > ---
 >Statt $\mathbb{N}\to \mathbb{R}\;,\;n\mapsto a_{n}$ schreibt man auch $(a_{n})_{n\ge 1}$
@@ -44,3 +44,58 @@ $a_{n}=a_{n_{0}}\cdot\text{const}^{n-n_{0}}$
 
 ---
 # Monotonie von Folgen
+
+>[!def] Monotonie von Folgen
+> >[!def] (einfache) Monotonie
+> > Eine Folge $(a_{n})_{n\in \mathbb{N}}$ heißt **monoton wachsend**, wenn $a_{n+1}\ge a_{n}$ für alle $n\in \mathbb{N}$ gilt.
+> > Eine Folge heißt **monoton fallend**, wenn $a_{n+1}\le a_{n}$ für alle $n\in \mathbb{N}$ gilt.
+> 
+> 
+> >[!def] Strenge Monotonie
+> > Eine Folge $(a_{n})_{n\in \mathbb{N}}$ heißt **streng monoton wachsend**, wenn $a_{n+1} > a_{n}$ für alle $n\in \mathbb{N}$ gilt. 
+> > Eine Folge $(a_{n})_{n\in \mathbb{N}}$ heißt **streng monoton fallend**, wenn $a_{n+1} < a_{n}$ für alle $n\in \mathbb{N}$ gilt. 
+
+
+# Beschränktheit von Folgen
+>[!def] Beschränktheit von Folgen
+> Eine Folge $(a_{n})_{n\in \mathbb{N}}$ heißt **nach oben beschränkt**, wenn es ein $M_{1}\in \mathbb{R}$ gibt, so dass $a_{n} \le M$ für alle $n\in \mathbb{N}$.
+> 
+> Eine Folge $(a_{n})_{n\in \mathbb{N}}$ heißt **nach unten beschränkt**, wenn es ein $M_{2}\in \mathbb{R}$ gibt, so dass $a_{n}\ge M_{2}$ für alle $n\in \mathbb{N}$.
+> 
+> Eine nach oben *und* nach unten beschränkte Folge heißt kurz **beschränkt.**
+> 
+> ---
+> 
+> Feststellen von Beschränktheit:
+> - Eine monoton wachsende Folge ist offensichtlich durch ihr erstes Element nach unten beschränkt.
+>   Eine monoton fallende Folge ist offensichtlich durch ihr erstes Element nach oben beschränkt.
+> - Eine Folge $(a_{n})_{n\in \mathbb{N}}$ ist *genau dann* beschränkt, wenn es ein $M\in \mathbb{R}$ gibt, so dass $\left| a_{n} \right|\le M$ für alle $n\in \mathbb{N}$.
+
+---
+
+# Grenzwert von Folgen
+
+>[!def] Grenzwert einer Folge
+> Eine [[Reelle Zahlen und Schranken|reelle]] Folge $(a_{n})_{n \ge 1}$ heißt **konvergent**, wenn ein $a\in \mathbb{R}$ existiert, so das zu jedem $\varepsilon>0$ ein $n_{0}(\varepsilon)\in \mathbb{N}$ existiert, so dass:$$\left| a_{n}-a \right| < \varepsilon \quad\text{für alle}\;n\ge n_{0}$$
+> 
+> was bedeutet:
+> Für *jedes* $\varepsilon$ findet sich ein (großer) Index $n_{0}$ , ab dem alle weiteren Folgenglieder in der $\varepsilon$-Umgebung liegen.
+>
+> ---
+> Man nennt $a$ **Limes** oder **Grenzwert** der Folge $(a_{n})_{n\ge 1}$ und schreibt 
+> $$\lim_{ n \to \infty } a_{n}=a\quad \text{oder}\quad a_{n} \underset{n\to \infty}\longrightarrow a$$
+> 
+> Man sagt auch, dass $(a_{n})_{n\ge 1}$ gegen $a$ **konvergiert**.
+> Eine Folge die nicht konvergent ist, heißt **divergent**.
+> 
+> Eine Folge mit Grenzwert $0$ heißt **Nullfolge**.
+> 
+
+- Mit $n_{0}(\varepsilon)$ ist gemeint, dass $n_{0}$ von $\varepsilon$ abhängen kann. Wird z.B. ein sehr kleines $\varepsilon$ eingefordert, muss man ggfs. ein sehr großes $n_{0}$ wählen, ab dem die Folge ausreichend nah an ihrem Grenzwert bleibt.
+- Die Konvergenzbedingung besagt, dass *fast alle* Folgenglieder (d.h. alle bis auf endlich viele) in ger geforderten $\varepsilon$-Umgebung liegen.
+
+Wenn man Quantoren mag ist auch diese kompakte Schreibweise gleichbedeutend:
+> Eine Folgen reeller Zahlen $(a_{n})_{n\ge 1}$ konvergiert gegen $a$, falls gilt:$$
+\forall_{\varepsilon>0}\exists_{n_{0}\in \mathbb{N}}\forall_{n\ge n_{0}}:\left| a_{n}-a \right| <\varepsilon
+$$
+
