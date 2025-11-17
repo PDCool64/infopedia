@@ -99,3 +99,4 @@ Wenn man Quantoren mag ist auch diese kompakte Schreibweise gleichbedeutend:
 \forall_{\varepsilon>0}\exists_{n_{0}\in \mathbb{N}}\forall_{n\ge n_{0}}:\left| a_{n}-a \right| <\varepsilon
 $$
 
+## Eindeutigkeit des Grenzwerts
