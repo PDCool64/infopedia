@@ -173,4 +173,23 @@ Graphisch: ([Wikipedia](https://de.wikipedia.org/wiki/Cantors_erstes_Diagonalarg
 Man zählt genau wie beim Kreuzprodukt, überspringt aber nicht vollständig gekürzte Brüche.
 
 ---
+# Das [[Mengen#Kartesisches Produkt|Kartesische Produkt]] endliche vieler abzählbarer Mengen ist abzählbar
+
+>[!def] Abzählbarkeit des kartesischen Produkts
+> Sind $M_{1}$ und $M_{2}$ abzählbar, so ist auch $M_{1}\times M_{2}$ abzählbar
+>
+> ---
+> Ist $M$ abzählbar, und $n\in \mathbb{N}$, so ist auch $M^{n}=\underbrace{ M\times\dots \times M }_{ n-mal }$ abzählbar
+
+## Beweis.
+Aus $a)$ ergibt sich wegen $M^{(n+1)}=M^{n}\times M$ mit offensichtlicher Induktion.
+
+a) selbst lässt sich zeigen: Das kartesische Produkt ist die [[#Eine Abzählbare Vereinigung $ cup$ abzählbarer Mengen ist abzählbar|Vereinigung]] $\cup$ abzählbar vieler Zweitupel.
+
+---
+
+# Die [[Mengen#Potenzmenge|Potenzmenge]] ist *nicht* abzählbar
+
+>[!def] Potenzmenge ist überabzählbar
+> Die Potenzmenge $\text{Pot}(\mathbb{N})$ ist überabzählbar.
 
