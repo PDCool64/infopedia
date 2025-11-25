@@ -1,5 +1,6 @@
 ---
 tags:
+  - AFI
 status: rot
 ---
 ---
