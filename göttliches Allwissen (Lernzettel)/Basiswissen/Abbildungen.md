@@ -1,3 +1,7 @@
+---
+aliases:
+  - Abbildung
+---
 
 >[!wip]
 > Diese Notiz ist noch redundant mit [[Abbildungen für DS]] weil die beiden Definitionsansätze noch nicht perfekt zusammengefügt sind.
