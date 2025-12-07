@@ -51,4 +51,9 @@ status: rot
 ## Existenz von Umkehrabbildungen und [[Abbildungen#Injektiv, Surjektiv, Bijektiv|Surjektivität, Injektivität, Bijektivität]]
 
 Es gilt:
-- $f$ hat *links*seitige Umkehrabbildung $\iff$ $f$ ist 
+- $f$ hat *links*seitige Umkehrabbildung $\iff$ $f$ ist injektiv.
+  
+  Wäre $f$ nicht injektiv, dann könnte eine *danach* ausgeführte (also links stehende) die Elemente nicht mehr aus einander halten und korrekt umkehren.
+> merke: in l*i*nksinvertierbar ist ein $i$ genauso wie in *i*njektiv.
+
+- $f$
