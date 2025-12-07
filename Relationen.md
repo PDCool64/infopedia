@@ -51,6 +51,44 @@ status: rot
 > | (R)-(A)-(T)-(V) | Totale Ordnung                        |
 > 
 
+# Äquivalenzklassen
+>[!def] Äquivalenzklasse
+> Es sei $C$ eine *Äquivalenzrelation* auf $M$. Für $x\in M$ heißt
+> $$
+> \left[ x \right] :=\left[ x \right] _{C}:=\{ y\in M \mid xCy\}= \{ y\in M \mid yCx \}
+> $$
+> die **Äquivalenzklasse** von $C$ zu $x$. 
+> 
+> ---
+> 
+> Es gilt für alle $x,y\in M$
+> - $x\in \left[ x \right]_{C}$
+> - $y\in \left[ x \right]_{C}\iff x\in \left[ y \right]_{C}$
+> - $y\in \left[ x \right]_{C} \implies \left[ y \right]_{C}=\left[ x \right]_{C}$
+>  
+>  Man bezeichnet deshalb, *jedes* Element einer Äquivalenzklasse als Repräsentant derselben.
+>  
+>  Es folgt der Satz: Für alle $x,y\in M$ gilt:
+>  $$xCy \iff \left[ x \right] _{C}= \left[ y \right] _{C} \iff \left[ x \right] _{c} \subseteq \left[ y \right] _{C}$$
+>  
+>  Somit sind zwei Äquivalenzklassen entweder gleich oder disjunkt.
+>  
+
+
+ > [!def] Quotientenmenge
+>  Die Menge aller Äquivalenzklassen von $M$ unter der Relation $C$ wird mit $M/ C$ bezeichnet. 
+>  $$M / C := \{ \left[ x \right] _{C} \mid x \in M \}$$
+>  Sie wird **Quotientenmenge von $M$ modulo $C$** genannt.
+> >(Nicht zu verwechseln mit $A\setminus B$ für ``\setminus``) 
+> 
+> ---
+> 
+> Die Quotientenmenge $S / C$ jeder Äquivalenzrelation bildet eine Partition von $M$
+
+
+
+
+
 
 # Abschlüsse
 Die Meisten Relationen haben keine der [[#Eigenschaften von Relationen|interessanten Eigenschaften]] - Man kann sie aber so erweitern, dass sie diese erfüllen.
