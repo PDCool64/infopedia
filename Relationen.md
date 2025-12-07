@@ -35,6 +35,7 @@ status: rot
 > 
 
 - Vollständig bedeutet, dass jedes beliebige Paar an Elementen bzgl. der Relation vergleichbar ist.
+- Bei Transitiven Relationen schreibt man für $(x,y)\in R\;,\;(y,z)\in R$ auch kurz:$$x\,R\,y\,R\,z$$ bzw. für $(x_{k},x_{k+1})\in M\; \forall_{k\in \{ 1 ,\dots,n\}}$  kurz: $$x_{1}\,R\,x_{2}\,R\,x_{3}\,R\,\cdots\,R\,x_{n}$$
 ## Bemerkungen
 - wir betrachten hier nur $M=N$ d.h. $R\subseteq M\times M$
 - Die allermeisten Relationen haben keine der obigen Eigenschaften. Solche, die manche der Eigenschaften haben sind aber besonders interessant.
@@ -71,28 +72,47 @@ Die Meisten Relationen haben keine der [[#Eigenschaften von Relationen|interessa
 > > - $S$ minimal groß: Für alle transitiven Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
 > >   
 > > heißt **transitiver Abschluss** von $R$.
+> > 
+> > ---
+> > Der transitive Abschluss $S$  von $R$ lässt aufschreiben durch: $x,y\in M$
+> > $$ rSy \iff\text{ es gibt }n\in \mathbb{N}_{0}\;,\;x_{0},\dots,x_{n}\in M : {\color{lime}{x}}R\,x_{0}Rx_{1}R\cdots Rx_{n}\,R{\color{lime}{y}}$$
+> > 
+> > In der Praxis:
+> > - Erstelle für jedes $x$ eine Liste der $y$ mit denen es in Relation steht, also für die $xRy$ gilt
+> > - Gehe für jedes $x$ die Listeneinträge $y$ durch. Schaue in die Liste von $y$ selbst. Wenn die Liste von $y$ Einträge hat, die $x$ noch nicht hat, füge diese bei $x$ hinzu.
+> > - Wiederhole so lange für alle $x$, bis man über alle iterieren kann, ohne noch neue Paare zu finden.
+> >
 > 
 > 
 > >[!def] Reflexiver Abschluss
 > > Die Relation $S$ auf $M$ mit
 > > - $S$ reflexiv
 > > - $R\subseteq S$
-> > - $S$ minimal groß: Für alle transitiven Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
+> > - $S$ minimal groß: Für alle reflexiven Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
 > >   
 > > heißt **reflexiver Abschluss** von $R$.
 > >   --- 
-> Der Reflexive Abschluss ist sehr leicht zu erzeugen, indem man $S$ mit der Menge der Diagonalpaare vereinigt:$$R=S \cup \{ (x,x) \mid x\in M \}$$
+> > Der Reflexive Abschluss ist sehr leicht zu erzeugen, indem man $S$ mit der Menge der Diagonalpaare vereinigt:$$R=S \cup \{ (x,x) \mid x\in M \}$$
+> > Gleichbedeutend ist für $x,y\in M$: $$xSy \iff xRy \lor x=y$$
+> 
 > 
 > >[!def] Symmetrischer Abschluss
 > > Die Relation $S$ auf $M$ mit
 > > - $S$ symmetrisch
 > > - $R\subseteq S$
-> > - $S$ minimal groß: Für alle transitiven Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
+> > - $S$ minimal groß: Für alle symmetrischen Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
 > >   
-> > heißt **transitiver Abschluss** von $R$.
+> > heißt **symmetrischer Abschluss** von $R$.
 > > 
 > > ---
-> > Der symmetrische Abschluss
+> > Der symmetrische Abschluss lässt sich leicht bestimmen. Für $x,y\in M$:
+> > $$xSy \iff xRy \lor yRx$$
+>
+> Jeder dieser Abschlüsse ist *eindeutig* bestimmt und immer existent.
+
+
+
+
 
 
 
