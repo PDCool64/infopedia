@@ -118,6 +118,9 @@ Die Leere Menge ist [[#^ec070c|Teilmenge]] jeder Menge, also $\emptyset \subsete
 > 
 > ---
 > Man nennt die **Mächtigkeit** einer Menge auch **Ordnung** einer Menge.
+>
+> ---
+> Zwei Mengen sind gleichmächtig, wenn es eine [[Abbildungen#Injektiv, Surjektiv, Bijektiv|Bijektion]] zwischen ihnen gibt.
 
 
 Sind $M,N$ Mengen, so gilt $\left| M \cup N \right|=\left| M \right|+\left| N \right|-\left| N\cap N \right|$
@@ -134,7 +137,6 @@ $$
 \left| M \right| =\sum_{C\in\mathcal{P}}\left| C \right| 
 $$
 
-moin servus
 
 # Potenzmenge
 
