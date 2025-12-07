@@ -90,6 +90,9 @@ Die Meisten Relationen haben keine der [[#Eigenschaften von Relationen|interessa
 > > - $S$ minimal groß: Für alle transitiven Relationen $T$ auf $M$ gilt: $R\subseteq T \implies S \subseteq T$ bzw. $\left| T \right|\ge \left| S \right|$
 > >   
 > > heißt **transitiver Abschluss** von $R$.
+> > 
+> > ---
+> > Der symmetrische Abschluss
 
 
 
