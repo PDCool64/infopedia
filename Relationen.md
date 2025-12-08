@@ -77,7 +77,7 @@ status: rot
 >  Somit sind zwei Äquivalenzklassen entweder gleich oder disjunkt.
 >  
 
-## Quotientenmenge als und Partitionen
+## Quotientenmenge und Partitionen: 
  > [!def] Quotientenmenge
 >  Die Menge aller Äquivalenzklassen von $M$ unter der Relation $C$ wird mit $M/ C$ bezeichnet. 
 >  $$M / C := \{ \left[ x \right] _{C} \mid x \in M \}$$
@@ -85,13 +85,51 @@ status: rot
 > >(Nicht zu verwechseln mit $A\setminus B$ für ``\setminus``) 
 > 
 
-> [!def]Haut
+>[!def] Quotientenabbildung
+> Die **Quotientenabbildung** $\kappa$ ("Kappa") bildet jedes Element einer Menge $M$ auf seine Äquivalenzklasse unter der Äquivalenzrelation $C$ ab:
+> $$
+> \kappa : M\to M /C \;,\;x \mapsto \left[ x \right] _{C}
+> $$
+
+### Hauptsatz über Äquivalenzrelationen
+> [!def] Hauptsatz über Äquivalenzrelationen
 > Die Quotientenmenge $S / C$ jeder Äquivalenzrelation bildet eine [[Mengen#Partition einer Menge|Partition]] von $M$.
-> 
 > Ist $\mathcal{P}$ eine [[Mengen#Partition einer Menge|Partition]] von $M$, so existiert eine Äquivalenzrelation $C$ auf $M$ mit $M / C = \mathcal{P}$.
+> Die Äquivalenzklassen sind genau die Teile der Partition.
+>
+> ---
+> Genauer gesagt, gilt der **Hauptsatz der Äquivalenzrelationen**:
+> Es sei $M$ eine Menge. Dann existiert eine [[Abbildungen#Injektiv, Surjektiv, Bijektiv|Bijektion]]: $$
+\{ C \mid C\text{ ist Äq.rel. auf }M \} \to \{  \mathcal{P} \mid \mathcal{P} \text{ ist Partition von }M \} \;,\; C \mapsto M / C
+$$
 
+### Homomorphiesatz für Mengen
+**Vorbedingungen**:
+Es sei $f:M\to N$ Abbildung
+- Nicht-leere [[Abbildungen#Bild, Urbild, Wertebereich und Fasern|Fasern]] bilden [[Mengen#Partition einer Menge|Partition]] von $M$. (Disjunkt, weil jedem $x$ genau ein $y$ zugeordnet wird)
+- die **Bildgleichheit** ist eine Äquivalenzrelation:
+>[!def] Bildgleichheit
+> Es sei $f:M\to N$ eine [[Abbildungen|Abbildung]] und $x,x'\in M$.
+> Die **Bildgleichheit** ist folgende Äquivalenzrelation:
+> $$
+> x\,R_{f}\,x' :\!\iff f(\,x\,)=f(\,x'\,)
+> $$
 
-
+>[!def] Homomorphiesatz für Mengen
+> Es sei $f:M\to N$ [[Abbildungen|Abbildung]] und $\kappa$ ("Kappa")
+> $$\kappa:M \to M / R_{f} \;,\; x\mapsto \left[ x \right] _{R_{f}}$$
+> die Quotientenabbildung zur Bildgleichheit.
+> > *(Bildet jedes Element der Menge auf seine Äquivalenzklasse unter Bildgleichheit ab)*
+> 
+> Dann existiert eine wohldefinierte Abbildung
+> $$\hat{f}: M / R_{f} \to N \;,\; \left[ x \right] _{R_{f} }  \mapsto f(x)$$
+> > *(Bildet jede Bildgleichheit-Äquivalenzklasse auf den Funktionswert ihrer Repräsentanten ab)* 
+>
+> mit $$f=\hat{f}\circ\kappa$$
+>
+#### Bemerkungen
+- $\hat{f}$ ist injektiv
+- $\hat{f}(M)=f(M)$
 
  ---
 # Abschlüsse
@@ -151,10 +189,3 @@ Die Meisten Relationen haben keine der [[#Eigenschaften von Relationen|interessa
 > > $$xSy \iff xRy \lor yRx$$
 >
 > Jeder dieser Abschlüsse ist *eindeutig* bestimmt und immer existent.
-
-
-
-
-
-
-
