@@ -51,7 +51,10 @@ status: rot
 > | (R)-(A)-(T)-(V) | Totale Ordnung                        |
 > 
 
-# Äquivalenzklassen
+---
+# Äquivalenzrelationen: Details
+
+## Äquivalenzklassen
 >[!def] Äquivalenzklasse
 > Es sei $C$ eine *Äquivalenzrelation* auf $M$. Für $x\in M$ heißt
 > $$
@@ -74,22 +77,23 @@ status: rot
 >  Somit sind zwei Äquivalenzklassen entweder gleich oder disjunkt.
 >  
 
-
+## Quotientenmenge als und Partitionen
  > [!def] Quotientenmenge
 >  Die Menge aller Äquivalenzklassen von $M$ unter der Relation $C$ wird mit $M/ C$ bezeichnet. 
 >  $$M / C := \{ \left[ x \right] _{C} \mid x \in M \}$$
 >  Sie wird **Quotientenmenge von $M$ modulo $C$** genannt.
 > >(Nicht zu verwechseln mit $A\setminus B$ für ``\setminus``) 
 > 
-> ---
+
+> [!def]Haut
+> Die Quotientenmenge $S / C$ jeder Äquivalenzrelation bildet eine [[Mengen#Partition einer Menge|Partition]] von $M$.
 > 
-> Die Quotientenmenge $S / C$ jeder Äquivalenzrelation bildet eine Partition von $M$
+> Ist $\mathcal{P}$ eine [[Mengen#Partition einer Menge|Partition]] von $M$, so existiert eine Äquivalenzrelation $C$ auf $M$ mit $M / C = \mathcal{P}$.
 
 
 
 
-
-
+ ---
 # Abschlüsse
 Die Meisten Relationen haben keine der [[#Eigenschaften von Relationen|interessanten Eigenschaften]] - Man kann sie aber so erweitern, dass sie diese erfüllen.
 
