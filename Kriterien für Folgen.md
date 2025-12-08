@@ -62,8 +62,9 @@ Grundliegend ist die normale Grenzwertdefinition:
   % ==== Funktionsbereich clippen ====
   \begin{scope}
     \clip (\xmin,\ymin) rectangle (\xmax,\ymax);
-    \draw[color=lime, thick, domain=\xmin:\xmax] plot (\x ,{-7/((\x+1)^3)},);
-    \draw[color=teal, thick, domain=\xmin:\xmax] plot (\x, {4/(2*\x+1)});
+    \draw[color=lime, thick, domain={\xmin+1}:\xmax] plot (\x ,{4/\x},);
+    \draw[color=orange, thick, domain={\xmin+1}:\xmax] plot (\x, {1/\x)});
+    \draw[color=teal, thick, domain={\xmin+1}:\xmax] plot (\x, {- 2/\x});
   \end{scope}
 
   % ==== Funktionsbeschriftungen außerhalb des Clips ====
