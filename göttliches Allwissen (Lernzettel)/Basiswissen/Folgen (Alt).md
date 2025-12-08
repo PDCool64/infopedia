@@ -1,5 +1,5 @@
 
-Diese Notiz besteht aus Infos aus der Schule und ist nicht zwangsweise auf dem Stand der Vorlesungen. Bis wir inhaltlich in DS so weit sind, dass man sieht ob es hier inhaltliche Unterschiede gibt, wird primär [[Folgen für DS]] unterhalten.
+Diese Notiz besteht aus Infos aus der Schule und ist nicht zwangsweise auf dem Stand der Vorlesungen. Bis wir inhaltlich in DS so weit sind, dass man sieht ob es hier inhaltliche Unterschiede gibt, wird primär [[Folgen für AFI]] und [[Folgen für DS]] unterhalten.
 
 
 >[!def] Folge

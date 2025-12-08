@@ -24,7 +24,7 @@ $g_{n}$ hingegen ist die Abbildung, welche den Rekursionsschritt selbst definier
 ## Anders herum gedacht: (DS)
 >[!def] Rekursionssatz von Dedekind (DS)
 > Es sei $N$ eine Menge, $f:N\to N$ [[Abbildungen|Abbildung]] und $a\in N$.
-> Dann gibt es genau eine [[Folgen|Folge]] $(a_{n})_{n\in \mathbb{N}}$ mit:
+> Dann gibt es genau eine [[Folgen (Alt)|Folge]] $(a_{n})_{n\in \mathbb{N}}$ mit:
 > - $a_{1=a}$
 > - $a_{n+1}=f(a_{n})$ für $n\in \mathbb{N}$
 > 

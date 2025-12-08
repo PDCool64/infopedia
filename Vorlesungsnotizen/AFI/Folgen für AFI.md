@@ -5,6 +5,10 @@ status: rot
 ---
 ---
 
+Diese Notiz richtet sich nach dem AFI Skript.
+Für DS-spezifische Inhalte gibt es [[Folgen für DS]].
+Vorkursinhalte die noch nicht übertragen sind, gibt es noch in [[Folgen (Alt)]]
+
 >[!def] Folge
 >Eine ([[Reelle Zahlen und Schranken|reelle]]) Folge ist eine [[Abbildungen|Abbildung]] $\mathbb{N}\to \mathbb{R}$.
 >
@@ -96,16 +100,14 @@ $a_{n}=a_{n_{0}}\cdot\text{const}^{n-n_{0}}$
 
 Wenn man Quantoren mag ist auch diese kompakte Schreibweise gleichbedeutend:
 > Eine Folgen reeller Zahlen $(a_{n})_{n\ge 1}$ konvergiert gegen $a$, falls gilt:$$
-\forall_{\varepsilon>0}\exists_{n_{0}\in \mathbb{N}}\forall_{n\ge n_{0}}:\left| a_{n}-a \right| <\varepsilon
-$$
-
-## Eindeutigkeit des Grenzwerts
+\forall_{\varepsilon>0}\exists_{n_{0}\in \mathbb{N}}\forall_{n\ge n_{0}}:\left| a_{n}-a \right| <\varepsilon$$
+# Eindeutigkeit des Grenzwerts
 
 >[!def] Eindeutigkeit des Grenzwerts
 > Eine reelle Folge besitzt höchstens einen Grenzwert. 
 > D.h. *wenn* ein Grenzwert existiert, dann ist dieser eindeutig bestimmt.
 
-## Grenzwert und Beschränktheit.
+# Grenzwert und Beschränktheit.
 >[!def] Grenzwert und Beschränktheit
 > Eine konvergente Folge ist [[#Beschränktheit von Folgen|beschränkt]]. (nach Oben *und* nach Unten).
 
