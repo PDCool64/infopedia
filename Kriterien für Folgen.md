@@ -33,45 +33,55 @@ Grundliegend ist die normale Grenzwertdefinition:
 > ---
 > D.h. wenn ein $N$ existiert, ab dem $b_{n}$ zwischen den beiden Folgen $a_{n}$ und $b_{n}$ eingeschränkt ist, dann konvergiert es ebenso gegen $A$.
 
-
 ```tikz
 \begin{document}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.2, every node/.style={scale=1.2}]
 
-  % ==== Parameter wie bei Desmos ====
-  \def\xmin{0}
-  \def\xmax{10}
-  \def\ymin{-3}
-  \def\ymax{3}
-
-  % ==== Gitter ====
-  \draw[very thin, gray] (\xmin,\ymin) grid (\xmax,\ymax);
+  % ==== Parameter ====
+  \def\nmin{1}
+  \def\nmax{10}
 
   % ==== Achsen ====
-  \draw[->] (\xmin,0) -- (\xmax+0.5,0) node[right] {$x$};
-  \draw[->] (0,\ymin) -- (0,\ymax+0.5) node[above] {$y$};
+  \draw[->, thick] (-0.5,0) -- (\nmax+0.5,0) node[right] {$n$};
+  \draw[->] (0,-3) -- (0,3);
 
-  % ==== Ticks und Labels (X-Achse) ====
-  \foreach \x in {\xmin,...,\xmax}
-    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+  % ==== Gitter ====
+  \draw[very thin, gray!40] (0,-3) grid (\nmax,3);
+  
+  % ==== N ====
+  \draw[red, thick,dashed] (4,-3) --(4,3);
+  \node[red] at (4,3.3) {$N$};
+  
+  \node[black] at (-1,0) {$A$};
 
-  % ==== Ticks und Labels (Y-Achse) ====
-  \foreach \y in {\ymin,...,\ymax}
-    \draw (0.1,\y) -- (-0.1,\y) ;
+  % ==== Folge 1: c_n = 4/n ====
+  \foreach \n in {\nmin,...,\nmax} {
+    \fill[lime] ({\n}, {4/(\n+1)}) circle (2pt);
+  }
 
-  % ==== Funktionsbereich clippen ====
-  \begin{scope}
-    \clip (\xmin,\ymin) rectangle (\xmax,\ymax);
-    \draw[color=lime, thick, domain={\xmin+1}:\xmax] plot (\x ,{4/\x},);
-    \draw[color=orange, thick, domain={\xmin+1}:\xmax] plot (\x, {1/\x)});
-    \draw[color=teal, thick, domain={\xmin+1}:\xmax] plot (\x, {- 2/\x});
-  \end{scope}
+  % ==== Folge 2: b_n = 1/n ====
+  \foreach \n in {3,...,\nmax} {
+    \fill[orange] (\n, {1/(\n-2.4)}) circle (2pt);
+  }
+   \fill[orange] (2,3) circle (2pt);
 
-  % ==== Funktionsbeschriftungen außerhalb des Clips ====
-  \node[color=lime, right] at (\xmax,\xmax) {$f(x)=x$};
-  \node[color=teal, right] at (\xmax,{sin(\xmax r)}) {$f(x)=\sin x$};
+  % ==== Folge 3: a_n = -2/n ====
+  \foreach \n in {\nmin,...,\nmax} {
+    \fill[teal] (\n, {-2/\n}) circle (2pt);
+  }
 
+  % ==== Labels ====
+  \node[lime]   at (-1, 2)   [right] {$c_n$};
+  \node[orange] at (-1, 3)   [right] {$b_n$};
+  \node[teal]   at (-1, -2)  [right] {$a_n$};
+  
+  
 
 \end{tikzpicture}
+
 \end{document}
 ```
+
+
+
+
