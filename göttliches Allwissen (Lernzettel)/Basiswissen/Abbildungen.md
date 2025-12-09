@@ -1,3 +1,7 @@
+---
+aliases:
+  - Abbildung
+---
 
 >[!wip]
 > Diese Notiz ist noch redundant mit [[Abbildungen für DS]] weil die beiden Definitionsansätze noch nicht perfekt zusammengefügt sind.
@@ -80,6 +84,8 @@ Eine besondere Einschränkung ist die sog. **Inklusion**:
 > f \circ g:A\to C,\;x\mapsto(g\circ f)(x):=g(f(x))
 > $$ die **Verkettung** oder **Komposition** oder **Hintereinanderausführung** von $f$ und $g$.
 
+
+Mehr Details in [[Komposition von Abbildungen; Umkehrabbildungen]]
  ---
 # Identische Abbildung
 >[!def] Identische Abbildung
