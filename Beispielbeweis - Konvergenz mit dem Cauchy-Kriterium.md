@@ -10,7 +10,7 @@ $$
 Einsetzen, umformen und abschätzen ergibt:
 $$
 \begin{align}
-&& \left| \frac{1}{n}-\frac{1}{m} \right| =\frac{\left| m-n \right| }{m\cdot n} \overset{2.\Delta-UG.}< \frac{\left| m \right| -\left| n \right| }{m\cdot n} < \frac{\left| m \right| }{m\cdot n} = \frac{1}{n}
+&& \left| \frac{1}{n}-\frac{1}{m} \right| =\frac{\left| m-n \right| }{m\cdot n} = \frac{\left| m+(-n) \right| }{m\cdot n} \leq \frac{\left| m \right| +\left| n \right| }{m\cdot n}
 \end{align}
 $$
 Man wähle $N=\frac{1}{\varepsilon}$ und erhält mit $n\ge N$:
