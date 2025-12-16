@@ -124,4 +124,4 @@ D.h. :
 - Wenn sich ab einem $N$ *alle Kombinationen* der restlichen Folgenglieder um weniger als $\varepsilon$ von einander unterscheiden, dann ist die Folge konvergent.
 - Man benötigt keinen Grenzwert-Kandidaten
 
-#### Beispiel-Beweis:
+Einen [[Beispielbeweis - Konvergenz mit dem Cauchy-Kriterium]]
