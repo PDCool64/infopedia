@@ -82,6 +82,46 @@ Grundliegend ist die normale Grenzwertdefinition:
 \end{document}
 ```
 
+## Mit Teilfolgen
+![[Folgen für AFI#Teilfolgen]]
+
+Resultierendes Konvergenzkriterium:
+>[!def] Konvergenz von Teilfolgen
+> Sei $(a_n)_{n\ge 1}$ eine [[Folgen für AFI#Grenzwert von Folgen|konvergente]] Folge mit Limes $a$.
+> Dann konvergiert auch *jede* Teilfolge von $(a_n)_{n\ge 1}$ gegen $a$.
+
+Insbesondere kann die Konvergent *widerlegt* werden, in dem eine nicht konvergente Teilfolge angegeben wird.
 
 
+## Mit Monotonie und Beschränktheit
+>[!def] Monotonie und Beschränktheit erzwingen Konvergenz
+> Jede monotone, beschränkte [[Reelle Zahlen und Schranken|reelle]] Folge $(a_n)_{n\ge 1}$ ist konvergent.
+> Sei $W$ die Wertemenge von $(a_n)_{n\ge 1}$, so gilt:
+> $$
+> \lim_{ n \to \infty } a_{n}= \begin{cases}
+> \text{sup }W &,(a_n)_{n\ge 1}\text{ ist monoton wachsend} \\
+> \text{inf }W &,(a_n)_{n\ge 1}\text{ ist monoton fallend}
+> \end{cases}
+> $$
+> 
 
+Anders gesagt aber gleichbdeutend:
+>[!def] Monotonie und einseitige Beschränktheit
+> - Eine nach oben beschränkte und monoton wachsende Folge ist konvergent gegen ihr Supremum.
+> - Eine nach unten beschränkte und monoton fallende Folge ist konvergent gegen ihr Infimum.
+
+(Bei monoton wachsenden Folgen ist die Beschränktheit nach unten durch den Startwert sowieso gegeben; Bei monoton fallenden Folgen analog die Beschränkung nach oben durch den Startwert.)
+
+
+## Cauchy-Kriterium
+>[!def] Cauchy-Folgen
+> Eine reelle Folge $(a_n)_{n\ge 1}$ heißt **Cauchy-Folge**, wenn es zu jedem $\varepsilon>0$ ein (von $\varepsilon$ abhängiges $N\in \mathbb{N}_{0}$ gibt, so dass:
+> $$
+> \forall_{m,n\ge N}:\left| a_{m}-a_{n} \right| <\varepsilon 
+> $$
+
+D.h. : 
+- Wenn sich ab einem $N$ *alle Kombinationen* der restlichen Folgenglieder um weniger als $\varepsilon$ von einander unterscheiden, dann ist die Folge konvergent.
+- Man benötigt keinen Grenzwert-Kandidaten
+
+#### Beispiel-Beweis:

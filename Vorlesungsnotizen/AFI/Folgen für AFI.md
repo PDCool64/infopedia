@@ -157,3 +157,8 @@ Weil $\varepsilon$ beliebig ist, folgt $a=a'$.
 > > $$
 > 
 
+---
+# Teilfolgen
+
+>[!def] Teilfolge
+> Eine Folge $(a'_{k})_{k\geq 1}$ heißt **Teilfolge** einer [[Folgen für AFI|Folge]], wenn es eine [[Folgen für AFI#Monotonie von Folgen|streng monoton wachsende]] Folge $(n_{k})_{k\geq 1}\subseteq \mathbb{N}$ gibt mit $a'_{k}=a_{n_{k}}$ für alle $k\geq 1$.
