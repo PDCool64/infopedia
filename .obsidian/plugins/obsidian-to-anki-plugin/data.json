@@ -2,7 +2,7 @@
   "settings": {
     "CUSTOM_REGEXPS": {
       "Bildverdeckung": "",
-      "Einfach": "",
+      "Einfach": "((?:[^\\n][\\n]?)+) #flashcard ?\\n*((?:\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))+)",
       "Einfach (Antwort eintippen)": "",
       "Einfach (und die umgekehrte Richtung)": "",
       "Einfach (und wahlweise die umgekehrte Richtung)": "",
@@ -255,7 +255,7 @@
     "göttliches Allwissen (Lernzettel)/AFI/Betrag.md": "ba00a4a28c91a926d304c2683c9334a5",
     "Aufgaben/Affenproblem.md": "8fe82cfbfa519cfd9a19a60af5f51163",
     "Algebraische Strukturen.md": "770bf8293c0e9d4310456183493b5d27",
-    "Test.md": "e02e29f7eb2172f2bea92723ffd02923"
+    "Test.md": "10810cb949dcf367db1057543ba112ed"
   },
   "fields_dict": {
     "Bildverdeckung": [
