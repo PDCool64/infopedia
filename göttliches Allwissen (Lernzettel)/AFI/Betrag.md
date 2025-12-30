@@ -28,3 +28,9 @@ Damit lässt sich für alle $x,y\in K$ zeigen:
 
 - $\left| x \right|\le y \implies -y\le x \le y$
 
+
+START Basic This is a test. Back: Test successful! Tags: Testing END
+
+START Basic Front: This is a test with Front specified. Back: Test successful! Tags: Testing 2 END
+
+START Basic This is a test. And the test is continuing. Back: Test successful! END
