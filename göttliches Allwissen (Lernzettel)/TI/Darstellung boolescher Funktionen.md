@@ -48,6 +48,8 @@ Das Konvertieren aus einer Liste einschlägiger Indizes zu einer Wahrheitstabell
 
 Wofür steht der `_` in einer Binärvektorliste? #flashcard 
 Verwendet wird die Schreibweise mit einem Unterstrich `_` , welcher "Do Not Care" bedeutet - der Eingabebit an dieser Stelle kann also einen beliebigen Wert haben.
+<!--ID: 1767098461350-->
+
 
 Man nimmt sich eine Tabelle der [[#1.1 Liste "*einschlägiger Indizes*"|Einschlägigen Zeilen]] und streicht dan redundante Informationen:
 ![[Darstellung boolescher Funktionen 2025-10-23 13.08.10.excalidraw]]
