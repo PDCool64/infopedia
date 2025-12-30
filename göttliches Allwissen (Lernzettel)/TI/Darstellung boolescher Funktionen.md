@@ -2,6 +2,7 @@
 tags:
   - TI
 status: rot
+TARGET DECK: TI
 ---
 ---
 
@@ -26,9 +27,11 @@ wobei es sich hier um die Wahrheitstafel von $\text{xor}$ handelt.
 # 1.1 Liste "*einschlägiger Indizes*"
 
 ^bbd58f
-
+Woraus besteht die Liste der einschlägigen Indizes #flashcard 
 Man nummeriert die Zeilen einer Wahrheitstabelle durch.
 Dann speichert man nur noch die Indizes der Spalten welche $1$ als Ausgabe liefern.
+<!--ID: 1767096642081-->
+
 
 ![[Darstellung boolescher Funktionen 2025-10-23 13.00.00.excalidraw]]
 
