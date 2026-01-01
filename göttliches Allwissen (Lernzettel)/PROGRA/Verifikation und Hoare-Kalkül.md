@@ -17,7 +17,7 @@ Es geht hier nicht mehr darum, dass eine Programm *syntaktisch* korrekt ist -das
 	
 - **Verifikation**: *Mathematisch rigoroser Beweis der Korrektheit*
 	- **Terminierung**: Hält das Programm immer an?
-	- **Partielle Korrektheit**: Falls das Programm anhält, erfüllt es die Spezifikation
+	- **Partielle Korrektheit**: Falls das Programm anhält, erfüllt es die Spezifikation?
 	- **Totale Korrektheit:** Sowohl Terminierung als auch partielle Korrektheit.
 	
 > Warum der Aufwand:
@@ -38,7 +38,7 @@ Das **Hoare-Tripel**$$
 $$besagt: Wenn vor der Ausführung des *Programms* $P$ die Vorbedingung $\varphi$ gilt, dann gilt danach $\psi$ . Jede dieser in $<>$ stehenden [[Aussagenlogik|Aussagen]] wird **Zusicherung** genannt.
 
 ## Regeln:
-Das Hoare-Kalkül ist *streng syntaktisch* - jede einzelne Zeile muss unbedingt einer der Regeln des Hoare-Kalküls entsprechen. Für eine kleine Teilmenge von Java-Programmen -solchen die nur aus Zuweisungen, ``if``, ``if-else`` und ``while`` bestehen- reichen die folgenden 7 Regeln.
+Das Hoare-Kalkül ist *streng syntaktisch* - jede einzelne Zeile muss unbedingt einer der Regeln des Hoare-Kalküls entsprechen. Für eine kleine Teilmenge von Java-Programmen - solchen die nur aus Zuweisungen, ``if``, ``if-else`` und ``while`` bestehen- reichen die folgenden 7 Regeln.
 
 Jede Regel wird mit einem Strich geschrieben, der bedeutet: Wenn die Bedingungen über dem Strich gelten, dann gelten auch die Bedingungen unter dem Strich.
 ### Zuweisungsregel

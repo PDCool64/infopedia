@@ -126,5 +126,5 @@ Interessanter -und fehleranfälliger sind aber Rechenoperationen:
    String a = "hal"+(2+3)   ->    "hal5"
    String a = "hal"+(2.0+3) ->    "hal5.0"
    String a = 2+3+"hal"     ->   "5hal"
-   String a = 2.0+3         -> "5.0hallo"
+   String a = 2.0+3+"hallo" -> "5.0hallo"
    ```
