@@ -2,6 +2,7 @@
 tags:
   - TI
 status: rot
+TARGET DECK: TI
 ---
 ---
 

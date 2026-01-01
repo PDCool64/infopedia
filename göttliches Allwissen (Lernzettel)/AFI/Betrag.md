@@ -27,4 +27,3 @@ Damit lässt sich für alle $x,y\in K$ zeigen:
 - $\left| x+y \right|\ge\left| \left| x \right|-\left| y \right| \right|\ge\left| x \right|-\left| y \right|$ (*2. Dreieckungleichung*)
 
 - $\left| x \right|\le y \implies -y\le x \le y$
-
