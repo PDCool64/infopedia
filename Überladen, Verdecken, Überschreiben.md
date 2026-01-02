@@ -14,7 +14,7 @@ Finden allesamt statt, wenn in einem Kontext mehrere Attribute/Methoden mit glei
 | Wann?      | Compilezeit                                                               | Compilezeit                                                                         | Laufzeit                                                                                      |
 | Auflösung? | spezifischste passende Signatur                                           | statischer Typ der Variable von der aufgerufen wird                                 | Unterklasse des zur Laufzeit tatsächlich vorhandenen Objekts                                  |
 
-Man beachte bei Methoden aufrufen, die [[#Reihenfolge der Abarbeitung bei Methodenaufrufen]] von Überladen und Überschreiben: ersteres findet zuerst -zur Compilezeit statt und beeinflusst somit was vom Überschreiben aus überhaupt gesehen wird.
+Man beachte bei Methoden aufrufen, die [[#Reihenfolge der Abarbeitung bei Methodenaufrufen]] von Überladen und Überschreiben: ersteres findet zuerst -zur Compilezeit- statt und beeinflusst somit was vom Überschreiben aus überhaupt gesehen wird.
 
 ---
 # Überladen: Methoden innerhalb *einer* Klasse (overloading)

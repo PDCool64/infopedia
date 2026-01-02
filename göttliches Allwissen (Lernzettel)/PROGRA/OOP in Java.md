@@ -114,7 +114,7 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
 - Man nennt Methoden mit Rückgabetyp `void` oft Prozedur.
   Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.
 ## Überladen von Methoden
-Es kann in der gleichen Klasse mehrere Methoden mit gleichen Namen geben, solange deren Parameterlisten hinreichend verschieden sind. Genaueres bei [[Überladen von Methoden]].
+Es kann in der gleichen Klasse mehrere Methoden mit gleichen Namen geben, solange deren Parameterlisten hinreichend verschieden sind. Genaueres bei [[Überladen, Verdecken, Überschreiben]] 
 
 ---
 # Realisierung im Speicher
