@@ -79,6 +79,8 @@ Hingegen wäre ``b.next=c;`` ein Typfehler : ``b`` erwartet ``Element<Integer>``
 # Statische Methoden in Generischen Klassen
 
 
+
+
 # Generische Klassen als Polymorphismus: Parametrischer Polymorphismus
 Dieselbe Implementierung einer Methode kann für Objekte/Argumente verschiedener Typen ausgeführt werden.
 
