@@ -139,7 +139,25 @@ Statische Methoden hängen *nicht* von einzelnen Objekten ab.
 
 Insbesondere können statische Methoden ohne weiteren Kontext direkt auf der Klasse aufgerufen werden.
 
-Der Compiler hat also keinerlei Referenz, 
+Der Compiler hat also keinerlei Referenz, welche Typen gemeint wären.
+
+Stattdessen: Eigene Typparameter für Methoden
+# Eigene Typparameter für Methoden
+```java
+import java.utilts.LinkedList;
+public class Box<T>{
+	public T value;
+	
+	public static <U> LinkedList<U> f(){
+		LinkedList<U> = new LinkedList<U>;
+	}
+	
+	public static void main{
+			Box.f();	
+		}
+
+}
+```
 
 
 
@@ -147,6 +165,9 @@ Der Compiler hat also keinerlei Referenz,
 # Type Bounds : Typparameter darf nur mit bestimmten Typen instantiiert werden
 
 ```java
+
+public class Element<T extends SomeInterface>{
+
     public T value;
     public Element<T> next;
     public String name;
@@ -160,6 +181,7 @@ Der Compiler hat also keinerlei Referenz,
        Element<U> out = new Element<U>(newValue, this.name);
        return out;
     }
+
 
     public static void main(){
         MyInteger a = new MyInteger(20);
@@ -183,8 +205,14 @@ class MyInteger implements SomeInterface{
        this.number = value;
    }
 }
+
+interface SomeInterface {
+}
+
+
 ```
 
+Man beachte, dass man in der Methode ``public <U extends Someinterface> Element<U> copyWithNewValue(U new Value)`` erneut die TypeBounds angegeben werden müssen, weil ``U`` nichts mit ``T`` zu tun hat.
 
 
 # Generische Klassen als Polymorphismus: Parametrischer Polymorphismus
