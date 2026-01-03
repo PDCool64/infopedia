@@ -139,9 +139,18 @@ Statische Methoden hängen *nicht* von einzelnen Objekten ab.
 
 Insbesondere können statische Methoden ohne weiteren Kontext direkt auf der Klasse aufgerufen werden.
 
-Wollte man nun z.B. Funktionsparameter mit generischem Typ in einer statischen Methode anlegen, hätte der Compiler
+Hätte man *theoretisch* die generische Klasse welche mit ``T input`` versucht, auf den Typparameter zuzugreifen.
+```java
+class Box<T>{
+	public T value
+	public void f(T input){
+		System.out.println(input.toString());
+	}
+}
+```
 
-
+Dann ergäben sich viele Probleme:
+``Box.f(?)
 
 
 
