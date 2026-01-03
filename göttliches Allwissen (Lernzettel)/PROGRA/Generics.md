@@ -139,17 +139,7 @@ Statische Methoden hängen *nicht* von einzelnen Objekten ab.
 
 Insbesondere können statische Methoden ohne weiteren Kontext direkt auf der Klasse aufgerufen werden.
 
-Hätte man *theoretisch* die generische Klasse welche mit ``T input`` versucht, auf den Typparameter zuzugreifen.
-```java
-class Box<T>{
-	static T echo(T x){
-	return x
-	}
-}
-```
-
-Dann ergäben sich viele Probleme: *Welchen Rückgabetyp hat dann* ``Box.echo()`` ?
-Es ist kein 
+Der Compiler hat also keinerlei Referenz, 
 
 
 
