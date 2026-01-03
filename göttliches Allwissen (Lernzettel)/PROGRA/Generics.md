@@ -29,7 +29,10 @@ Eine generische Klasse ``Element<T>`` definiert viele Typen
 
 Idee:
 	Eine *Typvariable* (hier ``T``) kann mit jedem beliebigen [[Speicher in Java - Stack und Heap|nichtprimitiven]] Datentyp instanziiert werden
-Dies stellt sicher, dass eine Liste vom Typ ``Liste<Bruch`` nur Werte vom Typ Bruch enthalten kann,
+Dies stellt sicher, dass eine Liste vom Typ ``Liste<Bruch`` nur Werte vom Typ Bruch enthalten kann.
+
+
+Eine Klasse - Viele Typen
 
 ## Erzeugen von Objekten generischer Typen
 ```java
