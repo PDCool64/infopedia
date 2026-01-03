@@ -15,7 +15,7 @@ Will man Datenstrukturen programmieren, welche auf verschiedene Datentypen anwen
  2. Verschiedene Objekt-Typen in der gleichen Liste könnten auftreten und Fehler erzeugen.
     *Ist auch durch Interfaces nicht gut abdeckbar*.
  3. Zugriff auf Elemente der Liste gibt immer Objekte vom Typ `Object` aus - um mit ihnen zu arbeiten muss man sie dann immer manuell und explizit wieder zu Instanzen der Unterklasse casten.
-    (und Lauter `isinstanceof` Unterscheidungen bauen um dies zu ermöglichen)
+    (und Lauter `instanceof` Unterscheidungen bauen um dies zu ermöglichen)
 
 Die Lösung für Problem 2) und 3) sind *Generische Typen*:
 
@@ -39,13 +39,16 @@ Generische Typen existieren ausschließlich zur Compilezeit - sie sind sozusagen
 
 > Generische Typen gibt es erst seit Java 5 - Um Rückwärtskompatibilität zu erhalten ist ihre Implementierung so gewählt.
 
-Zur Laufzeit / Im Bytecode werden alle Generischen Typen zu einem einzigen "Raw Type" neo denen die Typvariablen durch ``Object`` ersetzt werden. Zur Laufzeit existieren also nicht mehr ``Element<Bruch>`` und `Element<Zahl>` sondern nur noch ``Element``.
+Zur Laufzeit / Im Bytecode werden alle Generischen Typen zu einem einzigen "Raw Type" bei  denen die Typvariablen durch ``Object`` ersetzt werden. Zur Laufzeit existieren also nicht mehr ``Element<Bruch>`` und `Element<Zahl>` sondern nur noch ``Element``.
+
+Werden die [[#Type Bounds Typparameter darf nur mit bestimmten Typen instantiiert werden|Type Bounds]] angegeben, dann wird nicht durch ``Object`` sonder durch die angegebene Klasse ersetzt. Bei ``Box<U extends Gegenstand>`` wird aus ``Box<Buch>`` und ``Box<Klamotten>`` zur Laufzeit ``Box<Gegenstand>``.
 
 Dies hat wichtige Konsequenzen:
 - [[#Statische Methoden]]
 - [[#Nichtstatische Methoden]]
 - [[#Type Bounds Typparameter darf nur mit bestimmten Typen instantiiert werden|Type Bounds]]
-- ``isinstanceof Element<Bruch>`` geht nicht - zur Laufzeit ist nur ``isinstanceof Element`` möglich
+- ``instanceof Element<Bruch>`` geht nicht - zur Laufzeit ist nur ``isinstanceof Element`` möglich
+- 
 
 ## Erzeugen von Objekten generischer Typen
 
@@ -143,24 +146,85 @@ Der Compiler hat also keinerlei Referenz, welche Typen gemeint wären.
 
 Stattdessen: Eigene Typparameter für Methoden
 # Eigene Typparameter für Methoden
+
+Syntax:
+
+``public static <U> Element<U> CopyWithNewValue(U newValue)``
+- ``<U>`` noch vor der restlichen Signatur: Neuer Typparameter für diese Methode
+- ``Element<U>`` Rückgabetyp wie immer - hier zufällig generisch
+- ``U newValue`` Erwartete Parameter - hier ein Objekt der vom Typparameter angegebenen klasse
+
+``private <S extends Human> String saySomething(String phrase, S from)``
+- ``<S extends Human>`` ist Typparameter der Methode - hier sind nur Typen zugelassen, die Unterklasse von ``Human`` sind.
+- ``String`` Rückgabetyp wie immer
+- ``String phrase, S from`` erwartete Parameter - hier 1xString und 1x ein Objekt der vom Typparameter angegebenen klasse
+
+
 ```java
-import java.utilts.LinkedList;
-public class Box<T>{
-	public T value;
-	
-	public static <U> LinkedList<U> f(){
-		LinkedList<U> = new LinkedList<U>;
-	}
-	
-	public static void main{
-			Box.f();	
-		}
+
+public class Element<T>{
+
+    public T value;
+    public Element<T> next;
+    public String name;
+
+	public Element(T value, String name){
+        this.value = value;
+        this.name = name;
+    }
+
+    public <U> Element<U> CopyWithNewValue(U newValue){
+       Element<U> out = new Element<U>(newValue, this.name);
+       return out;
+    }
+
+
+    public static void main(){
+        MyInteger a = new MyInteger(20);
+        MyInteger b = new MyInteger(30);
+
+        Element<MyInteger> x = new Element<>(a,"x");
+        Element<MyInteger> y = new Element<>(b,"y");
+
+        Element<MyInteger> z = x.CopyWithNewValue(new MyInteger(2));
+
+        System.out.println(x.value.number);
+        System.out.println(y.value.number);
+        System.out.println(z.value.number);
+    }
 
 }
 ```
 
 
+### Compiler erschließt Kontext:
+Wird eine (statische oder nichtstatische) Methode, welche eine eigene Typvariable hat, aufgerufen erschließt der Compiler am Kontext, wie diese zu instantiieren ist, und ob Typfehler auftreten
+- Anhand der Typen der übergebenen Parameter
+- (Anhand des Typs auf den die Ausgabe zugewiesen werden soll)
 
+###### Dumme Sidenote:
+Nur anhand des Typs auf den die Ausgabe zugewiesen werden soll: (eher selten nützlich)
+```java
+import java.util.LinkedList;
+public class Element<T>{
+	public T value;
+	public Element(T value){
+		this.value = value;	
+	}
+
+	//möglich, aber nutzlos
+	public static <U> LinkedList<U> fun(){
+		return new LinkedList<U>();	
+	}
+	
+	public static void main(){
+		// Compiler erschließt aus Kontext: U=Integer
+		LinkedList<Integer> a = Element.fun();
+	}
+
+}
+
+```
 
 # Type Bounds : Typparameter darf nur mit bestimmten Typen instantiiert werden
 
@@ -217,4 +281,3 @@ Man beachte, dass man in der Methode ``public <U extends Someinterface> Element<
 
 # Generische Klassen als Polymorphismus: Parametrischer Polymorphismus
 Dieselbe Implementierung einer Methode kann für Objekte/Argumente verschiedener Typen ausgeführt werden.
-
