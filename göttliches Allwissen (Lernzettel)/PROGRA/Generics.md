@@ -35,25 +35,50 @@ Dies stellt sicher, dass eine Liste vom Typ ``Liste<Bruch`` nur Werte vom Typ Br
 Eine Klasse - Viele Typen
 
 ## Erzeugen von Objekten generischer Typen
-```java
-public class Element<T>{
-	public T value;
-	public Element next;
-	
-	public Element<T>(T value){
-		this.value = value;
-	}
-	
-	public static void main(){           //Autoboxing int->Integer
-		Element<Integer> a = new Element<Integer>(10);
-		Element<Integer> b = new Element<Integer>(10);
-		
-		a.next = b;
-		
-		System.out.println(a.value);
-		System.out.println(b.value);
-	
-	}
 
+```java
+class Element<T>{
+
+		// referenziert den Typparameter T der Klasse
+    public T value;
+    public Element<T> next;
+
+	public Element(T value){
+        this.value = value;
+    }
+
+    public static void main(){           //Autoboxing int->Integer
+        Element<Integer> a = new Element<Integer>(10);
+        Element<Integer> b = new Element<Integer>(10);
+        
+        a.next = b; //Erlaubt : a hat Typ Element<Integer> 
+                    //          b hat Typ Element<Integer>
+                    
+                    
+					            //Kurzschreibweise
+        Element<Double> c = new Element<>(20.5);
+        
+        Element<String> d = new Element<>("hallo");
+        Element<String> e = new Element<>("moin");
+        
+        d.next = e; // Erlaubt
+
+        System.out.println(a.value); 
+        System.out.println(b.value);
+        System.out.println(c.value);
+    }
 }
 ```
+
+#### Erreich Ziel: Typfehler werden statisch abgefangen:
+``a.next = b;`` ist erlaubt, weil ``a.next`` ein Element vom Typ ``Element<Integer>`` erwartet und ``b`` ein solches ist.
+
+Hingegen wäre ``b.next=c;`` ein Typfehler : ``b`` erwartet ``Element<Integer>`` aber ``c`` ist ``Element<Double>``
+
+
+# Statische Methoden in Generischen Klassen
+
+
+# Generische Klassen als Polymorphismus: Parametrischer Polymorphismus
+Dieselbe Implementierung einer Methode kann für Objekte/Argumente verschiedener Typen ausgeführt werden.
+
