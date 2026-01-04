@@ -182,7 +182,7 @@ class B extends A{
 Denn: ``B(int b)`` ruft selbst keinen Konstruktor der Oberklasse auf - also versucht java automatisch ``super();`` einzufügen. Die Oberklasse ``A`` hat aber keinen parameterlosen Konstruktor - Programm kompiliert nicht.
 
 
-# Canonical Constructor bei Records
+# Canonical Constructor bei ``record``s
 Hier wird automatische ein Konstruktor eingefügt, der die Felder als Parameter nimmt und diese auch setzt. Dieser muss *immer* existieren (auch wenn man selber Konstruktoren mit unterschiedlichen Parameterlisten dazuschreibt). Man kann selber schreiben.
 Jeder eigene Konstruktor *muss* diesen Canonical-Konstructor aufrufen.
 
