@@ -32,7 +32,34 @@ class Rechteck{
 ```
 
 # Ablauf
-Was passiert bei
+Was passiert beim Konstruktoraufruf
+
+1. Parameter werden auf die Werte ihrer Variablendeklaration gesetzt
+2. Konstruktor wird ausgeführt
+```java
+class Rechteck{
+    public int laenge=5;
+    public int breite=1;
+
+    public Rechteck(){
+        this.breite +=1;
+        this.laenge -=1;
+    }
+    public static void main(){
+        Rechteck2  = new Rechteck();
+        IO.println(r.laenge); // 4
+        IO.println(r.breite); // 2
+    }
+}
+```
+
+# Konstruktoren in Klassenhierarchien
+
+
+# Canonical Constructor und automatische super()
+Schreibt man selbst keinen Konstruktor, so wird automatisch der parmeterlose sog. "Canonical-Konstruktor" eingefügt.
+
+
 
 
 
