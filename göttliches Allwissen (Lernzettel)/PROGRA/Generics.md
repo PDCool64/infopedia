@@ -28,11 +28,10 @@ Eine generische Klasse ``Element<T>`` definiert viele Typen
 - ...
 
 Idee:
-	Eine *Typvariable* (hier ``T``) kann mit jedem beliebigen [[Speicher in Java - Stack und Heap|nichtprimitiven]] Datentyp instanziiert werden
+	Eine *Typvariable* (hier ``T``) kann mit jedem beliebigen [[Speicher in Java - Stack und Heap|nichtprimitiven]] Datentyp instanziiert werden.
 Dies stellt sicher, dass eine Liste vom Typ ``Liste<Bruch`` nur Werte vom Typ Bruch enthalten kann.
 
-Eine Klasse - Viele Typen
-
+> Eine Klasse - Viele Typen
 
 # Compile- vs. Laufzeit
 Generische Typen existieren ausschließlich zur Compilezeit - sie sind sozusagen glorifizierte Compileranweisungen, die dafür sorgen, dass Typfehler erkannt und abgefangen werden.
@@ -41,7 +40,7 @@ Generische Typen existieren ausschließlich zur Compilezeit - sie sind sozusagen
 
 Zur Laufzeit / Im Bytecode werden alle Generischen Typen zu einem einzigen "Raw Type" bei  denen die Typvariablen durch ``Object`` ersetzt werden. Zur Laufzeit existieren also nicht mehr ``Element<Bruch>`` und `Element<Zahl>` sondern nur noch ``Element``.
 
-Werden die [[#Type Bounds Typparameter darf nur mit bestimmten Typen instantiiert werden|Type Bounds]] angegeben, dann wird nicht durch ``Object`` sonder durch die angegebene Klasse ersetzt. Bei ``Box<U extends Gegenstand>`` wird aus ``Box<Buch>`` und ``Box<Klamotten>`` zur Laufzeit ``Box<Gegenstand>``.
+Werden die [[#Type Bounds Typparameter darf nur mit bestimmten Typen instantiiert werden|Type Bounds]] angegeben, dann wird nicht durch ``Object`` sondern durch die angegebene Klasse ersetzt. Bei ``Box<U extends Gegenstand>`` wird aus ``Box<Buch>`` und ``Box<Klamotten>`` zur Laufzeit ``Box<Gegenstand>``.
 
 Dies hat wichtige Konsequenzen:
 - [[#Statische Methoden]]
