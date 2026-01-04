@@ -244,3 +244,40 @@ Mahnung aus 'Person' 1
 Das Studiensekretariat wurde informiert
 Mahnung aus 'Person' 1
 ```
+
+
+# Stolperfalle: Methodenaufrufe in Methoden oder Konstruktoren
+
+> Diese Falle kam so in Präsenztests vor
+
+```java
+class A{
+	int x;
+	
+	void setX(int x){
+		this.x=x;	
+	}
+	
+	A (int x){
+		setX(x);
+	}
+}
+
+class B extends A{
+	void setX(int x){
+		this.x = x-3;
+	}
+
+	B (int x){
+		super(x);
+	}
+	
+	
+	public static void main {
+		B b = new B(5)	
+		IO.println(b.x); // -> 2 und NICHT 5
+	}
+}
+```
+
+> Alle Methodenaufrufe nichtstatischer Methoden werden zur Laufzeit anhand des tatsächlichen Objekttyps aufgelöst - selbst in Konstruktoren greift somit das Überschreiben durch Methoden der tatsächlichen Unterklasse.
