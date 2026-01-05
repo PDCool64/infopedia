@@ -243,7 +243,8 @@ Mahnung aus 'Person' 1
 ```
 
 ---
-# Stolperfallen: Weitere Feinheiten die Tricky sind
+# Stolperfallen - Weitere Feinheiten die Tricky sind_
+
 # Methodenaufrufe in Methoden oder Konstruktoren
 
 > Diese Falle kam so in Präsenztests vor
@@ -322,9 +323,11 @@ Man kann sich -*nur in Gedanken*- beim Überschreiben diese Idee merken:
 	 ``ab.getD()`` wird -wenn die Methode in ``B`` überladen ist- also von den Attributzugriffen ca. wie ``((B) ab).getD()`` behandelt.
 
 Merke:
-> Das (implizite als auch explizite) `this.` in Methoden hat immer den Typ der Klasse in welcher die momentane Methode deklariert ist - auch wenn das aufrufende Objekt statisch als eins einer anderen Klasse getypt ist.
+> Das (implizite als auch explizite) `this.` in Methoden hat für Attributzugriffe immer den Typ der Klasse in welcher die momentane Methode deklariert ist - auch wenn das aufrufende Objekt statisch als eins einer anderen Klasse getypt ist.
 
-
+Wichtig:
+	Vergleiche dies mit: [[#Methodenaufrufe in Methoden oder Konstruktoren]] - hier entschiedet auch in Methoden der Oberklasse immer der tatsächliche Laufzeittyp, auch mit Impliziten ``this.setX();``.
+	*Attribute und Methoden verhalten sich grundsätzlich unterschiedlich*.
 # Überschreiben oder doch nicht? Parametersignatur
 
 ```java
