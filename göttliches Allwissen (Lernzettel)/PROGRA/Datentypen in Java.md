@@ -35,19 +35,19 @@ Zahlen die mit einem Punkt ``.`` geschrieben werden, sind standardmäßig ein ``
 - ``5.`` $\to$ double
 - ``12.3f`` $\to$ float
 ---
-# char 
+# ``char`` 
 Einzelne Zeichen, in *einfachen* Anführungszeichen.
 ``'a'`` aber auch Steuerzeichen wie `\n`
 
 ---
 
-# String
+# ``String``
 Ketten von Zeichen, in *doppelten* Anführungszeichen.
 `"a"` oder `"Hallo Welt!"`
 
 > Strings sind in Java *keine* primitiven Datentypen - sie sind stattdessen aus anderen Datentypen konstruiert und werden wie alle Klassen mit Großbuchstaben geschrieben.
 ---
-# boolean
+# ``boolean``
 Entweder ``true`` oder ``false``
 
 > Achtung: die Integers `1` und `0` sind in Java nicht mit Booleans austauschbar!
