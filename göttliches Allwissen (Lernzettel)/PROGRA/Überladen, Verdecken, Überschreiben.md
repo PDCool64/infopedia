@@ -20,7 +20,7 @@ Man beachte bei Methoden aufrufen, die [[#Reihenfolge der Abarbeitung bei Method
 # Überladen: Methoden innerhalb *einer* Klasse (overloading)
 Innerhalb einer Klasse können mehrere **Methoden** mit gleichem Namen aber hinreichend unterschiedlichen Signaturen (=Parametern) auftreten. Dies ermöglicht Ad-Hoc-Polymorphismus.
 
-Genauer bedeutet "hinreichend unterschiedliche Signatur", dass eindeutig ist, welche der Der Implementierungen für jede Parameterkombination (insbesondere ihre Datentypen und Anzahl) klar ist, welche Implementierung zutrifft.
+Genauer bedeutet "hinreichend unterschiedliche Signatur", dass eindeutig ist, welche der Implementierungen für jede Parameterkombination (insbesondere ihre Datentypen und Anzahl) klar ist, welche Implementierung zutrifft.
 
 ```java
 public class Rechteck{
@@ -104,7 +104,7 @@ Hier also:
 ---
 # Überschreiben von *nichtstatischen Methoden*  in Unterklassen (overriding)
 
-Existiert eine nichtstatische Methode mit gleichem Namen und *exakt gleicher Parametersignatur* sowohl in Ober- und Unterklasse, wird immer die Methode der Unterklasse ausgeführt.
+Existiert eine nichtstatische Methode mit gleichem Namen und ***[[#Überschreiben oder doch nicht? Parametersignatur|exakt gleicher]] Parametersignatur*** sowohl in Ober- und Unterklasse, wird immer die Methode der Unterklasse ausgeführt.
 
 >Überschreiben wird zur *Laufzeit* ausgewertet und die Methode der tatsächlichen Klasse des Objekts im Speicher verwendet, auch wenn diese statisch als Oberklasse getypt ist.
 
@@ -161,7 +161,7 @@ Das Studiensekretariat wurde informiert
 Ihr Vorgesetzter bekommt eine Rechnung 
 ```
 
-Somit kann man eine Datenstruktur die gemischt einzelne Unterklassen enthält verwaltet werden, und es wird jeweils automatisch die korrekte Implementierung aus der spezifischen Unterklasse eines jeweiligen Objekts gefunden.
+Somit kann man eine Datenstruktur verwalten, die Objekte verschiedener Unterklassen enthält, und es wird jeweils automatisch die korrekte Implementierung aus der spezifischen Unterklasse eines jeweiligen Objekts gefunden.
 
 (Dies zeigt, dass es sehr gut ist, dass bei der impliziten Datentypanpassung von Unter- zur Oberklassen keine Informationen verloren gehen)
 
@@ -178,7 +178,7 @@ Methoden die mit ``final`` markiert sind, können nicht überschrieben werden.
 - In der Klasse des *statischen* Typs des Objekts (oder den Oberklassen dieses statischen Types) nach passenden Methoden suchen:
 - Nach dem Prinzip "[[#Überladen Methoden innerhalb *einer* Klasse (overloading)|Überladen]]"  dort die Methode mit der spezifischsten passenden Signatur suchen.
 2. Laufzeit
-- Überprüfen ob die gefundene Methode nicht in der tatsächlichen Unterklasse des Objekts durch [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|Überschreiben]] abgeändert wurde: Ist dies der Fall, wird die aus der Unterklasse ausgewählt.
+- Überprüfen ob die gefundene Methode nicht in der tatsächlichen Unterklasse des Objekts durch [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|Überschreiben]] abgeändert wurde: Ist dies der Fall, wird die aus der Unterklasse ausgewählt. Die überschreibende Methode der Unterklasse muss *genau* die gleiche Signatur haben - [[#Überschreiben oder doch nicht? Parametersignatur|sonst wird nicht überschrieben]]. 
 
 ```java
 class Person{
@@ -242,8 +242,9 @@ Das Studiensekretariat wurde informiert
 Mahnung aus 'Person' 1
 ```
 
-
-# Stolperfalle: Methodenaufrufe in Methoden oder Konstruktoren
+---
+# Stolperfallen: Weitere Feinheiten die Tricky sind
+# Methodenaufrufe in Methoden oder Konstruktoren
 
 > Diese Falle kam so in Präsenztests vor
 
@@ -301,7 +302,7 @@ class B extends A{
 		B b = new B(); IO.println(b.d); // -> 2
 		A ab = b;
 		IO.println(ab.d);      //-> 1 (wie erwartet nach statischem Typ)
-		IO.println(ab.getD()); //-> 2 (durch Überladen und this.)
+		IO.println(ab.getD()); //-> 2 (durch Überschreiben und this.)
 	}
 }	
 ```
@@ -317,8 +318,46 @@ Ablauf ``ab.getD();``
 3. Attributzugriff in der Methode: ``return d`` ist Kurzschreibweise für ``return this.d``. Dabei ist ``this`` immer vom Typ der Klasse in der die momentane Methode deklariert ist - auch wenn ``ab`` von dem aus aufgerufen wurde statisch als ``A`` getypt ist. Es wird also das Attribut ``d`` aus der Klasse ``B`` gefunden.
 
 Man kann sich -*nur in Gedanken*- beim Überschreiben diese Idee merken:
-	Wird die Methode überladen, dann wird im Methodenrumpf praktisch mit ``(B) ab`` gearbeitet.
+	Wird die Methode überschrieben, dann wird im Methodenrumpf praktisch mit ``(B) ab`` gearbeitet.
 	 ``ab.getD()`` wird -wenn die Methode in ``B`` überladen ist- also von den Attributzugriffen ca. wie ``((B) ab).getD()`` behandelt.
 
 Merke:
 > Das (implizite als auch explizite) `this.` in Methoden hat immer den Typ der Klasse in welcher die momentane Methode deklariert ist - auch wenn das aufrufende Objekt statisch als eins einer anderen Klasse getypt ist.
+
+
+# Überschreiben oder doch nicht? Parametersignatur
+
+```java
+class A {
+	public void fun(){
+		IO.println("A");
+	}
+
+	public void fun(int x){
+		IO.println("A");
+	}
+}
+
+class B extends A {
+	public void fun(){
+		IO.println("B");
+	}
+	public void fun(long x){
+		IO.println("B");
+	}
+	
+	public static void main(){
+		A ab = new B();
+		ab.fun();  // -> "B"     (Wird überschrieben)
+		ab.fun(1); // -> "A"     (Wird nicht überschrieben)
+	}
+}
+```
+
+Achtung:
+ 1. Zuerst sucht der Compiler zur Compilezeit in der Klasse des statischen Typs die Methode mit spezifischsten passenden Parametern *und setzt diese fest*.
+2. Zur Laufzeit: Überschreiben findet nur statt, wenn die Parametersignatur der überschreibenden Methode *exakt* mit der -vorher in der Oberklasse vom Compiler festgelegten- Methode übereinstimmt.
+
+hier wird bei ``fun(1)`` keine überschreibende Methode gefunden:
+- Der Compiler findet in ``A`` eine Methode die ``int`` akzeptiert und setzt diese fest
+- In ``B`` existiert nur ``fun(long x)`` - das ist aber nicht das gleiche wie ``fun(int x)`` 
