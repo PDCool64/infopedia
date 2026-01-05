@@ -100,8 +100,6 @@ Hier also:
 
 > Verdecken wird zur Compilezeit aufgelöst.
 
-Methoden die mit ``final`` markiert sind, können nicht verdeckt werden.
-(z.B. wenn man in der Klasse ``Person`` stattdessen ein ``static final void info()`` hätte)
 
 ---
 # Überschreiben von *nichtstatischen Methoden*  in Unterklassen (overriding)
@@ -177,11 +175,10 @@ Methoden die mit ``final`` markiert sind, können nicht überschrieben werden.
 # Reihenfolge der Abarbeitung bei Methodenaufrufen
 
 1. Compilezeit
-- In der Klasse des *statischen* Typs des Objekts nach passenden Methoden suchen:
+- In der Klasse des *statischen* Typs des Objekts (oder den Oberklassen dieses statischen Types) nach passenden Methoden suchen:
 - Nach dem Prinzip "[[#Überladen Methoden innerhalb *einer* Klasse (overloading)|Überladen]]"  dort die Methode mit der spezifischsten passenden Signatur suchen.
 2. Laufzeit
-- Überprüfen ob die gefundene Methode nicht in der tatsächlichen Unterklasse durch 
-  [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|Überschreiben]] abgeändert wurde: Ist dies der Fall, wird die aus der Unterklasse ausgewählt.
+- Überprüfen ob die gefundene Methode nicht in der tatsächlichen Unterklasse des Objekts durch [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|Überschreiben]] abgeändert wurde: Ist dies der Fall, wird die aus der Unterklasse ausgewählt.
 
 ```java
 class Person{
@@ -281,3 +278,47 @@ class B extends A{
 ```
 
 > Alle Methodenaufrufe nichtstatischer Methoden werden zur Laufzeit anhand des tatsächlichen Objekttyps aufgelöst - selbst in Konstruktoren greift somit das Überschreiben durch Methoden der tatsächlichen Unterklasse.
+
+# Verdecken in überschriebenen Methoden
+Interessant, wenn der statisch deklarierte Typ eines Objekts nicht mit dem Laufzeit-Typ übereinstimmt.
+
+```java
+class A {
+	public double d=1;
+	public double getD(){
+		return d;	
+	}
+}
+
+class B extends A{
+	public double d=2;
+	public double getD(){
+		return d;	
+	}
+	
+	public static void main(){
+		A a = new A(); IO.println(a.d); // -> 1
+		B b = new B(); IO.println(b.d); // -> 2
+		A ab = b;
+		IO.println(ab.d);      //-> 1 (wie erwartet nach statischem Typ)
+		IO.println(ab.getD()); //-> 2 (durch Überladen und this.)
+	}
+}	
+```
+
+Warum: 
+
+Ablauf ``ab.d``: 
+	Attribute werden statisch nach deklariertem Typ vom Compiler aufgelöst und das Attribut aus ``A`` wird gefunden.
+
+Ablauf ``ab.getD();``
+1. Compilezeit: Compiler findet in statischer Klasse ``A`` die Methode ``getD()``. Parameter passen, alles ok.
+2. Laufzeit: ``ab`` ist im Speicher ein ``B``-Objekt. Durch Überschreiben wird also die ``getD()``-Methode aus ``B`` ausgeführt.
+3. Attributzugriff in der Methode: ``return d`` ist Kurzschreibweise für ``return this.d``. Dabei ist ``this`` immer vom Typ der Klasse in der die momentane Methode deklariert ist - auch wenn ``ab`` von dem aus aufgerufen wurde statisch als ``A`` getypt ist. Es wird also das Attribut ``d`` aus der Klasse ``B`` gefunden.
+
+Man kann sich -*nur in Gedanken*- beim Überschreiben diese Idee merken:
+	Wird die Methode überladen, dann wird im Methodenrumpf praktisch mit ``(B) ab`` gearbeitet.
+	 ``ab.getD()`` wird -wenn die Methode in ``B`` überladen ist- also von den Attributzugriffen ca. wie ``((B) ab).getD()`` behandelt.
+
+Merke:
+> Das (implizite als auch explizite) `this.` in Methoden hat immer den Typ der Klasse in welcher die momentane Methode deklariert ist - auch wenn das aufrufende Objekt statisch als eins einer anderen Klasse getypt ist.
