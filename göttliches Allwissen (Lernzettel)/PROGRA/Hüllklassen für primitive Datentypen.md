@@ -67,23 +67,27 @@ IO.println(a.equals(b));
 
 ## Autoboxing: ``int->Integer``
 Der primitive Typ kann automatisch zum Hüllklassentyp gewandelt werden.
+
+*Es ist nicht möglich, vor dem Boxing noch implizite Datentypanpassung zu betreiben*
+*AutoBoxing ist nur **genau** vom primitiven Typ aus erlaubt*
 ## AutoUnboxing: ``Integer->int``
 Der Hüllklassentyp kann automatisch zum primitiven Datentyp gewandelt werden.
 
+*Hingegen ist es erlaubt, nach dem AutoUnboxing noch implizite Datentypanpassung zu bertreiben*
 
-*Dies kann beides nicht mit normaler impliziter Datentypanpassung kombiniert werden - es kann nur genau zwischen Hüllklassentyp und genau entsprechendem primitiven Typ autoboxing passieren.* 
+```java
+void main() {  
+	// Autoboxing:
+    // VERBOTEN: primitive Widening -> Boxing  
+    Double d = 1;    //KOMPILIERT NICHT
+    Long g = 3;      //KOMPILIERT NICHT
+
+	// AutoUnboxing:	
+    // ERLAUBT: Unboxing -> primitve Widening  
+    double x = Float.valueOf(2.0f);  
+    long l = Integer.valueOf(3);   
+```
+
 ## Beispiele
 ![[Pasted image 20260105144548.png]]
 
-Ebenfalls verboten sind -ebenfalls weil AutoBoxing/Unboxing nicht mit impliziter Datentypanpassung kombinierbar sind:
-```java
-short s = 3;
-Integer i = s; // VERBOTEN
-
-int x = Double.valueOf(1.0);
-long l = Byte.valueOf(2);
-```
-
-
----
-# Methodenaufrufe mit Hüllklassen als Parameter
