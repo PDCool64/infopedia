@@ -1,3 +1,10 @@
+---
+aliases:
+  - Menge
+---
+
+
+---
 
 >[!def] Mengen
 >Eine Menge ist eine Ansammlung von *unterscheidbaren* Objekten, genannt *Elemente* der Menge. Eine Menge wird durch eine Vorschrift festgelegt, die eindeutig bestimmt, ob ein gegebenes Objekt ein Element der Menge ist oder nicht. Die Elemente der Menge haben *keine* Reihenfolge und werden *nicht* mehrfach gezählt. (grob nach *[Georg Cantor](https://de.wikipedia.org/wiki/Georg_Cantor), 1895*)
