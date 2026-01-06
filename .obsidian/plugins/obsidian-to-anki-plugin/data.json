@@ -194,7 +194,7 @@
     "göttliches Allwissen (Lernzettel)/TI/Darstellung boolescher Funktionen.md": "b24bf0acc9f7ee26bca2a27de8c4d076",
     "göttliches Allwissen (Lernzettel)/TI/Boolesche Algebra.md": "5c01b2edd963ca30c83e8ffc68d081d0",
     "göttliches Allwissen (Lernzettel)/PROGRA/Kontrollstrukturen in Java.md": "41d41dbb5f3acd47d475841327e6a3e1",
-    "göttliches Allwissen (Lernzettel)/PROGRA/Verifikation und Hoare-Kalkül.md": "732d3f99dc8da05f1a6ab74597c9bfc6",
+    "göttliches Allwissen (Lernzettel)/PROGRA/Verifikation und Hoare-Kalkül.md": "44cd5085fa60c0449224fbb4e931c54d",
     "göttliches Allwissen (Lernzettel)/PROGRA/Speicher in Java - Stack und Heap.md": "91d5e5f94df916c0d2cd59cde27f4840",
     "göttliches Allwissen (Lernzettel)/PROGRA/Typkonversion in Java.md": "3b0709dc56d59f64bfea6da535a18f77",
     "göttliches Allwissen (Lernzettel)/PROGRA/OOP in Java.md": "d7fb5d7c12d3de4d8c3a104cef6cefda",
@@ -256,7 +256,7 @@
     "Aufgaben/Affenproblem.md": "8fe82cfbfa519cfd9a19a60af5f51163",
     "Algebraische Strukturen.md": "770bf8293c0e9d4310456183493b5d27",
     "Test.md": "e277860c1d9cafea29a837d55164f0fe",
-    "göttliches Allwissen (Lernzettel)/PROGRA/Überladen, Verdecken, Überschreiben.md": "6080ecd341c4d89100a014ef05d7f964",
+    "göttliches Allwissen (Lernzettel)/PROGRA/Überladen, Verdecken, Überschreiben.md": "890c7c7b8b33210daeddef5a8d345d93",
     "göttliches Allwissen (Lernzettel)/PROGRA/Hüllklassen für primitive Datentypen.md": "4a178ed60da3375951686acc76e1e0f1",
     "göttliches Allwissen (Lernzettel)/PROGRA/Konstruktoren.md": "6aa165e7c0ce1353a34f14aeb0cadac0",
     "göttliches Allwissen (Lernzettel)/PROGRA/Generics.md": "1e00b47aae69c2ca1ff0a5ad04191c12",
@@ -268,8 +268,8 @@
     "Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Generics.md": "d41d8cd98f00b204e9800998ecf8427e",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Exceptions.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Hoarekalkül.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - OOP allgemein.md": "31f5d6e3a168be7bbc914bb984edb401"
+    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Hoarekalkül.md": "29ae0433431f7ceca1532c8e1be4195b",
+    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - OOP allgemein.md": "d4b9000149fbbc0a4953dbf365d2648b"
   },
   "fields_dict": {
     "Bildverdeckung": [

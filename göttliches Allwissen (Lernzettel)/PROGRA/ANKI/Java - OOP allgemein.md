@@ -41,6 +41,8 @@ Compilezeit
 
 Verdecken - Auflösung? #flashcard
 *statischer* Typ der Variable von der aufgerufen wird
+<!--ID: 1767711433152-->
+
 
 # Überschreiben
 
