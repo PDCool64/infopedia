@@ -232,7 +232,7 @@
     "göttliches Allwissen (Lernzettel)/Basiswissen/paarweise verschieden und paarweise disjunkt.md": "c9f69080e46061fed9ab72f2e6d4478a",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Polynomfunktionen.md": "d1a0bece5e7ea0f8a7007373514716cb",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Notwendige vs hinreichende Bedingung.md": "aaa1ccd9e1d6c8599dbb76e851bd0297",
-    "göttliches Allwissen (Lernzettel)/Basiswissen/Mengen.md": "da8626738300e9cd9225624a9fd43b6d",
+    "göttliches Allwissen (Lernzettel)/Basiswissen/Mengen.md": "fbfe4518bbad35c3cfb50602483c2f61",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Körper.md": "83c9285b8e15297dbd820d62eaef8165",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Intervalle auf den reellen Zahlen.md": "102ef69c5afd8db8288c2fa944e2a2ef",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Gleichungen und Ungleichungen.md": "4cc41439bed5060f3377b381d0649882",
@@ -255,7 +255,7 @@
     "göttliches Allwissen (Lernzettel)/AFI/Betrag.md": "ba00a4a28c91a926d304c2683c9334a5",
     "Aufgaben/Affenproblem.md": "8fe82cfbfa519cfd9a19a60af5f51163",
     "Algebraische Strukturen.md": "770bf8293c0e9d4310456183493b5d27",
-    "Test.md": "f5e9cff3f1c1770dbeff3b54fd1695b5",
+    "Test.md": "70cebbf2c2e37c50588a013c41146245",
     "göttliches Allwissen (Lernzettel)/PROGRA/Überladen, Verdecken, Überschreiben.md": "6080ecd341c4d89100a014ef05d7f964",
     "göttliches Allwissen (Lernzettel)/PROGRA/Hüllklassen für primitive Datentypen.md": "4a178ed60da3375951686acc76e1e0f1",
     "göttliches Allwissen (Lernzettel)/PROGRA/Konstruktoren.md": "6aa165e7c0ce1353a34f14aeb0cadac0",
@@ -264,7 +264,8 @@
     "göttliches Allwissen (Lernzettel)/DS/Relationen.md": "f1a22b9e97718128c2a33c6ea3a0667c",
     "göttliches Allwissen (Lernzettel)/DS/Algebraische Strukturen.md": "223b6d7b4bb038c2ed995099ab46f721",
     "göttliches Allwissen (Lernzettel)/AFI/Kriterien für Folgen.md": "8eaa7737650d9f42b063f83f8e4ba810",
-    "göttliches Allwissen (Lernzettel)/AFI/Beispielbeweis - Konvergenz mit dem Cauchy-Kriterium.md": "00ef80f8c4dd3688adeb668c6d57ab3d"
+    "göttliches Allwissen (Lernzettel)/AFI/Beispielbeweis - Konvergenz mit dem Cauchy-Kriterium.md": "00ef80f8c4dd3688adeb668c6d57ab3d",
+    "Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150"
   },
   "fields_dict": {
     "Bildverdeckung": [
