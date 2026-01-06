@@ -8,6 +8,7 @@ status: rot
 Objekte sind Instanzen von Klassen und haben
 - Attribute
 - Methoden
+- [[Konstruktoren]]
 
 Grundlage für die Umsetzung im Speicher ist [[Speicher in Java - Stack und Heap]].
 
@@ -39,7 +40,9 @@ public class Rechteck {
 
 
 ---
-# Erstellen von Objekten: Konstruktoren
+# Erstellen von Objekten: [[Konstruktoren]]
+> Hier nur ein TL:DR. Ausführliche Version in [[Konstruktoren]]
+
 Konstruktoren sind Methoden zur Erzeugung von Objekten
 Ein Konstruktor heißt genau wie die Klasse, die er erzeugt. 
 
@@ -96,16 +99,26 @@ Typischer Anwendungsfall für eigene Konstruktoren sind **Kopier-Konstruktoren**
 # Eigenschaften von Attributen und Methoden
 
 # ``static`` vs. nicht-``static``
-Jede Variable die im Rumpf der Klasse deklariert wird und die nicht explizit ``static`` ist, ist automatisch ein Attribut jedes Objekts: Sie sind nicht-statisch und verändern sich von Objekt zu Objekt. Man kann sie für jedes Objekt mit ``R.breite`` usw. aufrufen.
+
+> nicht-`static` Komponenten sind Eigenheiten der einzelnen Objekte der Klasse.
+> 
+> `static` Komponenten gibt es nur einmal pro Klasse: Sie hängen an keinem einzelnen Objekt.
+
+Jede Variable die im Rumpf der Klasse deklariert wird und welche nicht explizit ``static`` ist, ist automatisch ein Attribut jedes Objekts: Sie sind nicht-statisch und verändern sich von Objekt zu Objekt. Man kann sie für jedes Objekt mit ``r.breite`` usw. aufrufen.
 
 Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt folgendes:
 - In Methoden, die selber nicht-``static`` sind, verwendet man sie direkt, oder besser mit ``this.attributsName`` (so überlädt man sie nicht versehentlich mit Methodenparametern)
 - In ``static``-Methoden, muss man sie explizit auf einen bestimmten Objekt aufrufen, also z.B. ``r.laenge``
 
+Statische Methoden sind besonders beim [[Überladen, Verdecken, Überschreiben]] von Bedeutung.
 
-
-# ``public`` vs. ``private`` vs. ``protected`` 
+# ``public`` vs. ``private`` vs. ``protected`` vs. garnichts
 ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
+
+``private`` Komponenten sind ausschließlich in der eigenen Klasse sichtbar.
+Sie werden *nicht* vererbt.
+
+``proteced`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt.
 
 
 ---
