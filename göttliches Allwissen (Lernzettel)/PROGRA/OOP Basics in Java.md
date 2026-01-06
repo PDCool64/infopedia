@@ -161,7 +161,7 @@ class Kid extends Abstract {
 
 //selbst abstract -> muss nicht überschreiben
 abstract class Kid2 extends Abstract{ 
-	public void doSomething();
+	public void doSomething(){};
 }
 ```
 
