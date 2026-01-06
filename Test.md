@@ -25,4 +25,4 @@ You just have to do it.
 Just a quick try to do some math in this. 
 If you have $a = b \land c = d$ #flashcard 
 You get $a + c = b + c$
-<!--ID: 1767095508703-->
+
