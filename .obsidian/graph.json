@@ -1,11 +1,11 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "- .excalidraw",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path: Vorlesungsnotizen  tag:#AFI  ",
@@ -81,6 +81,6 @@
   "repelStrength": 10,
   "linkStrength": 0.777176120211182,
   "linkDistance": 250,
-  "scale": 0.7545958428437247,
-  "close": false
+  "scale": 0.4071928087836453,
+  "close": true
 }

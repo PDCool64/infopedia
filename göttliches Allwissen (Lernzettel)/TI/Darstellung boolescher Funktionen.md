@@ -2,6 +2,7 @@
 tags:
   - TI
 status: rot
+TARGET DECK: TI
 ---
 ---
 
@@ -26,9 +27,11 @@ wobei es sich hier um die Wahrheitstafel von $\text{xor}$ handelt.
 # 1.1 Liste "*einschlägiger Indizes*"
 
 ^bbd58f
-
+Woraus besteht die Liste der einschlägigen Indizes #flashcard 
 Man nummeriert die Zeilen einer Wahrheitstabelle durch.
 Dann speichert man nur noch die Indizes der Spalten welche $1$ als Ausgabe liefern.
+<!--ID: 1767096642081-->
+
 
 ![[Darstellung boolescher Funktionen 2025-10-23 13.00.00.excalidraw]]
 
@@ -43,7 +46,10 @@ Das Konvertieren aus einer Liste einschlägiger Indizes zu einer Wahrheitstabell
 # 1.2 Binärvektorliste und Ternärverktorliste
 (heute eher veraltet)
 
+Wofür steht der `_` in einer Binärvektorliste? #flashcard 
 Verwendet wird die Schreibweise mit einem Unterstrich `_` , welcher "Do Not Care" bedeutet - der Eingabebit an dieser Stelle kann also einen beliebigen Wert haben.
+<!--ID: 1767098461350-->
+
 
 Man nimmt sich eine Tabelle der [[#1.1 Liste "*einschlägiger Indizes*"|Einschlägigen Zeilen]] und streicht dan redundante Informationen:
 ![[Darstellung boolescher Funktionen 2025-10-23 13.08.10.excalidraw]]

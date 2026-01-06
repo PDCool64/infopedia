@@ -4,7 +4,7 @@ tags:
 status: rot
 ---
 ---
-Für mehr Infos, die aber noch auf weniger rigorosem Schulwissen basieren gibt es auch die Notiz [[Folgen]].
+Für mehr Infos, die aber noch auf weniger rigorosem Schulwissen basieren gibt es auch die Notiz [[Folgen (Alt)]].
 
 ---
 

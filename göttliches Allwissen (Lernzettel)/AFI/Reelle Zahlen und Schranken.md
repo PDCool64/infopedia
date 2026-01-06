@@ -2,6 +2,9 @@
 tags:
   - AFI
 status: rot
+aliases:
+  - reelle
+  - reelle Zahl
 ---
 ---
 # Schranken

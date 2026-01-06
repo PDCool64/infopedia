@@ -17,7 +17,7 @@ Der [Wikipedia Artikel zu Tupeln](https://de.wikipedia.org/wiki/Tupel#:~:text=Da
 
 ---
 >[!def] Tupel
-> Es sei $M$ eine Menge und $n\in \mathbb{N}$. Ein $n$-**Tupel** über $M$ ist eine [[Abbildungen|Abbildung]]$$t:\underline{n}\to M$$Wie bei [[Folgen]] schreiben wir das Tupel als $(x_{1},\dots,x_{n})$ oder $(x_{i})_{i\in \underline{n}}$ .
+> Es sei $M$ eine Menge und $n\in \mathbb{N}$. Ein $n$-**Tupel** über $M$ ist eine [[Abbildungen|Abbildung]]$$t:\underline{n}\to M$$Wie bei [[Folgen (Alt)]] schreiben wir das Tupel als $(x_{1},\dots,x_{n})$ oder $(x_{i})_{i\in \underline{n}}$ .
 > Dabei sind die einzelnen Elemente definiert als:$$x_{i}:=t(i)\text{ für }i\in \underline{n}$$
 > Wir setzen $M^{n}:=M^{\underline{n}}=\text{Abb}(\underline{n},M)$ 
 
