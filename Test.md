@@ -1,3 +1,5 @@
+TARGET_DECK: test
+
 In Neuracache style, to make a flashcard you do #flashcard
 The next lines then become the back of the flashcard
 <!--ID: 1767095250719-->
@@ -26,3 +28,9 @@ Just a quick try to do some math in this.
 If you have $a = b \land c = d$ #flashcard 
 You get $a + c = b + c$
 
+I have question. $$
+\text{What will you do if I do } x
+$$abc #flashcard 
+This is an answer. $$
+x
+$$
