@@ -132,9 +132,14 @@ ChatGPT hier einfügen
 ---
 # Modifikatoren vor Klassen
 
+>[!wip]
+> ``abstract`` und ``interface`` sind noch sehr WIP - Sie brauchen eigentlich eigene Notizen.
+> Bei ihnen gibt es noch viele wichtige Details die hier fehlen.
 ## ``abstract``
 - Klasse ist eine abstrakte Klasse - keine Instanzen von ihr können erzeugt werden
+	- Sie definieren praktisch Anforderungen an die Methoden von Unterklassen und liefern schon Attribute
 - Alle selbst als `abstract` Markierten Methoden müssen in Unterklassen überschrieben werden, es sei denn die Unterklasse ist ebenfalls abstract
+	- Abstrakte Methoden haben einen Leeren Methodenrumpf
 - Kann auch ganz normale Methoden und Attribute enthalten
 ```java
 public abstract class Abstract {
@@ -158,7 +163,14 @@ Die Klasse ``Kid2`` überschreibt nicht alle abstrakten Methoden - Sie muss selb
 
 Alle nicht-abstrakten Unterklassen von ``Kid2`` müssen sowohl ``run()`` als auch ``doSomething()`` implementieren (oder aus ihren Oberklassen eine konkrete Implementierung haben).
 
-# ``sealed``
+## ``interface``
+- Klassen die (eigentlich) nur aus abstrakten Methoden bestehen
+- Stellen Anforderungslisten an die Existenz bestimmter Methoden dar
+- erlauben Mehrfachvererbung (eine Klasse kann mehrere Interfaces implementieren)
+- Eine Klasse "implementiert"  Interfaces mit  Syntax:
+   ``class A extends ... implements MyInterface, AnotherInterface {...}``
+
+# ``sealed ... permits ...``
 - Eine Klasse erlaubt nur bestimmte direkte Unterklassen.
 - Genau diese Unterklassen müssen dann aber auch existieren
 - Die direkten Unterklassen müssen selber explizit entweder
@@ -166,6 +178,22 @@ Alle nicht-abstrakten Unterklassen von ``Kid2`` müssen sowohl ``run()`` als auc
 	- ``final``
 	- ``non-sealed`` 
 
+Beispiel:
+```java
+sealed class J permits H, K, L {};
+
+sealed     class H extends J permits I {};
+final      class K extends J{};
+non-sealed class L extends J {};
+
+final      class I extends H {};
+
+```
+
+Es es nicht erlaubt, eine Unterklasse zu schreiben, die nicht explizit einen dieser drei Modifikatoren hat
+
+## ``final``
+- Klasse darf *keine* Unterklassen haben
 
 ---
 # Methoden genauer
