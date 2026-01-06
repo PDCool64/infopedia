@@ -3,7 +3,7 @@ TARGET DECK: Java
 
 # Überladen
 Überladen - Wo? #flashcard 
-innerhalb einer Klasse
+sowohl in einzelnen Klassen als auch zwischen Ober-/Unterklassen
 <!--ID: 1767699047827-->
 
 

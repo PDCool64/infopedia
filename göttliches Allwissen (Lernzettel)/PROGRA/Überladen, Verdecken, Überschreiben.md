@@ -9,7 +9,7 @@ Finden allesamt statt, wenn in einem Kontext mehrere Attribute/Methoden mit glei
 
 |            | [[#Überladen Methoden innerhalb *einer* Klasse (overloading)\|Überladen]] | [[#Verdecken Attribute und Statische Methoden in Unterklassen (hiding)\|Verdecken]] | [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)\|Überschreiben]] |
 | ---------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Wo?        | innerhalb einer Klasse                                                    | Ober- /Unterklasse                                                                  | Ober-/Unterklasse                                                                             |
+| Wo?        | sowohl in einzelnen Klassen als auch zwischen Ober-/Unterklassen<br>      | Ober- /Unterklasse                                                                  | Ober-/Unterklasse                                                                             |
 | Was?       | Methoden mit unterschiedlicher <br>Signatur                               | - Attribute<br>- Statische Methoden                                                 | nichtstatische<br>Methoden                                                                    |
 | Wann?      | Compilezeit                                                               | Compilezeit                                                                         | Laufzeit                                                                                      |
 | Auflösung? | spezifischste passende Signatur                                           | statischer Typ der Variable von der aufgerufen wird                                 | Unterklasse des zur Laufzeit tatsächlich vorhandenen Objekts                                  |
@@ -17,8 +17,8 @@ Finden allesamt statt, wenn in einem Kontext mehrere Attribute/Methoden mit glei
 Man beachte bei Methoden aufrufen, die [[#Reihenfolge der Abarbeitung bei Methodenaufrufen]] von Überladen und Überschreiben: ersteres findet zuerst -zur Compilezeit- statt und beeinflusst somit was vom Überschreiben aus überhaupt gesehen wird.
 
 ---
-# Überladen: Methoden innerhalb *einer* Klasse (overloading)
-Innerhalb einer Klasse können mehrere **Methoden** mit gleichem Namen aber hinreichend unterschiedlichen Signaturen (=Parametern) auftreten. Dies ermöglicht Ad-Hoc-Polymorphismus.
+# Überladen: Methoden mit verschiedenen Signaturen (overloading)
+Innerhalb einer Klasse und ihren ggfs. existierenden Oberklassen können mehrere **Methoden** mit gleichem Namen aber hinreichend unterschiedlichen Signaturen (=Parametern) auftreten. Dies ermöglicht Ad-Hoc-Polymorphismus.
 
 Genauer bedeutet "hinreichend unterschiedliche Signatur", dass eindeutig ist, welche der Implementierungen für jede Parameterkombination (insbesondere ihre Datentypen und Anzahl) klar ist, welche Implementierung zutrifft.
 
@@ -45,13 +45,33 @@ public class Rechteck{
 }
 ```
 
-Sind mehrere Methoden vorhanden, deren Signaturen allesamt durch verschiedene Konversionen zutreffend gemacht werden können, wird die speziellste anwendbare Methode ausgewählt. Dabei ist die Priorität:
+Sind in der Klasse oder der Klasse und ihren Oberklassen mehrere Methoden vorhanden, deren Signaturen allesamt durch verschiedene Konversionen zutreffend gemacht werden können, wird die speziellste anwendbare Methode ausgewählt. Dabei ist die Priorität:
 0. exakte Übereinstimmung
 1. Implizite Datentypanpassung primitiver Datentypen (int->double)
 2. AutoBoxing / Unboxing (int -> Integer)
 3. Varargs (int ... args)
 
 (1. und 2. schließen sich aus - es wird nicht automatisch ``short -> int -> Integer`` gemacht)
+### Beispiel: Überladen in Klassenhierachien
+Beim Überladen werden Methoden sowohl aus der momentanen Klasse als auch *allen Oberklassen* berücksichtigt.
+```java
+class A {
+	fun(int x){
+		IO.println("A");
+	}
+}
+class B extends A {
+	fun(double x){
+		IO.println("B");
+	}
+	
+	public static void main(){
+		B b = new B();
+		b.fun(10.0); // -> "B"
+		b.fun(3);    // -> "A"
+	}
+}
+```
 
 ---
 # Verdecken: Attribute und Statische Methoden in Unterklassen (hiding)
@@ -175,9 +195,9 @@ Methoden die mit ``final`` markiert sind, können nicht überschrieben werden.
 # Reihenfolge der Abarbeitung bei Methodenaufrufen
 
 1. Compilezeit
-- In der Klasse des *statischen* Typs des Objekts (oder den Oberklassen dieses statischen Types) nach passenden Methoden suchen:
-- Nach dem Prinzip "[[#Überladen Methoden innerhalb *einer* Klasse (overloading)|Überladen]]"  dort die Methode mit der spezifischsten passenden Signatur suchen.
-2. Laufzeit
+- In der Klasse des *statischen* Typs des Objekts und den Oberklassen dieses nach passenden Methoden suchen:
+- Nach dem Prinzip "[[#Überladen Methoden innerhalb *einer* Klasse (overloading)|Überladen]]" dort die Methode mit der spezifischsten passenden Signatur suchen und diese fest setzen.
+1. Laufzeit
 - Überprüfen ob die gefundene Methode nicht in der tatsächlichen Unterklasse des Objekts durch [[#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|Überschreiben]] abgeändert wurde: Ist dies der Fall, wird die aus der Unterklasse ausgewählt. Die überschreibende Methode der Unterklasse muss *genau* die gleiche Signatur haben - [[#Überschreiben oder doch nicht? Parametersignatur|sonst wird nicht überschrieben]]. 
 
 ```java
