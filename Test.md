@@ -1,5 +1,3 @@
-TARGET_DECK: test
-
 In Neuracache style, to make a flashcard you do #flashcard
 The next lines then become the back of the flashcard
 <!--ID: 1767095250719-->
