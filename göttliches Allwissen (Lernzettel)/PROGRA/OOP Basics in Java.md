@@ -96,9 +96,9 @@ Typischer Anwendungsfall für eigene Konstruktoren sind **Kopier-Konstruktoren**
 ``Rechteck r = new Rechteck(anderesRechteck);``
 
 ---
-# Eigenschaften von Attributen und Methoden
+# Modifikatoren bei Komponenten einer Klasse
 
-# ``static`` vs. nicht-``static``
+## ``static`` vs. nicht-``static``
 
 > nicht-`static` Komponenten sind Eigenheiten der einzelnen Objekte der Klasse.
 > 
@@ -112,13 +112,59 @@ Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt fol
 
 Statische Methoden sind besonders beim [[Überladen, Verdecken, Überschreiben]] von Bedeutung.
 
-# ``public`` vs. ``private`` vs. ``protected`` vs. garnichts
+## ``public`` vs. ``private`` vs. ``protected`` vs. garnichts
+
 ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
 
 ``private`` Komponenten sind ausschließlich in der eigenen Klasse sichtbar.
 Sie werden *nicht* vererbt.
 
 ``proteced`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt.
+
+Steht Garnichts vor einer Komponente (also z.B. nur ``int x;``)
+ChatGPT hier einfügen
+
+## ``final``
+- Wert von Attributen kann nach dem ersten Setzen nicht verändert werden
+- Methode darf in Unterklassen nicht überschrieben werden
+	- ``static final`` sind cursed und sollte man nie zu Gesicht bekommen
+
+---
+# Modifikatoren vor Klassen
+
+## ``abstract``
+- Klasse ist eine abstrakte Klasse - keine Instanzen von ihr können erzeugt werden
+- Alle selbst als `abstract` Markierten Methoden müssen in Unterklassen überschrieben werden, es sei denn die Unterklasse ist ebenfalls abstract
+- Kann auch ganz normale Methoden und Attribute enthalten
+```java
+public abstract class Abstract {
+    abstract public void run();  //Muss überschrieben werden
+    public void f(){IO.println("f");}; //Muss nicht überschrieben werden
+    public int x;
+}
+
+class Kid extends Abstract {
+    public void run(){}
+}
+
+//selbst abstract -> muss nicht überschreiben
+abstract class Kid2 extends Abstract{ 
+	public void doSomething();
+}
+```
+
+Die nicht-abstrakte Klasse ``Kid`` muss alle abstrakten Methoden überschreiben.
+Die Klasse ``Kid2`` überschreibt nicht alle abstrakten Methoden - Sie muss selber also auch abstract sein.
+
+Alle nicht-abstrakten Unterklassen von ``Kid2`` müssen sowohl ``run()`` als auch ``doSomething()`` implementieren (oder aus ihren Oberklassen eine konkrete Implementierung haben).
+
+# ``sealed``
+- Eine Klasse erlaubt nur bestimmte direkte Unterklassen.
+- Genau diese Unterklassen müssen dann aber auch existieren
+- Die direkten Unterklassen müssen selber explizit entweder
+	- ``sealed``
+	- ``final``
+	- ``non-sealed`` 
 
 
 ---
