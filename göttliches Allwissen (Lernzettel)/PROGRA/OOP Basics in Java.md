@@ -51,7 +51,7 @@ Was macht ein Konstruktor:
 - Setzt die Attribute des neuen Objekts auf bestimmte Werte, die er gegebenenfalls als Parameter erhält
 - hat keinen Rückgabetyp
 
-> Man kann den standardmäßig erzeugten Konstruktor mit einem eigenen überschreiben.
+> Der standardmäßig erzeugte [[Konstruktoren#Default Constructor und automatisches ``super()``|Default-Konstruktor]] entfällt, sobald man einen eigenen Konstruktor definiert.
 
 *Wann* wird der Konstruktor ausgeführt:
 1. Die Attribute erhalten zunächst die Initialwerte aus den Variablendeklarationen im Rumpf der Klasse.
@@ -86,11 +86,11 @@ class Rechteck {
 
 Konstruktoren können wie alle anderen Methoden auch überladen werden, womit die Objekte mit flexiblen Parametern erzeugt werden können.
 
-# Überschreiben des "canonical"-constructors
-Wenn man keinen Konstruktor schreibt, dann wird der parameterlose Konstruktor (canonical / default constructor) automatisch erzeugt. Er hat einen leeren Methodenrumpf.
+# Überschreiben des Default-Constructors
+Wenn man keinen Konstruktor schreibt, dann wird der parameterlose Default-Construktor automatisch erzeugt. Er hat einen leeren Methodenrumpf.
 
 **Achtung**:
-- Sobald man einen eigenen Konstruktor implementiert (auch wenn dieser Parameter hat), dann wir für diese Klasse *kein* default-Konstruktor mehr automatisch erzeugt.
+- Sobald man einen eigenen Konstruktor implementiert (auch wenn dieser Parameter hat), dann wir für diese Klasse *kein* Default-Constructor mehr automatisch erzeugt.
 
 Typischer Anwendungsfall für eigene Konstruktoren sind **Kopier-Konstruktoren**, die ein neues Objekt mit den Eigenschaften eines schon existierenden erzeugen:
 ``Rechteck r = new Rechteck(anderesRechteck);``
@@ -106,28 +106,35 @@ Typischer Anwendungsfall für eigene Konstruktoren sind **Kopier-Konstruktoren**
 
 Jede Variable die im Rumpf der Klasse deklariert wird und welche nicht explizit ``static`` ist, ist automatisch ein Attribut jedes Objekts: Sie sind nicht-statisch und verändern sich von Objekt zu Objekt. Man kann sie für jedes Objekt mit ``r.breite`` usw. aufrufen.
 
-Will man in der Klasse selbst die nicht-``static`` Attribute verwenden, gilt folgendes:
+### Attribute
+Will man in einer Klasse die nicht-``static`` Attribute verwenden, gilt folgendes:
 - In Methoden, die selber nicht-``static`` sind, verwendet man sie direkt, oder besser mit ``this.attributsName`` (so überlädt man sie nicht versehentlich mit Methodenparametern)
 - In ``static``-Methoden, muss man sie explizit auf einen bestimmten Objekt aufrufen, also z.B. ``r.laenge``
 
-Statische Methoden sind besonders beim [[Überladen, Verdecken, Überschreiben]] von Bedeutung.
+#### Methoden
+Statischen Methoden ruft man direkt auf der Klasse auf.
+(Ruft man sie auf einem Objekt auf, hat dies den gleichen Effekte als wenn man direkt auf der Klasse des Objekts aufgerufen hätte).
+
+- statische Methoden haben kein ``this.`` und können nur auf nichtstatische Attribute zugreifen, wenn sie ein konkretes Objekt als Referenz haben.
+- statische Methoden werden [[Überladen, Verdecken, Überschreiben#Verdecken Attribute und Statische Methoden in Unterklassen (hiding)|verdeckt]] und nicht [[Überladen, Verdecken, Überschreiben#Überschreiben von *nichtstatischen Methoden* in Unterklassen (overriding)|überschrieben]].
 
 ## ``public`` vs. ``private`` vs. ``protected`` vs. garnichts
 
-``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
+Hierarchie: Mehr Sichtbarkeit -> Weniger Sichtbarkeit:
 
-``private`` Komponenten sind ausschließlich in der eigenen Klasse sichtbar.
-Sie werden *nicht* vererbt.
+1. ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
 
-``proteced`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt.
+2. ``proteced`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt. *Sie sind auch in Unterklassen **außerhalb** des eigenen Paktes bekannt.*
 
-Steht Garnichts vor einer Komponente (also z.B. nur ``int x;``)
-ChatGPT hier einfügen
+3. Steht Garnichts vor einer Komponente (also z.B. nur ``int x;``) handelt es sich um "package-private": Komponenten werden vererbt, sind aber nur im eigenen Paket sichtbar.
 
+4. ``private`` Komponenten sind ausschließlich in der eigenen Klasse sichtbar.
+   Sie werden *nicht* vererbt.
 ## ``final``
-- Wert von Attributen kann nach dem ersten Setzen nicht verändert werden
+- Wert von Attributen kann nach dem ersten Setzen nicht verändert werden.
+	- gut für Konstanten wie ``static double pi = 3.1415`` 
 - Methode darf in Unterklassen nicht überschrieben werden
-	- ``static final`` sind cursed und sollte man nie zu Gesicht bekommen
+	- Kombination zu ``static final``-Methoden sind cursed und sollte man nie zu Gesicht bekommen
 
 ---
 # Modifikatoren vor Klassen
@@ -197,10 +204,10 @@ Es es nicht erlaubt, eine Unterklasse zu schreiben, die nicht explizit einen die
 
 ---
 # Methoden genauer
-## Prozedur vs. Funktion
-- Man nennt Methoden mit Rückgabetyp `void` oft Prozedur.
-  Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.
-## Überladen von Methoden
+## Prozedur vs. Funktion : Klassifikation
+Spricht man über Methoden mit Rückgabetyp `void`, nennt man sie oft Prozedur.
+Hier ist kein `return` notwendig. Stattdessen wird `return` einfach zum vorzeitigen Abbrechen verwendet.
+## Überladen/Verdecken/Überschreiben von Methoden
 Es kann in der gleichen Klasse mehrere Methoden mit gleichen Namen geben, solange deren Parameterlisten hinreichend verschieden sind. Genaueres bei [[Überladen, Verdecken, Überschreiben]] 
 
 ---
