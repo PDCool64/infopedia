@@ -253,7 +253,7 @@ Für jede Schleife ``while (B) {P}`` finde einen ``int``-Ausdruck $V$ (**Variant
 
 Es ist also ein Ausdruck $V$ gesucht, der durch die Schleifenbedingung nach unten Begrenzt ist aber bei jedem Schleifendurchlauf kleiner wird.
 
-Beispiel:
+## Beispiel:
 $$
 \begin{array}{l} \\
 \text{while (i>1)\{} \\
@@ -265,4 +265,23 @@ $$
 \text{\}}
 \end{array}
 
+$$
+## Beispiel: 
+Sei $n\ge0$
+```java
+while (i<n){
+	i=i+1;
+}
+```
+
+Wähle als Variante $V=n-i$. Hiermit lässt sich die Terminierung von $P$ beweisen, denn für die **einzige** Schleife im Programm (mit Schleifenbedingung $B=i<n$) gilt:
+1. $B\implies V\ge 0$ weil $i<n \implies 0\le n-i$ 
+2. Die folgende Ableitung ist korrekt:$$
+\begin{align}
+&{\color{red}{<n-i=m \; \land\;i<0>}} \\ 
+&{\color{red}{<n-i=m >}} \\
+&{\color{red}{<n-(i+1)<m >}} \\
+&i=i+1; \\
+&{\color{red}{<n-i<m >}} \\
+\end{align}
 $$
