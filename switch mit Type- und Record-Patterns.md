@@ -38,7 +38,7 @@ Neu dazu kommen:
 class Person {
     public String name;
     public Person(String name) {
-       this.name = name;
+        this.name = name;
     }
 }
 
@@ -49,7 +49,7 @@ class Student extends Person {
         this.uni = uni;
     }
 }
-class Nerd extends Student {};
+
 
 class Angestellter extends Person{
     public String chef;
@@ -58,31 +58,33 @@ class Angestellter extends Person{
         this.chef =chef;
     }
 }
-
+class Sklave extends Person {
+    public Sklave(String name, String chef) {
+        super(name);
+    }
+};
 
 public class Switch {
     void f (Person p){
 
-       switch(p){
-           case null -> {
-               IO.println("Dummer Aufruf");
-               throw new NullPointerException();
-               // hier kann man machen was man will
-               // Diese Exception passt aber gut
-           }
+        switch(p){
+            case null -> {
+                IO.println("Dummer Aufruf");
+                throw new NullPointerException();
+                // hier kann man machen was man will
+                // Diese Exception passt aber gut
+            }
 
-           case Nerd s , Student s -> IO.println("Stundent von: "+s.uni);
+            //guarded case: WHEN
+            case Angestellter a when a.chef.equals("RWTH") -> {
+                IO.println("Ein Angestellter der RWTH");
+                IO.println("Sag Hallo!");
+            }
+            //unbenannte pattern-Variable, mehrere Patterns
+            case Angestellter _ , Sklave _-> IO.println("Ein Arbeiter");
 
-							//guarded case: WHEN
-           case Angestellter a when a.chef.equals("RWTH") -> {
-               IO.println("Ein Angestellter der RWTH");
-               IO.println("Sag Hallo!");
-           }
-                       //unbenannte pattern-Variable
-           case Angestellter _ -> IO.println("Ein Arbeiter");
-
-           default -> IO. println("Ein dude halt");
-       }
+            default -> IO. println("Ein Dude halt");
+        }
     }
 
     void main(){
@@ -96,7 +98,12 @@ public class Switch {
 ```
 
 
+# Record Patterns
 
+Syntax:
+``<EinRecord>(<Type oder RecordPattern> , <Type oder RecordPattern> , ...)
 
+Zum Beispiel:
+```java
 
-#
+```
