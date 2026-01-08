@@ -26,10 +26,77 @@ Möglich ist auch ``switch`` über beliebige Klassen-Datentypen zu verwenden. Di
 > Hier ist meistens ein `default`-case Notwendig, damit eine Fallunterscheidung vollständig wird. Ausnahmen sind Enums und sealed-classes.
 
 Neu dazu kommen:
+- Patterns: Muster erkennen und automatisch Variable zuweisen
+	- ``case <Klassen-Datentyp> <Variable> {...};``
+		- Trifft der Datentyp zu, wir die Variable mit dem Wert aus dem ``switch`` belegt. Sie hat den Typ der aus der Pattern hervorgeht.
+	- "guarded" case-labels: mit
+	   ``case <Klassendatenyp> <Variable> when <boolean> {...};`` können weitere Anforderungen an die Eigenschaften eines Objekts gestellt werden
+
 - Neben ``default`` auch ein ``null``-case, da es sich um Objekte handelt.
-- sog. "guared" case-labels: mit ``case <Pattern> when <boolean> {...};`` können weitere Anforderungen an die Eigenschaften eines Objekts gestellt werden
-
 ### Syntax:
+```java
+class Person {
+    public String name;
+    public Person(String name) {
+       this.name = name;
+    }
+}
+
+class Student extends Person {
+    public String uni;
+    public Student(String name, String uni) {
+        super(name);
+        this.uni = uni;
+    }
+}
+class Nerd extends Student {};
+
+class Angestellter extends Person{
+    public String chef;
+    public Angestellter(String name,String chef){
+        super(name);
+        this.chef =chef;
+    }
+}
+
+
+public class Switch {
+    void f (Person p){
+
+       switch(p){
+           case null -> {
+               IO.println("Dummer Aufruf");
+               throw new NullPointerException();
+               // hier kann man machen was man will
+               // Diese Exception passt aber gut
+           }
+
+           case Nerd s , Student s -> IO.println("Stundent von: "+s.uni);
+
+							//guarded case: WHEN
+           case Angestellter a when a.chef.equals("RWTH") -> {
+               IO.println("Ein Angestellter der RWTH");
+               IO.println("Sag Hallo!");
+           }
+                       //unbenannte pattern-Variable
+           case Angestellter _ -> IO.println("Ein Arbeiter");
+
+           default -> IO. println("Ein dude halt");
+       }
+    }
+
+    void main(){
+        f(new Angestellter("Hans","KIT")) ;
+        f(new Student("Tom","RWTH"));
+        f(new Person("Dieter"));
+        f(null);
+    }
+}
+
+```
 
 
 
+
+
+#
