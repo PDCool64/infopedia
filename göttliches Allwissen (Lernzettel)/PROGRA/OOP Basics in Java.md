@@ -124,7 +124,7 @@ Hierarchie: Mehr Sichtbarkeit -> Weniger Sichtbarkeit:
 
 1. ``public`` Methoden und Attribute können von jeder anderen Klasse aus gesehen/verwendet/aufgerufen/abgeändert werden.
 
-2. ``proteced`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt. *Sie sind auch in Unterklassen **außerhalb** des eigenen Paktes bekannt.*
+2. ``protected`` Komponenten sind im gesamten eigenen Paket sowie aller Unterklassen bekannt. *Sie sind auch in Unterklassen **außerhalb** des eigenen Paktes bekannt.*
 
 3. Steht Garnichts vor einer Komponente (also z.B. nur ``int x;``) handelt es sich um "package-private": Komponenten werden vererbt, sind aber nur im eigenen Paket sichtbar.
 
@@ -132,7 +132,7 @@ Hierarchie: Mehr Sichtbarkeit -> Weniger Sichtbarkeit:
    Sie werden *nicht* vererbt.
 ## ``final``
 - Wert von Attributen kann nach dem ersten Setzen nicht verändert werden.
-	- gut für Konstanten wie ``static double pi = 3.1415`` 
+	- gut für Konstanten wie ``static final double pi = 3.1415`` 
 - Methode darf in Unterklassen nicht überschrieben werden
 	- Kombination zu ``static final``-Methoden sind cursed und sollte man nie zu Gesicht bekommen
 
@@ -159,7 +159,7 @@ class Kid extends Abstract {
     public void run(){}
 }
 
-//selbst abstract -> muss nicht überschreiben
+// Klasse selbst abstract -> muss nicht alles überschreiben
 abstract class Kid2 extends Abstract{ 
 	public void doSomething(){};
 }
