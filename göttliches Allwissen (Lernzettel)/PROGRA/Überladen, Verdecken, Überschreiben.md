@@ -52,7 +52,7 @@ Sind in der Klasse oder der Klasse und ihren Oberklassen mehrere Methoden vorhan
 3. Varargs (int ... args)
 
 (1. und 2. schließen sich aus - es wird nicht automatisch ``short -> int -> Integer`` gemacht)
-### Beispiel: Überladen in Klassenhierachien
+### Beispiel: Überladen in Klassenhierarchien
 Beim Überladen werden Methoden sowohl aus der momentanen Klasse als auch *allen Oberklassen* berücksichtigt.
 ```java
 class A {
