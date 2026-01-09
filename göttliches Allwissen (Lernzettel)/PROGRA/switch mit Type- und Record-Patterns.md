@@ -120,7 +120,7 @@ public class RecordPatterns {
 		  case Paar(Student s1 , Student s2) ->
 	           IO.println("Bei"+s1.name+"und"+s2.name+"gibs Bafäg");
            
-           case Paar(Angestellter a1 , Student _) ->
+           case Paar(Angestellter a1 , Student _ ) ->
 	           IO.println(a1.name+" zahl alleine die Miete");
            
            case Paar(Sklave _ , _ ) , Paar(_ , Sklave _) ->
