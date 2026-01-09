@@ -92,6 +92,8 @@ $$ \frac{
 {\color{red}{<\varphi>}}\;\text{ while (B) \{P\} }{\color{red}{<\varphi \land \neg \text{B}>}}
 }
 $$
+
+
 3 Anforderungen für eine nützliche Schleifeninvariante  #flashcard
 1. Muss tatsächlich invariant sein
 2. muss aus der Vorbedingung folgen

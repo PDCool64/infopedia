@@ -5,7 +5,7 @@ status: rot
 ---
 ---
 
-Dies ist ein Verfahren, um bessere Software mit [[OOP in Java|Objektorientierten Verfahren]] zu schreiben.
+Dies ist ein Verfahren, um bessere Software mit [[OOP Basics in Java|Objektorientierten Verfahren]] zu schreiben.
 
 Datenkapselung als Entwurfsprinzip besagt, dass man zuerst die Schnittstelle entwirft sowie definiert und erst dann die Implementierung.
 
@@ -15,7 +15,7 @@ Datenkapselung als Entwurfsprinzip besagt, dass man zuerst die Schnittstelle ent
 >[!def] Datenkapselung
 > Schreiben und Lesen von Objektattributen sollte nicht außerhalb der eigenen Klasse erfolgen, sondern *nur* durch bestimmte Methoden, die in der eigenen Klasse festgelegt werden: So genannten **Selektoren**. bzw. `set`-Methoden und `get`-Methoden.
 
-Man verwendet also [[OOP in Java#``public`` vs. ``private`` vs. ``protected``|Zugriffsmodifikatoren]] , insbesondere ``private``, um den Zugriff auf Attribute von außen zu verhindern. 
+Man verwendet also [[OOP Basics in Java#``public`` vs. ``private`` vs. ``protected``|Zugriffsmodifikatoren]] , insbesondere ``private``, um den Zugriff auf Attribute von außen zu verhindern. 
 
 # Vorteile
 - Der Entwickler der Klasse kann selbst entschieden, wie auf Daten zugegriffen wird und wie diese verändert werden dürfen
