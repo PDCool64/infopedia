@@ -47,8 +47,8 @@ public class Rechteck{
 
 Sind in der Klasse oder der Klasse und ihren Oberklassen mehrere Methoden vorhanden, deren Signaturen allesamt durch verschiedene Konversionen zutreffend gemacht werden können, wird die speziellste anwendbare Methode ausgewählt. Dabei ist die Priorität:
 0. exakte Übereinstimmung
-1. Implizite Datentypanpassung primitiver Datentypen (int->double)
-2. AutoBoxing / Unboxing (int -> Integer)
+1. Implizite Datentypanpassung primitiver Datentypen (int->double usw.)
+2. AutoBoxing / Unboxing (int -> Integer usw.)
 3. Varargs (int ... args)
 
 (1. und 2. schließen sich aus - es wird nicht automatisch ``short -> int -> Integer`` gemacht)
@@ -119,7 +119,6 @@ Hier also:
 - ``p`` ist statisch als ``Person`` getypt, also ist nur das ``boolean``-Attribut sichtbar. Dass ``p`` zur Laufzeit auf ein ``Person``-Objekt zeigt, ist egal.
 
 > Verdecken wird zur Compilezeit aufgelöst.
-
 
 ---
 # Überschreiben von *nichtstatischen Methoden*  in Unterklassen (overriding)
