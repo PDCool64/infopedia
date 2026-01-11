@@ -92,7 +92,7 @@ Man teilt durch die Menge an Ladungsträgern, um herauszufinden, wie viel _poten
 
 Da es immer um die Energie geht, die aufgebracht werden musste um eine Ladungsungleichverteilung *zwischen zwei Orten* zu erzeugen, besteht die Spannung *relativ* zwischen zwei Punkten.
 ## Im Schaltkreis
-- Ladung wirkt zwischen zwei Punkten im Schaltkreis
+- Spannung wirkt zwischen zwei Punkten im Schaltkreis
 - In der Regel gibt man die Spannung eines Punktes $p$ in einem Schaltkreis in Bezug auf einen *festen Nullpunkt* an. Man spricht dann vom **Potential** des Punktes.
   Dieser Nullpunkt heißt im Schaltkreis **Masse**: Symbol ⏚ 
 
@@ -109,18 +109,18 @@ $$I=\frac{\Delta Q}{\Delta t}\quad\text{bzw.}\quad 1\text{A}= \frac{1\text{C}}{1
 
 ![[Pasted image 20251110110022.png|400]]
 Gedankenexperiment dazu:
-- Man stelle sich an eine Stelle im Leiter und zählt, wie viele Ladungsträger pro Zeiteinheit an einem Vorbeifließen.
+- Man stelle sich an eine Stelle im Leiter und zählt, wie viele Ladungsträger pro Zeiteinheit an einem vorbeifließen.
 
 ## Historisch gewachsen: Ampere, Coulomb und Elementarladung
 
-Die Einheiten Ampere und Coulomb wurden definiert, noch *bevor* wir ein gutes Verständniss der Elementarteilchen hatten. Ihre Werte wurden durch Referenzversuche experimentell festgesetzt und ihre Werte eignen sich gut für menschliche Anwendungen.
+Die Einheiten Ampere und Coulomb wurden definiert, noch *bevor* wir ein gutes Verständnis der Elementarteilchen hatten. Ihre Werte wurden durch Referenzversuche experimentell festgesetzt und ihre Werte eignen sich gut für menschliche Anwendungen.
 
 Timeline:
 - 1785: Coulomb stell einen Zusammenhang zwischen Ladung und Kraft fest: [Torsionswage](https://de.wikipedia.org/wiki/Drehwaage) : Zwei geladene Kugel stoßen sich ab und eine Kraft kann gemessen werden. Er **definiert aber keine Einheiten** für die Größen
   
-- 1820: Oversted entdeckt: Strom erzeugt eine Magnetfeld: Kompassnadel wird von Stromdurchflossenem Draht abgelenkt. Strom wird messbar, aber ohne Einheit.
+- 1820: Oversted entdeckt: Strom erzeugt eine Magnetfeld: Kompassnadel wird von stromdurchflossenem Draht abgelenkt. Strom wird messbar, aber ohne Einheit.
   
-- 1827: Ohm formuliert das Ohm'sche Gesetz: Spannung proportional zu Strom und Widerstand. Man fängt an über die "Systematik" und den Zusammenhang zwischen den Größen Nachzudenken.
+- 1827: Ohm formuliert das Ohm'sche Gesetz: Spannung proportional zu Strom und Widerstand. Man fängt an über die "Systematik" und den Zusammenhang zwischen den Größen nachzudenken.
   
 - 1881: Deutsches Reich: **Definition des Amperes als Basiseinheit**: Strom der in einer bestimmten Elektrolyselösung eine feste Menge an Silbernitrat pro Sekunde an der Elektrode entstehen lässt.
 
@@ -129,7 +129,7 @@ Timeline:
   Die Elektrische Ladung in Coulomb wir hingegen als **Abgeleitete Einheit** definiert durch:
   $1\text{C}=1\text{A}\cdot 1\text{s}$ 
 
-- 1897: J.J. Thomson entdeckt das Elektron: Beginn des Verständnisses, das Ladung aus "Stückchen" besteht.[Versuch zu Kathodenstrahlen](https://www.leifiphysik.de/atomphysik/atomaufbau/ausblick/atommodell-von-thomson) findet unabhängig vom Element negative Ladungsträger mit gleicher Ladungsmenge: Elektronen.
+- 1897: J.J. Thomson entdeckt das Elektron: Beginn des Verständnisses, das Ladung aus "Stückchen" besteht. [Versuch zu Kathodenstrahlen](https://www.leifiphysik.de/atomphysik/atomaufbau/ausblick/atommodell-von-thomson) findet unabhängig vom Element negative Ladungsträger mit gleicher Ladungsmenge: Elektronen.
 
 - 1909: [Milikan-Experiment](https://de.wikipedia.org/wiki/Millikan-Versuch): Öltropfen schweben zwischen geladenen Platten. Aus Gleichgewicht folgt Ladungsträgergröße $e$. Man misst: $e\approx 1.602 \cdot 10^{-19}C$, wobei Coulomb aber immernoch die recht arbiträr, historisch experimentell gewachsene Einheit ist.
 
