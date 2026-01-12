@@ -32,6 +32,7 @@ $$
 Bsp. : $3$-stellige Binärzahl: $(111)_{2}=2^{0}+2^{1}+2^{2}=1+2+4=7=2^{3}-1$
 
 # Umrechnung Dezimal- zu Binärsystem
+ho
 Wie bei allen Zahlsystemen ist diese Umrechnung mit den [[Basen von natürlichen Zahlen#Horner-Schema|Horner Schema]] möglich.
 
 
