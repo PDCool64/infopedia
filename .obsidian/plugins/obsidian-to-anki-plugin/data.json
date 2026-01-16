@@ -140,7 +140,7 @@
     "Vorlesungsnotizen/PROGRA/T02 - Grammatiken und Datentypen.md": "325019e1c426b31b4d3f27af734ce069",
     "Vorlesungsnotizen/PROGRA/T01 - Orga Tutorium 15 und Besprechung 1.Blatt.md": "231ae4010ab2c47ad000a3a08815028a",
     "Vorlesungsnotizen/PROGRA/Formale Sprachen.md": "577113ec20c7050fc0621cb438bc0cfa",
-    "Vorlesungsnotizen/PROGRA/Datenkapselung und Datenabstraktion.md": "3f140c896e60002e108bf12c7f9fd9b6",
+    "Vorlesungsnotizen/PROGRA/Datenkapselung und Datenabstraktion.md": "c3ffeacd586788cb496073238cb2b745",
     "Vorlesungsnotizen/DS/V11 - Mengen.md": "5176e8f96218d916816497dc7bde7fbb",
     "Vorlesungsnotizen/DS/V16 - Eigenschaften von Abbildungen.md": "e2803c573fa3586277d7173e58c7c4fa",
     "Vorlesungsnotizen/DS/V15 - Folgen.md": "94ebe8bedc028071a358c4b08c28c500",
@@ -268,8 +268,13 @@
     "Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Generics.md": "d41d8cd98f00b204e9800998ecf8427e",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Exceptions.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Hoarekalkül.md": "29ae0433431f7ceca1532c8e1be4195b",
-    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - OOP allgemein.md": "d4b9000149fbbc0a4953dbf365d2648b"
+    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Hoarekalkül.md": "704f763dc82650d7e27612f92dd2d3d2",
+    "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - OOP allgemein.md": "00a255e3cebe95fb66d04af2e964c741",
+    "göttliches Allwissen (Lernzettel)/TI/ANKI/Zahlendarstellung.md": "e6428df7e2322053f48408214bb7ae96",
+    "göttliches Allwissen (Lernzettel)/PROGRA/OOP Basics in Java.md": "f3244a394ad0ff0772868eea91d6fc07",
+    "göttliches Allwissen (Lernzettel)/PROGRA/switch mit Type- und Record-Patterns.md": "77e62fedeb0e343ffd02eab1eac3939e",
+    "göttliches Allwissen (Lernzettel)/PROGRA/Exceptions in Java.md": "44f61ef07aa3c10296bd67d7b510b211",
+    "göttliches Allwissen (Lernzettel)/DS/Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150"
   },
   "fields_dict": {
     "Bildverdeckung": [
