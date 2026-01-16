@@ -21,7 +21,7 @@ $$\text{bias}=2^{k-1}-1=2^{7}-1=127$$
 
 
 Floating-Point Zahlen:
-Sei $\hat{e}$ der gespeicherte Exponent - wie berechnet man aus ihm mit dem $\text{bias}$ den tatsächlichen Exponent für die Umrechnung? #flashcard
+Sei $\hat{e}$ der gespeicherte Exponent - wie berechnet man aus ihm mit dem $\text{bias}$ den tatsächlichen Exponent $e$ für die Umrechnung? #flashcard
 $$
 \begin{align}
 e&=\hat{e}-\text{bias} \\
@@ -43,18 +43,24 @@ $\to$ Beim konvertieren wieder einfügen.
 Wozu verwendet man den Gray-Code #flashcard
 - KV-Diagramme zur Vereinfachung boolescher Funktionen
 - Weniger schwere Fehler durch Bitflips bei der Datenübertragung
+<!--ID: 1768577354407-->
+
 
 Was ist die definierende Eigenschaft des Gray-Code #flashcard
 Benachbarte Zahlen unterscheiden sich nur in einem Bit
+<!--ID: 1768577354413-->
+
 
 Wie lauten die Zahlen $0-4$ im Gray-Code #flashcard
 0: ``00``
 1: ``10``
 2: ``11``
 3: `10`
+<!--ID: 1768577354416-->
+
 
 Wie rechnet man eine Binärzahl in den Gray-Code um #flashcard
 ``( (x<<1) xor x ) >>1``
 - Wende ``xor`` auf die Zahl und ihr um eins nach *Links* geshiftetes an
 - Shifte zurück
-
+<!--ID: 1768577354418-->
