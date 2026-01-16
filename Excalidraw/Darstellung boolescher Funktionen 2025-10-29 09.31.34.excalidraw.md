@@ -19,9 +19,9 @@ Logikgatter aus einer DNF: ^oHpBmPrN
 Als DAG: ^UBcN3QR3
 
 ## Embedded Files
-16b14891ec003e086391ab04533789bac2ab5e72: [[Pasted Image 20251029093136_235.png]]
+16b14891ec003e086391ab04533789bac2ab5e72: [[Vorlesungsnotizen/TI/_attachments/Pasted Image 20251029093136_235.png]]
 
-211cb96a2bd403977da483c717cf3a85db06213a: [[Pasted Image 20251029093136_280.png]]
+211cb96a2bd403977da483c717cf3a85db06213a: [[Vorlesungsnotizen/TI/_attachments/Pasted Image 20251029093136_280.png]]
 
 %%
 ## Drawing
