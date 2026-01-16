@@ -5,6 +5,16 @@ Wie bestimmt man das Zweierkomplement einer Binärzahl #flashcard
 2. addiere +1
 <!--ID: 1768576162442-->
 
+Welchen Bereich kann man in $n$ Bit im Zweierkomplement darstellen #flashcard
+$-2^{n-1}\le x \le 2^{n-1}-1$
+<!--ID: 1768578251949-->
+
+
+Warum kann man im Zweierkomplement eine Zahl mehr als im Einerkomplement darstellen  #flashcard
+Es gibt keine doppelte Darstellung für die $0$
+<!--ID: 1768578251953-->
+
+
 
 Floating-Point Zahlen:
 Welche Bits sind für Vorzeichen, Mantisse und Exponent in einer 32bit IEEE754 Gleitkommazahl vorgesehen #flashcard
@@ -18,6 +28,19 @@ Floating-Point Zahlen:
 Für den Exponent seien 8Bit vorgesehen - um welches bias muss er verschoben werden #flashcard
 $$\text{bias}=2^{k-1}-1=2^{7}-1=127$$
 <!--ID: 1768576162448-->
+
+Floating-Point Zahlen:
+Wann ist eine IEEE754-Zahl normalisiert? #flashcard
+Wenn der Exponent weder ``00..00`` oder ``11...111`` ist
+<!--ID: 1768578251956-->
+
+
+Wann ist eine IEEE754-Zahl denormalisiert
+und was ist dann für die Mantisse wichtig #flashcard
+- denormalisiert wenn der Exponent  ``00..000`` ist
+- *keine* implizite " $1,$ " vor der Mantisse
+<!--ID: 1768578251958-->
+
 
 
 Floating-Point Zahlen:
@@ -53,14 +76,12 @@ Benachbarte Zahlen unterscheiden sich nur in einem Bit
 
 Wie lauten die Zahlen $0-4$ im Gray-Code #flashcard
 0: ``00``
-1: ``10``
+1: ``01``
 2: ``11``
 3: `10`
 <!--ID: 1768577354416-->
 
 
-Wie rechnet man eine Binärzahl in den Gray-Code um #flashcard
-``( (x<<1) xor x ) >>1``
-- Wende ``xor`` auf die Zahl und ihr um eins nach *Links* geshiftetes an
-- Shifte zurück
-<!--ID: 1768577354418-->
+Wie rechnet man eine Binärzahl $x$ in den Gray-Code um #flashcard
+$$g=x \oplus(x\gg 1)$$
+<!--ID: 1768578251961-->

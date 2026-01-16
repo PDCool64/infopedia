@@ -177,11 +177,11 @@
     "göttliches Allwissen (Lernzettel)/TI/Übersicht verschiedener Boolesche Funktionen.md": "7eb6a2a4f83a2566fc632963ed963a16",
     "göttliches Allwissen (Lernzettel)/TI/Verfahren zur Netzwerkanalyse.md": "9d2e00b9199ef3e45d8c01fcbd4ca138",
     "göttliches Allwissen (Lernzettel)/TI/Physikalische Größen der Elektrotechnik.md": "38d81ee58610b11b27bf87b543d2d8d8",
-    "göttliches Allwissen (Lernzettel)/TI/Vereinfachung Boolescher Funktionen.md": "50ead1cdc073fc295cd2830d894edad4",
+    "göttliches Allwissen (Lernzettel)/TI/Vereinfachung Boolescher Funktionen.md": "aab69647ca12ed0df9187b01742bcebf",
     "göttliches Allwissen (Lernzettel)/TI/Untitled.md": "d41d8cd98f00b204e9800998ecf8427e",
     "göttliches Allwissen (Lernzettel)/TI/Halbleiter.md": "5096c53c981033c06179b9467734d738",
     "göttliches Allwissen (Lernzettel)/TI/Schaltfunktionen und Boolesche Funktionen.md": "12f4d23add9ba48bb5109bf4fee29e04",
-    "göttliches Allwissen (Lernzettel)/TI/Gray-Code.md": "48b66403b816a15af1d3d40d1d166c13",
+    "göttliches Allwissen (Lernzettel)/TI/Gray-Code.md": "ce1c19b0970277663439f297b5946010",
     "göttliches Allwissen (Lernzettel)/TI/Negative Binärzahlen durch Komplement - Ganze Zahlen im Binärsystem.md": "e7b96a866a930bcdf90cffda70a4e02c",
     "göttliches Allwissen (Lernzettel)/TI/Festkomma-Darstellung von Binärzahlen.md": "7d33c716498b22cd6a7fb1a939c27dcf",
     "göttliches Allwissen (Lernzettel)/TI/Kondensator und Spule.md": "839754277a13aeadc078fe0668aab6e8",
@@ -270,11 +270,12 @@
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Exceptions.md": "d41d8cd98f00b204e9800998ecf8427e",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - Hoarekalkül.md": "704f763dc82650d7e27612f92dd2d3d2",
     "göttliches Allwissen (Lernzettel)/PROGRA/ANKI/Java - OOP allgemein.md": "00a255e3cebe95fb66d04af2e964c741",
-    "göttliches Allwissen (Lernzettel)/TI/ANKI/Zahlendarstellung.md": "fb0786d9e2501cfef881549da9401bab",
+    "göttliches Allwissen (Lernzettel)/TI/ANKI/Zahlendarstellung.md": "7bbbc70a6b6d577d7a52888e04f5bb97",
     "göttliches Allwissen (Lernzettel)/PROGRA/OOP Basics in Java.md": "f3244a394ad0ff0772868eea91d6fc07",
     "göttliches Allwissen (Lernzettel)/PROGRA/switch mit Type- und Record-Patterns.md": "77e62fedeb0e343ffd02eab1eac3939e",
     "göttliches Allwissen (Lernzettel)/PROGRA/Exceptions in Java.md": "44f61ef07aa3c10296bd67d7b510b211",
-    "göttliches Allwissen (Lernzettel)/DS/Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150"
+    "göttliches Allwissen (Lernzettel)/DS/Algebraische Strukturen - Monoide und Gruppen.md": "93622c61b2c2afb6f3ab75a50d12a150",
+    "göttliches Allwissen (Lernzettel)/TI/ANKI/Boolesche Funktionen.md": "09fe2feb213af17de55defdabd0a4c7c"
   },
   "fields_dict": {
     "Bildverdeckung": [
