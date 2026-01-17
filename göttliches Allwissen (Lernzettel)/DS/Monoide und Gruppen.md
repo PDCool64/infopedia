@@ -46,3 +46,16 @@ Wenn man keine eigene Notation für die Verknüpfung hat, schreibt man diese oft
 - $a^{n}$ für $\underbrace{ a\cdot a\cdot\;\cdots\;\cdot a }_{ n-\text{mal} }$
 
 ---
+
+# Gruppe
+Eine Gruppe ist ein [[#Monoid]] in dem jedes Element *invertierbar* ist.
+>[!def] Monoid
+> Es sei $G$ eine [[Mengen|Menge]] mit der [[#^2eb8c1|Verknüpfung]] 
+> $$\bullet:M\times M\to M \;,\;(x,y)\mapsto x \bullet y$$
+> Wir nennen $G$ eine **Gruppe**, wenn gilt
+> - $(G,\bullet)$ ist Monoid
+> - Für alle $x\in G$ existiert ein $x^{-1}$ mit$$ x\bullet x^{-1}=e=x^{-1} \bullet x $$
+> 
+> Die Gruppe nennen wir *abelsch* oder *kommutativ*, wenn zusätzlich gilt:
+>  $x\bullet y = y \bullet x$ für alle $x,y\in G$
+
