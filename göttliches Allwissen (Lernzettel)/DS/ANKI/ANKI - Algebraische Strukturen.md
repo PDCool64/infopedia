@@ -23,6 +23,8 @@ Eine Menge $U\subseteq G$ ist Untergruppe, wenn für alle $x,y\in U$ gilt
 - $x^{-1}\in U$
 - $e\in U$ (neutrales Element enthalten)
 Also muss eine Untergruppe *abgeschlossen* bzgl. Verknüpfung und Inversenbildung sein und das neutrale Element der Gruppe enthalten.
+<!--ID: 1769083724325-->
+
 
 
 # Ringe
@@ -59,4 +61,6 @@ Ein *kommutativer* Ring heißt Körper, wenn
 
 Ist die Multiplikation in einem Körper immer kommutativ #flashcard
 Ja
+<!--ID: 1769083724327-->
+
 
