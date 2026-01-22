@@ -21,7 +21,8 @@ Definiere eine Untergruppe $U$ der Grupp $G$ #flashcard
 Eine Menge $U\subseteq G$ ist Untergruppe, wenn für alle $x,y\in U$ gilt
 - $x\cdot y\in U$ 
 - $x^{-1}\in U$
-Also muss eine Untergruppe *abgeschlossen* bzgl. Verknüpfung und Inversenbildung sein.
+- $e\in U$ (neutrales Element enthalten)
+Also muss eine Untergruppe *abgeschlossen* bzgl. Verknüpfung und Inversenbildung sein und das neutrale Element der Gruppe enthalten.
 
 
 # Ringe
