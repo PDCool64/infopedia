@@ -1,4 +1,4 @@
-TARGET DECK: Java
+TARGET DECK: PROGRA
 
 Zuweisungsregel  #flashcard
 $$
@@ -92,6 +92,8 @@ $$ \frac{
 {\color{red}{<\varphi>}}\;\text{ while (B) \{P\} }{\color{red}{<\varphi \land \neg \text{B}>}}
 }
 $$
+<!--ID: 1768576162457-->
+
 
 
 3 Anforderungen für eine nützliche Schleifeninvariante  #flashcard

@@ -4,7 +4,7 @@ tags:
 status: rot
 ---
 ---
-Warum vereinfachen: Will ich eine [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] in hardware realisieren, ist es günstiger/effizienter/kleiner/schneller/effizienter Weniger Gatter = Verknüpfungen zu brauchen.
+Warum vereinfachen: Will ich eine [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] in Hardware realisieren, ist es günstiger/effizienter/kleiner/schneller/effizienter Weniger Gatter = Verknüpfungen zu brauchen.
 
 ---
 In diesem Dokument wird fast ausschließlich die Vereinfachung von [[DNF und KNF - Disjunktive und Konjunktive Normalform#Disjunktive Normalform - DNF|disjunktiven Formen]] thematisiert. Prinzipiell ist all dies aber auch mit Konjunktiven Formen möglich wenn man sich der Verneinungen bewusst ist. Beispielsweise kann man im KV Diagram auch Boxen um die Nullen malen und für jede Box einen Maxterm aus den negierten Variablen aufstellen.
