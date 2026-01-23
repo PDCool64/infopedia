@@ -49,7 +49,7 @@ aliases:
 > Existiert ein $C\in M$ mit $C=\text{sup } M$, so heißt $C$ das **Maximum** von $M$.
 >  $C=\text{max }M$
 > 
->Liegt also das Supremum- die kleinste obere Schranke- selbst in der Menge $M$, dann nennt man es auch Maximum.
+>Liegt also das Supremum -die kleinste obere Schranke- selbst in der Menge $M$, dann nennt man es auch Maximum.
 >
 > ---
 > Existiert ein $c\in M$ mit $c=\text{inf }M$, so heißt $c$ das **Minimum** von $M$.

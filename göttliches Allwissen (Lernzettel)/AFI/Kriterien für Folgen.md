@@ -7,7 +7,7 @@ status: rot
 # Kriterien für die [[Folgen für AFI#Grenzwert von Folgen|Konvergenz]] von Folgen
 
 
-Grundliegend ist die normale Grenzwertdefinition:
+Grundlegend ist die normale Grenzwertdefinition:
 ![[Folgen für AFI#Grenzwert von Folgen]]
 
 

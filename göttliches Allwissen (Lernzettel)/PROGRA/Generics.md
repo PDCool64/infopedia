@@ -85,7 +85,7 @@ class Element<T>{
 }
 ```
 
-#### Erreich Ziel: Typfehler werden statisch abgefangen:
+#### Erreicht Ziel: Typfehler werden statisch abgefangen:
 ``a.next = b;`` ist erlaubt, weil ``a.next`` ein Element vom Typ ``Element<Integer>`` erwartet und ``b`` ein solches ist.
 
 Hingegen wäre ``b.next=c;`` ein Typfehler : ``b`` erwartet ``Element<Integer>`` aber ``c`` ist ``Element<Double>``

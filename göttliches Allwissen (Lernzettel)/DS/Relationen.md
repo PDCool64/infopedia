@@ -36,8 +36,8 @@ status: rot
 
 - Vollständig bedeutet, dass jedes beliebige Paar an Elementen bzgl. der Relation vergleichbar ist.
 - Bei Transitiven Relationen schreibt man für $(x,y)\in R\;,\;(y,z)\in R$ auch kurz:$$x\,R\,y\,R\,z$$ bzw. für $(x_{k},x_{k+1})\in M\; \forall_{k\in \{ 1 ,\dots,n\}}$  kurz: $$x_{1}\,R\,x_{2}\,R\,x_{3}\,R\,\cdots\,R\,x_{n}$$
-## Bemerkungen
-- wir betrachten hier nur $M=N$ d.h. $R\subseteq M\times M$
+#### Bemerkungen
+- wir betrachten für die o.g. Eigenschaften nur $M=N$ d.h. $R\subseteq M\times M$
 - Die allermeisten Relationen haben keine der obigen Eigenschaften. Solche, die manche der Eigenschaften haben sind aber besonders interessant.
 # Klassifikation von Relationen
 

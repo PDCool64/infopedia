@@ -37,7 +37,7 @@ Die [[#Disjunktive Normalform - DNF]] als auch die [[#Konjunktive Normalform - K
 ^0681ec
 
 >[!def] Disjunktive Normalform
-> Jede [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] $f:B^{n}\to B$ ist *eindeutig* darstellbar als **Summe der [[#^0681ec|Minterme]] ihrer [[Darstellung boolescher Funktionen#^bbd58f|einschlägigen Indizes]]. 
+> Jede [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] $f:B^{n}\to B$ ist *eindeutig* darstellbar als **Summe der [[#^0681ec|Minterme]]** ihrer [[Darstellung boolescher Funktionen#^bbd58f|einschlägigen Indizes]]. 
 > 
 > D.h. ist $I\subseteq \{ 0,\dots,2^{n}-1 \}$ die Menge der [[Darstellung boolescher Funktionen#^bbd58f|einschlägigen Indizes]] von $f$, so gilt: $$f=\sum_{i\in I}m_{i}$$
 > bzw. ausgeschrieben:$$f=m_a\;\vee\; \dots \;\vee\;m_b$$
@@ -83,7 +83,7 @@ Durch die *Disjunktion* dieser Optionen erhält man alle möglichen Wege, die zu
 ---
 # [[Funktionale Vollständigkeit]] auf Grund von KNF und DNF.
 
-Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] eine DNF und keine KNF aufstellen, welche die Funktion genau widergeben. Da sowohl DNF als auch KNF nur aus den Verknüpfungen $\vee,\wedge,\neg$ bestehen, lassen sich also *alle* Booleschen Funktionen nur mit diesen drei Verknüpfungen darstellen. 
+Wie oben gezeigt, lässt sich für *jede* beliebige [[Schaltfunktionen und Boolesche Funktionen#Boolesche Funktionen|Boolesche Funktion]] eine DNF und eine KNF aufstellen, welche die Funktion genau widergeben. Da sowohl DNF als auch KNF nur aus den Verknüpfungen $\vee,\wedge,\neg$ bestehen, lassen sich also *alle* Booleschen Funktionen nur mit diesen drei Verknüpfungen darstellen. 
 Man sagt: 
 	Das System $\{ \vee,\wedge,\neg \}$ ist **[[Funktionale Vollständigkeit|funktional vollständig]]**.
 
