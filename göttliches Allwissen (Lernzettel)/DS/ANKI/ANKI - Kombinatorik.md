@@ -1,4 +1,4 @@
-TARGET DECK: DS
+TARGET DECK: standby
 
 ### Kombinatorik
 Wie viele Kombinationen gibt es
