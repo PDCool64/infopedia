@@ -13,4 +13,17 @@ für $p$ Primzahl.
 <!--ID: 1769353266275-->
 
 
+Was besagt der kleine Satz von Fermat #flashcard
+In $\mathbb{Z}_{p}$ mit $p$ Primzahl gilt
+$$
+x^{p-1} \equiv_{p} 1
+$$
+$$
+x^{p} \equiv_{p} x
+$$
+> Dies ist sehr nützlich in *Restklassenringen modulo $p$*: 
+> Hier ist bedeutet dies $x^{p-1}=1$ und $x^{p}=x$ 
+<!--ID: 1769354749497-->
+
+
 

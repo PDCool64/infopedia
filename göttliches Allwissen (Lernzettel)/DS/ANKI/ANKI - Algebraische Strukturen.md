@@ -17,7 +17,7 @@ Kann ein Monoid mehrere neutrale Elemente haben  #flashcard
 Nein
 <!--ID: 1769077654502-->
 
-Definiere eine Untergruppe $U$ der Grupp $G$ #flashcard
+Definiere eine Untergruppe $U$ der Gruppe $G$ #flashcard
 Eine Menge $U\subseteq G$ ist Untergruppe, wenn für alle $x,y\in U$ gilt
 - $x\cdot y\in U$ 
 - $x^{-1}\in U$

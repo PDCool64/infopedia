@@ -26,6 +26,7 @@ Auf Integritätsbereichen gilt sogar:
 $$
 a \sim b \iff a|b \land b|a
 $$
+(Nur auf einem Integritätsbereich kann *kürzen* um von gegenseitiger Teilbarkeit auf Assoziertheit zu kommen)
 <!--ID: 1769083724300-->
 
 
