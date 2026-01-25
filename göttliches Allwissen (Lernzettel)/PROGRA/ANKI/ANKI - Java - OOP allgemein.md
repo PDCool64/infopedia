@@ -65,3 +65,6 @@ Laufzeit
 Überschreiben - Auflösung? #flashcard
 Unterklasse des zur Laufzeit tatsächlich vorhandenen Objekts
 <!--ID: 1767699047852-->
+
+
+# Polymorphismus

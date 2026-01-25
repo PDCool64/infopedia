@@ -12,6 +12,7 @@ Ein Ring, auf dem jedes Ideal Hauptideal ist
 
 Wie bestimmt man auf einem Hauptidealring welchem Hauptideal $(f,g)$ entspricht #flashcard
 $(f,g)=(\;\text{ggT}(f,g)\;)$
+(Ergebnis muss ggfs. noch normiert werden)
 <!--ID: 1769353266284-->
 
 
