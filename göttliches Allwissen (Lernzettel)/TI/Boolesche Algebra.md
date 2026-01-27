@@ -78,7 +78,7 @@ a \wedge (a\vee b) &=a
 \end{align}
 $$
 
-### "obvious" Gesetze, den man aber für die Axiomatik braucht:
+### "obvious" Gesetze, die man aber für die Axiomatik braucht:
 Idempotenzgesetze:
 $$
 \begin{align}

@@ -33,11 +33,11 @@ $g_{n}$ hingegen ist die Abbildung, welche den Rekursionsschritt selbst definier
 
 
 ## Wichtige Bemerkung: Existenz $\neq$ Praktisch
-- Die reine Existenz und Eindeutigkeit einer Expliziten Abbildung ist nur dies, und nichts mehr. Die explizite Form ist oft:
+- Die reine Existenz und Eindeutigkeit einer expliziten Abbildung ist nur dies, und nichts mehr. Die explizite Form ist oft:
 	- nicht konstruierbar
 	- nicht als Formel aufschreibbar
 	- nicht berechenbar
-- Aus expliziten Formen kann man formell immer eine triviale rekursive Form bauen, auch wenn diese oft keine "schönen" kleinen Rekusionsschritte ergeben.
+- Aus expliziten Formen kann man formell immer eine triviale rekursive Form bauen, auch wenn diese oft keine "schönen" kleinen Rekursionsschritte ergeben.
 
 ---
 # Rekursion für [[Summenzeichen und Produktzeichen]]

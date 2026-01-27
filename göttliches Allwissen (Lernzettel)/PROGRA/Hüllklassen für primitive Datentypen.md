@@ -90,4 +90,3 @@ void main() {
 
 ## Beispiele
 ![[Pasted image 20260105144548.png]]
-

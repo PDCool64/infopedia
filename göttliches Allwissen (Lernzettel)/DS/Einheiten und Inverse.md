@@ -1,8 +1,6 @@
 ---
-date:
 tags:
+  - DS
 status: rot
-Vorlesungsfolien:
-Skriptfolien:
 ---
 ---
