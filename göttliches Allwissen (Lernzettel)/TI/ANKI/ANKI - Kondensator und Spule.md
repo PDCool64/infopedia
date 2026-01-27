@@ -57,3 +57,25 @@ $$
 Schaltverhalten des Kondensators:
 Wie sieht der Graph für Spannung sowie Strom am Kondensator beim Laden und Entladen aus?
 ![[Pasted image 20260127194626.png]]
+($U_{0}$ ist die Versorgungsspannung)
+
+Welche Frequenzen lässt ein *Tiefpass* durch #flashcard 
+Nur niedrige Frequenzen können *passieren*.
+
+Welche Frequenzen lässt ein *Hochpass* durch #flashcard 
+Nur hohe Frequenzen können *passieren*.
+
+Handelt es sich um einen Hoch oder Tiefpass?
+![[Pasted image 20260127195304.png]]
+#flashcard 
+Tiefpass
+
+Handelt es sich um einen Hoch- oder Tiefpass?
+![[Pasted image 20260127195403.png]]
+#flashcard 
+Hochpass
+
+Handelt es sich um einen Hoch- oder Tiefpass?
+![[Pasted image 20260127195747.png]]
+#flashcard 
+Hochpass
