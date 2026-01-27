@@ -16,4 +16,6 @@ daily notes/
 /.obsidian/themes/Atom/manifest.json
 /.obsidian/plugins/obsidian-style-settings/manifest.json
 /.obsidian/plugins/obsidian-style-settings/main.js
+/.obsidian/plugins/obsidian-to-anki-plugin/data.json
+
 >>>>>>> 91e47ed341eb23844602c5fc160d6f6d7fe5f19b

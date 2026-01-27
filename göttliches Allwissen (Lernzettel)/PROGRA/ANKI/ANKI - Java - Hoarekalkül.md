@@ -4,7 +4,9 @@ Zuweisungsregel  #flashcard
 $$
 \frac{}{{\color{red}{<\varphi[x/t ]>}}\;\text{ x=t; }{\color{red}{<\varphi>}}}
 $$
-<!--ID: 1767711433128-->
+<!--ID: 1768586729996-->
+
+
 
 
 Konsequenzregel 1
@@ -18,7 +20,9 @@ $$
 {\color{red}{<\alpha>}}\;\text{ P }{\color{red}{<\psi>}}
 }
 $$
-<!--ID: 1767711433131-->
+<!--ID: 1768586730001-->
+
+
 
 
 Konsequenzregel 2
@@ -32,7 +36,9 @@ $$
 {\color{red}{<\varphi>}}\;\text{ P }{\color{red}{<\beta>}}
 }
 $$
-<!--ID: 1767711433134-->
+<!--ID: 1768586730004-->
+
+
 
 
 Sequenzregel #flashcard
@@ -48,7 +54,9 @@ $$
 {\color{red}{<\varphi>}}\;\text{ P Q }{\color{red}{<\beta>}}
 }
 $$
-<!--ID: 1767711433136-->
+<!--ID: 1768586730008-->
+
+
 
 
 Bedingungsregel 1
@@ -63,7 +71,9 @@ $$
 {\color{red}{<\varphi>}}\;\text{ if (B) \{P\} }{\color{red}{<\psi>}}
 }
 $$
-<!--ID: 1767711433139-->
+<!--ID: 1768586730012-->
+
+
 
 
 Bedingungsregel 2
@@ -80,7 +90,9 @@ $$
 {\color{red}{<\varphi>}}\;\text{ if (B) \{P\} else \{Q\} }{\color{red}{<\psi>}}
 }
 $$
-<!--ID: 1767711433141-->
+<!--ID: 1768586730016-->
+
+
 
 
 Schleifenregel  #flashcard
@@ -92,7 +104,9 @@ $$ \frac{
 {\color{red}{<\varphi>}}\;\text{ while (B) \{P\} }{\color{red}{<\varphi \land \neg \text{B}>}}
 }
 $$
-<!--ID: 1768576162457-->
+<!--ID: 1768586730020-->
+
+
 
 
 
@@ -100,7 +114,9 @@ $$
 1. Muss tatsächlich invariant sein
 2. muss aus der Vorbedingung folgen
 3. muss mit negierter Schleifenbedingung die Nachbedingung implizieren
-<!--ID: 1767711433144-->
+<!--ID: 1768586730024-->
+
+
 
 
 An welchen 4 Stellen fügt man die Schleifeninvariante ein  #flashcard
@@ -108,12 +124,16 @@ An welchen 4 Stellen fügt man die Schleifeninvariante ein  #flashcard
 2. Am Anfang des Schleifenrumpfs zusammen mit Schleifenbedingung
 3. Am Ende des Schleifenrumps
 4. Nach der Schleife zusammen mit negierter Schleifenbedingung
-<!--ID: 1767711433146-->
+<!--ID: 1768586730027-->
+
+
 
 
 Terminierungsregel  #flashcard
 Für jede Schleife ``while (B) {P}`` finde einen ``int``-Ausdruck $V$ (**Variante der Schleife**), so dass:
 - $B\implies V\ge 0$
 - ${\color{red}{<V=m \land B>}}\text{ P }{\color{red}{<V<m>}}$
-<!--ID: 1767711433149-->
+<!--ID: 1768586730031-->
+
+
 
