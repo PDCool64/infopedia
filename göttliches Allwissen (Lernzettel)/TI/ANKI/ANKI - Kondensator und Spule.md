@@ -53,3 +53,7 @@ Strom an der Spule ist das Integral über die Spannung.
 $$
 i(T) = \frac{1}{L} \int_{0}^{T}u(t) \;\text{d}t
 $$
+
+Schaltverhalten des Kondensators:
+Wie sieht der Graph für Spannung sowie Strom am Kondensator beim Laden und Entladen aus?
+![[Pasted image 20260127194626.png]]
