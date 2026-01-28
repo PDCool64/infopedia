@@ -2,7 +2,7 @@
   "settings": {
     "CUSTOM_REGEXPS": {
       "Bildverdeckung": "",
-      "Einfach": "^#+(.+)\\n*((?:\\n(?:^[^\\n#].{0,2}$|^[^\\n#].{3}(?<!<!--).*))+)",
+      "Einfach": "",
       "Einfach (Antwort eintippen)": "",
       "Einfach (und die umgekehrte Richtung)": "",
       "Einfach (und wahlweise die umgekehrte Richtung)": "",
