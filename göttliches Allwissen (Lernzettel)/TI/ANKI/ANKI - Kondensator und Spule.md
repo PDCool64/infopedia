@@ -1,7 +1,7 @@
 TARGET DECK: TI
 
 Wie verhält sich ein Kondensator bei Wechselstrom mit sehr *hoher* Frequenz #flashcard 
-Wie ein Draht / Kurzschluss
+Wie ein Draht / *Kurzschluss*
 
 Wie verhält sich ein Kondensator bei Wechselstrom nach dem anfänglichem Aufladen bei Gleichstrom / sehr niedriger Frequenz #flashcard 
 Wie eine offene Klemme
