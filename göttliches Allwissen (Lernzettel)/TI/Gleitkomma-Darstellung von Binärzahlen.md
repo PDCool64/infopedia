@@ -79,7 +79,8 @@ Aufteilung bei $32$-Bit:
 # Fallunterscheidungen:
 Die meisten Zahlen werden in der [[#Normalisierte Darstellung|Normalisierten Darstellung]] gespeichert.
 - Diese ermöglicht es, bei 32 Bit Zahlen mit Beträgen von $1.18\cdot 10^{-38}$ zu speichern
-- $0$ selbst lässt sich so nicht speichern. sowie Zahlen sehr nah an $0$ lassen außerdem nicht sehr genau speichern.
+- $0$ selbst lässt sich so nicht speichern
+- Zahlen sehr nah an $0$ lassen sich außerdem in der normalisierten Darstellung nicht sehr genau speichern.
 Für die Zahlen nahe der $0$, sowie die $0$ selbst gibt es die [[#Denormalisierte Darstellung]]
 
 Sonderfälle werden ebenfalls markiert:
@@ -109,8 +110,26 @@ am Beispiel $-12.6875$
      Dadurch wird dieser zu einer immer positiven Zahl und kann somit einfach ins Binärsystem mit $k$-Bit umgewandelt werden:
      $(130)_{10}=(10000010)_{2}$
      
-3. Alles zusammentun:![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 20.17.04.excalidraw]]
+3. Alles zusammen:![[Gleitkomma-Darstellung von Binärzahlen 2025-10-19 20.17.04.excalidraw]]
 ## Gleitkomma -> Dezimal
+Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
+1. Vorzeichen ablesen: $\hat{s}=s=0\to$ positive Zahl
+2. Mantisse ablesen:
+	Im Speicher:
+	    ``11100001100000000000000``
+	Führende ``1`` wieder einfügen: (`|` markiert das Komma)
+	   ``1|11100001100000000000000``
+3. gespeicherten Exponenten $\hat{e}$ ablesen und zu $e$ umrechnen:
+		``10000110`` = $128+4+2=134$ 
+		Das *bias* wieder herausrechnen, um den tatsächlichen Exponenten $e$ zu erhalten:
+		$e=\hat{e}-bias$
+		$e=134-127=7$
+4. Komma in der Mantisse um den Exponenten $e$ verschieben:
+	   Für positive Exponenten $e$ schieben wir das Komma nach rechts: Zahl wird größer
+	    ``1|11100001100000000000000`` $\to$  ``11110000|1100000000000000``
+5. Wie eine Festkommazahl ausrechnen:
+	   ``11110000|1100000000000000`` $=240,\!75$
+## Gleitkomma -> Dezimal (umständlicherer Variante)
 Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
 1. Vorzeichen ablesen: $\hat{s}=s=0\to$ positive Zahl
 2. Nachkommastellen der Mantisse ablesen:
@@ -124,10 +143,10 @@ Gegeben sei die $32$-Bit Gleitkommazahl ``0 10000110 11100001100000000000000``
 		$e=134-127=7$
 4. Die Dezimalzahl aus Vorzeichen, Mantisse und Exponenten berechnen:
 	   $z= + 1.880859375\cdot 2^{7}= 240.75$
-
 ---
 # Denormalisierte Darstellung
 Darstellung der $0$ sowie genauere Darstellung von Zahlen sehr nah an der Null.
+
 Es handelt sich um die Denormalisierte Darstellung, wenn der gespeicherte Exponent $\hat{e}$ nur aus Nullen besteht.
 
  >[!wip]
