@@ -1,3 +1,5 @@
+TARGET DECK: AFI
+
 Definition der Injektivität? #flashcard
 $$
 f(x) = f(y) \implies x = y

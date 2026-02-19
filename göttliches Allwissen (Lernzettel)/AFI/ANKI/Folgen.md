@@ -1,3 +1,5 @@
+TARGET DECK: AFI
+
 Definition der Konvergenz von Folgen? #flashcard
 $$
 \begin{align}
