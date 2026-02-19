@@ -12,6 +12,7 @@ $$
 	\forall y \in N: \exists x \in M: f(x) = y 
    \end{align}
 $$
+
 Definition der Bijektivität? #flashcard
 Die Funktion ist surjektiv und Bijektiv
 
