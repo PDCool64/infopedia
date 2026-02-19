@@ -2,7 +2,7 @@
   "settings": {
     "CUSTOM_REGEXPS": {
       "Bildverdeckung": "",
-      "Einfach": "((?:[^\\\\n][\\\\n]?)+) #flashcard ?\\\\n*((?:\\\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))+)",
+      "Einfach": "((?:[^\\n][\\n]?)+) #flashcard ?\\n*((?:\\n(?:^.{1,3}$|^.{4}(?",
       "Einfach (Antwort eintippen)": "",
       "Einfach (und die umgekehrte Richtung)": "",
       "Einfach (und wahlweise die umgekehrte Richtung)": "",
