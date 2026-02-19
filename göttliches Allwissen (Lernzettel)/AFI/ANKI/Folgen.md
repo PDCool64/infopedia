@@ -1,5 +1,3 @@
-TARGET DECK: AFI
-
 Definition der Konvergenz von Folgen? #flashcard
 $$
 \begin{align}
@@ -7,19 +5,27 @@ $$
  \forall \epsilon > 0: \exists n_{0} \in \mathbb{N} : \forall n \geq n_{0}: |a_{n} - a| < \epsilon
 \end{align}
 $$
+<!--ID: 1771495777970-->
+
 
 Grenzwertsatz für zwei konvergente Folgen $(a_{n})_{n \in \mathbb{N}}, (b_{n})_{n \in \mathbb{N}}$ , was gilt dann für  $\lim_{  n \to \infty } (a_{n})_{n \in \mathbb{N}} +  (b_{n)_{n \in \mathbb{N}}}$? #flashcard
 $$
 \lim_{ n \to \infty } (a_{n} + b_{n})_{n \in \mathbb{N}} = a + b
 $$
+<!--ID: 1771495777972-->
+
 
 Grenzwertsatz für zwei konvergente Folgen $(a_{n})_{n \in \mathbb{N}}, (b_{n})_{n \in \mathbb{N}}$ , was gilt dann für $\lim_{ n \to \infty } (a_{n} \cdot b_{n})_{n \in \mathbb{N}}$? #flashcard
 $$
 \lim_{ n \to \infty } (a_{n} \cdot b_{n})_{n \in \mathbb{N}} = a \cdot b
 $$
+<!--ID: 1771495777974-->
+
 
 Wann sind die Grenzwertsätze anwendbar? #flashcard
 Wenn beide Folgen konvergent sind
+<!--ID: 1771495777977-->
+
 
 Definition des Sandwich Lemmas? #flashcard
 $$
@@ -31,5 +37,7 @@ $$
 \text{ Daraus folgt, dass a ebenfalls konvergent ist. } 
 \end{align}
 $$
+<!--ID: 1771495777980-->
+
 
 
