@@ -39,5 +39,6 @@ $$
 $$
 <!--ID: 1771495777980-->
 
-
+Welche Eigenschaften muss $(a_{n})_{n \in \mathbb{N}}$ erfüllen, damit das Monotonie Kriterium anwendbar ist? #flashcard
+$(a_{n})_{n \in \mathbb{N}}$ muss beschränkt und monoton sein.
 
