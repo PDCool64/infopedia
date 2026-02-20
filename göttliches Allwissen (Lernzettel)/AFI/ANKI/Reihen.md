@@ -21,3 +21,11 @@ $\implies \sum_{k=1}^{\infty}\alpha a_{k} + \beta b_{k}$ konvergent, $\sum_{k=1}
 <!--ID: 1771572684211-->
 
 
+Definition des Leibnitzkriteriums?
+$$
+\begin{align}
+ &\text{Sei } a_{k} \text{ eine monoton fallende Nullfolge dann gilt für} \sum_{k=1}^{\infty} (-1)^{k} \cdot a_{k}:  \\
+ & \text{ Die Reihe konvergiert} \\
+  & \rvert\sum_{k=1}^{\infty}\lvert
+\end{align}
+$$
