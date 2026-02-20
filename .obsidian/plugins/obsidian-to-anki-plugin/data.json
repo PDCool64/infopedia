@@ -6,7 +6,7 @@
       "Einfach (Antwort eintippen)": "",
       "Einfach (und die umgekehrte Richtung)": "",
       "Einfach (und wahlweise die umgekehrte Richtung)": "",
-      "Lückentext": ""
+      "Lückentext": "((?:.+\\n)*(?:.*{.*)(?:\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))*)"
     },
     "FILE_LINK_FIELDS": {
       "Bildverdeckung": "Bildverdeckung",
@@ -289,10 +289,11 @@
     "göttliches Allwissen (Lernzettel)/AFI/Beispielbeweis - Konvergenz mit dem Cauchy-Kriterium.md": "e7d5d8df9908c0bdb8ea67461908a0cd",
     "göttliches Allwissen (Lernzettel)/AFI/Betrag.md": "4c35d4afcd9e9cf21a35fc6cd39ed19e",
     "göttliches Allwissen (Lernzettel)/AFI/Binomialkoeffizient.md": "bb234b0bea4e0b8438890312f139a20a",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "53a3985d74516d9d8c53dfb6dbab15ff",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "ed27c666c8483d75fe2375df70656121",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "b93dab02496398f8c5a7cc7dec58ee1e",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "f1e21003842232eaa40be54bc9187ce6",
     "göttliches Allwissen (Lernzettel)/AFI/Abzählbarkeit.md": "6242a535d442af7220386405f3aa57c9",
-    "Aufgaben/Affenproblem.md": "65d29efa46ba2433e40516af6b17220f"
+    "Aufgaben/Affenproblem.md": "65d29efa46ba2433e40516af6b17220f",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "058a78be525b943426a1f0c6afd3828e"
   },
   "fields_dict": {
     "Bildverdeckung": [
