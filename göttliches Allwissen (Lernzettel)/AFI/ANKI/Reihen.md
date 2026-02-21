@@ -1,4 +1,5 @@
 TARGET DECK: AFI::Reihen
+FILE TAGS: reihen
 
 
 Wenn $\sum_{k=1}^{\infty}a_{k}$ konvergiert, dann ist $a_{k}$ {{c1::eine Nullfolge}}

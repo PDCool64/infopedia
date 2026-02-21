@@ -1,4 +1,5 @@
 TARGET DECK: AFI::Folgen
+FILE TAGS: folgen
 
 Definition der Konvergenz von Folgen? #flashcard
 $$
