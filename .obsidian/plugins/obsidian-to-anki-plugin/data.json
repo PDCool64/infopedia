@@ -166,9 +166,9 @@
     "Vorlesungsnotizen/AFI/V03 - Mengen.md": "b80d0232cbab623d8eee2bd06794f728",
     "Vorlesungsnotizen/AFI/V01 - Grundlegendes.md": "d2273e509a0b470a69eeb7822434d7fc",
     "Vorlesungsnotizen/AFI/F01 - Lerntipps und Schulwdh..md": "ba573be1e43d08dbd328c5ad928181af",
-    "Untitled.md": "f9145177aad80e3f5ab2232d2cc2750e",
+    "Untitled.md": "3c2533b5eaa3448fd18f9687627c6fa1",
     "styleguides.md": "1d25dda630b73c670d8463989be988f0",
-    "Test.md": "52c37b87bc520b1a2808ccbc3e3da661",
+    "Test.md": "0d80a67c19721e1bca0541173d58b6de",
     "Metaphysik (Vault-Verwaltung)/Testnotiz.md": "b6f96c58267ea970222d0213c7ec2661",
     "Metaphysik (Vault-Verwaltung)/Templates/wip-callout-template.md": "3e0f022006c535aea33b1ec96354c206",
     "Metaphysik (Vault-Verwaltung)/Templates/Vorlesungsnotizen.md": "70bdd93cc9a894677b0811cb5456ac20",
@@ -288,45 +288,17 @@
     "göttliches Allwissen (Lernzettel)/Basiswissen/Durschnitt vs Median.md": "e1e99e0742370441b92ff838331a6d96",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Betragsgleichungen und Betragsungleichungen.md": "3605cc543d509a8652681691cfe21991",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Basiswissen.md": "b379438417c5c056cd41512fbd336e14",
-<<<<<<< HEAD
-    "göttliches Allwissen (Lernzettel)/Basiswissen/Betragsgleichungen und Betragsungleichungen.md": "f4e5ddaca141949a25951134815704d6",
-    "göttliches Allwissen (Lernzettel)/Basiswissen/Aussagenlogik.md": "80e8f5ce89716cf872afa20e84bf0215",
-    "göttliches Allwissen (Lernzettel)/Basiswissen/Abbildungen.md": "ce5b2bb8fcdd556eddf3742638e7706c",
-    "göttliches Allwissen (Lernzettel)/AFI/Rekursion.md": "4afa93c49fdbf96b43484062d0e02dde",
-    "göttliches Allwissen (Lernzettel)/AFI/Reelle Zahlen und Schranken.md": "17f1aebae4dbb7c618eaf184b5e67320",
-    "göttliches Allwissen (Lernzettel)/AFI/Natürliche und rationale Zahlen als Teilmenge der Reellen Zahlen.md": "f8eee3bc23d16776a38bd7799d4ecb05",
-    "göttliches Allwissen (Lernzettel)/AFI/Kriterien für Folgen.md": "e041bb595a1f37ceb1e7a3c02a95f615",
-    "göttliches Allwissen (Lernzettel)/AFI/Formelsammlung Summen.md": "3c8b0bff446ffea87c3714c7fe65b0d1",
-    "göttliches Allwissen (Lernzettel)/AFI/Folgen für AFI.md": "9a1d5134ef08501d95faa43c8ce0f246",
-    "göttliches Allwissen (Lernzettel)/AFI/Formelsammlung Abschätzungen.md": "091c51f31209842b410dc553e183f868",
-    "göttliches Allwissen (Lernzettel)/AFI/Beispielbeweis - Konvergenz mit dem Cauchy-Kriterium.md": "e7d5d8df9908c0bdb8ea67461908a0cd",
-    "göttliches Allwissen (Lernzettel)/AFI/Betrag.md": "4c35d4afcd9e9cf21a35fc6cd39ed19e",
-    "göttliches Allwissen (Lernzettel)/AFI/Binomialkoeffizient.md": "bb234b0bea4e0b8438890312f139a20a",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "2cbdaa5a750dc1af60c148dad64f92b7",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "631fcc9e376a16d43c990fd818f7eaf5",
-    "göttliches Allwissen (Lernzettel)/AFI/Abzählbarkeit.md": "6242a535d442af7220386405f3aa57c9",
-    "Aufgaben/Affenproblem.md": "65d29efa46ba2433e40516af6b17220f",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "5abf0e4f418ecdb9a03612f72f0acce7",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Zahlen.md": "09790edbd5cea4a701a4beb922dffd6d",
-    "komplexe Folgen.md": "b87ab5fc7c760f0056a54b9108b4a373",
-    "reelle Funktionen.md": "49e0bcc26eb1fb533c0514b46c521aa6"
-=======
     "göttliches Allwissen (Lernzettel)/Basiswissen/Aussagenlogik.md": "ad1cac5d728e6395fd084543c49e8b99",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Abbildungen.md": "4830792d0b01c463ae7b99fb5fdbff36",
     "Aufgaben/Affenproblem.md": "8fe82cfbfa519cfd9a19a60af5f51163",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Zahlen.md": "f84ac80d54f9ba0a6bfe69383b2e2e2d",
-<<<<<<< HEAD
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Zahlen.md": "09790edbd5cea4a701a4beb922dffd6d",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "5fa9f46e8c477c7f36445a00b88ae471",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "8f2d94e7c6c73f76c005d77c0ed3d710",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "9639147f595643058f47efa68b09be4e",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "b9bba9e85acd4d056e6b5d32cb14cc91",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Praktische Gleichungen.md": "6ca2b9b1fb724d5e9c2ca753cb0764a0",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Gesetzte Exponential und Trig-Funktionen.md": "eae87769f80cb05003c90784cc051abe"
-=======
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "d59aa92fabad1ade2f6873c6fa251252",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "fdd78b45076f05e836a8ca630e3fa2ef",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "b83bc73b892bdf6395e92cf3fe86c9d7"
->>>>>>> origin/main
->>>>>>> origin/main
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Gesetzte Exponential und Trig-Funktionen.md": "eae87769f80cb05003c90784cc051abe",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Folgen.md": "3a5839b8f87633b8dc304f37445cf4b1",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/reelle Funktionen.md": "49e0bcc26eb1fb533c0514b46c521aa6"
   },
   "fields_dict": {
     "Bildverdeckung": [

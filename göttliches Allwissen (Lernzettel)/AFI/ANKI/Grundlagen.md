@@ -24,19 +24,15 @@ Die Funktion ist surjektiv und injektiv
 
 
 Injektivität ist äquivalent mit {{c1::links}}-seitiger Umkehrbarkeit.
-<!--ID: 1771754761243-->
 
 
 Surjektivität ist äquivalent mit {{c1::rechts}}-seitiger Umkehrbarkeit.
-<!--ID: 1771754761248-->
 
 
 Ist $f\circ g$ injektiv, dann ist die Funktion {{c1::$g$}} selber injektiv.
-<!--ID: 1771772034998-->
 
 
 Ist $f\circ g$ surjektiv, dann ist die Funktion {{c1::$f$}} selber surjektiv.
-<!--ID: 1771772035001-->
 
 
 

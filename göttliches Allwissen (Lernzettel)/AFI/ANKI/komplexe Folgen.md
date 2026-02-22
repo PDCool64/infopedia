@@ -6,6 +6,8 @@ Analog zu der Konvergenz der reellen Zahlen konvergierte eine komplexe Folge $(a
 
 
 Die Konvergenz von einer komplexen Folge lässt sich zeigen, indem man {{c1::die Konvergenz des Realteils}} und {{c1::die Konvergenz des Imaginärteils}} zeigt. 
+<!--ID: 1771776983247-->
+
 $\lim_{ n \to \infty } a_{n} = a \iff$ {{c2::$\lim_{ n \to \infty } \mathrm{Re}(a_{n}) = \mathrm{Re}(a) \land \lim_{ n \to \infty } \mathrm{Im}(a_{n}) =\mathrm{Im}(a)$}}
 <!--ID: 1771685265701-->
 
