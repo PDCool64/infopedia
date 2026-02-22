@@ -2,11 +2,11 @@
   "settings": {
     "CUSTOM_REGEXPS": {
       "Bildverdeckung": "",
-      "Einfach": "",
+      "Einfach": "((?:[^\\n][\\n]?)+) #flashcard ?\\n*((?:\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))+)",
       "Einfach (Antwort eintippen)": "",
       "Einfach (und die umgekehrte Richtung)": "",
       "Einfach (und wahlweise die umgekehrte Richtung)": "",
-      "Lückentext": ""
+      "Lückentext": "((?:.+\\\\n)*(?:.*{.*)(?:\\\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))*)"
     },
     "FILE_LINK_FIELDS": {
       "Bildverdeckung": "Bildverdeckung",
@@ -30,7 +30,7 @@
       "göttliches Allwissen (Lernzettel)/TI": "",
       "Metaphysik (Vault-Verwaltung)/Forum romanum": "",
       "Metaphysik (Vault-Verwaltung)/Templates": "",
-      "Vorlesungsnotizen/AFI": "",
+      "Vorlesungsnotizen/AFI": "AFI",
       "Vorlesungsnotizen/DS": "",
       "Vorlesungsnotizen/PROGRA": "",
       "Vorlesungsnotizen/TI": "",
@@ -292,9 +292,9 @@
     "göttliches Allwissen (Lernzettel)/Basiswissen/Abbildungen.md": "4830792d0b01c463ae7b99fb5fdbff36",
     "Aufgaben/Affenproblem.md": "8fe82cfbfa519cfd9a19a60af5f51163",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Zahlen.md": "f84ac80d54f9ba0a6bfe69383b2e2e2d",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "5abf0e4f418ecdb9a03612f72f0acce7",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "2cbdaa5a750dc1af60c148dad64f92b7",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "631fcc9e376a16d43c990fd818f7eaf5"
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reihen.md": "d59aa92fabad1ade2f6873c6fa251252",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Grundlagen.md": "fdd78b45076f05e836a8ca630e3fa2ef",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Folgen.md": "b83bc73b892bdf6395e92cf3fe86c9d7"
   },
   "fields_dict": {
     "Bildverdeckung": [
