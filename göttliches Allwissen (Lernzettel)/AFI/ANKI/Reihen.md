@@ -13,13 +13,13 @@ Ist $a_{k}$ eine Nullfolge, so {{c1::folgt nicht unbedingt}}, dass $\sum_{k=1}^{
 
 
 
-Die harmonische Reihe $\sum_{k = 1}^{\infty} \frac{1}{k}$ {{c1::konvergiert nicht}}
+Die harmonische Reihe $\sum_{k = 1}^{\infty} \frac{1}{k}$ konvergiert {{c1::nicht}}
 <!--ID: 1771751281770-->
 
 
 
 
-Die geometrische Reihe $\sum_{k=1}^{\infty} q^{k}, |q|^{k}\leq 1$ {{c1::konvergiert gegen $\frac{1}{1-q}$}}
+Die geometrische Reihe $\sum_{k=1}^{\infty} q^{k}, |q|^{k}\leq 1$ konvergiert {{c1::gegen $\frac{1}{1-q}$}}
 <!--ID: 1771751281772-->
 
 
@@ -55,7 +55,7 @@ $\sum_{k=1}^{\infty} a_{k}$ ist absolut konvergent, wenn $\sum_{k=1}^{\infty} |a
 
 
 Definition des Majorantenkriteriums? #flashcard
-Sei $\sum_{k=1}^{\infty} c_{k}$ eine konvergente Reihe und $\exists N \in \mathbb{N}\forall k \geq N : |a_{k}| \leq c_{k}$, dann ist $\sum_{k=1}^{\infty} a_{k}$ absolut konvergent
+Sei $\sum_{k=1}^{\infty} c_{k}$ eine konvergente Reihe und $\exists_{N \in \mathbb{N}}\;\forall_{ k \geq N }: |a_{k}| \leq c_{k}$, dann ist $\sum_{k=1}^{\infty} a_{k}$ absolut konvergent
 <!--ID: 1771751281760-->
 
 

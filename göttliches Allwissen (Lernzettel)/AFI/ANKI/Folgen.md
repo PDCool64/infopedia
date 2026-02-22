@@ -2,9 +2,9 @@ TARGET DECK: AFI::Folgen
 FILE TAGS: folgen
 
 Definition der Konvergenz von Folgen? #flashcard
+$a$ ist der Grenzwert der Folge $(a_{n})_{n\in \mathbb{N}}$, wenn
 $$
 \begin{align}
-\text{Für einen Grenzwert } a \text{ gilt } \\
  \forall \epsilon > 0: \exists n_{0} \in \mathbb{N} : \forall n \geq n_{0}: |a_{n} - a| < \epsilon
 \end{align}
 $$
@@ -13,9 +13,9 @@ $$
 
 
 
-Grenzwertsatz für zwei konvergente Folgen $(a_{n})_{n \in \mathbb{N}}, (b_{n})_{n \in \mathbb{N}}$ , was gilt dann für  $\lim_{  n \to \infty } (a_{n})_{n \in \mathbb{N}} +  (b_{n)_{n \in \mathbb{N}}}$? #flashcard
+Grenzwertsatz für zwei konvergente Folgen $(a_{n})_{n \in \mathbb{N}}, (b_{n})_{n \in \mathbb{N}}$ , was gilt dann für  $\lim_{ n \to \infty }(a_{n}+b_{n})_{n\in \mathbb{N}}$? #flashcard
 $$
-\lim_{ n \to \infty } (a_{n} + b_{n})_{n \in \mathbb{N}} = a + b
+\lim_{ n \to \infty } (a_{n} + b_{n})_{n \in \mathbb{N}} =   a + b
 $$
 <!--ID: 1771751281808-->
 
@@ -39,22 +39,15 @@ Wenn beide Folgen konvergent sind
 
 
 Definition des Sandwich Lemmas? #flashcard
+Die Folge $(a_{n})_{n\in \mathbb{N}}$ ist gegen $A$ konvergent, falls es Folgen $(b_{n})_{n\in \mathbb{N}},(c_{n})_{n\in \mathbb{N}}$ gibt mit $\lim_{ n \to \infty }b_{n}=\lim_{ n \to \infty }c_{n}=A$ und ab einem $N\in \mathbb{N}$ gilt, dass
 $$
-\begin{align}
-\text{Sei } (a_{n})_{n \in \mathbb{N}} \text{ eine Folge mit } (b_{n})_{n \in \mathbb{N}}, (c_{n})_{n \in \mathbb{N}}:  \\
-\forall n \in \mathbb{N} : b_{n} \leq a_{n} \leq c_{n} \text{ }\land b = c \\
-\implies a = b = c \\
-\text{ Dabei müssen b und c konvergent sein.} \\ 
-\text{ Daraus folgt, dass a ebenfalls konvergent ist. } 
-\end{align}
+a_{n}\le b_{n} \le c_{n} \;\;,\;\forall\; {n\ge N}
 $$
 <!--ID: 1771751281816-->
 
 
 
-Welche Eigenschaften muss $(a_{n})_{n \in \mathbb{N}}$ erfüllen, damit das Monotonie Kriterium anwendbar ist? #flashcard
+Welche Eigenschaften muss $(a_{n})_{n \in \mathbb{N}}$ erfüllen, damit das Monotoniekriterium anwendbar ist? #flashcard
 $(a_{n})_{n \in \mathbb{N}}$ muss beschränkt und monoton sein.
 <!--ID: 1771751281819-->
-
-
 
