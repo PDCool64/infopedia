@@ -25,7 +25,7 @@ Die geometrische Reihe $\sum_{k=1}^{\infty} q^{k}, |q|^{k}\leq 1$ konvergiert {{
 
 
 
-$\sum_{k=1}^{\infty} a_{k}, \sum_{k=1}^{\infty}b_{k}$ konvergent, $\alpha, \beta \in \mathbb{R}$ #flashcard
+$\sum_{k=1}^{\infty} a_{k}, \sum_{k=1}^{\infty}b_{k}$ konvergent, $\alpha, \beta \in \mathbb{R}$. Was folgt für die Reihe der Summanden? #flashcard
 $\implies \sum_{k=1}^{\infty}\alpha a_{k} + \beta b_{k}$ konvergent, $\sum_{k=1}^{\infty}\alpha a_{K} + \beta b_{k} = \alpha \sum_{k=1}^{\infty}a_{k} + \beta \sum_{k=1}^{\infty} b_{k}$
 <!--ID: 1771751281752-->
 
@@ -33,13 +33,15 @@ $\implies \sum_{k=1}^{\infty}\alpha a_{k} + \beta b_{k}$ konvergent, $\sum_{k=1}
 
 
 Definition des Leibnitzkriteriums? #flashcard
-
+Sei  $a_{k}$ eine monoton fallende Nullfolge dann konvergiert auch die Reihe 
 $$
 \begin{align}
- &\text{Sei } a_{k} \text{ eine monoton fallende Nullfolge dann gilt für} \sum_{k=1}^{\infty} (-1)^{k} \cdot a_{k}:  \\
- & \text{ Die Reihe konvergiert} \\
-  & \forall n \in \mathbb{N} : \rvert\sum_{k=n}^{\infty} (-1)^{k} a_{k}\lvert \leq a_{n}
+\sum_{k=1}^{\infty} (-1)^{k} \cdot a_{k}  
 \end{align}
+$$
+und es gilt: 
+$$
+\forall_{n \in \mathbb{N} }:\; \left|\sum_{k=n}^{\infty} (-1)^{k} a_{k}\right| \leq a_{n}
 $$
 <!--ID: 1771751281754-->
 
@@ -51,7 +53,8 @@ Was ist absolute Konvergenz? #flashcard
 $\sum_{k=1}^{\infty} a_{k}$ ist absolut konvergent, wenn $\sum_{k=1}^{\infty} |a_{k}|$ konvergent ist.
 <!--ID: 1771751281757-->
 
-
+Welche Implikation besteht zwischen *absoluter* und "normaler" Konvergenz einer Reihe? #flashcard
+Absolute Konvergenz $\implies$ "normale" Konvergenz
 
 
 Definition des Majorantenkriteriums? #flashcard
@@ -62,20 +65,20 @@ Sei $\sum_{k=1}^{\infty} c_{k}$ eine konvergente Reihe und $\exists_{N \in \math
 
 
 Definition des Minoratenkriteriums? #flashcard
-Sei $\sum_{k=1}^{\infty} d_{k}$ eine divergierende Reihe und $\exists N \in \mathbb{N} \forall k \geq N: 0 <? d_{k} \leq |a_{k}|$, dann konvergiert $\sum_{k=1}^{\infty} a_{k}$ nicht absolut
+Sei $\sum_{k=1}^{\infty} d_{k}$ eine divergierende Reihe und $\exists _{N \in \mathbb{N}} \forall _{k \geq N}: 0 \le d_{k} \leq |a_{k}|$, dann ist $\sum_{k=1}^{\infty}\left| a_{k} \right|$ divergent bzw. $\sum_{k=1}^{\infty} a_{k}$ konvergiert nicht absolut.
 <!--ID: 1771751281762-->
 
 
 
 
-Das Quotientenkriterium besagt, dass wenn $\lim_{ k \to \infty } |\frac{a_{k + 1}}{a_{k}}|$ existiert und er {{c1::kleiner}} als 1 ist, dann divergiert die Reihe $\sum_{k=1}^{\infty} a_{k}$
+Das Quotientenkriterium besagt, dass wenn $\lim_{ k \to \infty } |\frac{a_{k + 1}}{a_{k}}|$ existiert und er {{c1::echt größer}} als 1 ist, dann divergiert die Reihe $\sum_{k=1}^{\infty} a_{k}$
 <!--ID: 1771751281775-->
 
 
 
 
 
-Das Quotientenkriterium besagt, dass wenn $\lim_{ k \to \infty } |\frac{a_{k + 1}}{a_{k}}|$ existiert und er {{c1::größer}} als 1 ist, dann konvergiert die Reihe $\sum_{k=1}^{\infty} a_{k}$ absolut
+Das Quotientenkriterium besagt, dass wenn $\lim_{ k \to \infty } |\frac{a_{k + 1}}{a_{k}}|$ existiert und er {{c1::echt kleiner}} als 1 ist, dann konvergiert die Reihe $\sum_{k=1}^{\infty} a_{k}$ absolut
 <!--ID: 1771751281777-->
 
 
@@ -88,13 +91,13 @@ Das Quotientenkriterium besagt, dass wenn $\lim_{ k \to \infty } |\frac{a_{k + 1
 
 
 
-Nach dem Quotientenkriterium konvergiert $\sum_{k=1}^{\infty} a_{k}$ absolut wenn {{c1:: $\exists N \in \mathbb{N} \forall k \geq N: a_{k} \neq 0$}} und {{c2:: $\exists C < 1 \forall k \geq N: | \frac{a_{k + 1}}{a_{k}} | \leq C$}}
+Nach dem Quotientenkriterium konvergiert $\sum_{k=1}^{\infty} a_{k}$ absolut wenn {{c1:: $\exists_{N \in \mathbb{N}} \forall_{k \geq N}: a_{k} \neq 0$}} und {{c2:: $\exists _{C < 1} \forall_{ k \geq N}: | \frac{a_{k + 1}}{a_{k}} | \leq C<1$}}
 <!--ID: 1771751281782-->
 
 
 
 
-Nach dem Quotientenkriterium divergiert $\sum_{k=1}^{\infty} a_{k}$, wenn {{c1:: $\exists N \in \mathbb{N} \forall k \geq N: a_{k} \neq 0$}} und {{c2:: $\forall k \geq N: | \frac{a_{k + 1}}{a_{k}} | \geq 1$}}
+Nach dem Quotientenkriterium divergiert $\sum_{k=1}^{\infty} a_{k}$, wenn {{c1:: $\exists N \in \mathbb{N} \forall k \geq N: a_{k} \neq 0$}} und {{c2:: $\forall k \geq N: | \frac{a_{k + 1}}{a_{k}} | > 1$}}
 <!--ID: 1771751281785-->
 
 
