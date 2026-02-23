@@ -108,4 +108,6 @@ Die Reihe $\sum_{k=1}^{\infty}a_{k}$ konvergiert genau dann, wenn
 $$
 \forall_{\varepsilon>0} \exists_{n_{0}\in \mathbb{N}}:\; \left|  \sum_{k=m}^{n}a_{k} \right| <\varepsilon\text{ für alle } n\ge m \ge n_{0}
 $$
+<!--ID: 1771863587971-->
+
 

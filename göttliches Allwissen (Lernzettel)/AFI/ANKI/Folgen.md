@@ -57,9 +57,13 @@ Eine reelle Folge $(a_n)_{n\ge 1}$ heißt Cauchy-Folge, wenn es zu jedem $\varep
 $$
 \forall_{m,n\ge N}:\left| a_{m}-a_{n} \right| <\varepsilon
 $$
+<!--ID: 1771863587983-->
+
 
 
 Eine Folge ist genau dann {{c1::konvergent}} wenn sie eine Cauchy-Folge ist.
+<!--ID: 1771863587988-->
+
 
 
 
@@ -73,4 +77,6 @@ $$
 g=f(g)
 $$
 (Verwendet, dass alle Teilfolgen - insb. $a_{n+1}$ - den gleichen Grenzwert haben)
+<!--ID: 1771863587986-->
+
 

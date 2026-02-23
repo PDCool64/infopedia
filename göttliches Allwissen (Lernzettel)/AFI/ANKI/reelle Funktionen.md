@@ -49,3 +49,5 @@ Also, weil $a_{n}$ konvergent ist:
 $$
 g = \lim_{ n \to \infty } f(a_{{n}}) = f(\lim_{ n \to \infty } a_{n}) = f(g)
 $$
+<!--ID: 1771863587976-->
+

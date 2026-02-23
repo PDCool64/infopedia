@@ -34,3 +34,5 @@ $$
 und allgemeiner für $a,b\in K\;,\;a\neq b$:$$
 \sum_{k=0}^{n}a^{k}b^{n-k} = \frac{a^{n+1}-b^{n+1}}{a-b}
 $$
+<!--ID: 1771863587980-->
+
