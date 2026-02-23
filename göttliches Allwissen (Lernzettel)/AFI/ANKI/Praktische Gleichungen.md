@@ -26,3 +26,13 @@ Was besagt die 2. Dreiecksungleichung? #flashcard
 $$\left| x+y \right|\ge \left| \left| x \right|-\left| y \right| \right|\ge \left| x \right|- \left|  y \right|$$
 <!--ID: 1771754557671-->
 
+
+Wie lautet die Geometrische Summenformel? #flashcard
+Für $n\in \mathbb{N}_{0}$ und $q\in K,q\neq 1$ gilt:
+$$
+\sum_{k=0}^{n}q^{k}= \frac{q^{n+1}-1}{q-1}
+$$
+und allgemeiner für $a,b\in K\;,\;a\neq b$:
+$$
+\sum_{k=0}^{n}a^{k}b^{n-k} = \frac{a^{n+1}-b^{n+1}}{a-b}
+$$

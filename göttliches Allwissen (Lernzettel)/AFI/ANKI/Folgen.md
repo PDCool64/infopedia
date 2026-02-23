@@ -51,3 +51,12 @@ Welche Eigenschaften muss $(a_{n})_{n \in \mathbb{N}}$ erfüllen, damit das Mono
 $(a_{n})_{n \in \mathbb{N}}$ muss beschränkt und monoton sein.
 <!--ID: 1771751281819-->
 
+
+Wie ist eine Cauchy-Folge definiert? #flashcard
+Eine reelle Folge $(a_n)_{n\ge 1}$ heißt Cauchy-Folge, wenn es zu jedem $\varepsilon>0$ ein $N\in \mathbb{N}_{0}$ gibt, so dass
+$$
+\forall_{m,n\ge N}:\left| a_{m}-a_{n} \right| <\varepsilon
+$$
+
+Eine Folge ist genau dann {{c1::konvergent}} wenn sie eine Cauchy-Folge ist.
+

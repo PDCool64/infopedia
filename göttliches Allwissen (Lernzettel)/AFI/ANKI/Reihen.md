@@ -7,7 +7,6 @@ Wenn $\sum_{k=1}^{\infty}a_{k}$ konvergiert, dann ist $a_{k}$ {{c1::eine Nullfol
 
 
 
-
 Ist $a_{k}$ eine Nullfolge, so {{c1::folgt nicht unbedingt}}, dass $\sum_{k=1}^{\infty}a_{k}$ konvergiert.
 <!--ID: 1771751281767-->
 
@@ -55,6 +54,8 @@ $\sum_{k=1}^{\infty} a_{k}$ ist absolut konvergent, wenn $\sum_{k=1}^{\infty} |a
 
 Welche Implikation besteht zwischen *absoluter* und "normaler" Konvergenz einer Reihe? #flashcard
 Absolute Konvergenz $\implies$ "normale" Konvergenz
+<!--ID: 1771837053054-->
+
 
 
 Definition des Majorantenkriteriums? #flashcard
@@ -102,4 +103,9 @@ Nach dem Quotientenkriterium divergiert $\sum_{k=1}^{\infty} a_{k}$, wenn {{c1::
 
 
 
+Wie lautet das Cauchy-Kriterium für Reihen? #flashcard
+Die Reihe $\sum_{k=1}^{\infty}a_{k}$ konvergiert genau dann, wenn
+$$
+\forall_{\varepsilon>0} \exists_{n_{0}\in \mathbb{N}}:\; \left|  \sum_{k=m}^{n}a_{k} \right| <\varepsilon\text{ für alle } n\ge m \ge n_{0}
+$$
 
