@@ -72,5 +72,5 @@ bzw. letztendlich:
 $$
 g=f(g)
 $$
-(Verwendet, dass alle Teilfolgen - insb. $a_{n+1}$ - den gleichen Grenzwert haben)ä
+(Verwendet, dass alle Teilfolgen - insb. $a_{n+1}$ - den gleichen Grenzwert haben)
 
