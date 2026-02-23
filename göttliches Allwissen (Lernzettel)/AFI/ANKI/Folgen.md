@@ -58,6 +58,7 @@ $$
 \forall_{m,n\ge N}:\left| a_{m}-a_{n} \right| <\varepsilon
 $$
 
+
 Eine Folge ist genau dann {{c1::konvergent}} wenn sie eine Cauchy-Folge ist.
 
 
