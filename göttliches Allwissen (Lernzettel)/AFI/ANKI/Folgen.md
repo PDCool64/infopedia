@@ -60,3 +60,16 @@ $$
 
 Eine Folge ist genau dann {{c1::konvergent}} wenn sie eine Cauchy-Folge ist.
 
+
+
+
+Die gegen den Grenzwert $g$ konvergente Folge $a_{n}$ sei rekursiv definiert mit der *stetigen* Funktion $f$ als:$$
+a_{n+1}=f(a_{n})
+$$ Wie bestimmt man den Wert von $g$? #flashcard
+$$g=\lim_{ n \to \infty }a_{n+1}=\lim_{ n \to \infty } f(a_{n})\overset{f \text{ stetig}}=f(\lim_{ n \to \infty } a_{n})=f(g)$$
+bzw. letztendlich:
+$$
+g=f(g)
+$$
+(Verwendet, dass alle Teilfolgen - insb. $a_{n+1}$ - den gleichen Grenzwert haben)ä
+
