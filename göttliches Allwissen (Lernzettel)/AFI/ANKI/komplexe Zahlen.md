@@ -21,7 +21,7 @@ Für $x=(a + ib), y=(c + id) \in \mathbb{C}$ gilt: $x \cdot y =$ {{c1::$(ac - bd
 Was ist das multiplikative Inverse von $z=a+ib\in\mathbb{C}$ #flashcard
 Falls $c\neq{0}$ ist, gilt
 $$
-z^{-1}= \frac{x}{x^{2}+y^{2}}+i \frac{-y}{x^{2}+y^{2}} = \frac{\overline{z}}{\left| z \right|^{2} }
+z^{-1}= \frac{a}{a^{2}+b^{2}}+i \frac{-b}{a^{2}+b^{2}} = \frac{\overline{z}}{\left| z \right|^{2} }
 $$
 <!--ID: 1771948075772-->
 
@@ -29,9 +29,13 @@ $$
 
 Wie berechnet man den Realteil von $z\in \mathbb{C}$ #flashcard
 $$\text{Re}(z)= \frac{1}{2}(z+\overline{z})$$
+<!--ID: 1771952122370-->
+
+
 Wie berechnet man den Imaginärteil von $z\in \mathbb{C}$ #flashcard
 $$\text{Im}(z)=\frac{1}{2i}(z-\overline{z})$$
-<!--ID: 1771948075776-->
+<!--ID: 1771952122373-->
+
 
 
 Mit $z=a+bi\in \mathbb{C}$ gilt $z\cdot \overline{z}=${{c1::$a^{2}+b^{2}$}}

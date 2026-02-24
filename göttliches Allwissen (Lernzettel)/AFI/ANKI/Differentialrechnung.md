@@ -6,7 +6,7 @@ Für $f:D\to\mathbb{R}$ und $x_{0}$ als innerer Punkt von $D\subseteq \mathbb{R}
 $$
 \lim_{ h \to 0 }  \frac{f(x_{0}+h)-f(x_{0})}{h}
 $$
-existiert. Wenn dieser existiert, wird er mit $f'(x_{0})=\frac{\text{d}}{\text{d}x}f(x_{0})$ bezeichnet.
+existiert. 
 (Beachte, dass mit $x_{0}$ als innerem Punkt sowohl positive als auch negative $h$ berücksichtigt werden)
 <!--ID: 1771940383893-->
 
@@ -26,7 +26,7 @@ existiert, dann nennt man $f$ in $x_{0}$ rechtsseitig differenzierbar und schrei
 Definiere, wann eine Funktion auf ihrem Definitionsbereich $D$ differenzierbar ist #flashcard
 Sei $f:D\to \mathbb{R}$ eine Funktion und $D\subseteq \mathbb{R}$
 Wenn
-- $D$ enthalte keine isolierten Punkte (jeder Punkt ist Häufungspunkt),
+- $D$ keine isolierten Punkte enthält (jeder Punkt ist Häufungspunkt),
 - $f$ in jedem inneren Punkt von $D$ differenzierbar ist,
 - $f$ in jedem Randpunkt, der zu $D$ gehört, einseitig differenzierbar ist,
 Dann heißt $f$ differenzierbar auf $D$.

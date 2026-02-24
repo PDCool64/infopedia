@@ -57,7 +57,7 @@ $M$ ist offen, wenn $\mathbb{R}\setminus M$ offen ist.
 
 
 Definiere einen Häufungspunkt einer Menge $M$ #flashcard
-$x_{0}$ ist Häufungspunkt von $M$, wenn es zu *jedem* $\varepsilon>0$ der Schnitt der Umgebung $U_{\varepsilon}(x_{0})\setminus\{ x_{0} \}$ mit $M$ nichtleer ist, also
+$x_{0}$ ist Häufungspunkt von $M$, wenn für alle $\varepsilon>0$ der Schnitt von $U_{\varepsilon}(x_{0})\setminus\{ x_{0} \}$ mit $M$ nichtleer ist, also
 $$
 \left( U_{\varepsilon}(x_{0})\setminus\{ x_{0} \} \right) \cap M \neq \emptyset
 $$
@@ -77,20 +77,21 @@ Nicht Jeder {{c1::Häufungspunkt}} ist auch ein {{c2::innerer Punkt}}.
 Wie ist der Grenzwert einer Funktion gegen einen Punkt definiert? #flashcard
 Für $f:D\to \mathbb{R}$ und $x_{0}$ Häufungspunkt ist $L$ der Funktionsgrenzwert, wenn $\forall_{\varepsilon>0}\exists_{\delta>0}$ sodass
 $$
-\forall_{x\in D}:0<\left| x-x_{0} \right|<\delta\text{ gilt :} \\
+\forall_{x\in D}\text{ mit }0<\left| x-x_{0} \right|<\delta\text{ gilt :} \\
 $$
 $$ \left| f(x)-L \right| <\varepsilon$$
 (Beachte: $x_{0}$ muss nicht in $D$ sein. Außerdem wird nur $0<\left| x-x_{0} \right|$ betrachtet)
 <!--ID: 1771931548985-->
 
 Was besagt der Satz vom Minimum und Maximum? #flashcard
-Eine stetige Funktion nimmt auf einem *geschlossenen* Intervall aus ihren Definitionsbereich ein Minimum und Maximum.
+Eine stetige Funktion nimmt auf einem *geschlossenen* Intervall ein Minimum und Maximum an.
 <!--ID: 1771934169671-->
 
 
 Was besagt der Zwischenwertsatz bezüglich Nullstellen? #flashcard
 Sei $f:D\to \mathbb{R}$ stetig und $a,b\in D$ mit $a<b$ sowie $[a,b]\subseteq D$.
-- Gilt $f(a)<0\land f(b)>0$ (oder alternativ $f(a)>0 \land f(b)<0$), dann existiert ein $c\in(a,b)$ mit $f(c)=0$
+Gilt $f(a)<0\land f(b)>0$ (oder alternativ $f(a)>0 \land f(b)<0$), dann existiert ein
+$c\in(a,b)$ mit $f(c)=0$.
 <!--ID: 1771934169676-->
 
 
