@@ -24,6 +24,7 @@ Was besagt die Euler-Identität? #flashcard
 $$
 e^{ix}=\cos(x)+i \sin(x)
 $$
+Es gilt $e^{i\pi}=${{c1::$-1$}}
 
 Wie lauten die Additionstheoreme für $\sin,\cos$? #flashcard
 $$
