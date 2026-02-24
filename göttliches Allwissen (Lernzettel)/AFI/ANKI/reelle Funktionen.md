@@ -46,13 +46,32 @@ U_{\varepsilon}(x_{0}) \subseteq M
 $$
 <!--ID: 1771931548978-->
 
+Wann ist eine Menge $M\subseteq \mathbb{R}$ offen? #flashcard
+$M$ ist offen, wenn alle Elemente von $M$ innere Punkte sind.
+<!--ID: 1771936027511-->
+
+
+Wann ist eine Menge $M\subseteq\mathbb{R}$ abgeschlossen? #flashcard
+$M$ ist offen, wenn $\mathbb{R}\setminus M$ offen ist.
+<!--ID: 1771936027516-->
+
 
 Definiere einen Häufungspunkt einer Menge $M$ #flashcard
 $x_{0}$ ist Häufungspunkt einer Menge $M$, wenn es zu *jedem* $\varepsilon>0$ der Schnitt der Umgebung $U_{\varepsilon}(x_{0})\setminus\{ x_{0} \}$ mit $M$ nichtleer ist, also
 $$
 \left( U_{\varepsilon}(x_{0})\setminus\{ x_{0} \} \right) \cap M \neq \emptyset
 $$
+Ein Punkt, der kein Häufungspunkt ist, heißt isolierter Punkt.
 <!--ID: 1771931548983-->
+
+Innere Punkte vs. Häufungspunkte:
+Jeder {{c1::innere Punkt}} ist auch ein {{c2::Häufungspunkt}}.
+<!--ID: 1771940383907-->
+
+
+Innere Punkte vs. Häufungspunkte:
+Nicht Jeder {{c1::Häufungspunkt}} ist auch ein {{c2::innerer Punkt}}.
+<!--ID: 1771940383910-->
 
 
 Wie ist der Grenzwert einer Funktion gegen einen Punkt definiert? #flashcard
