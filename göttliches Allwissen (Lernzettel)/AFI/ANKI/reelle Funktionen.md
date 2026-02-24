@@ -40,7 +40,7 @@ $$
 <!--ID: 1771686253072-->
 
 Definiere einen inneren Punkt einer Menge $M$ #flashcard
-$x_{0}$ ist innerer Punkt von $M$, wenn eine $\varepsilon$-Umgebung $U_{\varepsilon}$ um $x_{0}$ existiert, sodass
+$x_{0}\in M$ ist innerer Punkt von $M$, wenn eine $\varepsilon$-Umgebung $U_{\varepsilon}$ um $x_{0}$ existiert, sodass
 $$
 U_{\varepsilon}(x_{0}) \subseteq M
 $$
