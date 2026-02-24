@@ -57,7 +57,7 @@ $M$ ist offen, wenn $\mathbb{R}\setminus M$ offen ist.
 
 
 Definiere einen Häufungspunkt einer Menge $M$ #flashcard
-$x_{0}$ ist Häufungspunkt einer Menge $M$, wenn es zu *jedem* $\varepsilon>0$ der Schnitt der Umgebung $U_{\varepsilon}(x_{0})\setminus\{ x_{0} \}$ mit $M$ nichtleer ist, also
+$x_{0}$ ist Häufungspunkt von $M$, wenn es zu *jedem* $\varepsilon>0$ der Schnitt der Umgebung $U_{\varepsilon}(x_{0})\setminus\{ x_{0} \}$ mit $M$ nichtleer ist, also
 $$
 \left( U_{\varepsilon}(x_{0})\setminus\{ x_{0} \} \right) \cap M \neq \emptyset
 $$
@@ -75,10 +75,11 @@ Nicht Jeder {{c1::Häufungspunkt}} ist auch ein {{c2::innerer Punkt}}.
 
 
 Wie ist der Grenzwert einer Funktion gegen einen Punkt definiert? #flashcard
-Für $f:D\to \mathbb{R}$ und $x_{0}$ Häufungspunkt ist $L$ der Funktionsgrenzwert, wenn $\forall_{\varepsilon>0}\exists_{\delta>0}:$ 
+Für $f:D\to \mathbb{R}$ und $x_{0}$ Häufungspunkt ist $L$ der Funktionsgrenzwert, wenn $\forall_{\varepsilon>0}\exists_{\delta>0}$ sodass
 $$
-\text{Für alle }x\in D\text{ mit }0<\left| x-x_{0} \right|<\delta\text{ gilt :\quad} \left| f(x)-L \right| <\varepsilon
+\forall_{x\in D}:0<\left| x-x_{0} \right|<\delta\text{ gilt :} \\
 $$
+$$ \left| f(x)-L \right| <\varepsilon$$
 (Beachte: $x_{0}$ muss nicht in $D$ sein. Außerdem wird nur $0<\left| x-x_{0} \right|$ betrachtet)
 <!--ID: 1771931548985-->
 

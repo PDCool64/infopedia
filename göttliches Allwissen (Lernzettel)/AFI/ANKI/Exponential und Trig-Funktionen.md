@@ -19,21 +19,20 @@ für alle $x\in \mathbb{R}$ ist $\left| \exp(ix) \right|=${{c1::$1$}}
 
 
 Für $x\in \mathbb{R}$ definiert man $\sin,\cos$ durch
-<!--ID: 1771948075795-->
-
 $\sin(x):=${{c1::$\text{Im}$}}$(\exp(ix))$
-<!--ID: 1771948075797-->
+$\cos(x):=${{c2::$\text{Re}$}}$(\exp(ix))$
+<!--ID: 1771950001430-->
 
-$\cos(x):=${{c1::$\text{Re}$}}$(\exp(ix))$
-<!--ID: 1771948075800-->
 
 
 Was besagt die Euler-Identität? #flashcard
 $$
 e^{ix}=\cos(x)+i \sin(x)
 $$
+
 Es gilt $e^{i\pi}=${{c1::$-1$}}
-<!--ID: 1771948075787-->
+<!--ID: 1771950001433-->
+
 
 
 Wie lauten die Additionstheoreme für $\sin,\cos$? #flashcard

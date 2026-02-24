@@ -13,24 +13,32 @@ existiert. Wenn dieser existiert, wird er mit $f'(x_{0})=\frac{\text{d}}{\text{d
 
 
 Definierte rechtsseitige Differenzierbarkeit einer Funktion in einem Punkt $x_{0}$ #flashcard
-Für $f:D\to\mathbb{R}$ und gebe es ein $\rho>0$, sodass $[x_{0},x_{0}+\rho)\subseteq D$. Falls
+Sei $f:D\to\mathbb{R}$ und gebe es ein $\rho>0$, sodass $[x_{0},x_{0}+\rho)\subseteq D$. Falls
 $$
 \lim_{ h \,\downarrow\, 0 }  \frac{f(x_{0}+h)-f(x_{0})}{h}
 $$
-existiert, dann nennt man $f$ in $x_{0}$ rechtsseitig differenzierbar.
+existiert, dann nennt man $f$ in $x_{0}$ rechtsseitig differenzierbar und schreibt $f'_{+}(x_{0})$ für den Grenzwert.
+(Die $\rho$-Umgebung dient als einseitiger Ersatz dafür, dass $x_{0}$ kein innerer Punkt ist)
 <!--ID: 1771949074621-->
 
 
 
-Definiere, wann eine Funktion auf ihren Definitionsbereich $D$ differenzierbar ist #flashcard
-Sei $f:D\to \mathbb{R}$ eine Funktion und $D\subseteq \mathbb{R}$ enthalte keine isolierten Punkte (also jeder Punkt sei Häufungspunkt).
-$f$ heißt dann differenzierbar auf $D$, wenn $f$ in *jedem inneren Punkt* von $D$ differenzierbar ist, und in jedem Randpunkt, der zu $D$ gehört, einseitig differenzierbar ist.
+Definiere, wann eine Funktion auf ihrem Definitionsbereich $D$ differenzierbar ist #flashcard
+Sei $f:D\to \mathbb{R}$ eine Funktion und $D\subseteq \mathbb{R}$
+Wenn
+- $D$ enthalte keine isolierten Punkte (jeder Punkt ist Häufungspunkt),
+- $f$ in jedem inneren Punkt von $D$ differenzierbar ist,
+- $f$ in jedem Randpunkt, der zu $D$ gehört, einseitig differenzierbar ist,
+Dann heißt $f$ differenzierbar auf $D$.
 <!--ID: 1771940383899-->
 
 
 
 Wie lautet die Regel für die Ableitung der Umkehrfunktion? #flashcard
-Sei $I\subseteq \mathbb{R}$ ein Intervall, $x_{0}\in I$ und $f:I\to \mathbb{R}$ differenzierbar und injektiv mit $f(x_{0})\neq 0$.
+Sei $I\subseteq \mathbb{R}$ ein Intervall, $x_{0}\in I$ und $f:I\to \mathbb{R}$ 
+Wenn
+- $f$ differenzierbar und injektiv ist,
+- $f(x_{0})\neq{0}$ ist,
 Dann ist die Umkehrfunktion $f^{-1}:W\to \mathbb{R}\;,\;W:=f(I)$ differenzierbar in $y_{0}=f(x_{0})$ mit
 $$
 (f^{-1})'(y_{0}) = \frac{1}{f'(x_{0})} = \frac{1}{f'(f^{-1}(y_{0}))}
