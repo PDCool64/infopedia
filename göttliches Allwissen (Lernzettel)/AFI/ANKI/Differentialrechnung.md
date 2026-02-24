@@ -18,7 +18,8 @@ $$
 \lim_{ h \,\downarrow\, 0 }  \frac{f(x_{0}+h)-f(x_{0})}{h}
 $$
 existiert, dann nennt man $f$ in $x_{0}$ rechtsseitig differenzierbar.
-<!--ID: 1771940383904-->
+<!--ID: 1771949074621-->
+
 
 
 Definiere, wann eine Funktion auf ihren Definitionsbereich $D$ differenzierbar ist #flashcard
