@@ -37,5 +37,7 @@ Dann ist die Umkehrfunktion $f^{-1}:W\to \mathbb{R}\;,\;W:=f(I)$ differenzierbar
 $$
 (f^{-1})'(y_{0}) = \frac{1}{f'(x_{0})} = \frac{1}{f'(f^{-1}(y_{0}))}
 $$
+(Die Umkehrfunktion einer Tangente $mx+b$ hat die Steigung $\frac{1}{m}$)
 <!--ID: 1771940383902-->
+
 
