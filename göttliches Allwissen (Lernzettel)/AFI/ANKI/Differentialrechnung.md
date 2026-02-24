@@ -14,9 +14,6 @@ existiert. Wenn dieser existiert, wird er mit $f'(x_{0})=\frac{\text{d}}{\text{d
 
 Definierte rechtsseitige Differenzierbarkeit einer Funktion in einem Punkt $x_{0}$ #flashcard
 Für $f:D\to\mathbb{R}$ und gebe es ein $\rho>0$, sodass $[x_{0},x_{0}+\rho)\subseteq D$. Falls
-<!--ID: 1771940383896-->
-
-
 $$
 \lim_{ h \,\downarrow\, 0 }  \frac{f(x_{0}+h)-f(x_{0})}{h}
 $$
