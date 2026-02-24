@@ -23,18 +23,26 @@ Falls $c\neq{0}$ ist, gilt
 $$
 z^{-1}= \frac{x}{x^{2}+y^{2}}+i \frac{-y}{x^{2}+y^{2}} = \frac{\overline{z}}{\left| z \right|^{2} }
 $$
+<!--ID: 1771948075772-->
+
 
 
 Wie berechnet man den Realteil von $z\in \mathbb{C}$ #flashcard
 $$\text{Re}(z)= \frac{1}{2}(z+\overline{z})$$
 Wie berechnet man den Imaginärteil von $z\in \mathbb{C}$ #flashcard
 $$\text{Im}(z)=\frac{1}{2i}(z-\overline{z})$$
+<!--ID: 1771948075776-->
+
 
 Mit $z=a+bi\in \mathbb{C}$ gilt $z\cdot \overline{z}=${{c1::$a^{2}+b^{2}$}}
+<!--ID: 1771948075781-->
+
 
 Die Konjugation von Komplexen Zahlen lässt sich beliebig hinein- oder herausziehen bei #flashcard
 - Summen
 - Produkte
 - Brüche
 - der Exponentialfunktion
+<!--ID: 1771948075779-->
+
 

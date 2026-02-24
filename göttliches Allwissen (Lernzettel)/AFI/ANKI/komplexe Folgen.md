@@ -19,5 +19,7 @@ $\lim_{ n \to \infty } |a_{n}| = 0 \implies$ {{c1::$\lim_{ n \to \infty }a_{n} =
 
 
 Gilt für die Komplexe Folge $(a_n)_{n\ge 1}$, dass $\lim_{ n \to \infty }a_{n}=a$, dann gilt auch $\lim_{ n \to \infty }\overline{a_{n}}=${{c1::$\overline{a}$}}
+<!--ID: 1771948075784-->
+
 
 
