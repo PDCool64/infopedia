@@ -63,3 +63,22 @@ $$
 (Beachte: $x_{0}$ muss nicht in $D$ sein. Außerdem wird nur $0<\left| x-x_{0} \right|$ betrachtet)
 <!--ID: 1771931548985-->
 
+Was besagt der Satz vom Minimum und Maximum? #flashcard
+Eine stetige Funktion nimmt auf einem *geschlossenen* Intervall aus ihren Definitionsbereich ein Minimum und Maximum.
+<!--ID: 1771934169671-->
+
+
+Was besagt der Zwischenwertsatz bezüglich Nullstellen? #flashcard
+Sei $f:D\to \mathbb{R}$ stetig und $a,b\in D$ mit $a<b$ sowie $[a,b]\subseteq D$.
+- Gilt $f(a)<0\land f(b)>0$ (oder alternativ $f(a)>0 \land f(b)<0$), dann existiert ein $c\in(a,b)$ mit $f(c)=0$
+<!--ID: 1771934169676-->
+
+
+Was besagt der Zwischenwertsatz bezüglich dem Wertebereich? #flashcard
+Sei $f:D\to \mathbb{R}$ stetig und $a,b\in D$ mit $a<b$ sowie $[a,b]\subseteq D$.
+Dann gilt $f([a,b])=[\text{m},M]$ mit
+$m=\text{min}\{ f(x) |x\in[a,b]\}$
+$M=\text{max}\{ f(x) |x\in[a,b]\}$
+<!--ID: 1771934169678-->
+
+
