@@ -18,10 +18,13 @@ für alle $x\in \mathbb{R}$ ist $\left| \exp(ix) \right|=${{c1::$1$}}
 <!--ID: 1771948075792-->
 
 
-Für $x\in \mathbb{R}$ definiert man $\sin,\cos$ durch
+
+
 $\sin(x):=${{c1::$\text{Im}$}}$(\exp(ix))$
+
+
+
 $\cos(x):=${{c2::$\text{Re}$}}$(\exp(ix))$
-<!--ID: 1771950001430-->
 
 
 

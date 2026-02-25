@@ -52,7 +52,7 @@ $M$ ist offen, wenn alle Elemente von $M$ innere Punkte sind.
 
 
 Wann ist eine Menge $M\subseteq\mathbb{R}$ abgeschlossen? #flashcard
-$M$ ist offen, wenn $\mathbb{R}\setminus M$ offen ist.
+$M$ ist abgeschlossen, wenn $\mathbb{R}\setminus M$ offen ist.
 <!--ID: 1771936027516-->
 
 
