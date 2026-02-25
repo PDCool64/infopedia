@@ -101,6 +101,12 @@ $$ \left| f(x)-L \right| <\varepsilon$$
 (Beachte: $x_{0}$ muss nicht in $D$ sein. Außerdem wird nur $0<\left| x-x_{0} \right|$ betrachtet)
 <!--ID: 1771931548985-->
 
+Definiere Stetigkeit einer Funktion in einem Punkt #flashcard
+Sei $f:D\to \mathbb{R}\;,\;x_{0}\in D$
+- Ist $x_{0}$ Häufungspunkt von $D$, dann ist $f$ stetig in $x_{0}$, falls
+  $\lim_{ x \to x_{0} }f(x)=f(x_{0})$
+- (Konvention): Ist $x_{0}$ kein Häufungspunkt von $D$, dann heißt $f$ stetig in $x_{0}$.
+
 Was besagt der Satz vom Minimum und Maximum? #flashcard
 Eine stetige Funktion nimmt auf einem *geschlossenen* Intervall ein Minimum und Maximum an.
 <!--ID: 1771934169671-->
@@ -119,5 +125,4 @@ Dann gilt $f([a,b])=[\text{m},M]$ mit
 $m=\text{min}\{ f(x) |x\in[a,b]\}$
 $M=\text{max}\{ f(x) |x\in[a,b]\}$
 <!--ID: 1771934169678-->
-
 
