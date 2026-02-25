@@ -39,6 +39,24 @@ x, y \in D, x \leq y \\
 $$
 <!--ID: 1771686253072-->
 
+
+differenzierbares $f$ monoton wachsend {{c1::$\iff$}} $f'(x)\ge 0$
+<!--ID: 1772011948642-->
+
+
+differenzierbares $f$ monoton fallend {{c1::$\iff$}} $f'(x)\leq 0$
+<!--ID: 1772011948647-->
+
+
+differenzierbares $f$ streng monoton wachsend {{c1::$\impliedby$}} $f'(x)> 0$
+<!--ID: 1772011948650-->
+
+
+differenzierbares $f$ streng monoton fallend {{c1::$\impliedby$}} $f'(x)< 0$
+<!--ID: 1772011948652-->
+
+
+
 Definiere einen inneren Punkt einer Menge $M$ #flashcard
 $x_{0}\in M$ ist innerer Punkt von $M$, wenn eine $\varepsilon$-Umgebung $U_{\varepsilon}$ um $x_{0}$ existiert, sodass
 $$

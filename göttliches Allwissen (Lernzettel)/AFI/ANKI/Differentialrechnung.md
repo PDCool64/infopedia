@@ -47,3 +47,56 @@ $$
 <!--ID: 1771940383902-->
 
 
+
+
+
+Was besagt der Satz von Michel Rolle? #flashcard
+Seien $a,b\in \mathbb{R}\;,\;a<b\;,\;f[a,b]\to \mathbb{R}$ stetig und auf $(a,b)$ differenzierbar mit 
+$f(a)=f(b)=0$. Dann folgt:
+$$
+\exists \,x_{0}\in(a,b):f'(x_{0})=0
+$$
+<!--ID: 1772011948655-->
+
+
+Was besagt der Mittelwertsatz der Differentialrechnung? #flashcard
+Seien $a,b\in \mathbb{R}\;,\;a<b\;,\;f:[a,b]\to \mathbb{R}$ stetig und auf $(a,b)$ differenzierbar.
+Dann folgt:
+$$
+\exists\, x_{0}\in(a,b): f'(x_{0})= \frac{f(b)-f(a)}{b-a}
+$$
+<!--ID: 1772011948658-->
+
+
+An einem inneren Punkt einer in $x_{0}$ differenzierbaren Funktion ist $f'(x_{0})=0$ {{c1::notwendig}}  für die Existenz eines lokalen Extremums.
+<!--ID: 1772011948665-->
+
+
+Wie lautet das Vorzeichenwechselkriterium für strikte lokale Extrema von Funktionen? #flashcard
+Sei $x_{0}$ innerer Punkt und $\exists_{\delta>0}$ sodass $f$ differenzierbar auf $U_{\delta}(x_{0})\setminus\{ x_{0} \}$.
+Hinreichend für strikte lokale *Minimalstelle*:
+$$\forall\,x\in U_{\delta}(x_{0})\setminus\{ x_{0} \}: \begin{cases}
+x<x_{0} \implies f'(x)<0\\
+x>x_{0} \implies f'(x)>0
+\end{cases}$$
+Hinreichend für strikte lokale *Maximalstelle*:
+$$\forall\,x\in U_{\delta}(x_{0})\setminus\{ x_{0} \}: \begin{cases}
+x<x_{0} \implies f'(x)>0\\
+x>x_{0} \implies f'(x)<0
+\end{cases}$$
+<!--ID: 1772011948660-->
+
+
+
+Wie lautet das Kriterium mit zweiter Ableitung für strikte lokale Extrema von Funktionen? #flashcard
+Sei $x_{0}$ innerer Punkt und $f$ zweimal *stetig* differenzierbar in einer Umgebung von $x_{0}$.
+Hinreichend für strikte lokale *Minimalstelle*:
+$$
+f'(x_{0})=0 \land f''(x_{0})>0
+$$
+Hinreichend für strikte lokale *Maximalstelle*:
+$$
+f'(x_{0})=0 \land f''(x_{0})<0
+$$
+<!--ID: 1772011948663-->
+
