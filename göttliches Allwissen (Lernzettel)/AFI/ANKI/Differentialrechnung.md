@@ -38,7 +38,7 @@ Wie lautet die Regel für die Ableitung der Umkehrfunktion? #flashcard
 Sei $I\subseteq \mathbb{R}$ ein Intervall, $x_{0}\in I$ und $f:I\to \mathbb{R}$ 
 Wenn
 - $f$ differenzierbar und injektiv ist,
-- $f(x_{0})\neq{0}$ ist,
+- $f'(x_{0})\neq{0}$ ist,
 Dann ist die Umkehrfunktion $f^{-1}:W\to \mathbb{R}\;,\;W:=f(I)$ differenzierbar in $y_{0}=f(x_{0})$ mit
 $$
 (f^{-1})'(y_{0}) = \frac{1}{f'(x_{0})} = \frac{1}{f'(f^{-1}(y_{0}))}
