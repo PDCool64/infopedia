@@ -76,4 +76,6 @@ Somit ist er einfach der Spaltenvektor, in dem jeder Eintrag die Ableitung nach 
 <!--ID: 1772122363430-->
 
 
-
+Definiere, wann eine Funktion stetig partiell differenzierbar ist. #flashcard
+$F$ ist stetig partiell differenzierbar, wenn $F$ partiell differenzierbar ist und alle partiellen Ableitungen $D_{k}F$ stetig sind.
+<!--ID: 1772124259899-->
