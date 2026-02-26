@@ -106,6 +106,8 @@ Sei $f:D\to \mathbb{R}\;,\;x_{0}\in D$
 - Ist $x_{0}$ Häufungspunkt von $D$, dann ist $f$ stetig in $x_{0}$, falls
   $\lim_{ x \to x_{0} }f(x)=f(x_{0})$
 - (Konvention): Ist $x_{0}$ kein Häufungspunkt von $D$, dann heißt $f$ stetig in $x_{0}$.
+<!--ID: 1772122363413-->
+
 
 Was besagt der Satz vom Minimum und Maximum? #flashcard
 Eine stetige Funktion nimmt auf einem *geschlossenen* Intervall ein Minimum und Maximum an.

@@ -42,7 +42,7 @@ Wie lauten die Additionstheoreme für $\sin,\cos$? #flashcard
 $$
 \begin{align}
 \cos(x+y)&=\cos x \cdot \cos y-\sin x\cdot \sin y \\
-\sin(c+y)&=\cos x \cdot \sin y\,+\sin x\cdot \cos y
+\sin(x+y)&=\cos x \cdot \sin y\,+\sin x\cdot \cos y
 \end{align}
 $$
 <!--ID: 1771948075790-->
