@@ -31,7 +31,7 @@ Definiere Stetigkeit einer Abbildung mit Mehrdimensionalem Definitions- und Ziel
 Sei $M\subseteq \mathbb{R}^{m}\;,\;a\in M\;,\;f:M\to \mathbb{R}^{n}$.
 $f$ ist stetig in $a$, wenn $\forall_{\varepsilon>0}\exists_{\delta>0}$ sodass
 $$
-\forall_{x\in D}\text{ mit }\left|\left| x-x_{0} \right|\right|<\delta\text{ gilt :} \\
+\forall_{x\in M}\text{ mit }\left|\left| x-x_{0} \right|\right|<\delta\text{ gilt :} \\
 $$
 $$ \left| \left| f(x)-f(a) \right|  \right| <\varepsilon$$
 <!--ID: 1772122363422-->
