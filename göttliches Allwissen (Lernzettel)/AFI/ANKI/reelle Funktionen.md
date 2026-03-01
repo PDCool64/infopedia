@@ -140,4 +140,6 @@ $$
 $$
 Bzw. der Fehler $f(x)-p_{n}(x)$ konvergiert schneller als $(x-a)^{n}$.
 (Das Taylorpolynom ist das einzige Polynom mit Grad $\le n$, welches dies erfüllt)
+<!--ID: 1772378141822-->
+
 
