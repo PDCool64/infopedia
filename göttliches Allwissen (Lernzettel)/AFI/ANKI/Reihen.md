@@ -111,3 +111,10 @@ $$
 <!--ID: 1771863587971-->
 
 
+Was besagt das Verdichtungskriterium für Reihen? #flashcard
+Ist $(a_n)_{n\ge 1}\subseteq[0,\infty)$ monoton fallend, so konvergiert die Reihe $\sum_{k=1}^{\infty}a_{k}$ genau dann, wenn die Reihe
+$$
+\sum_{k=0}^{\infty}2^{k}a_{2^{k}}
+$$
+dies tut.
+<!--ID: 1772381486613-->

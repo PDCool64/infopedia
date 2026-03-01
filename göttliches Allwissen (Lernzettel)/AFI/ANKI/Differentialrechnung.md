@@ -100,3 +100,18 @@ f'(x_{0})=0 \land f''(x_{0})<0
 $$
 <!--ID: 1772011948663-->
 
+Was besagt die Regel von L'Hospital? #flashcard
+Für $a,b\in \mathbb{R}\;,\;a<b$ und $f,g:[a,b]\to \mathbb{R}$.
+- Seien $f,g$ auf $[a,b]$ stetig und auf $(a,b)$ differenzierbar
+- Gelte $g(a)=f(a)=0$
+- Gelte $\forall_{x\in(a,b)}:g(x)\neq 0$
+- Und Existiere der Grenzwert $$
+\lim_{ x \downarrow a }  \frac{f'(x)}{g'(x)}=c
+$$
+Dann folgt $g(x)\neq(0)$ für alle $x\in(a,b)$ und
+$$
+\lim_{ x \downarrow a }  \frac{f(x)}{g(x)}=c
+$$
+<!--ID: 1772381486617-->
+
+
