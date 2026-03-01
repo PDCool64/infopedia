@@ -128,3 +128,16 @@ $m=\text{min}\{ f(x) |x\in[a,b]\}$
 $M=\text{max}\{ f(x) |x\in[a,b]\}$
 <!--ID: 1771934169678-->
 
+Definiere den Satz von Taylor bzw. die Formel für das Taylorpolynom. #flashcard
+Sei $I$ ein Intervall und $a\in \overset{\circ}I$ und $n\in \mathbb{N}^{+}$.
+Falls $f:I\to \mathbb{R}$ $n$-mal differenzierbar in $\overset{\circ}I$ ist und setze
+$$
+p_{n}(x):= \sum_{k=0}^{n} \frac{f^{(k)(a)}}{k!}(x-a)^{k}
+$$
+Dann gilt:
+$$
+\lim_{ x \to a }  \frac{f(x)-p_{n}(x)}{(x-a)^{n}}=a
+$$
+Bzw. der Fehler $f(x)-p_{n}(x)$ konvergiert schneller als $(x-a)^{n}$.
+(Das Taylorpolynom ist das einzige Polynom mit Grad $\le n$, welches dies erfüllt)
+
