@@ -132,7 +132,7 @@ Definiere den Satz von Taylor bzw. die Formel für das Taylorpolynom. #flashcard
 Sei $I$ ein Intervall und $a\in \overset{\circ}I$ und $n\in \mathbb{N}^{+}$.
 Falls $f:I\to \mathbb{R}$ $n$-mal differenzierbar in $\overset{\circ}I$ ist und setze
 $$
-p_{n}(x):= \sum_{k=0}^{n} \frac{f^{(k)(a)}}{k!}(x-a)^{k}
+p_{n}(x):= \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^{k}
 $$
 Dann gilt:
 $$
