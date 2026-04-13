@@ -26,3 +26,8 @@ $g(y_{0})=0$ gilt, dann ist eine Lösung gegeben durch? #flashcard
 $\varphi:I\to \mathbb{R}\;,\;\varphi(x)=y_{0}$
 <!--ID: 1772378141819-->
 
+$\epsilon$
+$\varepsilon$
+
+$\phi$ $\Phi$
+$\varphi$ 
