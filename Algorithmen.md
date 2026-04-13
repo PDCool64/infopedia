@@ -55,7 +55,7 @@ Die Anzahl der elementaren Operationen sollte eine gute Abschätzung für die An
 > A(n)= \sum_{I\in D_{n}}Pr(I)\cdot T(I)
 > $$
 > (=Erwartungswert =gewichteter Durchschnitt)
-i
+
 
 ### Konstante Faktoren
 Technologie, z.B. ein Rechner der jede Multiplikation 50% schneller durchführen kann, führt nur zur Verbesserung um einen Faktor, welcher über die Eingabelänge *konstant* ist.
