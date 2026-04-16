@@ -1,7 +1,7 @@
 ---
 tags:
-  - DSAL
   - DS
+  - FOSAP
 status: rot
 ---
 ---
@@ -98,3 +98,37 @@ Dann ist $h:M_{1}\to M_{2}: 0\mapsto 10\;,\;1 \mapsto 11 \;,\; 2\mapsto 12$ ein 
 - Betrachtet wird für zwei Alphabete $\Sigma \;,\;\Gamma$ einen Homomorphismus zwischen den Mengen der jeweils erzeugten Wörter also $\Sigma^{*}\to\Gamma^{*}$
 - Es ist dann schwierig, eine Abbildungsvorschrift für die unendlich vielen Wörter unendlich vieler Längen aus $\Sigma^{*}$ aufzuschreiben.
 - Aber: Nach dem Satz genügt es, die Wirkung auf jedes Symbol von $\Sigma$ zu definieren.
+
+
+# Operationen auf Sprachen
+
+>[!def] Operationen auf Sprachen
+> Es seien $A,B\subseteq\Sigma^{*}$ und $w\in\Sigma^{*}$.
+> - $AB:=\{ uv\mid u\in A \land v\in B\}$
+> - $wA:=\{ w \}A$ sowie $Aw:=A\{ w \}$
+> - Potenzierung: Genau $n$ viele (auch verschiedene) Wörter aus der Sprache$$
+> A^{i} := \begin{cases}
+> \{ e \} &,i=0 \\
+> A &,i=1 \\
+> AA^{i_{1-1}}&,i>1
+> \end{cases}
+> $$
+> - Beliebig viele (auch verschiedene) Wörter aus der Sprache $$A^{*}:= \bigcup_{n\ge_{0}} A^{n}$$
+>   Diese Operation heißt auch [Kleenesche Hülle](https://de.wikipedia.org/wiki/Kleenesche_und_positive_H%C3%BClle)
+> - Ein oder mehr (auch verschiedene) Wörter aus der Sprache $$A^{+}:= \bigcup_{n\ge_{1}} A^{n}$$
+> Diese Operation heißt auch  [positive Hülle](https://de.wikipedia.org/wiki/Kleenesche_und_positive_H%C3%BClle)
+
+
+### Algebraische Gesetze
+Bei den Operationen auf Sprachen gelte folgende Gesetze:
+
+>[!def] Algebraische Gesetze bei Operationen auf Sprachen
+> Es seien  $A,B,C\subseteq\Sigma^{*}$.
+> - $A(BC)=(AB)C$
+> - $\varepsilon A=A\varepsilon=A$
+> - $(A^{*})^{*}=A^{*}$
+> - $A(B\cup C)=AB \cup AC$
+> - $(A\cup B)C=AC\cup BC$
+> - $A^{+}\cup \{ \varepsilon \}=A^{*}$
+
+
