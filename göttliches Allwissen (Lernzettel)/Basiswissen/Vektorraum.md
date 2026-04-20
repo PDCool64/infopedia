@@ -26,7 +26,7 @@
 
 ## Bemerkungen
 - "Abgeschlossen" bedeutet, dass das Ergebnis einer Vektoraddition bzw. einer Skalarmultiplikation selbst wieder im Vektorraum liegt. (s.h. [[Abbildungen#^e40e31|Zielbereich]] der Abbildungen)
-- Die Vektorraumaxiome ähneln sehr den [[Körper#^a3c120|Körperaxiomen]], aber in einem Vektorraum gibt es die Skalarmultiplikation, welche einen Vektor $v\in V$ *nicht* mit einem weiteren Vektor verknüpft, sondern mit einem *Skalar* $\lambda\in \mathbb{K}$. In Körpern hingegen verknüpft die Multiplikation zwei "gleichartige" Elemente.
+- Die Vektorraumaxiome ähneln sehr den [[Körper#^a3c120|Körperaxiomen]], aber in einem Vektorraum gibt es die Skalarmultiplikation, welche einen Vektor $v\in V$ *nicht* mit einem weiteren Vektor verknüpft, sondern mit einem *Skalar* $\lambda\in \mathbb{K}$. In Körpern hingegen verknüpft die Multiplikation zwei "gleichartige" Elemente. 
 
 # Beispiele für Vektorräume
 
