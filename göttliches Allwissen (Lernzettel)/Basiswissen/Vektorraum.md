@@ -53,10 +53,10 @@ $$
 ## Vektorraum der stetigen Funktionen
 Die Menge der stetigen Funktionen bildet über den reellen Zahlen einen Vektorraum.
 
-## Abgeschlossenheit der Addition:
+### Abgeschlossenheit der Addition:
 Seien $f,g$ zwei stetige Funktionen, dann ist auch $(f+g)$ eine stetige Funktion:$$(f+g)(x)=f(x)+g(x)$$was durch die [[Stetigkeit von Funktionen#^108050|Sätze zur Stetigkeit zusammengesetzter Funktionen]] ebenfalls eine stetige Funktion ergibt.
 
-## Abgeschlossenheit der Skalarmultiplikation
+### Abgeschlossenheit der Skalarmultiplikation
 Sei $f$ eine stetige Funktion und $\lambda$ ein Skalar, dann ist auch $(\lambda\cdot f)$ eine stetige Funktion:
 $$(\lambda\cdot f)(x)=\lambda\cdot f(x)$$was durch die [[Stetigkeit von Funktionen#^108050|Sätze zur Stetigkeit zusammengesetzter Funktionen]] ebenfalls eine stetige Funktion ergibt.
 
