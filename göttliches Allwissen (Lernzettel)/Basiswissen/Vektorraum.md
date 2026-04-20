@@ -56,11 +56,13 @@ $$(\lambda\cdot f)(x)=\lambda\cdot f(x)$$was durch die [[Stetigkeit von Funktion
 # Untervektorraum
 
 >[!def] Untervektorraum
-> Sei $V$ ein [[#^44084b|Vektorraum]] über $\mathbb{K}$. Eine nichtleere Teilmenge $\emptyset\neq W \subseteq C$ heißt **Untervektorraum** von $V$, wenn $W$ bezüglich der Vektoraddition sowie der Skalarmultiplikation abgeschlossen ist.
+> Sei $V$ ein [[#^44084b|Vektorraum]] über $\mathbb{K}$. Eine nichtleere Teilmenge $\emptyset\neq U \subseteq V$ heißt **Untervektorraum** von $V$, wenn $U$ bezüglich der Vektoraddition sowie der Skalarmultiplikation abgeschlossen ist.
 > 
 > D.h. wenn gilt:
-> $u,v\in W\implies (u+v)\in W$
-> $v\in W\implies\forall_{\lambda\in \mathbb{K}}: (\lambda\cdot v)\in W$
+> $u,v\in U\implies (u+v)\in W$
+> $v\in U\implies\forall_{\lambda\in \mathbb{K}}: (\lambda\cdot v)\in U$
+> 
+> Insbesondere enthält jeder Untervektorraum den Nullvektor, da $0_{V}=0_{K}\cdot u$ für einen beliebigen, in $V$ sicher existierenden, Vektor $u\in V$ denn $V\neq \emptyset$.
 ## Beispiel für einen Untervektorraum:
 $\mathbb{R}^{2}$ ist ein Vektorraum. (Vektorraum der reellen Zahlen über sich selbst)
 
