@@ -1,12 +1,20 @@
 
 >[!def] Vektorraum
 > Eine [[Mengen|Menge]] $V$ heißt **Vektorraum** über dem [[Körper]] $\mathbb{K}$, wenn es zwei abgeschlossene [[Abbildungen]] $$\begin{align}+:V\times V\to V\quad&,\quad(u,v)\mapsto u+v&(\text{Vektoraddition}) \\\cdot\,: \mathbb{K}\times V\to V \quad&,\quad(\lambda,v)\mapsto\lambda\cdot v &(\text{Skalarmultiplikation})\end{align}$$
+> 
 > gibt, mit den folgenden Eigenschaften: (Vektorraumaxiome)
+> 
+> Vektoraddition:
+> 
 > 1. Die Vektoraddition ist [[Einfache Rechengesetze#Assoziativgesetz|assoziativ]]: $u+(v+w)=(u+v)+w \quad\forall_{u,v,w}\in V$
 > 2. Die Vektoraddition ist [[Einfache Rechengesetze#Kommutativgesetz|kommutativ]]: $u+v=v+u\quad\forall_{u,v}\in V$
 > 3. Es gibt ein neutrales Element der Vektoraddition, den *Nullvektor* "$o$" : $\exists_{o\in V}\forall_{v\in V}:o + v=v \quad$
 > 4. Es gibt zu jedem Vektor ein inverses Element der Vektoraddition: $\exists_{-v\in V}:v+(-v)=o$
+>    
+> Skalarmultiplikation:
+> 
 > 5. Es gibt ein neutrales Element der Skalarmultiplikation, das Einselement "$1$": $1\cdot v=v \quad\forall_{v\in V}$
+>    
 > 6. $\forall_{\lambda,\mu\in \mathbb{K}}\forall_{v\in V}:(\lambda \cdot \mu)\cdot v=\lambda\cdot(\mu\cdot v)$
 > 7. $\forall_{\lambda,\mu\in \mathbb{K}}\forall_{v\in V}:(\lambda\!+\!\mu)\cdot v=\lambda\!\cdot\! v+\mu\!\cdot\! v$
 > 8. $\forall_{\lambda\in \mathbb{K}}\forall_{u,v\in V}:\lambda\cdot(u\!+\!v)=\lambda\!\cdot\!u+\lambda\!\cdot\!v$
@@ -56,11 +64,11 @@ $$(\lambda\cdot f)(x)=\lambda\cdot f(x)$$was durch die [[Stetigkeit von Funktion
 # Untervektorraum
 
 >[!def] Untervektorraum
-> Sei $V$ ein [[#^44084b|Vektorraum]] über $\mathbb{K}$. Eine nichtleere Teilmenge $\emptyset\neq W \subseteq C$ heißt **Untervektorraum** von $V$, wenn $W$ bezüglich der Vektoraddition sowie der Skalarmultiplikation abgeschlossen ist.
+> Sei $V$ ein [[#^44084b|Vektorraum]] über $\mathbb{K}$. Eine nichtleere Teilmenge $\emptyset\neq U \subseteq V$ heißt **Untervektorraum** von $V$, wenn $W$ bezüglich der Vektoraddition sowie der Skalarmultiplikation abgeschlossen ist.
 > 
 > D.h. wenn gilt:
-> $u,v\in W\implies (u+v)\in W$
-> $v\in W\implies\forall_{\lambda\in \mathbb{K}}: (\lambda\cdot v)\in W$
+> $u,v\in U\implies (u+v)\in U$
+> $v\in U\implies\forall_{\lambda\in \mathbb{K}}: (\lambda\cdot v)\in U$
 ## Beispiel für einen Untervektorraum:
 $\mathbb{R}^{2}$ ist ein Vektorraum. (Vektorraum der reellen Zahlen über sich selbst)
 
