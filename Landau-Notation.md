@@ -4,7 +4,6 @@ tags:
 status: rot
 ---
 ---
-
 # Die Klassen:
 
 | Klasse           | in Worten:<br>Funktionen, die ... <br>als $f$ wachsen | als Limes<br>$g\in X(f)\iff$                                                                                         | Quantoren:                                                                                                                               |
@@ -32,7 +31,7 @@ $$
 $$
 ## Eigenschaften als [[göttliches Allwissen (Lernzettel)/DS/Relationen|Relationen]]
 ### Transitivität von $\omega \;,\;\Omega,\Theta \;,\;\mathcal O \;,\;o$
-Das Enthaltensein von $f$ in der Klasse von $g$ ist bei allen dieser Klassen *transitiv*.
+Das Enthalten-sein von $f$ in der Klasse von $g$ ist bei allen dieser Klassen *transitiv*.
 Es gilt zum Beispiel:
 $$
 f\in \Omega(g) \;\land\; g\in\Omega(h) \implies f\in \Omega(h)
@@ -48,3 +47,4 @@ $$
 f\in\Theta(g) \iff g\in\Theta(f)
 $$
 > Somit ist $\Theta$ eine [[göttliches Allwissen (Lernzettel)/DS/Relationen|Äquivalenzrelation]]
+

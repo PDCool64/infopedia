@@ -1,4 +1,10 @@
 
+>[!wip]
+> Hier lieber die Vektorraumkriterien aus dem Skript verwenden:
+> Sind weniger aufzuschreiben / sich besser zu merken wenn man in Aufgaben durchtesten muss
+
+
+
 >[!def] Vektorraum
 > Eine [[Mengen|Menge]] $V$ heißt **Vektorraum** über dem [[Körper]] $\mathbb{K}$, wenn es zwei abgeschlossene [[Abbildungen]] $$\begin{align}+:V\times V\to V\quad&,\quad(u,v)\mapsto u+v&(\text{Vektoraddition}) \\\cdot\,: \mathbb{K}\times V\to V \quad&,\quad(\lambda,v)\mapsto\lambda\cdot v &(\text{Skalarmultiplikation})\end{align}$$
 > 

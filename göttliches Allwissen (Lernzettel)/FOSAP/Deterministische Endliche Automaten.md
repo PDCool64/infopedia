@@ -19,7 +19,7 @@ status: rot
 #### Bestimme, in welchem Zustand ein gesamtes Wort endet
 Erweitere die Zustandsübergangsfunktion $\delta$ -welche einzelne *Symbole* verwendet- auf die neue Funktion $\hat{\delta}$ -welche ganze *Wörter* verwendet:
 - Setze den Rekursionsanker: $\hat{\delta}(q,\varepsilon):=q$ 
-  (D.h. wenn das Wortende erreicht ist stehen bleiben)
+  (D.h. wenn das Wortende erreicht ist: stehen bleiben)
 - Definiere als rekursive Anwendung der Zustandsübergangsfunktion $\delta$:$$
 \hat{\delta}(q,wa):=\delta\left(\hat{\delta}(q,w)\;,\;a\right)
 $$

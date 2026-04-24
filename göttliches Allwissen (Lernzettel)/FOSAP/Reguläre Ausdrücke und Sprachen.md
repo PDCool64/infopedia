@@ -13,7 +13,7 @@ status: rot
 >> 
 >> Atomare Bestandteile:
 >> - $\emptyset$ ist ein regulärer Ausdruck
->> - $\epsilon$ ist ein regulärer Ausdruck
+>> - $\varepsilon$ ist ein regulärer Ausdruck
 >> - $a$ ist ein regulärer Ausdruck, falls $a\in\Sigma$
 >>
 >> Induktive Erweiterung:
@@ -21,8 +21,8 @@ status: rot
 >> - $r+s$ ist ein regulärer Ausdruck, falls $r$ und $s$ reguläre Ausdrücke sind.
 >> - $r*$ ist ein regulärer Ausdruck, falls $r$ ein regulärer Ausdrücke ist.
 >
-> Dies beschreibt erstmal, was syntaktisch überhaupt ein korrekter regulärer Ausdruck ist.
-> Den Zusammenhand zur *Sprache*, welche der reguläre Ausdruck erzeugt entsteht erst mit der folgenden Definition:
+> Dies beschreibt erstmal nur, was syntaktisch überhaupt ein korrekter regulärer Ausdruck ist.
+> Den Zusammenhang zur *Sprache*, welche der reguläre Ausdruck erzeugt entsteht erst mit der folgenden Definition:
 > 
 >>[!def] Semantik von regulären Ausdrücken
 >> Wir ordnen jedem regulären Ausdruck $r$ mit der Abbildung $L$ seine Sprache $L(r)$ zu.
@@ -30,10 +30,10 @@ status: rot
 >> Basisfälle:
 >> - $L(\emptyset)=\emptyset$ 
 >> 	  (Man unterscheidet in der Praxis nicht zwischen dem atomaren regulären Ausdruck $\emptyset$ und der leeren Menge/Sprache $\emptyset$)
->> - $L(\epsilon)=\{ \epsilon \}$  
->> 	  (Dem regulären Ausdruck $\epsilon$ wir die Sprache, welche nur das leere Wort $\epsilon$ enthält zugeordnet)
+>> - $L(\varepsilon)=\{ \varepsilon \}$  
+>> 	  (Dem regulären Ausdruck $\varepsilon$ wird die Sprache, welche nur das leere Wort $\varepsilon$ enthält zugeordnet)
 >> - $L(\alpha)=\{ \alpha \}$ 
->> 	  (der Reguläre Ausdruck $\alpha$ für ein $\alpha\in\Sigma$ wird die Sprache welche nur genau dieses Symbol enthält zugeordnet)
+>> 	  (der reguläre Ausdruck $\alpha$ für ein $\alpha\in\Sigma$ wird die Sprache welche nur genau dieses Symbol enthält zugeordnet)
 >> 
 >> Induktive Fälle: Definiert über die [[Alphabete, Wörter, Sprachen#Operationen auf Sprachen|Operationen auf Sprachen]]
 >> - $L(rs):=L(r)L(s)=\{ uv\mid u\in L(r),v\in L(s) \}$

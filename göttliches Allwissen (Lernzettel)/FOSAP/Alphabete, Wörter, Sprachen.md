@@ -56,7 +56,7 @@ status: rot
 
 ### Beispiel
 Sei $M_{1}=(\mathbb{Z}_{3},+)$ mit gewöhnlicher Addition und Modulo 3
-und $M_{2}=(\{ 10,11,12 \},\bullet)$ mit der Verknüpfung
+sowie $M_{2}=(\{ 10,11,12 \},\bullet)$ mit der Verknüpfung
 
 | $\bullet$ | 10  | 11  | 12  |
 | --------- | --- | --- | --- |
@@ -85,12 +85,9 @@ Dann ist $h:M_{1}\to M_{2}: 0\mapsto 10\;,\;1 \mapsto 11 \;,\; 2\mapsto 12$ ein 
 > Es seien $\Sigma$ und $\Gamma$ Alphabete. Jede Abbildung $\Sigma\to \Gamma^{*}$ lässt sich eindeutig auf einen Homomorphismus $\Sigma^{*}\to\Gamma^{*}$ erweitern.
 > 
 > Beweis:
-> Es sei $h:\Sigma^{*}\to \Gamma^{*}$ ein Homomorphismus. Dann lässt sich, weil $\Sigma^{*}$ ein frei erzeugtes Monoid von $\Sigma$ ist, jedes $w\in \Sigma^{*}$ schreiben als $w=w_{1} \cdots w_{n}\;,\;w_{i}\in\Sigma$. Es folgt weiter
-> $$
-> h(w) = h(w_{1}\cdots w_{n}) = h(w_{1}) \cdots h(w_{n})\;\in\;\Gamma^{*}
-> $$
-> weil $h$ ein Homomorphismus ist. 
-
+> 	Es sei $h:\Sigma^{*}\to \Gamma^{*}$ ein Homomorphismus. Dann lässt sich, weil $\Sigma^{*}$ ein frei erzeugtes Monoid von $\Sigma$ ist, jedes $w\in \Sigma^{*}$ schreiben als $w=w_{1} \cdots w_{n}\;,\;w_{i}\in\Sigma$. Es folgt weiter
+> 	$$h(w) = h(w_{1}\cdots w_{n}) = h(w_{1}) \cdots h(w_{n})\;\in\;\Gamma^{*}$$
+> 	weil $h$ ein Homomorphismus ist. 
 
 >Wenn wir einen Homomorphismus definieren wollen, genügt es somit, seine Wirkung auf die einzelnen Symbole zu beschreiben. 
 
@@ -98,7 +95,6 @@ Dann ist $h:M_{1}\to M_{2}: 0\mapsto 10\;,\;1 \mapsto 11 \;,\; 2\mapsto 12$ ein 
 - Betrachtet wird für zwei Alphabete $\Sigma \;,\;\Gamma$ einen Homomorphismus zwischen den Mengen der jeweils erzeugten Wörter also $\Sigma^{*}\to\Gamma^{*}$
 - Es ist dann schwierig, eine Abbildungsvorschrift für die unendlich vielen Wörter unendlich vieler Längen aus $\Sigma^{*}$ aufzuschreiben.
 - Aber: Nach dem Satz genügt es, die Wirkung auf jedes Symbol von $\Sigma$ zu definieren.
-
 
 # Operationen auf Sprachen
 
@@ -118,7 +114,6 @@ Dann ist $h:M_{1}\to M_{2}: 0\mapsto 10\;,\;1 \mapsto 11 \;,\; 2\mapsto 12$ ein 
 > - Ein oder mehr (auch verschiedene) Wörter aus der Sprache $$A^{+}:= \bigcup_{n\ge_{1}} A^{n}$$
 > Diese Operation heißt auch  [positive Hülle](https://de.wikipedia.org/wiki/Kleenesche_und_positive_H%C3%BClle)
 
-
 ### Algebraische Gesetze
 Bei den Operationen auf Sprachen gelte folgende Gesetze:
 
@@ -130,5 +125,3 @@ Bei den Operationen auf Sprachen gelte folgende Gesetze:
 > - $A(B\cup C)=AB \cup AC$
 > - $(A\cup B)C=AC\cup BC$
 > - $A^{+}\cup \{ \varepsilon \}=A^{*}$
-
-
