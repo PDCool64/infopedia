@@ -81,16 +81,23 @@ Dann ist $h:M_{1}\to M_{2}: 0\mapsto 10\;,\;1 \mapsto 11 \;,\; 2\mapsto 12$ ein 
 
 ## Homomorphismen zwischen den Wörtern über Alphabeten
 
+>[!wip]
+> Habe hier den Satz aus dem Skript mit eigener Erklärung gemischt.
+> Sollte man auseinandertrennen und insbesondere Definition der erweiterten Abbildung und Beweis ihrer Homomorphismeneigenschaften trennen.
+
+
 >[!def] Äquivalenz der Wirkung von Homomorphismen auf Wörter und Symbole
-> Es seien $\Sigma$ und $\Gamma$ Alphabete. Jede Abbildung $\Sigma\to \Gamma^{*}$ lässt sich eindeutig auf einen Homomorphismus $\Sigma^{*}\to\Gamma^{*}$ erweitern.
+> Es seien $\Sigma$ und $\Gamma$ Alphabete. Jede Abbildung $\Sigma\to \Gamma^{*}$ lässt sich eindeutig auf genau einen Homomorphismus $\Sigma^{*}\to\Gamma^{*}$ erweitern.
 > 
 > Beweis:
-> 	Es sei $h:\Sigma^{*}\to \Gamma^{*}$ ein Homomorphismus. Dann lässt sich, weil $\Sigma^{*}$ ein frei erzeugtes Monoid von $\Sigma$ ist, jedes $w\in \Sigma^{*}$ schreiben als $w=w_{1} \cdots w_{n}\;,\;w_{i}\in\Sigma$. Es folgt weiter
+> 	Es sei $h:\Sigma^{*}\to \Gamma^{*}$ der Homomorphismus mit erweitertem Definitionsbereich. Dann lässt sich, weil $\Sigma^{*}$ ein frei erzeugtes Monoid von $\Sigma$ ist, jedes $w\in \Sigma^{*}$ schreiben als $w=w_{1} \cdots w_{n}\;,\;w_{i}\in\Sigma$. Es folgt weiter
 > 	$$h(w) = h(w_{1}\cdots w_{n}) = h(w_{1}) \cdots h(w_{n})\;\in\;\Gamma^{*}$$
 > 	weil $h$ ein Homomorphismus ist. 
+> 	Somit hat man für die Elemente $w$ des Erweiterten Definitionsbereich $\Sigma^{*}$ eine wohldefinierte und *eindeutige* Funktionsdefinition auf Basis der zugrundeliegenden Abbildung $\Sigma\to \Gamma^{*}$ angegeben.
 
 >Wenn wir einen Homomorphismus definieren wollen, genügt es somit, seine Wirkung auf die einzelnen Symbole zu beschreiben. 
 
+Es besteht eine Bijektion zwischen den Abbildungen $\Sigma\to\Gamma^{*}$ und den Homomorphismen $\Sigma^{*}\to\Gamma^{*}$
 ### Anwendung / Problemstellung:
 - Betrachtet wird für zwei Alphabete $\Sigma \;,\;\Gamma$ einen Homomorphismus zwischen den Mengen der jeweils erzeugten Wörter also $\Sigma^{*}\to\Gamma^{*}$
 - Es ist dann schwierig, eine Abbildungsvorschrift für die unendlich vielen Wörter unendlich vieler Längen aus $\Sigma^{*}$ aufzuschreiben.
