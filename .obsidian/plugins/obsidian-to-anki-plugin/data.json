@@ -255,7 +255,7 @@
     "göttliches Allwissen (Lernzettel)/Basiswissen/Zahlenräume.md": "f4600a86b29d80c98bb38badbdfb02e8",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Winkelmaß und Bogenmaß.md": "bd85d2c0c9135bfbb15655dadbefd147",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Vollständige Induktion.md": "be62826be811a9f0441a779037bd31c7",
-    "göttliches Allwissen (Lernzettel)/Basiswissen/Vektorraum.md": "f8f57178bca648e8ce72027ffbe7d067",
+    "göttliches Allwissen (Lernzettel)/Basiswissen/Vektorraum.md": "055f04abda7466ebefce896dfb70063e",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Vollständige Induktion - Beispiele.md": "7dca184b522919a5b65e2b1ad345c79a",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Verknüpfung Trigonometrischer Funktionen.md": "d5e867c3719829d934f410c3bfc72377",
     "göttliches Allwissen (Lernzettel)/Basiswissen/Strahlensätze.md": "46eef6d986f9a8246d380824cc081cae",
@@ -298,12 +298,22 @@
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Praktische Gleichungen.md": "52267faa669bd9dc8c31d5c4a506a87b",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Gesetzte Exponential und Trig-Funktionen.md": "441ca0010b0c5d0dc7bf48929f45b936",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/komplexe Folgen.md": "fef1d50dc69d9c5065a1a0765bc4f710",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/reelle Funktionen.md": "a0337443bca317b538d49dfc9dff3b5d",
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/reelle Funktionen.md": "965b3419a5cbd91f6c0f9157676fc771",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Reelle Zahlen und Abzählbarkeit.md": "7d78422446f44a6f4e1d3c163dce59b5",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Differentialrechnung.md": "667bee2cf08fcf05dbcc5e5da1418e2f",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Exponential und Trig-Funktionen.md": "d53d6b740ba2ea8fa24f2e37b6e2297d",
     "göttliches Allwissen (Lernzettel)/AFI/ANKI/Mehrdimensionale Differentialrechnung.md": "5c6d45c96813b69f51ce0f03e82799f7",
-    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Differentialgleichungen.md": "b628aa01ceda6f250d9e0dd8bf965fad"
+    "göttliches Allwissen (Lernzettel)/AFI/ANKI/Differentialgleichungen.md": "71e5150da30c2d9d74ee9b35345a5219",
+    "göttliches Allwissen (Lernzettel)/FOSAP/LIJK - Verfahren.md": "30121fca8c2e894c3afc5c434b9156bb",
+    "göttliches Allwissen (Lernzettel)/FOSAP/Reguläre Ausdrücke und Sprachen.md": "fb89d855f41bcfcf54204fe2b4221394",
+    "göttliches Allwissen (Lernzettel)/FOSAP/Alphabete, Wörter, Sprachen.md": "65d6681a0fbcabdf94aa945c4a7b6d5b",
+    "göttliches Allwissen (Lernzettel)/FOSAP/Deterministische Endliche Automaten.md": "ba30b921ea6b96d010d53edd8b438e1b",
+    "göttliches Allwissen (Lernzettel)/DSAL/Rekursionsgleichungen und Mastertheorem.md": "07bcce376e80ec1f6ee236d01581b592",
+    "göttliches Allwissen (Lernzettel)/DSAL/Probleme und Probleminstanzen.md": "b7dfe50e32d1b5e63d7545c8fdf564e5",
+    "göttliches Allwissen (Lernzettel)/DSAL/Landau-Notation.md": "f43566efc1be88319d98f41a727c41fe",
+    "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Probleme und Algorithmen.md": "df20bb5e5782483557e65c8adbd306f4",
+    "göttliches Allwissen (Lernzettel)/DSAL/Algorithmen.md": "a9694ad18f7ad5c4776870c447f663cd",
+    "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Algorithmen.md": "9ac07f879a2cb176a2dd8a0ce8d27ae6"
   },
   "fields_dict": {
     "Bildverdeckung": [
