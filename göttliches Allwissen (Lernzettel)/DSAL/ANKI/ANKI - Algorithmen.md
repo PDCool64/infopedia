@@ -87,3 +87,22 @@ $$
 $$
 <!--ID: 1780493121284-->
 
+
+Was besagt das Mastertheorem? #flashcard
+Gegeben sei
+$$
+T(n)=a\cdot T\left( \frac{n}{b} \right)+f(n) \;,\;a\ge 1 \;,\;b >1
+$$
+Dann ist die Anzahl der Blätter im Rekursionsbaum:
+$$
+n^{E}\;,\;E:= \log_{b}a
+$$
+Fallunterscheidung:
+- $f\in O(n^{E-\varepsilon})$ für ein $\varepsilon>0$  dann ist $T\in \Theta(n^{E})$
+  (Blätter dominieren)
+- $f\in\Theta(n^{E})$ dann ist $T\in\Theta(n^{E}\cdot \log n)$
+- $f\in\Omega(n^{E+\varepsilon})$ für ein $\varepsilon>0$ sowie
+  $a\cdot f\left( \frac{n}{b} \right)\le d\cdot f(n)$ für ein $d<1$ und $n$ hinreichend groß
+  dann ist $T\in\Theta(f)$
+<!--ID: 1780493957125-->
+

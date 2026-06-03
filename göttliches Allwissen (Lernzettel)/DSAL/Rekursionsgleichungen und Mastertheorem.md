@@ -91,6 +91,8 @@ $$
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | 1.  | $f\in \mathcal{O}(n^{E-\varepsilon})$ für ein $\varepsilon>0$                                                                                                 | $T\in\Theta(n^{E})$<br>(Blätter dominieren) |
 | 2.  | $f\in\Theta(n^{E})$                                                                                                                                           | $T\in\Theta(n^{E}\cdot \log n)$             |
-| 3.  | $f\in\Omega(n^{E}+\varepsilon)$ für ein $\varepsilon>0$ <br>und<br>$a\cdot f\left( \frac{n}{b} \right)\le d\cdot f(n)$ für ein $d<1$ und $n$ hinreichend groß | $T\in\Theta(f)$                             |
+| 3.  | $f\in\Omega(n^{E+\varepsilon})$ für ein $\varepsilon>0$ <br>und<br>$a\cdot f\left( \frac{n}{b} \right)\le d\cdot f(n)$ für ein $d<1$ und $n$ hinreichend groß | $T\in\Theta(f)$                             |
+<!--ID: 1780493957121-->
+
 > Bemerke, dass das Mastertheorem nicht alle Fälle abdeckt.
 
