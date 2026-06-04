@@ -80,16 +80,15 @@ Eigenschaften: *Radixsort* #flashcard
 **W=A**: $d\cdot(n+k)$ 
 	mit $d=$ Anzahl Schlüsselkomponenten
 	und $k$ = mögliche Werte pro Schlüsselkomponente
-**Speicher**: $n$
+**Speicher**: $n+k$
 **Stabil**: Ja
 <!--ID: 1780572621414-->
 
 
 Eigenschaften: _Bucketsort_  #flashcard
-Sei $b$ = Anzahl Buckets
 **W**: Alles in einem Bucket: Laufzeit des verwendeten Subalgorithmus
 (oft $n^{2}$ mit Insertionsort)
-**A**: $n+b$
+**A**: $n$
 **Speicher**: $n$ oder ($n\cdot b$ bei stumpfen malloc(n) für jeden Bucket)
 **Stabil**: Ja
 <!--ID: 1780572621416-->
