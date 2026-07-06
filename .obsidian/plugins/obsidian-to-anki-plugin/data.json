@@ -49,7 +49,12 @@
       "Vorlesungsnotizen/PROGRA/Folien & Skripte": "",
       "Vorlesungsnotizen/PROGRA/_attachments": "",
       "Vorlesungsnotizen/TI/Folien & Skripte": "",
-      "Vorlesungsnotizen/TI/_attachments": ""
+      "Vorlesungsnotizen/TI/_attachments": "",
+      "göttliches Allwissen (Lernzettel)/DSAL": "",
+      "göttliches Allwissen (Lernzettel)/FOSAP": "",
+      "göttliches Allwissen (Lernzettel)/BUS": "",
+      "göttliches Allwissen (Lernzettel)/DSAL/ANKI": "",
+      "göttliches Allwissen (Lernzettel)/BUS/ANKI": ""
     },
     "FOLDER_TAGS": {
       "Aufgaben": "",
@@ -83,7 +88,12 @@
       "Vorlesungsnotizen/PROGRA/Folien & Skripte": "",
       "Vorlesungsnotizen/PROGRA/_attachments": "",
       "Vorlesungsnotizen/TI/Folien & Skripte": "",
-      "Vorlesungsnotizen/TI/_attachments": ""
+      "Vorlesungsnotizen/TI/_attachments": "",
+      "göttliches Allwissen (Lernzettel)/DSAL": "",
+      "göttliches Allwissen (Lernzettel)/FOSAP": "",
+      "göttliches Allwissen (Lernzettel)/BUS": "",
+      "göttliches Allwissen (Lernzettel)/DSAL/ANKI": "",
+      "göttliches Allwissen (Lernzettel)/BUS/ANKI": ""
     },
     "Syntax": {
       "Begin Note": "START",
@@ -314,7 +324,8 @@
     "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Probleme und Algorithmen.md": "df20bb5e5782483557e65c8adbd306f4",
     "göttliches Allwissen (Lernzettel)/DSAL/Algorithmen.md": "a9694ad18f7ad5c4776870c447f663cd",
     "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Algorithmen.md": "e26ca519230c9e9ee5e1a8dfd2edb165",
-    "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Sortieren.md": "5e29d7993b72f796627c38687b0e0806"
+    "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Sortieren.md": "c3997b114e38fa64233b415f5dc6b981",
+    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - OS Basics.md": "ce166c92a1d4c6100c1e3cfaa241bf24"
   },
   "fields_dict": {
     "Bildverdeckung": [
