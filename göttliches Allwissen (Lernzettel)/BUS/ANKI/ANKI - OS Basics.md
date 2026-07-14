@@ -49,6 +49,7 @@ Most stuff in the kernel: Core stuff plus
 - file systems
 - drivers
 - ...
+can be modular (load only required drivers etc.)
 <!--ID: 1783354481162-->
 
 
