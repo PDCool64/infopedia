@@ -115,6 +115,7 @@ New process initially starts with a copy of the PCB and memory.
 returns:
 - in the parent: PID of the child
 - in the child: $0$
+(copy of memory is **copy on write** using virtual memory/paging.)
 <!--ID: 1783609457096-->
 
 

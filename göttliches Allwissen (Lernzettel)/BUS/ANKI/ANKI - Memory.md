@@ -105,6 +105,11 @@ Name two mechanisms for free memory management: #flashcard
 	- each bit represents the state of a chunk
 <!--ID: 1784040893519-->
 
+What strategies exist to choose which chunk of memory to **allocate**?
+- First Fit (superior)
+- Next Fit
+- Best Fit
+- Worst Fit
 
 # Virtual Memory
 
@@ -153,6 +158,193 @@ What 7 things are stored in a **Page Table Entry** #flashcard
 <!--ID: 1784040893544-->
 
 
-pro: Paging and virtual address spaces
+pro: Paging and virtual address spaces #flashcard
 - provides relocation and protection
 - efficient in hardware with MMU + TLB
+- fixed sized pages: not fragmentation
+- swap at page granularity: fast
+<!--ID: 1784363193499-->
+
+
+virtual adress spaces are giant: how to store page table efficiently? #flashcard
+- process never uses entire address space simultaneously
+- use multilevel page table
+- only load the tables from each level into memory which are being used currently
+<!--ID: 1784363193506-->
+
+
+
+Why do we need **large/huge pages**? #flashcard
+TLB is **small** and can only store translations for a couple MiB of memory.
+-> Can't effectively cache when multiple GiB are used quickly
+<!--ID: 1784363193510-->
+
+
+How are **large/huges pages** implemented? #flashcard
+Use Multilevel paging: stop at an earlier level in the page walk.
+Use address found there as physical address to large/huge page directly, rest of the address becomes offset.
+- Large page: stop at the PD
+- Huge page: stop at the PDP
+(PD and PDP also store PTE-esque metadata and a bit to signal: continue deeper or stop here for large/huge page)
+<!--ID: 1784363193515-->
+
+
+---
+# Segmentation
+
+What is **Segmentation**? #flashcard
+Alternative virtual memory implementation without paging.
+Process can split its address space into multiple **segments**,
+which are each mapped to contiguous physical memory.
+- segments can have any size
+- segments can grow
+<!--ID: 1784363193519-->
+
+
+How is **Segmentation** implemented? #flashcard
+segment table and two-part adresses:
+- segment number: lookup base+limit in segment table
+- **add (_not append_)**  base to offset
+- check if below limit
+<!--ID: 1784363193523-->
+
+
+fragmentation when using **segmentation** #flashcard
+- varying segment sizes cause fragmentation
+- smaller granularity compared to dynamic relocation makes it less severe
+<!--ID: 1784363193528-->
+
+
+Two types of **memory fragmentation** #flashcard
+External: Wasted space between segments/address spaces
+Internal: Wasted free space inside the page/segment
+<!--ID: 1784363193532-->
+
+
+Why is segmentation not **transparent**? #flashcard
+Compiler/assembly code/program has to be aware that segmentation is used: cant just assume flat address space.
+Has to specify segment+address explicitly:
+`mov eax, [DS:x]` asks for the Data Segment 
+(usually the compiler handles this, not the programmer)
+<!--ID: 1784363193536-->
+
+
+comparison: dynamic relocation, segmentation, paging : swapping/fragmentation/transparency #flashcard
+![[Pasted image 20260718094458.png]]
+<!--ID: 1784363193540-->
+
+
+How does **Segmentation with Paging** work? #flashcard
+Split segments into pages to partially swap them.
+Virtual address:
+- segment number
+- page number
+- offset
+Segment table contains a pointer to a page table.
+"two level paging where the first level is variable size"
+<!--ID: 1784363193545-->
+
+
+---
+# Page Faults and Eviction
+
+What would be the optimal eviction strategy and how is it approximated? #flashcard
+Optimal: Evict page whose next use is the furthest away
+Approximation: Least recently used
+<!--ID: 1784363193549-->
+
+
+Design decision: whose page gets evicted? #flashcard
+- a page of the process requesting a new one gets evicted:
+  limits number of page frames a single process can use
+- a page of another process gets evicted:
+  processes can unload each others pages
+<!--ID: 1784363193553-->
+
+
+Name three eviction algorithms #flashcard
+- FIFO
+- Clock
+- LRU with aging
+<!--ID: 1784363193558-->
+
+
+How does FIFO eviction work? #flashcard
+- sort list by when they were swapped in
+- evict oldest page
+<!--ID: 1784363193562-->
+
+
+Problem with FIFO eviction? #flashcard
+Only tracks initial swap in, not later accesses: 
+Not an accurate measurement of usage
+<!--ID: 1784363193566-->
+
+
+How does **Clock** eviction work? #flashcard
+FIFO with second chance to recently accessed pages.
+Uses MMU/TLB referenced bit.
+- move around FIFO list 
+- skip pages that have referenced bit set to 1
+	- reset their referenced bit to 0
+- evict first page with referenced = 0
+<!--ID: 1784363193571-->
+
+
+pro: **Clock eviction** #flashcard
+avoids swapping out frequently used pages
+<!--ID: 1784363193575-->
+
+
+How does **LRU Approximation with Aging** work? #flashcard
+- store a small counter for each page
+- at every clock tick
+	  - shift counter to the right
+	  - add referenced bit as new left bit
+- evict page with smallest counter
+<!--ID: 1784363193580-->
+
+
+pro/con: **LRU Approximation with Aging**
+- little time/space overhead
+- good approximation of LRU
+- does not scale for very large address spaces: many counters
+
+---
+# Memory allocators
+
+What three levels of Memory allocators do we need? #flashcard
+- **page frame allocator**: allocate page frames to pages when an unmaped page is accessed. Part of the kernel.
+- **kernel high-level allocator**: Allocates arbitrary size objects for use in the kernel. These object are allocated inside pages given by the page frame allocator.
+- **user high-level allocator**: arbitrary size object for user programs.
+  Asks the kernel for memory through syscalls and allocates within that.
+<!--ID: 1784363193585-->
+
+
+
+What **Page Frame allocator** does Linux use? #flashcard
+**Buddy allocator**: Merge physical page frames into chunks for $2^{n}$ page frames
+<!--ID: 1784363193589-->
+
+
+How does page frame allocation with the **Buddy Allocator** work? #flashcard
+- requested allocation size rounded up to the next $2^{n}$
+- if a chunk of that size is available, return it
+- Split a chunk in half until reaching that size
+	- the resulting halves are called "buddies"
+<!--ID: 1784363193594-->
+
+
+How does freeing page frames with the **Budy Allocator** work?
+- tag free chunk as free
+- if two buddies are free, merge back into larger chunk
+(two neighbors of same size are not always budies)
+
+How do **User Space allocators** work?
+- pre-allocate **large chunks of memory at once**
+	- request multiple pages from OS
+- manages user objects within the large chunk itself
+	- free lists
+	- metadata
+- if user requested allocation fits within the large chunks already pre-allocated, no OS interaction is needed
+

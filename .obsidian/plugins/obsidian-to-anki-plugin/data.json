@@ -122,7 +122,10 @@
     ]
   },
   "Added Media": [
-    "Pasted image 20260709170041.png"
+    "Pasted image 20260709170041.png",
+    "Pasted image 20260718094458.png",
+    "Pasted image 20260719104336.png",
+    "Pasted image 20260719104917.png"
   ],
   "File Hashes": {
     "Welcome.md": "bb732791fe9f896c6b5aeae133290c13",
@@ -327,10 +330,11 @@
     "göttliches Allwissen (Lernzettel)/DSAL/Algorithmen.md": "a9694ad18f7ad5c4776870c447f663cd",
     "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Algorithmen.md": "e26ca519230c9e9ee5e1a8dfd2edb165",
     "göttliches Allwissen (Lernzettel)/DSAL/ANKI/ANKI - Sortieren.md": "c3997b114e38fa64233b415f5dc6b981",
-    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - OS Basics.md": "ce166c92a1d4c6100c1e3cfaa241bf24",
-    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Processes.md": "499e1e06cacc0366c73049d383bc24cc",
+    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - OS Basics.md": "12227ed9b19394051b7a50f7fc0d1419",
+    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Processes.md": "78bcfe5cc45ce8b80ff4d3f07c1b337f",
     "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Scheduling.md": "cc8e06a511014e2f34789d092eaf9d43",
-    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Memory.md": "d00580d820e30ffe6cbf5b3f653ec842"
+    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Memory.md": "52a5492eb63bf5db608d7ff3dd73592f",
+    "göttliches Allwissen (Lernzettel)/BUS/ANKI/ANKI - Files.md": "72b667a4454818b115c26d6c930c9e63"
   },
   "fields_dict": {
     "Bildverdeckung": [
