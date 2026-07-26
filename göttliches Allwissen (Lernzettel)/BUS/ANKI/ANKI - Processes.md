@@ -47,11 +47,13 @@ All information about the virtual Address Space:
 <!--ID: 1783608506350-->
 
 
-What is stored about **Files** in a **PCB**?
+What is stored about **Files** in a **PCB**? #flashcard
 - Current working directory (CWD)
 - User ID (UID)
 - Group ID (GID)
 - file descriptors
+<!--ID: 1784821043729-->
+
 
 What sections is a process' **address space** split up into?
 (from 0xFFF... to 0x000...) #flashcard
