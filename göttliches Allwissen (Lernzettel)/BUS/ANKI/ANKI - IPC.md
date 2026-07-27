@@ -36,6 +36,5 @@ TL:DR:  **condition variable** #flashcard
 - waiting for something to change
 - state is stored in **separate user variable**
 	- this variable has to be protected by a **mutex**
-- always needs `while(!myOwnCondition){ cond_wait(); }` loop
-<!--ID: 1784742267331-->
-
+- always needs `while(!myOwnCondition) cond_wait(); ` loop
+<!--ID: 1785154227640-->
