@@ -98,3 +98,7 @@ $2\cdot \log(n+1)$
 Was gilt für das Verhältnis von Schwarzhöhe $bh(t)$ und Gesamthöhe $h$ eines RBT $t$? #flashcard
 $bh(t)\leq h \leq2\cdot bh(t)$
 <!--ID: 1785414493063-->
+
+Zeichnen von Rot Schwarz Bäumen: Welche Form für welche Knotenfarbe? #flashcard
+- Rot = Kreis (Rot=Rund)
+- Schwarz = Quadrat
