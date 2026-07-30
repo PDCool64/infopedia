@@ -102,3 +102,4 @@ $bh(t)\leq h \leq2\cdot bh(t)$
 Zeichnen von Rot Schwarz Bäumen: Welche Form für welche Knotenfarbe? #flashcard
 - Rot = Kreis (Rot=Rund)
 - Schwarz = Quadrat
+<!--ID: 1785415369973-->
