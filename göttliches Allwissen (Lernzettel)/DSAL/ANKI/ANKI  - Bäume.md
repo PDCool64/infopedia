@@ -10,7 +10,7 @@ Alle Pfade zu Blättern sind **genau gleich lang**
 <!--ID: 1785414492990-->
 
 
-2-3-4-Baum **Einfügen**: Wo die Baumhöhe verändert werden? #flashcard
+2-3-4-Baum **Einfügen**: Wo die darf Baumhöhe verändert werden? #flashcard
 Nur in der Wurzel darf durch Spalten die Baumhöhe gesteigert werden.
 <!--ID: 1785414492997-->
 
@@ -96,7 +96,7 @@ Wie viele **innere Knoten** kann ein RBT $t$ mit Schwarzhöhe $bh(t)$ höchstens
 
 
 Wie hoch kann ein RBT mit $n$ inneren Knoten höchstens sein? #flashcard
-$2\cdot \log(n+1)$
+$2\cdot \log_{2}(n+1)$
 <!--ID: 1785414493058-->
 
 
