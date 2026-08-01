@@ -44,7 +44,7 @@ $\mathcal{O}(\left| V \right|^{3})$
 
 Ford-Fulkerson #flashcard
 Max-Flow/Min-Cut
-$\mathcal{O}(\left| f^{*} \right|\cdot \left| E \right|\cdot \left| V \right|)$ mit $\left| f^{*} \right|$ als Wert des Maximalen Flusses
+$\mathcal{O}(\left| f^{*} \right|\cdot (\left| E \right|+ \left| V \right|))$ mit $\left| f^{*} \right|$ als Wert des Maximalen Flusses
 <!--ID: 1785329530082-->
 
 
