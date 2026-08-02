@@ -113,10 +113,15 @@ Formel: **doppeltes Hashing** #flashcard
 $$
 h(k,i)=(h_{1}(k)+i \cdot h_{2}(k))\text{ mod }m
 $$
+<!--ID: 1785689413404-->
+
+
+
 pro/con: **doppeltes Hashing** #flashcard
 pro:
 - erste Sondierung bestimmt **nicht** gesamte Sequenz+
 - Verteilt gut auf gesamte Tabelle, kaum Clustering
-<!--ID: 1785487282479-->
+<!--ID: 1785689413412-->
+
 
 
