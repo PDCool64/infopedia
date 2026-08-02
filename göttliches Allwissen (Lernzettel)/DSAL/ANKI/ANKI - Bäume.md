@@ -26,10 +26,10 @@ Der Wert kann einfach gelöscht werden, da vorher garantiert wurde, dass das Bla
 
 
 2-3-4-Baum **Löschen**: gefundener Zielknoten ist **innerer Knoten**. Verfahren? #flashcard
-Sind Vorgänger und Nachfolger BEIDE minimal?
-- ja: **verschmelze** gesuchten Wert mit Vor- und Nachfolger zu 4-Knoten. Versuche dort Löschen erneut durch rekursiven Aufruf.
-- nein: **Ersetze** Wert durch nichtminimalen Vorgänger/Nachfolger.
-  Lösche diesen zuerst rekursiv.
+Sind direktes Linkes und Rechtes Kind BEIDE minimal?
+- ja: **verschmelze** gesuchten Wert mit direkten Kindern zu 4-Knoten. Versuche dort Löschen erneut durch rekursiven Aufruf.
+- nein: Bestimme **numerischen Vorgänger/Nachfolger** im Teilbaum, ersetze durch dessen Wert.
+  Lösche diesen rekursiv.
 <!--ID: 1785414493012-->
 
 2-3-4-Baum **Löschen**: Nächster Knoten für Abstieg ist minimal. Verfahren? #flashcard
