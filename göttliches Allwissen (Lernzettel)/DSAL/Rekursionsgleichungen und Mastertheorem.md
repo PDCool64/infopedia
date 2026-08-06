@@ -75,7 +75,7 @@ T(n)&= 2\cdot T\left( \left\lfloor  \frac{n}{2}  \right\rfloor  \right) +n \\
 &\le 2n \log_{2}n
 \end{align}
 $$
-### Mastertheorem
+0### Mastertheorem
 Gegeben sei
 $$
 T(n) =a\cdot T\left( \frac{n}{b} \right)+f(n)\;,\;a\ge 1\;,\;b>1
