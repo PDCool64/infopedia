@@ -33,7 +33,7 @@ Spaltenoperationen = RECHTS
 3 Sanity Checks: **Bild und Kern** #flashcard
 1. Rangsatz
 2. Basisvektoren des Kerns einsetzen: $Av_{i}=0$ ?
-3. $\det(A_{a}=0)\iff\text{Kern}(A_{a})\neq \{ 0 \}$
+3. $\det(A_{a})=0\iff\text{Kern}(A_{a})\neq \{ 0 \}$
 <!--ID: 1786376481720-->
 
 
@@ -55,7 +55,7 @@ Spaltenoperationen = RECHTS
 
 4 Sanity Checks: **Charakteristisches Polynom**
 1. $deg(X_{a})=n$ bei $n\times n$ Matrix
-<!--ID: 1786376481732-->
+<!--ID: 1786377428645-->
 
 2. Leitkoeffizient $=1$
 3. Zweiter Koeffizient: $-tr(A)=-\sum_{i=1}^{n}a_{ii}$
