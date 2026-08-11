@@ -27,7 +27,7 @@ $n-k$
 
 
 Welche Länge hat ein Anführer eines Syndroms? #flashcard
-$k$
+$n$
 <!--ID: 1786205085688-->
 
 
