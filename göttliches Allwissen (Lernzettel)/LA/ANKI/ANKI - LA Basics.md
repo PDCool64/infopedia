@@ -63,3 +63,31 @@ Spaltenoperationen = RECHTS
 
 4. Konstanter Summand: $(-1)^{n}\det(A)$
 <!--ID: 1786376481740-->
+
+Wie lautet die Leibniz-Formel #flashcard
+$$
+\det(A):= \sum_{\pi\in S_{n}}\text{sgn}(\pi) \prod_{i=1}^{n}a_{i,\pi(i)}
+$$
+<!--ID: 1786622039012-->
+
+Vorgehen, wenn eine zu $A$ ähnliche Diagonalmatrix $D$ und die passenden $T\;,\;T^{-1}$ gesucht sind: #flashcard
+Ziel: $D=T^{-1}AT$
+Bestimme:
+- Eigenwerte $\lambda_{1},\dots,\lambda_{n}$ (mehrfache Verwendung erlaubt)
+- **Linear unabhängige** Eigenvektoren $e_{1},\dots, e_{n}$  sodass $Ae_{i}=\lambda_{i}e_{i}$ 
+$$D=\begin{pmatrix}\lambda_{1} &  & \dots & 0 \\
+ & \lambda_{2} & &\vdots \\
+  \vdots&  & \ddots \\
+ 0 & \dots &  & \lambda_{n}\end{pmatrix}$$
+$$
+T=\begin{pmatrix}
+e_{1} \mid e_{2} \mid \dots\mid e_{n}
+\end{pmatrix}
+$$ $T^{-1}$ falls gefordert durch normales invertieren bestimmen.
+<!--ID: 1786625269236-->
+
+
+Wie viele Elemente enthält die allgemeine lineare Gruppe $\text{GL}_{n}(\mathbb{F}_{q})$ über einem endlichen Körper mit $q$ Elementen? #flashcard
+$$\left| \text{GL}_{n}(\mathbb{F}_{q}) \right|=\prod_{i=0}^{n-1}(q^{n}-q^{i})$$
+<!--ID: 1786625269264-->
+
