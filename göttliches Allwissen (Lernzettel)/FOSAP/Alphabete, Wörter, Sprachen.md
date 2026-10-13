@@ -17,7 +17,7 @@ status: rot
 > Sei $(M,\circ)$ ein Monoid und $E\subseteq M$.
 > $E$ ist ein **Erzeugendensystem** von $(M,\circ)$, falls jedes $m\in M$ als
 > $$
-> m=e_{1}\circ \cdots \circ e_{n}\quad,\quad e_{i}\in E
+> m=e_{1}\circ \cdots \circ e_{n}\quad,\quad e_{1},\dots,e_{n}\in E
 > $$
 > dargestellt werden kann.
 
