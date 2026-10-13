@@ -10,26 +10,38 @@ $T=(Q,\Sigma,\Gamma,B,q_{0},\overline{q},\delta)$ mit
 - $\overline{q}\in Q$ als Endzustand
 - $\delta:(Q\setminus\{ \overline{q} \})\times\Gamma \to Q\times \Gamma \times \{ R,L,N \}$
   als Zustandsübergangsfunktion
+<!--ID: 1791889609148-->
+
 
 Wann stoppt eine Turingmaschine? #flashcard
 Genau dann, wenn sie den Endzustand $\overline{q}$ erreicht.
 Eine TM kann _nicht_ blockieren; die Zustandsübergangsfunktion ist vollständig definiert.
+<!--ID: 1791889609180-->
+
 
 Wie ist das Ausgabewort $y\in\Sigma^{*}$ einer TM definiert? #flashcard
 Vom Band ablesen:
 - von inkl. der momentanen Kopfposition
 - endet unmittelbar vor dem ersten Symbol aus $\Gamma\setminus\Sigma$ 
+<!--ID: 1791889609210-->
+
 
 Welche Ausgabewörter einer TM werden bei einen **Entscheidungsproblem** als Ja bzw. Nein interpretiert? #flashcard
 - Ja = Ausgabewort beginnt mit $1$
 - Nein = Ausgabewort beginnt nicht mit $1$
+<!--ID: 1791889609244-->
+
 
 Wann wird das Ausgabewort einer TM als undefiniert bezeichnet? #flashcard
 Wenn die TM bei der Berechnung mit einer Eingabe nicht terminiert.
 Wir schreiben für "undefiniert" das Symbol $\perp$ .
+<!--ID: 1791889609252-->
+
 
 Definiere den Speicherbedarf einer TM. #flashcard
 Die Anzahl von Bandzellen, die während der Berechnung **besucht** werden.
+<!--ID: 1791889609269-->
+
 
 Wie kodiert die **Konfiguration** einer TM die Informationen? #flashcard
 Eine Konfiguration ist ein String $\alpha q\beta \;,\;q\in Q\;,\;\alpha,\beta\in\Gamma^{*}$.
@@ -37,4 +49,6 @@ Eine Konfiguration ist ein String $\alpha q\beta \;,\;q\in Q\;,\;\alpha,\beta\in
 - der Zustand ist $q$
 - Der Kopf steht über dem ersten Zeichen von $\beta$
 Ein Ableitungsschritt wird durch $\vdash$ geschrieben.
+<!--ID: 1791889609367-->
+
 
