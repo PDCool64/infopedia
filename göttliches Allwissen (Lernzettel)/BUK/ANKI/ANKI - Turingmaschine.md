@@ -1,3 +1,5 @@
+TARGET DECK: BUK::Turingmaschine
+
 Definition: **Turingmaschine** #flashcard
 $T=(Q,\Sigma,\Gamma,B,q_{0},\overline{q},\delta)$ mit
 - $Q$ als endliche Zustandsmenge

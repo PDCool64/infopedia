@@ -1,3 +1,5 @@
+TARGET DECK: BUK::Probleme
+
 Definition: **Problem** #flashcard
 Ein Problem ist eine Relation über zwei Alphabeten.
 $R\subseteq\Sigma^{*}\times\Sigma'^{*}$
