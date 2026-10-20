@@ -57,7 +57,8 @@ Definition: verbindungsloser Dienst #flashcard
 
 Definition: verbindungsorientierter Dienst #flashcard
 - Dienstleistung im Kontext, also abhängig von früher erbrachten Dienstleistungen
-- Verbindungsaufbau, Aushandlung von Parametern
+- Verbindungsaufbau = Aufbau von Kontext
+- Aushandlung von Parametern
 - Berücksichtigung des aktuellen Verbindungszustands bzw. Phase
 - Weniger Kontrolldaten notwendig, aber Kontextmanagement
 <!--ID: 1792416023470-->
