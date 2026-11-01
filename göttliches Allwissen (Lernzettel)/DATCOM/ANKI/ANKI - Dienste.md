@@ -63,3 +63,8 @@ Definition: verbindungsorientierter Dienst #flashcard
 - Weniger Kontrolldaten notwendig, aber Kontextmanagement
 <!--ID: 1792416023470-->
 
+Definiere **Zuverlässigkeit** eines Dienstes #flashcard
+Der Dienst garantiert bestimmte Eigenschaften bzgl. der Korrektheit der übertragenen Daten (ECC usw.), des Verlusts von Paketen sowie der Reihenfolge in welcher diese ankommen.
+<!--ID: 1793019081298-->
+
+
