@@ -30,34 +30,6 @@ Aufprägung des Eingabesignals auf harmonische Trägerschwingungen.
 <!--ID: 1793544355315-->
 
 
-Was macht eine 4B/5B Kodierung ? #flashcard
-verhindere lange Läufe von mehr als drei 0en, indem 4 bit Wörter durch gut gewählt 5bit Wörter kodiert werden
-<!--ID: 1793544355321-->
-
-
-Wie arbeitet ein **RZ = Return to Zero** Code? #flashcard
-Es wird nur alle zwei Taktschritte ein Bit übertragen; Effizienz = 50%
-Erster Taktschritt = Daten(+-1); Zweiter Taktschritt = Immer 0
-$\to$ Wertsprünge besser zu erkenne als Absolutwerte
-$\to$ Selbsttaktung
-![[Pasted image 20261101153249.png]]
-<!--ID: 1793544355327-->
-
-
-Wie arbeitet ein Differentialer Code? #flashcard
-Bei jeder 1 wechselt die Darstellung von 0 und 1.
-Bzw. jede 1 hat genau die andere Darstellung im Vergleich zur vorigen 1.
-<!--ID: 1793544355333-->
-
-
-Wie arbeitet der Manchester-Code? #flashcard
-Es wird nur alle zwei Taktschritte ein Bit übertragen; Effizienz = 50%
-1 = Wechsel $1\to{0}$
-0 = Wechsel $0\to{1}$
-<!--ID: 1793544355340-->
-
-
-
 Welche drei Typen der Modulation gibt es? #flashcard
 - Amplitudenmodulation
 - Frequenzmodulation
