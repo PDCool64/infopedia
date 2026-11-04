@@ -22,6 +22,14 @@ Leitungscodes: NRZ-S #flashcard
 - *nicht* selbsttaktend
 <!--ID: 1793703995636-->
 
+Wann schalten Bi-Phase Codes _immer_? #flashcard
+An jedem Bitanfang.
+<!--ID: 1793806469758-->
+
+
+Wann schalten DBi-Phase Codes _immer_? #flashcard
+In jeder Bitmitte.
+<!--ID: 1793806469771-->
 
 
 Leitungscodes: Bi-Phase-L #flashcard
@@ -36,6 +44,8 @@ Leitungscodes: Bi-Phase-M #flashcard
 - Wechsel an jedem Bitanfang, bei 1 zusätzlich in der Mitte
 - 50% Effizienz
 - selbsttaktend
+<!--ID: 1793806375459-->
+
   
 Leitungscodes: Bi-Phase-S #flashcard
 - Wechsel an jedem Bitanfang, bei 0 zusätzlich in der Mitte

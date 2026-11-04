@@ -127,8 +127,7 @@
     "Pasted image 20260719104336.png",
     "Pasted image 20260719104917.png",
     "Pasted image 20260730134330.png",
-    "Modell eines Kommunikationssystems.png",
-    "Pasted image 20261101153249.png"
+    "Modell eines Kommunikationssystems.png"
   ],
   "File Hashes": {
     "Welcome.md": "bb732791fe9f896c6b5aeae133290c13",
@@ -356,13 +355,13 @@
     "göttliches Allwissen (Lernzettel)/BUK/ANKI/ANKI - Turingmaschine.md": "e0cfafa4e50c98f11f550d16416d1220",
     "göttliches Allwissen (Lernzettel)/BUK/ANKI/ANKI - Probleme.md": "230c02e6b5e4017f61783e460c53a401",
     "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Dienste.md": "9a3185962d23b2f2133486ec54b0a2d6",
-    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Protokolle und Schichten.md": "1fea059473a8da87bae1e1d86bc29304",
-    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Signalübertragung.md": "8f43dce431b9a18b6e64dda9e39526a1",
-    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Leitungscodes.md": "36b26707a8df567b20a6de926fbfa733",
-    "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - Anforderungsanalyse.md": "d41d8cd98f00b204e9800998ecf8427e",
     "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - Vorgehensmodelle.md": "554d6f99441e9754b0469c197addcb94",
+    "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - Testen.md": "cc7e6703a15cc279f80e95a7791250ab",
     "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - KI.md": "16ca73c7c44c0b8cd3e7a7bd454e8138",
-    "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - Testen.md": "cc7e6703a15cc279f80e95a7791250ab"
+    "göttliches Allwissen (Lernzettel)/ST/ANKI/ANKI - Anforderungsanalyse.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Leitungscodes.md": "9e4ba377845eb98038ae55f7b41ef4f6",
+    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Signalübertragung.md": "8f43dce431b9a18b6e64dda9e39526a1",
+    "göttliches Allwissen (Lernzettel)/DATCOM/ANKI/ANKI - Protokolle und Schichten.md": "1fea059473a8da87bae1e1d86bc29304"
   },
   "fields_dict": {
     "Bildverdeckung": [
